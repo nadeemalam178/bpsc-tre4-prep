@@ -1,23 +1,22 @@
 @echo off
-title BPSC TRE 4.0 - Auto Create & Sync Today Pack
+title BPSC TRE 4.0 - Sync Folder to Phone
 color 0b
 echo ============================================================
-echo   BPSC TRE 4.0 - Create Today Pack & Sync to Phone
+echo   BPSC TRE 4.0 - 1-Click Sync to Phone
 echo ============================================================
 echo.
-echo 1. Generating today's notes and questions in this folder...
-python "%~dp0new_day.py"
-
+echo Syncing this folder (your master database) to your phone...
 echo.
-echo 2. Syncing this folder (master database) to your phone...
+
 git add .
-git commit -m "Auto-generate new day study pack"
+git commit -m "Update daily study packs and questions"
 git push origin master
 
 echo.
 echo ============================================================
-echo   ALL DONE!
-echo   New day generated and updated to your phone app!
+echo   SYNC SUCCESSFUL!
+echo.
+echo   Your phone is updated with all current files in this folder.
 echo   Open on your phone:
 echo   https://nadeemalam178.github.io/bpsc-tre4-prep/
 echo ============================================================
