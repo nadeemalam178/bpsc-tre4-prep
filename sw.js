@@ -1,12 +1,14 @@
 // Service Worker for BPSC TRE 4.0 PWA
-const CACHE_NAME = 'bpsc-tre4-v1';
+const CACHE_NAME = 'bpsc-tre4-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
   './icon-192.svg',
   './icon-512.svg',
-  './2026-10-09/daily_quiz_data.json'
+  './data/index.json',
+  './2026-10-09/daily_quiz_data.json',
+  './2026-10-10/daily_quiz_data.json'
 ];
 
 self.addEventListener('install', (event) => {
@@ -49,7 +51,6 @@ self.addEventListener('fetch', (event) => {
         });
         return networkResponse;
       }).catch(() => {
-        // Offline fallback
         return caches.match('./index.html');
       });
     })
