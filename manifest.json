@@ -1,0 +1,24 @@
+{
+  "name": "BPSC TRE 4.0 Study Hub & Test Portal",
+  "short_name": "BPSC TRE 4.0",
+  "description": "Interactive study portal and authentic PYQ practice test engine for BPSC TRE 4.0 (Class 6-8 Maths & Science, Class 9-10 Secondary Maths).",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0e17",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

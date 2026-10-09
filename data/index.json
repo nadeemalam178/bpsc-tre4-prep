@@ -1,0 +1,17 @@
+{
+  "activeDay": 1,
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-10-09",
+      "title": "Day 01: Foundations, Real Numbers & 1857 Revolt",
+      "path": "2026-10-09/daily_quiz_data.json"
+    },
+    {
+      "day": 2,
+      "date": "2026-10-10",
+      "title": "Day 02: Linear Equations, Acids & Bases & 1942 Movement",
+      "path": "2026-10-10/daily_quiz_data.json"
+    }
+  ]
+}

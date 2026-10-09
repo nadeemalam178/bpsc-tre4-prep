@@ -1,0 +1,646 @@
+{
+  "day": 2,
+  "date": "2026-10-10",
+  "title": "BPSC TRE 4.0 Day 02 High-Yield Practice Test",
+  "totalQuestions": 30,
+  "durationMinutes": 35,
+  "negativeMarking": 0.33,
+  "sections": [
+    { "id": "language", "name": "Part I: Language Qualifying (भाषा अहर्ता)", "questionsCount": 5 },
+    { "id": "gs", "name": "Part II: General Studies (सामान्य अध्ययन)", "questionsCount": 8 },
+    { "id": "middle_math_sci", "name": "Part III: Class 6-8 (Maths & Science)", "questionsCount": 10 },
+    { "id": "sec_math", "name": "Part IV: Class 9-10 Secondary Mathematics", "questionsCount": 7 }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "language",
+      "subject": "Hindi Grammar",
+      "source": "BPSC TRE 2.0 PYQ",
+      "question": "'अत्यंत' शब्द में निम्नलिखित में से कौन-सा उपसर्ग प्रयुक्त हुआ है?\n(Which prefix is used in the word 'Atyant'?)",
+      "options": [
+        "अत्",
+        "अति",
+        "अत्य",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "अति + अंत = अत्यंत (यण स्वर संधि)। उपसर्ग 'अति' है।",
+      "aiDeepSolution": {
+        "concept": "उपसर्ग वह शब्दांश है जो किसी शब्द के आरंभ में जुड़कर उसके अर्थ में विशेषता या परिवर्तन लाता है। यहाँ अति + अंत में यण संधि के नियम से 'इ' का 'य्' हो गया है।",
+        "trick": "संधि विच्छेद करके मूल उपसर्ग निकालें: अति + अंत = अत्यंत। अतः मूल उपसर्ग 'अति' है।",
+        "trap": "छात्र सामने 'अत्य' देखकर विकल्प (C) टिक कर देते हैं, जो कि कोई मानक उपसर्ग नहीं है।"
+      }
+    },
+    {
+      "id": 2,
+      "section": "language",
+      "subject": "Hindi Grammar",
+      "source": "BPSC TRE 1.0 PYQ",
+      "question": "निम्नलिखित में से 'रात्रि' का पर्यायवाची शब्द कौन-सा है?\n(Which of the following is a synonym of 'Ratri'?)",
+      "options": [
+        "विभावरी",
+        "रजनी",
+        "निशीथ",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 3,
+      "explanation": "विभावरी, रजनी और निशीथ तीनों ही रात्रि के पर्यायवाची हैं। अतः विकल्प (D) सही है।",
+      "aiDeepSolution": {
+        "concept": "BPSC का ट्रेडमार्क 5-विकल्प प्रश्न! जब 2 या अधिक विकल्प सही हों, तो Option (D) 'उपर्युक्त में से एक से अधिक' चुना जाता है।",
+        "trick": "रजनी (A) और विभावरी (B) दोनों रात्रि के प्रसिद्ध पर्यायवाची हैं। जैसे ही दो सही मिलें, सीधे (D) पर जाएं!",
+        "trap": "जल्दबाजी में केवल (A) या (B) टिक करके आगे बढ़ जाना BPSC में सबसे बड़ी गलती है।"
+      }
+    },
+    {
+      "id": 3,
+      "section": "language",
+      "subject": "Hindi Grammar",
+      "source": "BPSC TRE 3.0 PYQ",
+      "question": "'आस्तिक' शब्द का सही विलोम शब्द क्या है?\n(What is the correct antonym of 'Aastik'?)",
+      "options": [
+        "अनास्तिक",
+        "नास्तिक",
+        "अविश्वासी",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "आस्तिक का सही विलोम 'नास्तिक' होता है।",
+      "aiDeepSolution": {
+        "concept": "आस्तिक (ईश्वर/वेदों में विश्वास रखने वाला), नास्तिक (विश्वास न रखने वाला)।",
+        "trick": "आस्तिक <-> नास्तिक (प्रत्यक्ष तत्सम विलोम युग्म)।",
+        "trap": "'अनास्तिक' हिंदी में अशुद्ध शब्द है।"
+      }
+    },
+    {
+      "id": 4,
+      "section": "language",
+      "subject": "English Grammar",
+      "source": "BPSC TRE 2.0 English PYQ",
+      "question": "Complete the conditional sentence:\n'If you had studied hard, you _______ the examination.'",
+      "options": [
+        "would pass",
+        "would have passed",
+        "will pass",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Third Conditional Rule: If + Past Perfect (had studied) -> would have + V3 (would have passed).",
+      "aiDeepSolution": {
+        "concept": "Third Conditional expresses an unreal past condition and its probable past result.",
+        "trick": "Structure: If + had + V3 ---> would have + V3. Always pairs 'had' with 'would have'.",
+        "trap": "Do not confuse with Type 2 (If + past simple -> would + V1)."
+      }
+    },
+    {
+      "id": 5,
+      "section": "language",
+      "subject": "English Grammar",
+      "source": "BPSC TRE 1.0 English PYQ",
+      "question": "Fill in the blank with correct preposition:\n'The train departs _______ 8:30 PM sharp.'",
+      "options": [
+        "in",
+        "at",
+        "on",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Use 'at' for precise clock times.",
+      "aiDeepSolution": {
+        "concept": "Prepositions of Time: 'At' for exact times (at 5 PM, at noon), 'On' for days/dates (on Monday), 'In' for months/years/centuries.",
+        "trick": "Clock time = AT. Calendar day = ON. Month/Year = IN.",
+        "trap": "'On 8:30 PM' is a common colloquial error."
+      }
+    },
+    {
+      "id": 6,
+      "section": "gs",
+      "subject": "1942 Movement Bihar",
+      "source": "BPSC TRE 1.0 GS PYQ",
+      "question": "1942 के भारत छोड़ो आंदोलन के दौरान 'पटना सचिवालय गोलीकांड' किस तिथि को घटित हुआ था जिसमें सात छात्र शहीद हुए थे?\n(On which date did the Patna Secretariat firing take place during the 1942 Movement?)",
+      "options": [
+        "9 अगस्त 1942",
+        "11 अगस्त 1942",
+        "15 अगस्त 1942",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "11 अगस्त 1942। पटना के डीएम डब्ल्यू. जी. आर्चर के आदेश पर पुलिस ने छात्रों पर गोली चलाई थी।",
+      "aiDeepSolution": {
+        "concept": "11 अगस्त 1942 को सचिवालय भवन पर तिरंगा फहराने के प्रयास में 7 छात्र (उमाकांत प्रसाद, रामानंद सिंह, सतीश प्रसाद झा, जगपति कुमार, देवीपद चौधरी, राजेंद्र सिंह, रामगोविंद सिंह) शहीद हुए।",
+        "trick": "11 अगस्त = 7 शहीद छात्र। 9 अगस्त को गांधीजी व शीर्ष नेताओं की गिरफ्तारी हुई थी।",
+        "trap": "9 अगस्त और 11 अगस्त में छात्र प्रायः कन्फ्यूज होते हैं।"
+      }
+    },
+    {
+      "id": 7,
+      "section": "gs",
+      "subject": "1942 Movement Bihar",
+      "source": "BPSC TRE 2.0 GS PYQ",
+      "question": "भारत छोड़ो आंदोलन (1942) के दौरान हजारीबाग सेंट्रल जेल की दीवार फांदकर फरार होने के बाद 'आजाद दस्ता' का गठन किसने किया था?\n(Who founded 'Azad Dasta' after escaping from Hazaribagh Central Jail during Quit India Movement?)",
+      "options": [
+        "राममनोहर लोहिया",
+        "जयप्रकाश नारायण",
+        "योगेंद्र शुक्ल",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "जयप्रकाश नारायण (JP)।",
+      "aiDeepSolution": {
+        "concept": "दिवाली की रात 9 नवंबर 1942 को जयप्रकाश नारायण अपने 5 साथियों के साथ हजारीबाग जेल से भागे और नेपाल के राजविलास जंगल में 'आजाद दस्ता' (छापामार संगठन) का गठन किया।",
+        "trick": "हजारीबाग जेल + आजाद दस्ता = लोकनायक जयप्रकाश नारायण।",
+        "trap": "लोहिया जी आजाद दस्ता के रेडियो प्रसारण प्रमुख थे, किंतु संस्थापक जयप्रकाश नारायण थे।"
+      }
+    },
+    {
+      "id": 8,
+      "section": "gs",
+      "subject": "Soils of Bihar",
+      "source": "BPSC TRE 3.0 GS PYQ",
+      "question": "बिहार के मैदानी भाग में पाई जाने वाली पुरानी जलोढ़ मिट्टी को स्थानीय भाषा में किस नाम से जाना जाता है?\n(What is the local name for the older alluvial soil found in the plains of Bihar?)",
+      "options": [
+        "खादर",
+        "बांगर (करैल-कैवाल)",
+        "बलथर",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "बांगर मिट्टी (दक्षिण बिहार में इसे करैल-कैवाल भी कहा जाता है)।",
+      "aiDeepSolution": {
+        "concept": "पुरानी जलोढ़ = बांगर (कंकड़ युक्त, कम उपजाऊ, बाढ़ क्षेत्र से दूर)। नवीन जलोढ़ = खादर (बाढ़ के मैदान, अत्यधिक उपजाऊ)।",
+        "trick": "बांगर = पुरानी (भंगार/कबाड़ की तरह पुरानी)। खादर = नई (खाद जैसी उपजाऊ)।",
+        "trap": "खादर नवीन जलोढ़ है, पुरानी नहीं।"
+      }
+    },
+    {
+      "id": 9,
+      "section": "gs",
+      "subject": "General Science",
+      "source": "BPSC TRE 1.0 Science PYQ",
+      "question": "शुद्ध जल का pH मान 7 होता है। मानव रक्त का सामान्य pH मान निम्नलिखित में से कितना होता है?\n(What is the normal pH value of human blood?)",
+      "options": [
+        "6.5 - 6.8",
+        "7.35 - 7.45",
+        "8.2 - 8.5",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "मानव रक्त थोड़ा क्षारीय (Slightly alkaline) होता है, जिसका pH मान लगभग 7.4 होता है।",
+      "aiDeepSolution": {
+        "concept": "pH स्केल की खोज सोरेनसन ने 1909 में की। 7 उदासीन, 7 से कम अम्लीय, 7 से अधिक क्षारीय। रक्त बफर विलयन है।",
+        "trick": "रक्त = 7.4 (हल्का क्षारीय)। आंसू का pH भी लगभग 7.4 होता है।",
+        "trap": "रक्त अम्लीय नहीं होता, विकल्प (A) गलत है।"
+      }
+    },
+    {
+      "id": 10,
+      "section": "gs",
+      "subject": "General Science",
+      "source": "BPSC TRE 2.0 Science PYQ",
+      "question": "नीले लिटमस पत्र को लाल रंग में कौन-सा पदार्थ परिवर्तित कर देता है?\n(Which substance turns blue litmus paper to red?)",
+      "options": [
+        "सिरका (Vinegar / Acetic acid)",
+        "नींबू का रस (Lemon juice / Citric acid)",
+        "कास्टिक सोडा (Sodium hydroxide)",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 3,
+      "explanation": "सिरका और नींबू का रस दोनों अम्ल हैं, और अम्ल नीले लिटमस को लाल करते हैं। अतः (D) उपर्युक्त में से एक से अधिक सही है।",
+      "aiDeepSolution": {
+        "concept": "BPSC Option D का क्लासिक सवाल! अम्ल (Acid) नीले लिटमस को लाल करते हैं। सिरका (एसिटिक एसिड) और नींबू का रस (साइट्रिक एसिड) दोनों अम्ल हैं।",
+        "trick": "कोड: 'अनिल' -> अ से अम्ल, नि से नीले को, ल से लाल करता है। सिरका और नींबू दोनों अम्ल हैं -> Option D!",
+        "trap": "सिर्फ सिरका देखकर (A) टिक करने वाले छात्र 1/3 नेगेटिव अंक गंवा देते हैं।"
+      }
+    },
+    {
+      "id": 11,
+      "section": "gs",
+      "subject": "Mental Ability",
+      "source": "BPSC TRE 3.0 PYQ",
+      "question": "यदि एक घड़ी में 4:30 बज रहे हों, तो घंटे और मिनट की सुई के बीच का कोण कितना होगा?\n(If a clock shows 4:30, what is the angle between the hour and minute hands?)",
+      "options": [
+        "45°",
+        "60°",
+        "30°",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "45°। सूत्र: Angle = |30H - (11/2)M| = |30(4) - (11/2)(30)| = |120 - 165| = 45°।",
+      "aiDeepSolution": {
+        "concept": "घड़ी के कोण का रामबाण सूत्र: θ = |30H - 5.5M|।",
+        "trick": "H=4, M=30 -> 30×4 = 120. 5.5×30 = 165. 165 - 120 = 45°! 5 सेकंड में हल।",
+        "trap": "कई छात्र सोचते हैं कि 4 और 6 के बीच 2 घंटे का अंतर है तो 60° होगा, पर 30 मिनट में घंटे की सुई भी 15° आगे बढ़ चुकी होती है।"
+      }
+    },
+    {
+      "id": 12,
+      "section": "gs",
+      "subject": "Bihar Agriculture",
+      "source": "BPSC TRE 2.0 GS PYQ",
+      "question": "बिहार का कौन-सा जिला मखाना (Fox Nut / Gorgon Nut) उत्पादन में देश में सर्वोच्च स्थान रखता है?\n(Which district of Bihar ranks highest in Makhana production in India?)",
+      "options": [
+        "दरभंगा",
+        "मधुबनी",
+        "कटिहार",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 3,
+      "explanation": "मिथिला क्षेत्र के दरभंगा और मधुबनी दोनों प्रमुख उत्पादक जिले हैं। बिहार देश के कुल मखाना का 85-90% उत्पादन करता है।",
+      "aiDeepSolution": {
+        "concept": "मिथिला मखाना को जीआई टैग (GI Tag) प्राप्त है। दरभंगा, मधुबनी, सहरसा, पूर्णिया सभी प्रमुख उत्पादक हैं। अतः (D) सही है।",
+        "trick": "दरभंगा को 'मखाना सिटी' कहा जाता है लेकिन मधुबनी में भी समान रूप से भारी उत्पादन होता है -> More than one!",
+        "trap": "BPSC अक्सर ऐसे कृषि उत्पादन प्रश्नों में 2 प्रमुख जिलों को देकर (D) सही उत्तर बनाता है।"
+      }
+    },
+    {
+      "id": 13,
+      "section": "gs",
+      "subject": "Indian Geography",
+      "source": "BPSC TRE 1.0 GS PYQ",
+      "question": "कर्क रेखा (Tropic of Cancer) भारत के कितने राज्यों से होकर गुजरती है?\n(Through how many Indian states does the Tropic of Cancer pass?)",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "8 राज्यों से: गुजरात, राजस्थान, मध्य प्रदेश, छत्तीसगढ़, झारखंड, पश्चिम बंगाल, त्रिपुरा और मिजोरम।",
+      "aiDeepSolution": {
+        "concept": "23.5° N अक्षांश रेखा कर्क रेखा कहलाती है। यह बिहार से होकर नहीं गुजरती (झारखंड विभाजन के बाद)।",
+        "trick": "याद रखने की ट्रिक: 'मित्र पर गमछा झार' (मिजोरम, त्रिपुरा, पश्चिम बंगाल, राजस्थान, गुजरात, मध्य प्रदेश, छत्तीसगढ़, झारखंड)।",
+        "trap": "बिहार कर्क रेखा के उत्तर में स्थित है।"
+      }
+    },
+    {
+      "id": 14,
+      "section": "middle_math_sci",
+      "subject": "Mathematics (6-8)",
+      "source": "BPSC TRE 2.0 (Class 6-8) PYQ",
+      "question": "भिन्नों 2/3, 4/9 और 5/6 का लघुत्तम समापवर्त्य (LCM) क्या होगा?\n(What is the LCM of fractions 2/3, 4/9 and 5/6?)",
+      "options": [
+        "20/3",
+        "10/3",
+        "20/27",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "भिन्नों का LCM = (अंशों का LCM) / (हरों का HCF) = LCM(2, 4, 5) / HCF(3, 9, 6) = 20 / 3।",
+      "aiDeepSolution": {
+        "concept": "भिन्नों का ल.स.प. = Numerators का LCM / Denominators का HCF।",
+        "trick": "अंश (2, 4, 5) का LCM = 20। हर (3, 9, 6) का HCF = 3। उत्तर = 20/3। सीधे 10 सेकंड!",
+        "trap": "छात्र हरों का भी LCM निकाल देते हैं और 20/18 या 10/9 ढूंढते हैं जो गलत है।"
+      }
+    },
+    {
+      "id": 15,
+      "section": "middle_math_sci",
+      "subject": "Mathematics (6-8)",
+      "source": "NCERT Class 7 & BPSC TRE 3.0 PYQ",
+      "question": "यदि 3^(x - y) = 27 तथा 3^(x + y) = 243 है, तो x का मान क्या होगा?\n(If 3^(x - y) = 27 and 3^(x + y) = 243, what is the value of x?)",
+      "options": [
+        "4",
+        "5",
+        "1",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "3^(x-y) = 3^3 => x - y = 3। 3^(x+y) = 3^5 => x + y = 5। दोनों को जोड़ने पर 2x = 8 => x = 4।",
+      "aiDeepSolution": {
+        "concept": "आधार समान होने पर घातें बराबर होती हैं: a^m = a^n => m = n।",
+        "trick": "x - y = 3 और x + y = 5। x = (3 + 5)/2 = 8/2 = 4। y = (5 - 3)/2 = 1।",
+        "trap": "x का मान पूछा गया है, जल्दबाजी में y=1 न टिक करें।"
+      }
+    },
+    {
+      "id": 16,
+      "section": "middle_math_sci",
+      "subject": "Mathematics (6-8)",
+      "source": "Bihar SCERT Class 8 & BPSC TRE 1.0 PYQ",
+      "question": "एक दुकानदार किसी वस्तु पर 20% की छूट देता है और फिर भी 20% का लाभ कमाता है। वस्तु का अंकित मूल्य (Marked Price) उसके क्रय मूल्य (Cost Price) से कितने प्रतिशत अधिक है?\n(A shopkeeper gives 20% discount and still makes 20% profit. By what % is MP above CP?)",
+      "options": [
+        "40%",
+        "50%",
+        "44%",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "50%। सूत्र: MP/CP = (100 + Profit%) / (100 - Discount%) = 120 / 80 = 3/2 = 1.5 => 50% अधिक।",
+      "aiDeepSolution": {
+        "concept": "सदाबहार जादुई सूत्र: MP / CP = (100 + P) / (100 - D)।",
+        "trick": "MP/CP = 120 / 80 = 3 / 2। वृद्धि = (3 - 2)/2 × 100 = 50%! बिना x माने 10 सेकंड में हल!",
+        "trap": "छात्र 20 + 20 = 40% जोड़ देते हैं जो बिल्कुल गलत है।"
+      }
+    },
+    {
+      "id": 17,
+      "section": "middle_math_sci",
+      "subject": "Science (Chemistry)",
+      "source": "NCERT Class 7 & BPSC TRE 2.0 PYQ",
+      "question": "चींटी के डंक में कौन-सा अम्ल पाया जाता है जो त्वचा पर जलन पैदा करता है?\n(Which acid is present in ant sting that causes irritation?)",
+      "options": [
+        "एसिटिक अम्ल",
+        "मेथेनोइक अम्ल (फॉर्मिक अम्ल)",
+        "ऑक्सालिक अम्ल",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "मेथेनोइक अम्ल (HCOOH), जिसे फॉर्मिक अम्ल भी कहते हैं।",
+      "aiDeepSolution": {
+        "concept": "चींटी, मधुमक्खी और बिच्छू-बूटी (Nettle) के डंक में मेथेनोइक अम्ल होता है। इसे बेकिंग सोडा (NaHCO3) या कैलामाइन विलयन से उदासीन किया जाता है।",
+        "trick": "चींटी = फॉर्मिक / मेथेनोइक अम्ल। सिरका = एसिटिक। टमाटर/पालक = ऑक्सालिक।",
+        "trap": "मेथेनोइक अम्ल ही फॉर्मिक अम्ल का IUPAC नाम है।"
+      }
+    },
+    {
+      "id": 18,
+      "section": "middle_math_sci",
+      "subject": "Science (Biology)",
+      "source": "NCERT Class 7 & BPSC TRE 3.0 PYQ",
+      "question": "पौधों में पत्तियों से निर्मित भोजन को पौधे के विभिन्न भागों तक पहुँचाने का कार्य कौन-सा संवहन ऊतक (Vascular Tissue) करता है?\n(Which vascular tissue transports synthesized food from leaves to other parts of plant?)",
+      "options": [
+        "जाइलम (Xylem)",
+        "फ्लोएम (Phloem)",
+        "पैरेन्काइमा (Parenchyma)",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "फ्लोएम (Phloem)।",
+      "aiDeepSolution": {
+        "concept": "फ्लोएम भोजन (सुक्रोज) का संवहन दोनों दिशाओं (द्विदिशीय) में करता है। जाइलम जल एवं खनिजों का परिवहन नीचे से ऊपर (एकदिशीय) करता है।",
+        "trick": "ज से जाइलम = जल। फ से फ्लोएम = फूड (Food/भोजन)।",
+        "trap": "जाइलम और फ्लोएम में उल्टा लगा देना आम भूल है।"
+      }
+    },
+    {
+      "id": 19,
+      "section": "middle_math_sci",
+      "subject": "Science (Physics)",
+      "source": "NCERT Class 8 & BPSC TRE 1.0 PYQ",
+      "question": "ध्वनि की प्रबलता (Loudness) ध्वनि तरंग के किस गुण पर निर्भर करती है?\n(Loudness of sound depends on which property of the sound wave?)",
+      "options": [
+        "आवृत्ति (Frequency)",
+        "आयाम (Amplitude)",
+        "तरंगदैर्ध्य (Wavelength)",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "आयाम (Loudness ∝ Amplitude²)।",
+      "aiDeepSolution": {
+        "concept": "प्रबलता (Loudness) आयाम के वर्ग के समानुपाती होती है। तारत्व (Pitch/तीखापन) आवृत्ति (Frequency) पर निर्भर करता है।",
+        "trick": "प्रबलता = आयाम (A)। तीखापन/सुरीलापन = आवृत्ति (ν)।",
+        "trap": "महिलाओं की आवाज का तीखापन आवृत्ति के कारण होता है, प्रबलता के कारण नहीं।"
+      }
+    },
+    {
+      "id": 20,
+      "section": "middle_math_sci",
+      "subject": "Science (Chemistry)",
+      "source": "BPSC TRE 2.0 PYQ",
+      "question": "उदासीनीकरण अभिक्रिया (Neutralization Reaction) में क्या उत्पाद प्राप्त होते हैं?\n(What products are obtained in a neutralization reaction?)",
+      "options": [
+        "केवल लवण (Salt)",
+        "लवण एवं जल (Salt and Water)",
+        "अम्ल एवं क्षार",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "अम्ल + क्षार -> लवण + जल + ऊष्मा।",
+      "aiDeepSolution": {
+        "concept": "HCl + NaOH -> NaCl + H2O + Heat। यह एक ऊष्माक्षेपी (Exothermic) अभिक्रिया है।",
+        "trick": "Acid + Base = Salt + Water।",
+        "trap": "लवण के साथ जल भी बनता है, अतः (A) अधूरा है।"
+      }
+    },
+    {
+      "id": 21,
+      "section": "middle_math_sci",
+      "subject": "Mathematics (6-8)",
+      "source": "NCERT Class 7 & BPSC TRE 3.0 PYQ",
+      "question": "किसी त्रिभुज के तीनों बाह्य कोणों (Exterior Angles) का योग कितना होता है?\n(What is the sum of the three exterior angles of a triangle?)",
+      "options": [
+        "180°",
+        "360°",
+        "540°",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "360°। किसी भी बहुभुज (चाहे त्रिभुज हो, चतुर्भुज या पंचभुज) के बाह्य कोणों का योग सदैव 360° होता है।",
+      "aiDeepSolution": {
+        "concept": "किसी भी उत्तल n-भुजाओं वाले बहुभुज के सभी बाह्य कोणों का योग = 360° (सार्वभौमिक नियम)।",
+        "trick": "आंतरिक कोणों का योग 180° होता है, लेकिन बाह्य कोण सदैव 360° होते हैं।",
+        "trap": "छात्र आंतरिक कोण समझकर 180° टिक कर देते हैं!"
+      }
+    },
+    {
+      "id": 22,
+      "section": "middle_math_sci",
+      "subject": "Science (Biology)",
+      "source": "NCERT Class 7 Science PYQ",
+      "question": "मानव शरीर में भोजन का संपूर्ण पाचन एवं पोषक तत्वों का अवशोषण मुख्य रूप से किस अंग में संपन्न होता है?\n(In which organ does complete digestion and absorption of nutrients take place?)",
+      "options": [
+        "आमाशय (Stomach)",
+        "छोटी आंत (Small Intestine)",
+        "बड़ी आंत (Large Intestine)",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "छोटी आंत (क्षुद्रांत्र) में दीर्घरोम (Villi) द्वारा अवशोषण होता है।",
+      "aiDeepSolution": {
+        "concept": "कार्बोहाइड्रेट, वसा और प्रोटीन का अंतिम पाचन छोटी आंत में होता है। बड़ी आंत केवल जल और कुछ लवणों का अवशोषण करती है।",
+        "trick": "संपूर्ण पाचन + विली (Villi) अवशोषण = छोटी आंत।",
+        "trap": "आमाशय में केवल प्रोटीन का आंशिक पाचन होता है, संपूर्ण पाचन नहीं।"
+      }
+    },
+    {
+      "id": 23,
+      "section": "middle_math_sci",
+      "subject": "Mathematics (6-8)",
+      "source": "NCERT Class 8 PYQ",
+      "question": "एक समबाहु त्रिभुज का परिमाप 45 सेमी है। इसका क्षेत्रफल क्या होगा?\n(The perimeter of an equilateral triangle is 45 cm. What is its area?)",
+      "options": [
+        "(225√3)/4 सेमी²",
+        "75√3 सेमी²",
+        "(225)/2 सेमी²",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "भुजा a = 45/3 = 15 सेमी। क्षेत्रफल = (√3 / 4) × a² = (√3 / 4) × 15² = (225√3) / 4 सेमी²।",
+      "aiDeepSolution": {
+        "concept": "समबाहु त्रिभुज का क्षेत्रफल = (√3 / 4) × भुजा²।",
+        "trick": "भुजा = 15 सेमी। 15² = 225। अतः Area = (225√3)/4 सेमी²।",
+        "trap": "परिमाप को सीधे भुजा न मान बैठें।"
+      }
+    },
+    {
+      "id": 24,
+      "section": "sec_math",
+      "subject": "Mathematics (9-10)",
+      "source": "BPSC TRE 1.0 (Class 9-10 Maths) PYQ",
+      "question": "रैखिक समीकरण युग्म a1·x + b1·y + c1 = 0 और a2·x + b2·y + c2 = 0 का कोई हल नहीं (No Solution) होने की शर्त क्या है?\n(What is the condition for pair of linear equations to have No Solution?)",
+      "options": [
+        "a1/a2 ≠ b1/b2",
+        "a1/a2 = b1/b2 ≠ c1/c2",
+        "a1/a2 = b1/b2 = c1/c2",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "a1/a2 = b1/b2 ≠ c1/c2 (समांतर रेखाएँ, असंगत)।",
+      "aiDeepSolution": {
+        "concept": "1. a1/a2 ≠ b1/b2 -> अद्वितीय हल (प्रतिच्छेदी, संगत)\n2. a1/a2 = b1/b2 = c1/c2 -> अनंत हल (संपाती, आश्रित)\n3. a1/a2 = b1/b2 ≠ c1/c2 -> कोई हल नहीं (समांतर, असंगत)",
+        "trick": "No Solution = समांतर रेखाएं (जो कभी नहीं मिलतीं) = a1/a2 = b1/b2 ≠ c1/c2।",
+        "trap": "अनंत हल और कोई हल नहीं में c1/c2 की समानता का अंतर ध्यान रखें।"
+      }
+    },
+    {
+      "id": 25,
+      "section": "sec_math",
+      "subject": "Mathematics (9-10)",
+      "source": "BPSC TRE 2.0 (Class 9-10 Maths) PYQ",
+      "question": "'k' के किस मान के लिए समीकरण प्रणाली 2x + 3y = 7 और (k - 1)x + (k + 2)y = 3k के अपरिमित रूप से अनेक हल (Infinitely many solutions) होंगे?\n(For what value of 'k' will the system have infinitely many solutions?)",
+      "options": [
+        "5",
+        "7",
+        "4",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "2/(k-1) = 3/(k+2) = 7/(3k) => 2(k+2) = 3(k-1) => 2k + 4 = 3k - 3 => k = 7।",
+      "aiDeepSolution": {
+        "concept": "अपरिमित अनेक हल की शर्त: a1/a2 = b1/b2 = c1/c2।",
+        "trick": "2 / (k - 1) = 3 / (k + 2)। क्रॉस गुणा: 2k + 4 = 3k - 3 => k = 7। तीसरे अनुपात 7/(3×7) = 1/3 और 2/(7-1) = 2/6 = 1/3 (सत्यापित)।",
+        "trap": "केवल पहले दो का हल निकालकर तीसरे में जांच अवश्य करें ताकि विसंगति न हो।"
+      }
+    },
+    {
+      "id": 26,
+      "section": "sec_math",
+      "subject": "Mathematics (9-10)",
+      "source": "BPSC TRE 2.0 Class 9-10 PYQ",
+      "question": "एक नाव की शांत जल में चाल 15 किमी/घंटा है। यदि धारा की चाल 3 किमी/घंटा हो, तो नाव को धारा के अनुकूल (Downstream) 36 किमी जाने में कितना समय लगेगा?\n(Speed of boat in still water is 15 km/h, stream is 3 km/h. Time taken to go 36 km downstream?)",
+      "options": [
+        "2 घंटे",
+        "3 घंटे",
+        "2.5 घंटे",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "धारा के अनुकूल सापेक्ष चाल = 15 + 3 = 18 किमी/घंटा। समय = दूरी / चाल = 36 / 18 = 2 घंटे।",
+      "aiDeepSolution": {
+        "concept": "धारा के अनुकूल (Downstream) चाल = u + v। धारा के प्रतिकूल (Upstream) चाल = u - v।",
+        "trick": "Downstream चाल = 15 + 3 = 18 किमी/घं। समय = 36 / 18 = 2 घंटे! सीधे 5 सेकंड में हल।",
+        "trap": "Upstream समझकर 15 - 3 = 12 और 36/12 = 3 घंटे (विकल्प B) न लगा दें!"
+      }
+    },
+    {
+      "id": 27,
+      "section": "sec_math",
+      "subject": "Mathematics (9-10)",
+      "source": "NCERT Exemplar Class 10 & BPSC TRE 3.0 PYQ",
+      "question": "समीकरण 2x + y = 6 और 2x - y = 2 के आलेखीय निरूपण (Graphical representation) की प्रतिच्छेद बिंदु (Intersection point) के निर्देशांक क्या होंगे?\n(What are coordinates of intersection point of lines 2x + y = 6 and 2x - y = 2?)",
+      "options": [
+        "(2, 2)",
+        "(1, 4)",
+        "(3, 0)",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "दोनों समीकरणों को जोड़ने पर: 4x = 8 => x = 2। मान रखने पर y = 6 - 2(2) = 2। बिंदु (2, 2) है।",
+      "aiDeepSolution": {
+        "concept": "दो रेखाओं का प्रतिच्छेदन बिंदु ही उनके समीकरण युग्म का अद्वितीय हल होता है।",
+        "trick": "विकल्पों को समीकरण में रखकर देखें (Back-substitution): x=2, y=2 -> 2(2)+2 = 6 और 2(2)-2 = 2। दोनों संतुष्ट! उत्तर (A)।",
+        "trap": "पेन चलाने की भी जरूरत नहीं, केवल विकल्प रखकर 3 सेकंड में उत्तर पाएं।"
+      }
+    },
+    {
+      "id": 28,
+      "section": "sec_math",
+      "subject": "Mathematics (9-10)",
+      "source": "BPSC TRE 1.0 (Class 9-10 Maths) PYQ",
+      "question": "यदि x + y = 10 और x - y = 4 है, तो (x² - y²) का मान क्या होगा?\n(If x + y = 10 and x - y = 4, what is the value of (x² - y²)?)",
+      "options": [
+        "40",
+        "28",
+        "48",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "x² - y² = (x + y)(x - y) = 10 × 4 = 40।",
+      "aiDeepSolution": {
+        "concept": "बीजगणितीय सर्वसमिका: a² - b² = (a + b)(a - b)।",
+        "trick": "सीधा गुणनफल: (x² - y²) = 10 × 4 = 40! x और y अलग से निकालने का समय बर्बाद न करें।",
+        "trap": "कई छात्र पहले x=7 और y=3 निकालते हैं, फिर 49 - 9 = 40 करते हैं। सर्वसमिका से यह 1 सेकंड का सवाल है।"
+      }
+    },
+    {
+      "id": 29,
+      "section": "sec_math",
+      "subject": "Mathematics (9-10)",
+      "source": "NCERT Class 10 & BPSC TRE 2.0 PYQ",
+      "question": "पिता की आयु अपने पुत्र की आयु की 3 गुनी है। 5 वर्ष बाद पिता की आयु पुत्र की आयु की 2.5 गुनी हो जाएगी। वर्तमान में पिता की आयु क्या है?\n(Father's age is 3 times son's age. After 5 years it will be 2.5 times. Father's current age?)",
+      "options": [
+        "45 वर्ष",
+        "30 वर्ष",
+        "40 वर्ष",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "माना पुत्र की आयु x, पिता की 3x। 5 वर्ष बाद: 3x + 5 = 2.5(x + 5) => 3x + 5 = 2.5x + 12.5 => 0.5x = 7.5 => x = 15 वर्ष। पिता = 3 × 15 = 45 वर्ष।",
+      "aiDeepSolution": {
+        "concept": "रैखिक समीकरण का आयु संबंधी प्रश्न।",
+        "trick": "विकल्प परीक्षण: पिता 45 -> पुत्र 15 (3 गुना)। 5 वर्ष बाद पिता 50, पुत्र 20 -> 50/20 = 2.5 गुना! सटीक मेल खाता है। उत्तर (A)।",
+        "trap": "पुत्र की आयु (15 वर्ष) को पिता की आयु न समझ बैठें।"
+      }
+    },
+    {
+      "id": 30,
+      "section": "sec_math",
+      "subject": "Mathematics (9-10)",
+      "source": "BPSC TRE 3.0 PYQ",
+      "question": "समीकरण युग्म x = 0 और y = -4 का आलेख (Graph) किस प्रकार की रेखाओं को दर्शाता है?\n(What type of lines are represented by x = 0 and y = -4?)",
+      "options": [
+        "परस्पर समांतर रेखाएं",
+        "परस्पर लंबवत रेखाएं (Perpendicular lines)",
+        "संपाती रेखाएं",
+        "उपर्युक्त में से एक से अधिक / More than one of the above",
+        "उपर्युक्त में से कोई नहीं / None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "x = 0 स्वयं Y-अक्ष है, और y = -4 एक क्षैतिज रेखा (X-अक्ष के समांतर) है। अतः ये दोनों रेखाएं बिंदु (0, -4) पर एक-दूसरे पर परस्पर लंबवत (Perpendicular) हैं।",
+      "aiDeepSolution": {
+        "concept": "x = 0 (Y-अक्ष) ऊर्ध्वाधर है। y = -4 क्षैतिज है। ऊर्ध्वाधर और क्षैतिज रेखाएं सदैव 90° पर लंबवत प्रतिच्छेद करती हैं।",
+        "trick": "एक रेखा x = k और दूसरी y = c हो, तो वे सदैव 90° के कोण पर (लंबवत) प्रतिच्छेद करेंगी।",
+        "trap": "समानांतर नहीं होंगी, क्योंकि एक क्षैतिज और एक ऊर्ध्वाधर है।"
+      }
+    }
+  ]
+}
