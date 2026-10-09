@@ -931,6 +931,138 @@
       white-space: pre-line;
     }
 
+    
+    /* ========================================================
+       DECLUTTERED MODULAR STUDY NOTES (CBSE / NCERT FORMAT)
+       ======================================================== */
+    .note-content-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 14px 0;
+    }
+
+    .study-section-card {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .study-section-card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .study-sec-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .study-sec-num {
+      font-size: 11px;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    .study-sec-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 0;
+      letter-spacing: -0.2px;
+      line-height: 1.35;
+    }
+
+    .study-point-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .study-point-item {
+      font-size: 13.5px;
+      line-height: 1.68;
+      color: var(--text-body);
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .study-point-item::before {
+      content: '•';
+      position: absolute;
+      left: 4px;
+      color: #38bdf8;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.3;
+    }
+
+    .study-point-lead {
+      color: var(--text-main);
+      font-weight: 700;
+      margin-right: 4px;
+    }
+
+    .study-sub-item {
+      list-style: none;
+      background: var(--bg-option);
+      border-left: 3px solid #38bdf8;
+      border-radius: 4px;
+      padding: 7px 12px;
+      margin: 6px 0 6px 12px;
+      font-size: 12.8px;
+      line-height: 1.6;
+      color: var(--text-body);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .study-sub-card {
+      background: var(--bg-option);
+      border-left: 3px solid #38bdf8;
+      border-radius: 4px;
+      padding: 7px 12px;
+      margin: 6px 0 8px 10px;
+      font-size: 12.8px;
+      line-height: 1.6;
+      color: var(--text-body);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .sub-arrow {
+      color: #38bdf8;
+      font-weight: 800;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .sub-content {
+      flex: 1;
+    }
+
+    .study-paragraph {
+      font-size: 13.5px;
+      line-height: 1.68;
+      color: var(--text-body);
+      margin: 6px 0;
+    }
+
     /* Formula Bank Box */
     .formula-box {
       background: var(--bg-option);
@@ -2024,10 +2156,10 @@
         <span class="meta-tag" id="notesCountTag">4 Core Modules</span>
       </div>
       <p class="notes-banner-sub">
-        Comprehensive NCERT/SCERT aligned revision notes covering Language (भाषा अहर्ता), General Studies (सामान्य अध्ययन), Class 6–8 Maths & Science, and Class 9–10 Secondary Maths.
+        High-yield CBSE / NCERT aligned revision modules covering Language, General Studies, Class 6–8 Maths & Science, and Class 9–10 Secondary Mathematics.
       </p>
       <div class="mastery-stats-row">
-        <span class="mastery-label">Daily Revision Mastery (<span id="notesUserLabel">User</span> की प्रगति)</span>
+        <span class="mastery-label">Daily Revision Mastery (<span id="notesUserLabel">User</span> Progress)</span>
         <span class="mastery-pct" id="notesMasteryText">0 of 4 Completed (0%)</span>
       </div>
       <div class="mastery-progress-track">
@@ -2046,19 +2178,19 @@
     <div class="notes-toolbar">
       <div class="notes-filter-pills">
         <button class="note-pill-btn active" onclick="filterNotesCategory('all')">
-          <span>All Topics (सभी विषय)</span>
+          <span>All Modules (30 Qs)</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('language')">
-          <span>Part I: Language (भाषा)</span>
+          <span>Part I: Language</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('gs')">
-          <span>Part II: GS & Bihar (सामान्य अध्ययन)</span>
+          <span>Part II: General Studies</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('middle')">
-          <span>Part III: 6–8 Math & Sci (गणित-विज्ञान)</span>
+          <span>Part III: 6–8 Maths & Sci</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('secondary')">
-          <span>Part IV: 9–10 Maths (माध्यमिक गणित)</span>
+          <span>Part IV: 9–10 Sec Maths</span>
         </button>
       </div>
     </div>
@@ -2263,332 +2395,343 @@
       {
         id: 'd1_lang',
         category: 'language',
-        part: 'Part I: Language Qualifying (भाषा अहर्ता)',
+        part: 'Part I: Language Qualifying',
         badge: 'badge-language',
         color: '#8b5cf6',
         readTime: '3 min read',
-        level: 'Matric Level Grammatical Standards (मैट्रिक स्तर)',
-        title: 'Hindi & English Grammar: Sandhi, Compounds & Proximity Rules (संधि, समास व नियम)',
-        takeaway: 'व्यंजन संधि में दंत्य वर्णों का तालव्य में परिवर्तन तथा English में Neither...nor के साथ निकटतम कर्ता (nearest subject) के अनुसार क्रिया।',
-        content: `1. व्यंजन संधि (Consonant Sandhi) के प्रमुख नियम:
-• दंत्य वर्णों का तालव्य 'ज्' में परिवर्तन (Dental Assimilation): जब 'त्' या 'द्' के बाद 'ज्' या 'झ्' आए, तो 'त्/द्' का 'ज्' हो जाता है।
-  - उत् + ज्वल = उज्ज्वल (Ujjwal) — ध्यान दें: इसमें दोनों 'ज' आधे (ह्स्व) होते हैं।
-• 'त्' का 'च्' तथा 'श्' का 'छ्' में परिवर्तन (Chh-Conversion Rule):
-  - उत् + श्वास = उच्छ्वास (Uchhvaas).
-  - सत् + शास्त्र = सच्छास्त्र (Sachhaastra).
+        level: 'Matric Level Grammatical Standards',
+        title: 'Hindi Grammar (Sandhi & Samas) & English Grammar (Proximity & Articles)',
+        takeaway: 'व्यंजन संधि में दंत्य वर्णों का तालव्य परिवर्तन (उत् + ज्वल = उज्ज्वल) + English Rule of Proximity with Neither...nor (finite verb strictly agrees with the nearest subject).',
+        content: `1. व्यंजन संधि (Consonant Sandhi Rules in Hindi):
+• दंत्य वर्णों का तालव्य परिवर्तन (Dental Assimilation): जब 'त्' या 'द्' के बाद 'ज्' या 'झ्' आए, तो 'त्/द्' का 'ज्' हो जाता है।
+  - उत् + ज्वल = उज्ज्वल — ध्यान दें: वर्तनी में दोनों 'ज' आधे (ह्स्व) होते हैं।
+• छ्-परिवर्तन नियम (Chh-Conversion Rule): जब 'त्' के बाद 'श्' आए, तो 'त्' का 'च्' तथा 'श्' का 'छ्' हो जाता है।
+  - उत् + श्वास = उच्छ्वास (Uchhvaas)
+  - सत् + शास्त्र = सच्छास्त्र (Sachhaastra)
 
-2. समास (Compound Formations) के 6 भेद:
-• अव्ययीभाव समास (Avyayibhav): पहला पद प्रधान (अव्यय/उपसर्ग) होता है तथा पूरा पद क्रिया-विशेषण की तरह कार्य करता है।
-  - यथाशक्ति (शक्ति के अनुसार), प्रतिदिन (प्रत्येक दिन), बेबुनियाद (बिना बुनियाद के).
-• तत्पुरुष समास (Tatpurush): उत्तर पद प्रधान तथा कारक चिह्नों (कारक विभक्ति) का लोप होता है।
-  - राजपुत्र (राजा का पुत्र - संबंध तत्पुरुष), विद्यालय (विद्या के लिए आलय - संप्रदान तत्पुरुष).
-• द्विगु समास (Dvigu): पहला पद संख्यावाचक विशेषण होता है जो समूह का बोध कराता है।
-  - चौराहा (चार राहों का समाहार), त्रिभुवन (तीन भुवनों का समूह).
+2. समास (Hindi Compound Formations):
+• अव्ययीभाव समास (Avyayibhav Samas): पूर्व पद अव्यय/उपसर्ग होता है और संपूर्ण पद क्रिया-विशेषण की तरह कार्य करता है।
+  - उदाहरण: यथाशक्ति (शक्ति के अनुसार), प्रतिदिन (प्रत्येक दिन), बेबुनियाद (बिना बुनियाद के).
+• तत्पुरुष समास (Tatpurush Samas): उत्तर पद प्रधान होता है तथा पदों के मध्य कारक विभक्तियों (कारक चिह्नों) का लोप होता है।
+  - उदाहरण: राजपुत्र (राजा का पुत्र — संबंध तत्पुरुष), विद्यालय (विद्या के लिए आलय — संप्रदान तत्पुरुष).
+• द्विगु समास (Dvigu Samas): प्रथम पद संख्यावाचक विशेषण होता है जो समूह (समाहार) का बोध कराता है।
+  - उदाहरण: चौराहा (चार राहों का समाहार), त्रिभुवन (तीन भुवनों का समूह).
 
-3. English Grammar: Rule of Proximity (समीपवर्ती नियम):
-• जब दो Subjects को 'Neither...nor' या 'Either...or' से जोड़ा जाता है, तो Verb हमेशा अपने निकटतम Subject (समीपवर्ती कर्ता) के Number और Person के अनुसार आती है।
-  - "Neither the teacher nor the students WERE present yesterday." (Students plural है और verb के पास है ⟶ 'were')
-  - "Neither the students nor the teacher WAS present yesterday." (Teacher singular है ⟶ 'was')
+3. English Subject-Verb Agreement: Rule of Proximity:
+• Correlative Conjunctions: When two subjects are connected by 'Neither...nor', 'Either...or', or 'Not only...but also', the finite verb agrees in number and person with the closest (nearest) subject.
+  - "Neither the teacher nor the students WERE present yesterday." (Nearest subject 'students' is plural ⟶ 'were').
+  - "Neither the students nor the teacher WAS present yesterday." (Nearest subject 'teacher' is singular ⟶ 'was').
 
-4. Phonetic Article Selection (ध्वनि आधारित आर्टिकल):
-• 'a' और 'an' का प्रयोग केवल प्रथम ध्वनि (Initial Phonetic Sound) पर निर्भर करता है, अक्षर पर नहीं।
-• /juː/ (यूनिवर्सिटी, यूरोपियन) जैसे व्यंजन अर्ध-स्वर से शुरू होने वाले शब्दों के पहले 'a' लगता है:
-  - "a European scholar", "a university professor", "a unique opportunity".
-• Silent 'h' (मूक 'ह') से शुरू होने वाले शब्दों में पहली ध्वनि स्वर होती है, अतः 'an' लगता है:
-  - "an hour", "an honest officer", "an heir to the throne".`,
-        formula: `• संधि सूत्र: त्/द् + ज् ⟶ ज्ज् (उत् + ज्वल = उज्ज्वल)
-• English Proximity: Neither S1 nor S2 + Verb(agrees with S2)
-• Article Rule: Vowel Sound ⟶ 'an' | /juː/ Glide ⟶ 'a'`,
-        tip: `BPSC भाषा अहर्ता रणनीति: कुल 30 प्रश्न (22 हिंदी + 8 अंग्रेजी). केवल 9 अंक (30%) लाना अनिवार्य है. 'उज्ज्वल' की वर्तनी और English Articles पक्के कर लें.`,
-        mnemonic: `नियम याद रखें: 'Neither...nor' की क्रिया पड़ोसी जैसी होती है—जो सबसे पास है, उसी की बात मानती है!`
+4. Phonetic Indefinite Articles (a vs an):
+• Initial Sound Rule: The choice between 'a' and 'an' depends strictly on the initial phonetic sound of the following word, NOT the written alphabet letter!
+• Consonant Semi-Vowel Glides /juː/: Words beginning with a 'yu' glide take the article 'a':
+  - "a European scholar", "a university professor", "a unique opportunity", "a one-rupee coin".
+• Silent 'h' & Pure Vowel Sounds: Words opening with a vowel sound take the article 'an':
+  - "an hour", "an honest administrator", "an honorable judge", "an heir to the throne".`,
+        formula: `• Hindi Sandhi Formula: त्/द् + ज् ⟶ ज्ज् (उत् + ज्वल = उज्ज्वल)
+• English Proximity: Neither S1 nor S2 + Verb(agrees strictly with S2)
+• Article Rule: Vowel Sound ⟶ 'an' | Semi-Vowel /juː/ Glide ⟶ 'a'`,
+        tip: `BPSC Language Strategy: 30 Questions total (22 Hindi + 8 English). Minimum 9 marks (30%) required to qualify. Watch out for spelling traps like 'उज्ज्वल' and phonetic article traps like 'a European'.`,
+        mnemonic: `Proximity Rule: In Neither...nor, the verb listens to its nearest neighbor!`
       },
       {
         id: 'd1_gs',
         category: 'gs',
-        part: 'Part II: General Studies & Bihar Special (सामान्य अध्ययन व बिहार)',
+        part: 'Part II: General Studies & Bihar Special',
         badge: 'badge-gs',
         color: '#f59e0b',
         readTime: '5 min read',
-        level: 'BPSC Primary & Secondary Core GS',
-        title: '1857 Revolt in Bihar, Champaran (1917) & Ganga Drainage (1857 क्रांति, चंपारण व अपवाह तंत्र)',
-        takeaway: 'बाबू कुंवर सिंह का जगदीशपुर अभियान, राजकुमार शुक्ल का चंपारण आमंत्रण (तिनकठिया 3/20), तथा गंगा नदी का बिहार में 445 किमी का प्रवाह।',
-        content: `1. 1857 की क्रांति और बिहार का योगदान:
-• विद्रोह का आरंभ: 12 जून 1857 को देवघर जिले के रोहिणी गाँव (वर्तमान झारखंड) में 32वीं नेटिव इन्फैंट्री रेजिमेंट द्वारा।
-• पटना में विद्रोह (3 जुलाई 1857): पुस्तक विक्रेता पीर अली खाँ ने नेतृत्व किया। अफीम एजेंट डॉ. आर. लॉयल (Dr. R. Lyell) मारा गया। कमिश्नर विलियम टेलर ने पीर अली को फाँसी दे दी।
-• दानापुर छावनी विद्रोह (25 जुलाई 1857): 7वीं, 8वीं और 40वीं रेजिमेंट के सैनिकों ने बगावत कर जगदीशपुर (आरा) में बाबू कुंवर सिंह का नेतृत्व स्वीकार किया।
-• बाबू वीर कुंवर सिंह: 80 वर्ष की उम्र में जगदीशपुर के जमींदार कुंवर सिंह ने कैप्टन डनबर, विन्सेंट आयर और ली ग्रांड की सेना को पराजित किया। 26 अप्रैल 1858 को उनके देहांत के बाद उनके भाई अमर सिंह ने कैमूर की पहाड़ियों से छापामार युद्ध जारी रखा।
+        level: 'NCERT & BPSC Core General Studies',
+        title: '1857 Revolt in Bihar, Champaran Satyagraha (1917) & River Ganga Drainage System',
+        takeaway: 'Kunwar Singh’s armed resistance from Jagdishpur, Gandhi’s first civil disobedience against Tinkathia (3/20th) in Champaran, and River Ganga flowing 445 km across 12 Bihar districts.',
+        content: `1. The 1857 Uprising in Bihar: Outbreak & Major Centers:
+• Outbreak at Rohini: The revolt broke out on June 12, 1857, in Rohini village (Deoghar district, modern Jharkhand) by sepoys of the 32nd Native Infantry.
+• Patna Uprising (July 3, 1857): Led by Pir Ali Khan, a local bookseller. British Opium Agent Dr. R. Lyell was killed in the encounter. Commissioner William Tayler suppressed the revolt with iron fist and hanged Pir Ali Khan.
+• Danapur Cantonment Mutiny (July 25, 1857): Sepoys of the 7th, 8th, and 40th Native Regiments revolted, marched to Jagdishpur (Arrah), and accepted Babu Kunwar Singh as their supreme commander.
+• Babu Veer Kunwar Singh (Jagdishpur): At the age of 80, the zamindar of Jagdishpur led fierce campaigns across Bihar and UP, defeating Captain Dunbar, Vincent Eyre, and Captain Le Grand. After his death on April 26, 1858, his brother Amar Singh continued guerrilla resistance from the Kaimur Hills.
 
-2. चंपारण सत्याग्रह (1917) — गांधीजी का भारत में प्रथम प्रयोग:
-• मूल कारण: तिनकठिया प्रथा — किसानों को अपनी सबसे उपजाऊ 3/20 भाग भूमि पर नील (Indigo) की खेती अनिवार्य रूप से करनी पड़ती थी।
-• आमंत्रणकर्ता: मुरली भरहवा के किसान राजकुमार शुक्ल ने 1916 के लखनऊ कांग्रेस अधिवेशन में गांधीजी को चंपारण आने के लिए राजी किया।
-• सहयोगी: डॉ. राजेंद्र प्रसाद, ब्रजकिशोर प्रसाद, अनुग्रह नारायण सिन्हा, जे.बी. कृपलानी, मजहरुल हक, धरणीधर।
-• जांच समिति: उप-राज्यपाल एडवर्ड गेट ने 'चंपारण एग्रेरियन समिति' बनाई (गांधीजी सदस्य थे)। तिनकठिया प्रथा समाप्त हुई तथा यूरोपीय बागान मालिकों को अवैध वसूली का 25% धन वापस करना पड़ा।
-• महात्मा उपाधि: सफलता के बाद रवींद्रनाथ टैगोर ने गांधीजी को 'महात्मा' की उपाधि दी।
+2. Champaran Satyagraha (1917) — Gandhi's First Satyagraha in India:
+• Root Cause (Tinkathia System): European planters forced tenant farmers (ryots) to cultivate indigo on 3/20th of their most fertile agricultural holdings.
+• The Invitation: Rajkumar Shukla, an exploited peasant from Murli Bharhawa, met Mahatma Gandhi at the Lucknow Congress Session (1916) and persistently convinced him to visit Champaran.
+• Key Associates: Dr. Rajendra Prasad, Brajkishore Prasad, Anugrah Narayan Sinha, J.B. Kripalani, Mazharul Haque, Mahadev Desai, and Dharnidhar.
+• Committee & Resolution: Lt. Governor Sir Edward Gait constituted the 'Champaran Agrarian Enquiry Committee' (Gandhi was an official member). The Tinkathia system was legally abolished, and European planters had to refund 25% of illegally extorted amounts.
+• Title of Mahatma: Conferred on Gandhiji by Rabindranath Tagore in honor of this historic victory.
 
-3. बिहार का भूगोल एवं गंगा नदी अपवाह तंत्र:
-• क्षेत्रफल: 94,163 वर्ग किमी (भारत का 2.86%, 12वाँ सबसे बड़ा राज्य).
-• गंगा नदी: चौसा (बक्सर) के पास बिहार में प्रवेश करती है तथा मनिहारी (कटिहार) के पास निकलती है। बिहार में लंबाई 445 किमी (12 जिलों से होकर बहती है, पटना में सर्वाधिक ~99 किमी).
-• उत्तरी सहायक नदियाँ (हिमालयी):
-  - घाघरा: छपरा के निकट गंगा में मिलती है।
-  - गंडक: वाल्मीकिनगर से प्रवेश, पहलेजा (सोनपुर) में संगम।
-  - बूढ़ी गंडक: सोमेश्वर श्रेणी से निकलकर खगड़िया/मुंगेर में संगम (सर्वाधिक तीव्र धारा).
-  - कोसी ('बिहार का शोक'): नेपाल में सप्तकोशी, कुरसेला (कटिहार) में गंगा में संगम (250 वर्षों में ~120 किमी पश्चिम की ओर खिसकी है).
-• दक्षिणी सहायक नदियाँ (पठारी):
-  - सोन नदी: अमरकंटक (MP) से उद्गम, रोहतास में प्रवेश, मनेर (पटना) के पास संगम।
-  - पुनपुन: फतुहा के पास संगम।
-  - फल्गु (निरंजना): बोधगया में भगवान बुद्ध को ज्ञान प्राप्त हुआ (पितृपक्ष मेला).`,
-        formula: `• तिनकठिया अनुपात: 3/20 भाग पर अनिवार्य नील की खेती
-• अवैध वसूली वापसी: ठीक 25% धन वापस किया गया
-• गंगा नदी बिहार: 445 किमी | 12 जिले | प्रवेश: चौसा (बक्सर)`,
-        tip: `BPSC PYQ Pattern: BPSC अक्सर नदियों के संगम स्थल पूछता है (सोन: मनेर, कोसी: कुरसेला, पुनपुन: फतुहा, गंगा प्रवेश: चौसा). इन्हें कंठस्थ रखें!`,
-        mnemonic: `संगम ट्रिक: 'सोन मनेर में, पुनपुन फतुहा में, और कोसी कुरसेला में गंगा से मिलती है!'`
+3. Physical Geography of Bihar & River Ganga Drainage:
+• Spatial Dimensions: Total geographical area of 94,163 sq km (2.86% of India's total area, 12th largest state by area).
+• River Ganga Course: Enters Bihar at Chausa (Buxar) and exits near Manihari (Katihar). Total length in Bihar is 445 km, traversing through 12 districts (longest stretch in Patna: ~99 km).
+• North Bank Himalayan Tributaries (Perennial & Silt-Rich):
+  - Ghaghara (Saryu): Confluence with Ganga near Chhapra.
+  - Gandak: Enters at Valmikinagar (West Champaran), confluence at Pahleza / Sonepur.
+  - Burhi Gandak: Originates from Someshwar Hills; has the highest water velocity among north-bank rivers; meets Ganga near Khagaria/Munger.
+  - Kosi ("Sorrow of Bihar"): Originates as Saptakoshi in Nepal; joins Ganga at Kursela (Katihar); has shifted course ~120 km westward over the last 250 years.
+• South Bank Peninsular Tributaries (Rain-Fed):
+  - Son River: Originates at Amarkantak (M.P.), enters Bihar at Rohtas, meets Ganga near Maner (Patna).
+  - Punpun River: Originates from Chota Nagpur Plateau, joins Ganga at Fatuha.
+  - Falgu River (Niranjana): Formed by the union of Lilajan and Mohana rivers; flows past Gaya (site of Buddha’s enlightenment at Bodh Gaya and Pitrapaksha Mela).`,
+        formula: `• Tinkathia Ratio: 3/20th fertile land reserved for compulsory indigo
+• Planter Refund: Exactly 25% of illegal dues refunded
+• Ganga in Bihar: Length = 445 km | 12 Districts | Entry = Chausa (Buxar)
+• Major Confluences: Son ⟶ Maner | Kosi ⟶ Kursela | Punpun ⟶ Fatuha`,
+        tip: `BPSC Confluence Trap: BPSC frequently tests tributary confluence locations! Remember: Son meets at Maner (not Danapur), Kosi meets at Kursela (not Purnea), and Punpun meets at Fatuha.`,
+        mnemonic: `Ganga Confluences: S-M (Son-Maner), P-F (Punpun-Fatuha), and K-K (Kosi-Kursela)!`
       },
       {
         id: 'd1_middle',
         category: 'middle',
-        part: 'Part III: Class 6–8 Maths & Science (गणित-विज्ञान)',
+        part: 'Part III: Class 6–8 Maths & Science',
         badge: 'badge-middle_math_sci',
         color: '#10b981',
         readTime: '4 min read',
-        level: 'NCERT / SCERT Class 6–8 Standards',
-        title: 'Middle School Maths & Fundamental Sciences (परिमेय संख्याएँ, पोषण व प्रकाशिकी)',
-        takeaway: 'परिमेय संख्याओं के प्रतिलोम, 9 व 11 की विभाज्यता, पोषक तत्वों के रासायनिक परीक्षण तथा समतल दर्पण में प्रतिबिंबों की संख्या।',
-        content: `1. परिमेय संख्याएँ (Rational Numbers) एवं संक्रियाएँ:
-• परिभाषा: कोई भी संख्या जिसे p/q के रूप में लिखा जा सके (p, q पूर्णांक, q ≠ 0).
-• प्रतिलोम के नियम:
-  - योज्य प्रतिलोम (Additive Inverse): a का योज्य प्रतिलोम -a होता है (योग = 0).
-  - गुणात्मक प्रतिलोम / व्युत्क्रम (Multiplicative Inverse): a/b का व्युत्क्रम b/a होता है (गुणनफल = 1). शून्य (0) का कोई व्युत्क्रम नहीं होता!
-  - सार्वभौमिक संबंध: किसी भी शून्येतर परिमेय संख्या x के लिए: (योज्य प्रतिलोम) × (गुणात्मक प्रतिलोम) = (-x) × (1/x) = -1.
+        level: 'NCERT Class 6–8 Foundation Standards',
+        title: 'NCERT Middle School Mathematics & General Science Fundamentals',
+        takeaway: 'Rational number inverse properties, divisibility rules for 9 & 11, biochemical food test reagents, and optical reflections in plane and spherical mirrors.',
+        content: `1. Rational Numbers & Algebraic Inverses:
+• Definition: Any number expressible in the form p/q, where p and q are integers and q ≠ 0.
+• Additive Inverse: The additive inverse of a is -a such that a + (-a) = 0 (Additive identity).
+• Multiplicative Inverse (Reciprocal): The multiplicative inverse of a/b is b/a such that (a/b) × (b/a) = 1 (Multiplicative identity). Note: Zero (0) has NO reciprocal!
+• Universal Golden Property: For any non-zero rational number x:
+  - (Additive Inverse) × (Multiplicative Inverse) = (-x) × (1/x) = -1.
 
-2. विभाज्यता परीक्षण व LCM-HCF:
-• 9 से विभाज्यता: सभी अंकों का योग 9 का गुणज होना चाहिए।
-• 11 से विभाज्यता: विषम स्थानों के अंकों के योग और सम स्थानों के अंकों के योग का अंतर 0 या 11 का गुणज हो।
-• घंटियों का एक साथ बजना: यदि घंटियाँ t1, t2, t3 सेकंड के अंतराल पर बजती हैं, तो वे पुनः अपने LCM(t1, t2, t3) पर एक साथ बजेंगी।
+2. Divisibility Tests & LCM-HCF Applications:
+• Divisibility by 9: The sum of all individual digits must be divisible by 9.
+• Divisibility by 11: The difference between the sum of digits at odd positions and the sum of digits at even positions must be either 0 or a multiple of 11.
+• Simultaneous Events Problem: If church bells or traffic lights repeat at intervals of t1, t2, t3 seconds, they will all repeat together again at intervals equal to LCM(t1, t2, t3).
 
-3. भोजन के घटक एवं पोषक परीक्षण (Food Reagents):
-• स्टार्च (मंड): तनु आयोडीन डालने पर नीला-काला (Blue-Black) रंग देता है।
-• प्रोटीन (Biuret Test): कॉपर सल्फेट (CuSO4) + कास्टिक सोडा (NaOH) डालने पर बैंगनी (Violet) रंग देता है।
-• विटामिन घुलनशीलता:
-  - वसा में घुलनशील: विटामिन K, E, D, A (ट्रिक: K-E-D-A, यकृत व वसा ऊतक में संचित).
-  - जल में घुलनशील: विटामिन B-कॉम्प्लेक्स और विटामिन C (मूत्र द्वारा नियमित उत्सर्जित).
-• हीनताजन्य रोग: स्कर्वी (विटामिन C), रिकेट्स (विटामिन D), रतौंधी (विटामिन A), बेरी-बेरी (विटामिन B1).
+3. Food Chemistry & Biochemical Testing Reagents:
+• Starch Test (Iodine Reaction): Adding 2–3 drops of dilute Iodine solution turns the food sample Blue-Black, confirming starch.
+• Protein Test (Biuret Reaction): Adding Copper Sulphate (CuSO4) followed by Caustic Soda (NaOH) turns the solution Violet, confirming protein.
+• Fat Test: Crushing the food sample on paper leaves a greasy, translucent patch.
+• Vitamin Classification & Solubility:
+  - Fat-Soluble Vitamins: K, E, D, A (stored in liver and adipose fatty tissue).
+  - Water-Soluble Vitamins: B-Complex and Vitamin C (regularly excreted in urine, cannot be stored).
+  - Deficiency Diseases: Scurvy (Vitamin C), Rickets (Vitamin D), Night Blindness (Vitamin A), Beri-Beri (Vitamin B1).
 
-4. प्रकाश का परावर्तन व दर्पण (Optics):
-• झुके हुए समतल दर्पणों के बीच प्रतिबिंब: कोण θ पर झुके दर्पणों के बीच बनने वाले प्रतिबिंबों की संख्या n = (360° / θ) - 1 (जब 360/θ सम संख्या हो). 60° पर n = 6 - 1 = 5 प्रतिबिंब।
-• गोलीय दर्पण:
-  - अवतल दर्पण (Concave): अभिसारी दर्पण। जब वस्तु ध्रुव (P) और फोकस (F) के बीच हो, तो आभासी, सीधा व बड़ा प्रतिबिंब बनता है (दाढ़ी बनाने व डेंटिस्ट द्वारा उपयोग).
-  - उत्तल दर्पण (Convex): अपसारी दर्पण। सदैव आभासी, सीधा व छोटा प्रतिबिंब (वाहनों के साइड मिरर).`,
-        formula: `• परिमेय प्रतिलोम गुणनफल: (Additive Inv.) × (Multiplicative Inv.) = -1
-• दर्पण प्रतिबिंब सूत्र: n = (360° / θ) - 1 (जब 360/θ सम हो)
-• ऋणात्मक घात नियम: (a/b)^(-n) = (b/a)^n`,
-        tip: `विज्ञान तथ्य: विटामिन C खाना पकाने की गर्मी से तुरंत नष्ट हो जाता है, जबकि विटामिन D धूप के संपर्क में आने पर त्वचा द्वारा संश्लेषित होता है.`,
-        mnemonic: `विटामिन ट्रिक: 'K-E-D-A' चर्बी (वसा) में रहता है, और 'B तथा C' पानी में बह जाता है!`
+4. Reflection of Light & Mirror Optics:
+• Inclined Plane Mirrors: For two plane mirrors placed at angle θ, the total number of images n formed is:
+  - n = (360° / θ) - 1 (when 360° / θ is an even integer). At θ = 60°, n = (360/60) - 1 = 5 images.
+• Spherical Mirrors (NCERT Class 7–8):
+  - Concave Mirror (Converging): Forms real, inverted images for most distances. When placed between Pole (P) and Focus (F), it forms a virtual, erect, and magnified image (used by dentists and in shaving mirrors).
+  - Convex Mirror (Diverging): Always forms a virtual, erect, and diminished image with a wide field of view (used as rear-view mirrors in vehicles).`,
+        formula: `• Inverse Golden Rule: (Additive Inv.) × (Multiplicative Inv.) = -1
+• Mirror Images: n = (360° / θ) - 1 (when 360/θ is even)
+• Negative Power Rule: (a/b)^(-n) = (b/a)^n`,
+        tip: `Vitamin Heat Trap: Vitamin C is easily destroyed by cooking heat (thermolabile), while Vitamin D is synthesized in our skin when exposed to solar UV rays.`,
+        mnemonic: `Vitamin Solubility: K-E-D-A stays in the fat, B & C wash away in the water!`
       },
       {
         id: 'd1_sec',
         category: 'secondary',
-        part: 'Part IV: Class 9–10 Secondary Maths (माध्यमिक गणित)',
+        part: 'Part IV: Class 9–10 Secondary Mathematics',
         badge: 'badge-sec_math',
         color: '#0ea5e9',
         readTime: '5 min read',
         level: 'NCERT Exemplar Class 9–10 Standards',
-        title: 'Real Numbers & Polynomials (वास्तविक संख्याएँ, बहुपद व संबंध)',
-        takeaway: 'सांत दशमलव के लिए हर 2^n · 5^m का रूप, द्विघात बहुपद में मूलों के संबंधों (Vieta formulas) का सीधा प्रयोग।',
-        content: `1. वास्तविक संख्याएँ व दशमलव प्रसार (Real Numbers):
-• यूक्लिड विभाजन प्रमेयिका: a = bq + r (0 ≤ r < b).
-• अंकगणित की आधारभूत प्रमेय: प्रत्येक भाज्य संख्या को अभाज्य गुणनखंडों के गुणनफल के रूप में अद्वितीय रूप से लिखा जा सकता है।
-• सांत दशमलव (Terminating Decimals): परिमेय संख्या p/q का दशमलव प्रसार तभी सांत होगा जब हर q के अभाज्य गुणनखंड केवल 2^n · 5^m रूप के हों।
-  - यह दशमलव के ठीक max(n, m) स्थानों के बाद समाप्त होगा!
-  - उदाहरण: 13 / 1250 ⟶ 1250 = 2^1 · 5^4 ⟶ max(1, 4) = 4 अंकों के बाद सांत।
+        title: 'NCERT Secondary Mathematics: Real Numbers, Decimals & Polynomials',
+        takeaway: 'Terminating decimal condition q = 2^n · 5^m, Vieta’s relations for quadratic & cubic polynomials, and remainder/factor theorems.',
+        content: `1. Real Numbers & Terminating Decimal Expansions:
+• Fundamental Theorem of Arithmetic: Every composite number can be uniquely factorized into a product of primes, apart from the order of factors.
+• Euclid’s Division Lemma: For integers a and b, there exist unique integers q and r such that a = bq + r, where 0 ≤ r < b.
+• Condition for Terminating Decimal Expansion: A rational number p/q in simplest form (gcd(p, q) = 1) has a terminating decimal expansion if and only if the denominator q is strictly of the form:
+  - q = 2^n · 5^m (where n, m are non-negative integers).
+  - It terminates after exactly max(n, m) decimal places!
+  - Example: 13 / 1250 ⟶ 1250 = 2^1 · 5^4 ⟶ max(1, 4) = 4 decimal places (0.0104).
 
-2. द्विघात बहुपद (Quadratic Polynomials):
-• मानक रूप: P(x) = ax² + bx + c (a ≠ 0). ज्यामितीय आलेख एक परवलय (Parabola) होता है।
-  - यदि a > 0 तो ऊपर खुला (∪), यदि a < 0 तो नीचे खुला (∩).
-• शून्यकों (α, β) और गुणांकों का संबंध (Vieta's Formulas):
-  1. शून्यकों का योग: α + β = -b/a
-  2. शून्यकों का गुणनफल: αβ = c/a
-  3. व्युत्क्रमों का योग: 1/α + 1/β = (α + β)/(αβ) = (-b/a)/(c/a) = -b/c
-• चिन्ह नियम: यदि ax² + bx + c में सभी गुणांक a, b, c > 0 हों, तो दोनों शून्यक अनिवार्य रूप से ऋणात्मक (Negative) होंगे।
+2. Quadratic Polynomials & Vieta's Relations:
+• Standard Form: P(x) = ax² + bx + c (a ≠ 0). Geometrical graph is a Parabola (opens upwards ∪ if a > 0, downwards ∩ if a < 0).
+• Relations Between Zeros (α, β) and Coefficients:
+  - Sum of Zeros: α + β = -b/a
+  - Product of Zeros: αβ = c/a
+  - Sum of Reciprocals: 1/α + 1/β = (α + β) / (αβ) = (-b/a) / (c/a) = -b/c
+• Signs of Zeros: If in ax² + bx + c, all coefficients a, b, c > 0, then both zeros are strictly negative.
 
-3. त्रिघात बहुपद (Cubic Polynomials):
-• P(x) = ax³ + bx² + cx + d (a ≠ 0).
-• α + β + γ = -b/a | αβ + βγ + γα = c/a | αβγ = -d/a
-• BPSC PYQ प्रमेय: यदि एक शून्यक 0 हो (मान लीजिए γ = 0), तो αβ + 0 + 0 = c/a ⟶ शेष दो शून्यकों का गुणनफल c/a होता है।
+3. Cubic Polynomials & High-Yield BPSC Theorems:
+• Standard Form: P(x) = ax³ + bx² + cx + d (a ≠ 0).
+• Vieta’s Relations for Cubic Polynomials:
+  - α + β + γ = -b/a
+  - αβ + βγ + γα = c/a
+  - αβγ = -d/a
+• Zero-Root Theorem: If one of the zeros of a cubic polynomial is 0 (say γ = 0):
+  - αβ + 0 + 0 = c/a ⟶ Product of the remaining two zeros αβ = c/a.
 
-4. शेषफल व गुणनखंड प्रमेय:
-• जब P(x) को (x - a) से भाग दिया जाए, तो शेषफल P(a) होता है।
-• यदि P(a) = 0 हो, तो (x - a) बहुपद P(x) का एक गुणनखंड होता है।`,
-        formula: `• द्विघात शून्यक: α + β = -b/a | αβ = c/a | 1/α + 1/β = -b/c
-• सांत दशमलव: q = 2^n · 5^m ⟶ max(n, m) स्थानों पर सांत
-• त्रिघात शून्यक नियम: एक शून्यक 0 होने पर अन्य दो का गुणनफल = c/a`,
-        tip: `बीजगणित शॉर्टकट: परीक्षा में जब भी 1/α + 1/β पूछे, अलग-अलग मूल निकालने के बजाय सीधे -b/c लिखें—उत्तर 2 सेकंड में आ जाएगा!`,
-        mnemonic: `परवलय ट्रिक: धनात्मक 'a' ऊपर की ओर मुस्कुराता है (∪), ऋणात्मक 'a' नीचे झुकता है (∩)!`
+4. Remainder Theorem & Factor Theorem:
+• Remainder Theorem: When polynomial P(x) is divided by (x - a), the remainder is simply P(a).
+• Factor Theorem: (x - a) is a factor of P(x) if and only if P(a) = 0.`,
+        formula: `• Quadratic Zeros: α + β = -b/a | αβ = c/a | 1/α + 1/β = -b/c
+• Terminating Decimals: q = 2^n · 5^m ⟶ terminates after max(n, m) places
+• Cubic Zero Rule: If one root is 0, product of other two = c/a`,
+        tip: `Speed Shortcut: In questions asking for 1/α + 1/β, never solve for α and β individually! Directly write -b/c to get the answer in 2 seconds.`,
+        mnemonic: `Parabola Sign: Positive 'a' smiles upward (∪), negative 'a' frowns downward (∩)!`
       }
     ],
     2: [
       {
         id: 'd2_lang',
         category: 'language',
-        part: 'Part I: Language Qualifying (भाषा अहर्ता)',
+        part: 'Part I: Language Qualifying',
         badge: 'badge-language',
         color: '#8b5cf6',
         readTime: '3 min read',
         level: 'Matric Level Grammatical Standards',
-        title: 'Prefixes, Synonyms & Advanced Conditionals (उपसर्ग, पर्यायवाची व कंडीशनल)',
-        takeaway: 'संधि युक्त उपसर्गों की पहचान, BPSC पर्यायवाची में "उपर्युक्त में से एक से अधिक" का जाल, तथा Past Conditionals.',
-        content: `1. संस्कृत व हिंदी के उपसर्ग (Upasarg):
-• उपसर्ग: वह शब्दांश जो किसी मूल शब्द के पहले जुड़कर उसके अर्थ में विशेषता या परिवर्तन लाता है।
-• संधि युक्त उपसर्ग (पहचान की ट्रिक):
-  - अत्यंत (Atyant): अति + अंत (उपसर्ग: 'अति') — यण् संधि (i + a ⟶ ya).
+        title: 'Hindi Prefixes & Synonyms + English Conditionals & Prepositions',
+        takeaway: 'संधि युक्त उपसर्गों की पहचान, BPSC पर्यायवाची में 5-विकल्प प्रारूप, तथा English Third Conditionals (had + V3 ⟶ would have + V3).',
+        content: `1. संस्कृत व हिंदी के उपसर्ग (Upasarg in Hindi):
+• उपसर्ग की परिभाषा: वह शब्दांश जो किसी मूल शब्द के पहले जुड़कर उसके अर्थ में विशेषता या परिवर्तन लाता है।
+• संधि युक्त उपसर्ग (पहचान की तकनीक):
+  - अत्यंत (Atyant): अति + अंत (उपसर्ग: 'अति') — यण् स्वर संधि (i + a ⟶ ya).
   - अध्यक्ष (Adhyaksh): अधि + अक्ष (उपसर्ग: 'अधि').
   - प्रत्येक (Pratyek): प्रति + एक (उपसर्ग: 'प्रति').
   - अन्वेषण (Anveshan): अनु + एषण (उपसर्ग: 'अनु').
   - दुर्बल (Durbal): दुर् + बल (उपसर्ग: 'दुर्').
 
-2. पर्यायवाची शब्द एवं BPSC का 5-विकल्प प्रारूप:
+2. पर्यायवाची व विलोम शब्द (Synonyms & Antonyms):
 • 'रात्रि' के प्रमुख पर्यायवाची: विभावरी, रजनी, निशीथ, यामिनी, तमस्विनी।
-  - BPSC Trap: यदि विकल्पों में 'विभावरी' और 'रजनी' दोनों हों, तो उत्तर अनिवार्य रूप से विकल्प (D) "उपर्युक्त में से एक से अधिक" होगा!
+  - BPSC 5-विकल्प Trap: यदि विकल्पों में 'विभावरी' और 'रजनी' दोनों हों, तो उत्तर अनिवार्य रूप से विकल्प (D) "More than one of the above" होगा!
 • प्रमुख विलोम शब्द:
   - आस्तिक ↔ नास्तिक | अनुराग ↔ विराग | उत्कर्ष ↔ अपकर्ष | तिमिर ↔ प्रकाश.
 
-3. English Conditional Sentences (शर्त सूचक वाक्य):
-• Third Conditional (Hypothetical Past - अतीत की असंभव शर्त):
+3. English Conditional Sentences:
+• Third Conditional (Hypothetical Past / Impossible Past):
   - Formula: If + Past Perfect (had + V3), Subject + would have + Past Participle (V3).
-  - Example: "If you HAD STUDIED diligently, you WOULD HAVE PASSED the examination."
-• Second Conditional (वर्तमान की काल्पनिक स्थिति):
+  - Example: "If you HAD REVISED the formulas diligently, you WOULD HAVE SOLVED the question."
+• Second Conditional (Hypothetical Present / Unreal Situation):
   - Formula: If + Simple Past (V2), Subject + would + Base Verb (V1).
-  - Example: "If I knew his address, I would write to him."
+  - Example: "If I knew his contact number, I would call him immediately."
 
-4. Prepositions of Time (समय के कारक):
-• 'At' निश्चित घड़ी के समय के लिए: at 8:30 PM, at noon, at dawn.
-• 'On' विशिष्ट दिन व तारीख के लिए: on Monday, on 15th August.
-• 'In' महीने, ऋतु व वर्ष के लिए: in October, in summer, in 2026.`,
+4. Prepositions of Time (at, on, in):
+• 'At' for precise clock times & points of the day: at 8:30 PM, at noon, at midnight, at dawn.
+• 'On' for specific days & calendar dates: on Monday, on 15th August, on New Year's Day.
+• 'In' for longer periods, months, seasons & years: in October, in summer, in 2026.`,
         formula: `• Third Conditional: If + had + V3 ⟶ would have + V3
 • उपसर्ग विच्छेद: अत्यंत = अति + अंत (अति उपसर्ग)
-• Time Prepositions: At (घड़ी समय) | On (दिन/दिनांक) | In (माह/वर्ष)`,
-        tip: `परीक्षा ट्रिक: वाक्य में Past Impossibility (had + V3) हो तो दूसरे भाग में 'would have + V3' ही आएगा. कभी भी Tenses का मिश्रण न करें.`,
-        mnemonic: `उपसर्ग ट्रिक: यदि शब्द में आधा त्+य (अत्यंत) या ध्+य (अध्यक्ष) दिखे, तो सीधे 'अति' और 'अधि' उपसर्ग पहचानें!`
+• Time Prepositions: At (Clock Time) | On (Day/Date) | In (Month/Year)`,
+        tip: `Grammar Trap: With past hypothetical condition (had + V3), always use 'would have + V3' in the main clause. Never mix conditional tenses.`,
+        mnemonic: `Prefix Trick: If a word begins with 'aty-' or 'adhy-', the root prefixes are 'ati-' and 'adhi-'!`
       },
       {
         id: 'd2_gs',
         category: 'gs',
-        part: 'Part II: General Studies & Bihar Special (सामान्य अध्ययन व बिहार)',
+        part: 'Part II: General Studies & Bihar Special',
         badge: 'badge-gs',
         color: '#f59e0b',
         readTime: '5 min read',
-        level: 'BPSC Primary & Secondary Core GS',
-        title: '1942 Quit India (Secretariat Martyrs) & Soils of Bihar (1942 भारत छोड़ो, आज़ाद दस्ता व मिट्टी)',
-        takeaway: '11 अगस्त 1942 को सचिवालय पर झंडा फहराते 7 छात्र शहीद, जयप्रकाश नारायण का आज़ाद दस्ता तथा पुरानी जलोढ़ (बांगर/कराइल-केवाल) मिट्टी।',
-        content: `1. 1942 भारत छोड़ो आंदोलन और बिहार:
-• आंदोलन का सूत्रपात: 8 अगस्त 1942 को बंबई के गवालिया टैंक मैदान में गांधीजी का 'करो या मरो' का नारा। 9 अगस्त की सुबह 'ऑपरेशन जीरो आवर' के तहत सभी बड़े नेता गिरफ्तार।
-• पटना सचिवालय गोलीकांड (11 अगस्त 1942):
-  - पटना सचिवालय पर तिरंगा फहराने निकले छात्रों के जुलूस पर जिलाधिकारी डब्ल्यू.जी. आर्चर (W.G. Archer) ने गोली चलाने का आदेश दिया।
-  - इसमें 7 वीर छात्र शहीद हुए:
-    1. उमाकांत प्रसाद सिन्हा (राम मोहन राय सेमिनरी, कक्षा 9)
-    2. रामानंद सिंह (राम मोहन राय सेमिनरी, कक्षा 9)
-    3. सतीश प्रसाद झा (पटना कॉलेजिएट, कक्षा 10)
-    4. जगतपति कुमार (बी.एन. कॉलेज, द्वितीय वर्ष)
-    5. देवीपद चौधरी (मिलर हाई स्कूल, कक्षा 9)
-    6. राजेंद्र सिंह (पटना हाई स्कूल, मैट्रिक)
-    7. रामगोविंद सिंह (पुनपुन हाई स्कूल, कक्षा 9)
-  - बिहार विधानसभा के सामने आज 'शहीद स्मारक' (Martyr's Memorial) स्थापित है।
+        level: 'NCERT & BPSC Core General Studies',
+        title: '1942 Quit India (Patna Martyrs), Azad Dasta & Alluvial Soils of Bihar',
+        takeaway: 'Patna Secretariat Firing (Aug 11, 1942) with 7 martyr students, Jayaprakash Narayan’s Azad Dasta, and Alluvial soils (Bangar/Karail-Kewal vs Khadar).',
+        content: `1. 1942 Quit India Movement in Bihar:
+• Movement Outbreak: Gandhiji delivered the historic 'Do or Die' call on August 8, 1942, at Gowalia Tank Ground, Bombay. Under 'Operation Zero Hour' on August 9, all prominent leaders were arrested.
+• Patna Secretariat Firing (August 11, 1942):
+  - A mammoth procession of patriotic students marched to hoist the national tricolour on the Patna Secretariat.
+  - District Magistrate W.G. Archer ordered police firing on the unarmed students.
+  - Seven young student martyrs sacrificed their lives:
+    1. Umakant Prasad Sinha (Ram Mohan Roy Seminary, Class 9)
+    2. Ramanand Singh (Ram Mohan Roy Seminary, Class 9)
+    3. Satish Prasad Jha (Patna Collegiate, Class 10)
+    4. Jagatpati Kumar (B.N. College, 2nd Year)
+    5. Devipada Choudhary (Miller High School, Class 9)
+    6. Rajendra Singh (Patna High School, Matric)
+    7. Ramgovind Singh (Punpun High School, Class 9)
+  - The 'Shaheed Smarak' (Martyr's Memorial) stands proudly today outside the Bihar Legislative Assembly.
 
-2. जयप्रकाश नारायण (JP) एवं 'आज़ाद दस्ता':
-• जेल से पलायन: दिवाली की रात (9 नवंबर 1942) को जयप्रकाश नारायण, रामानंद मिश्र, सूरज नारायण सिंह, शालिग्राम सिंह, योगेंद्र शुक्ल और गुलाब चंद गुप्त हजारीबाग केंद्रीय जेल की दीवार फांदकर फरार हुए।
-• गुरिल्ला बल: नेपाल की तराई में 'बकरों का टापू' के जंगलों में JP ने 'आज़ाद दस्ता' का गठन किया जिसका उद्देश्य संचार, रेल पटरियों और टेलीग्राफ को नष्ट कर ब्रिटिश सरकार को पंगु बनाना था।
-• भूमिगत रेडियो: डॉ. राममनोहर लोहिया ने आज़ाद दस्ते के भूमिगत रेडियो का संचालन किया।
+2. Jayaprakash Narayan (JP) & 'Azad Dasta':
+• Jail Escape: On Diwali night (November 9, 1942), Jayaprakash Narayan along with Ramanand Mishra, Suraj Narayan Singh, Shaligram Singh, Yogendra Shukla, and Gulab Chand Gupta scaled the boundary wall of Hazaribagh Central Jail and escaped.
+• Underground Resistance: In the dense forests of 'Bakro-ka-Tapu' (Nepal Terai), JP established 'Azad Dasta' (Guerrilla Army) to systematically disrupt British railways, communications, and administrative machinery.
+• Underground Radio: Dr. Ram Manohar Lohia operated the underground radio transmitter for Azad Dasta.
 
-3. बिहार की जलोढ़ मिट्टियाँ एवं कृषि:
-• बांगर (पुरानी जलोढ़): बाढ़ की सीमा से ऊपर पाई जाने वाली मिट्टी। दक्षिण बिहार में इसे 'कराइल-केवाल' मिट्टी कहा जाता है। इसमें चीका (clay) अधिक होता है, जल धारण क्षमता तीव्र होती है और कंकड़ ग्रंथियां पाई जाती हैं।
-• खादर (नवीन जलोढ़): नदियों के बाढ़ के मैदानों में प्रतिवर्ष जमा होने वाली गाद (silt) युक्त मिट्टी। रंग हल्का, अत्यंत उपजाऊ (धान, गेहूँ और जूट के लिए आदर्श).
-• मिथिला मखाना (Fox Nut): दरभंगा, मधुबनी और सहरसा के आर्द्रभूमि (wetland) में केंद्रित। विश्व का 85% से अधिक मखाना बिहार में उत्पादित होता है (GI टैग प्राप्त).`,
-        formula: `• सचिवालय गोलीकांड: 11 अगस्त 1942 (7 शहीद छात्र)
-• JP जेल पलायन: 9 नवंबर 1942 (दिवाली की रात, हजारीबाग जेल)
-• मिट्टी वर्गीकरण: बांगर = पुरानी जलोढ़ (कराइल-केवाल) | खादर = नवीन जलोढ़`,
-        tip: `BPSC Focus: 7 शहीदों के नाम और उनके स्कूल/कॉलेज BPSC TRE में पहले भी पूछे गए हैं, इन्हें याद रखें!`,
-        mnemonic: `पलायन ट्रिक: दिवाली के दीयों की रोशनी में 9 नवंबर को JP हजारीबाग जेल की दीवार फांद गए!`
+3. Alluvial Soils of Bihar & Agricultural Wealth:
+• Bangar (Older Alluvium): Found on uplands above annual flood levels. In South Bihar, it is locally called 'Karail-Kewal' soil. Heavy clay texture, high moisture retention, rich in calcareous nodules (kankar).
+• Khadar (Newer Alluvium): Annually replenished by silt from river floodplains. Light color, sandy-loam texture, exceptionally fertile (ideal for paddy, wheat, and jute).
+• Mithila Makhana (Fox Nut): Concentrated in the wetlands of Darbhanga, Madhubani, and Saharsa. Bihar produces over 85% of global makhana (GI Tag certified).`,
+        formula: `• Secretariat Firing: August 11, 1942 (7 Martyr Students)
+• JP Jail Escape: November 9, 1942 (Diwali Night, Hazaribagh Jail)
+• Soil Division: Bangar = Older Alluvium (Karail-Kewal) | Khadar = Newer Alluvium`,
+        tip: `BPSC Focus: The names and colleges/schools of the 7 Secretariat martyrs are high-yield questions in BPSC TRE exams.`,
+        mnemonic: `Hazaribagh Escape: On Diwali night (Nov 9), JP and companions slipped over the walls into freedom!`
       },
       {
         id: 'd2_middle',
         category: 'middle',
-        part: 'Part III: Class 6–8 Maths & Science (गणित-विज्ञान)',
+        part: 'Part III: Class 6–8 Maths & Science',
         badge: 'badge-middle_math_sci',
         color: '#10b981',
         readTime: '4 min read',
-        level: 'NCERT / SCERT Class 6–8 Standards',
-        title: 'Commercial Math, Acid-Base Chemistry & Sound (अंकित मूल्य, अम्ल-क्षार व ध्वनि)',
-        takeaway: 'अंकित मूल्य और क्रय मूल्य का सीधा अनुपात सूत्र, प्राकृतिक अम्लों के स्रोत, तथा ध्वनि की प्रबलता ∝ (आयाम)².',
-        content: `1. भिन्नों का ल.स.प. एवं म.स.प. (Fractions):
-• भिन्नों का LCM = (अंशों का LCM) / (हरों का HCF)
-• भिन्नों का HCF = (अंशों का HCF) / (हरों का LCM)
-  - उदाहरण: 2/3, 4/9, 5/6 का LCM = LCM(2, 4, 5) / HCF(3, 9, 6) = 20/3.
+        level: 'NCERT Class 6–8 Foundation Standards',
+        title: 'Commercial Mathematics, Acid-Base Chemistry & Sound Physics',
+        takeaway: 'Marked Price to Cost Price ratio formula, natural organic acids, and Sound Loudness ∝ (Amplitude)²',
+        content: `1. LCM & HCF of Fractions:
+• LCM of Fractions = (LCM of Numerators) / (HCF of Denominators)
+• HCF of Fractions = (HCF of Numerators) / (LCM of Denominators)
+  - Example: For fractions 2/3, 4/9, 5/6:
+  - LCM = LCM(2, 4, 5) / HCF(3, 9, 6) = 20 / 3.
 
-2. व्यावसायिक गणित (अंकित मूल्य एवं छूट):
-• सार्वभौमिक सूत्र:
-  MP / CP = (100 + लाभ%) / (100 - छूट%)
-  - यदि 20% छूट देने के बाद भी 20% का लाभ कमाना हो:
-    MP / CP = (100 + 20) / (100 - 20) = 120 / 80 = 3/2 = 1.5
-    अर्थात अंकित मूल्य को क्रय मूल्य से 50% अधिक रखना होगा!
+2. Commercial Mathematics: Marked Price & Discount:
+• Universal Ratio Formula:
+  MP / CP = (100 + Profit%) / (100 - Discount%)
+  - If a merchant wants to earn 20% profit even after giving a 20% discount:
+  - MP / CP = (100 + 20) / (100 - 20) = 120 / 80 = 3/2 = 1.5
+  - Hence, the marked price must be set 50% above the cost price!
 
-3. अम्ल, क्षार एवं उदासीनीकरण (Acids & Bases):
-• pH पैमाना (सोरेनसन द्वारा): 0 से 14. pH < 7 (अम्लीय), pH = 7 (उदासीन), pH > 7 (क्षारीय).
-  - मानव रक्त: हल्का क्षारीय (7.35 से 7.45).
-  - आमाशय रस (Gastric Juice): सांद्र HCl (pH 1.2 से 2.0).
-• प्राकृतिक अम्ल:
-  - चींटी का डंक: मेथेनोइक अम्ल (फॉर्मिक अम्ल, HCOOH) — बेकिंग सोडा या कैलेमाइन से शांत होता है।
-  - सिरका: एसीटिक अम्ल (CH3COOH).
-  - दही: लैक्टिक अम्ल | इमली/अंगूर: टार्टरिक अम्ल | टमाटर: ऑक्सालिक अम्ल.
-• उदासीनीकरण: अम्ल + क्षार ⟶ लवण + जल + ऊष्मा.
+3. Acids, Bases & pH Scale:
+• pH Scale (Introduced by Sorenson): Range from 0 to 14. pH < 7 (Acidic), pH = 7 (Neutral), pH > 7 (Basic/Alkaline).
+  - Human Blood: Slightly alkaline (pH 7.35 to 7.45).
+  - Gastric Juice: Concentrated Hydrochloric Acid HCl (pH 1.2 to 2.0).
+• Natural Organic Acids:
+  - Ant Sting: Methanoic Acid / Formic Acid (HCOOH) — neutralized by Calamine (zinc carbonate) or Baking Soda.
+  - Vinegar: Acetic Acid (CH3COOH).
+  - Curd: Lactic Acid | Tamarind/Grapes: Tartaric Acid | Tomatoes: Oxalic Acid.
+• Neutralisation Reaction: Acid + Base ⟶ Salt + Water + Heat.
 
-4. पादप परिवहन एवं ध्वनि भौतिकी:
-• फ्लोएम (Phloem): पत्तियों में निर्मित भोजन (सुक्रोज) को पौधे के सभी भागों में दोनों दिशाओं (bidirectional) में पहुँचाता है।
-• जाइलम (Xylem): जड़ों से जल एवं खनिजों को एकदिशीय (unidirectional) रूप से ऊपर खींचता है।
-• ध्वनि की प्रबलता (Loudness): प्रबलता आयाम के वर्ग के समानुपाती होती है (प्रबलता ∝ A²). आयाम 3 गुना करने पर ध्वनि 9 गुना तेज हो जाती है! तारत्व (Pitch) आवृत्ति (Frequency) पर निर्भर करता है।`,
-        formula: `• अंकित मूल्य अनुपात: MP / CP = (100 + P%) / (100 - D%)
-• रक्त का pH: 7.35 ≤ pH ≤ 7.45 (हल्का क्षारीय)
-• ध्वनि तीव्रता: प्रबलता ∝ (आयाम)²`,
-        tip: `भौतिकी जाल: आवृत्ति से तारत्व (तीखापन/आवाज़ का मोटा-पतला होना) तय होता है, जबकि आयाम से आवाज़ की ऊँचाई/प्रबलता (Volume) तय होती है. इन्हें आपस में न मिलाएँ.`,
-        mnemonic: `संवहन ट्रिक: 'फ्लो'एम से 'फू'ड (भोजन), और 'जा'इलम से 'ज'ल!`
+4. Plant Transportation & Sound Physics:
+• Phloem: Translocates synthesized food (sucrose) bidirectionally from leaves to all plant organs.
+• Xylem: Conducts water and dissolved minerals unidirectionally upwards from roots via transpiration pull.
+• Sound Loudness & Pitch:
+  - Loudness is directly proportional to the square of Amplitude: Loudness ∝ (Amplitude)². Tripling amplitude increases loudness by 9 times!
+  - Pitch (shrillness) is determined strictly by Frequency.`,
+        formula: `• Marked Price Ratio: MP / CP = (100 + P%) / (100 - D%)
+• Blood pH Range: 7.35 ≤ pH ≤ 7.45 (Slightly Alkaline)
+• Sound Loudness: Loudness ∝ (Amplitude)²`,
+        tip: `Physics Distinction: Frequency determines Pitch (how high/shrill a sound is), whereas Amplitude determines Loudness/Volume. Do not confuse the two.`,
+        mnemonic: `Plant Tissues: Phloem conducts Food, Xylem conducts Water (Jal)!`
       },
       {
         id: 'd2_sec',
         category: 'secondary',
-        part: 'Part IV: Class 9–10 Secondary Maths (माध्यमिक गणित)',
+        part: 'Part IV: Class 9–10 Secondary Mathematics',
         badge: 'badge-sec_math',
         color: '#0ea5e9',
         readTime: '5 min read',
         level: 'NCERT Exemplar Class 9–10 Standards',
-        title: 'Linear Systems, Boat & Stream Kinematics (दो चरों वाले रैखिक समीकरण व नाव-धारा)',
-        takeaway: 'रैखिक समीकरणों की संगतता/असंगतता की शर्तें, नाव व धारा की सापेक्ष चाल (u+v व u-v), तथा निर्देशांक तल में लंबवत रेखाएँ।',
-        content: `1. दो चरों वाले रैखिक समीकरण युग्म (Linear Systems):
-• सामान्य रूप: a1·x + b1·y + c1 = 0 तथा a2·x + b2·y + c2 = 0.
-• ज्यामितीय हल की 3 मुख्य स्थितियाँ:
-  1. अद्वितीय हल (Unique Solution, संगत): a1/a2 ≠ b1/b2 ⟶ रेखाएँ एक बिंदु पर प्रतिच्छेद करती हैं।
-  2. अनंत हल (Infinitely Many Solutions, संपाती व आश्रित): a1/a2 = b1/b2 = c1/c2 ⟶ रेखाएँ संपाती (एक दूसरे के ऊपर) होती हैं।
-  3. कोई हल नहीं (No Solution, असंगत): a1/a2 = b1/b2 ≠ c1/c2 ⟶ रेखाएँ समांतर (Parallel) होती हैं।
+        title: 'NCERT Secondary Mathematics: Linear Systems & Kinematics',
+        takeaway: 'Consistency conditions for pairs of linear equations, boat & stream relative speed (u+v vs u-v), and coordinate lines perpendicularity.',
+        content: `1. Pair of Linear Equations in Two Variables:
+• General Equations: a1·x + b1·y + c1 = 0 and a2·x + b2·y + c2 = 0.
+• Three Geometric Consistency Conditions:
+  1. Unique Solution (Consistent): a1/a2 ≠ b1/b2 ⟶ The two straight lines intersect at exactly one point.
+  2. Infinitely Many Solutions (Consistent & Dependent): a1/a2 = b1/b2 = c1/c2 ⟶ The two straight lines are coincident (lie on top of each other).
+  3. No Solution (Inconsistent): a1/a2 = b1/b2 ≠ c1/c2 ⟶ The two straight lines are strictly parallel.
 
-2. अनंत हल के लिए अज्ञात राशि का मान:
-• यदि 2x + 3y = 7 और (k-1)x + (k+2)y = 3k के अनंत हल हों:
-  2/(k-1) = 3/(k+2) = 7/(3k)
-  ⟶ 2(k+2) = 3(k-1) ⟶ 2k + 4 = 3k - 3 ⟶ k = 7.
+2. Solving for Unknown Parameters in Infinite Solutions:
+• If 2x + 3y = 7 and (k-1)x + (k+2)y = 3k have infinitely many solutions:
+  - 2/(k-1) = 3/(k+2) = 7/(3k)
+  - 2(k+2) = 3(k-1) ⟶ 2k + 4 = 3k - 3 ⟶ k = 7.
 
-3. नाव एवं धारा (Boat and Stream Kinematics):
-• माना शांत जल में नाव की चाल = u किमी/घंटा, धारा की चाल = v किमी/घंटा.
-  - धारा के अनुकूल चाल (Downstream) = u + v
-  - धारा के प्रतिकूल चाल (Upstream) = u - v
-  - शांत जल में नाव की चाल u = (अनुकूल + प्रतिकूल) / 2
-  - धारा की चाल v = (अनुकूल - प्रतिकूल) / 2
-  - उदाहरण: यदि नाव की चाल 15 किमी/घंटा और धारा 3 किमी/घंटा हो, तो अनुकूल चाल = 18 किमी/घंटा. 36 किमी जाने में समय = 36/18 = 2 घंटे।
+3. Boat and Stream Relative Kinematics:
+• Let speed of boat in still water = u km/h, and speed of water stream = v km/h.
+  - Downstream Speed = u + v
+  - Upstream Speed = u - v
+  - Speed of boat in still water u = (Downstream + Upstream) / 2
+  - Speed of stream v = (Downstream - Upstream) / 2
+  - Example: If boat speed = 15 km/h and stream = 3 km/h, downstream speed = 18 km/h. Time taken for 36 km = 36 / 18 = 2 hours.
 
-4. कार्तीय तल में रेखाओं की लंबवत स्थिति:
-• समीकरण x = 0 वास्तव में Y-अक्ष (ऊर्ध्वाधर रेखा) को निरूपित करता है।
-• समीकरण y = k (जैसे y = -4) X-अक्ष के समांतर एक क्षैतिज रेखा को निरूपित करता है।
-• नियम: कोई भी ऊर्ध्वाधर रेखा और कोई भी क्षैतिज रेखा 90° पर मिलती हैं, अतः वे परस्पर लंबवत (Mutually Perpendicular) होती हैं।`,
-        formula: `• समांतर रेखाएँ (No Solution): a1/a2 = b1/b2 ≠ c1/c2
-• धारा के अनुकूल: u + v | धारा के प्रतिकूल: u - v
-• वर्गांतर सूत्र: x² - y² = (x + y)(x - y)`,
-        tip: `समय बचाओ ट्रिक: नाव-धारा के प्रश्नों में सबसे पहले अनुकूल (u+v) और प्रतिकूल (u-v) की चाल अलग-अलग लिख लें.`,
-        mnemonic: `सापेक्ष चाल: धारा के अनुकूल नदी धक्का देती है (+), प्रतिकूल में नदी रोकती है (-)!`
+4. Cartesian Coordinate System: Perpendicular Lines:
+• The equation x = 0 represents the vertical Y-axis.
+• The equation y = k (e.g., y = -4) represents a horizontal line parallel to the X-axis.
+• Theorem: Any vertical line meets any horizontal line at an exact 90° angle, meaning they are mutually perpendicular.`,
+        formula: `• Inconsistent Lines (No Solution): a1/a2 = b1/b2 ≠ c1/c2
+• Downstream Speed: u + v | Upstream Speed: u - v
+• Still Water Speed: u = (Downstream + Upstream) / 2`,
+        tip: `Boat & Stream Strategy: In exam questions, immediately calculate (u+v) and (u-v) first before writing time-distance equations.`,
+        mnemonic: `Relative Motion: The stream helps downstream (+), but resists upstream (-)!`
       }
     ]
   };
@@ -3236,6 +3379,77 @@
     }, 2400);
   }
 
+  
+  // ========================================================
+  // STUDY CONTENT FORMATTER (DECLUTTERED CBSE CARDS)
+  // ========================================================
+  function formatStudyContent(raw) {
+    if (!raw) return '';
+    const lines = raw.split('\n');
+    let html = '';
+    let inSection = false;
+    let inList = false;
+
+    for (let i = 0; i < lines.length; i++) {
+      const trimmed = lines[i].trim();
+      if (!trimmed) continue;
+
+      // Section header: '1. Title' or '2. Title'
+      const secMatch = trimmed.match(/^(\d+)\.\s+(.+)$/);
+      if (secMatch) {
+        if (inList) { html += '</ul>'; inList = false; }
+        if (inSection) { html += '</div></div>'; inSection = false; }
+        const num = secMatch[1].padStart(2, '0');
+        const title = secMatch[2].replace(/:$/, '');
+        html += `
+          <div class="study-section-card">
+            <div class="study-sec-head">
+              <span class="study-sec-num">${num}</span>
+              <h4 class="study-sec-title">${title}</h4>
+            </div>
+            <div class="study-sec-body">
+        `;
+        inSection = true;
+        continue;
+      }
+
+      // Main bullet: '• Title: text' or '• text'
+      if (trimmed.startsWith('•')) {
+        if (!inList) { html += '<ul class="study-point-list">'; inList = true; }
+        const bulletContent = trimmed.substring(1).trim();
+        
+        const colonIdx = bulletContent.indexOf(':');
+        if (colonIdx > 0 && colonIdx < 50) {
+          const lead = bulletContent.substring(0, colonIdx + 1);
+          const rest = bulletContent.substring(colonIdx + 1);
+          html += `<li class="study-point-item"><strong class="study-point-lead">${lead}</strong>${rest}</li>`;
+        } else {
+          html += `<li class="study-point-item">${bulletContent}</li>`;
+        }
+        continue;
+      }
+
+      // Sub-bullet: '- text'
+      if (trimmed.startsWith('-')) {
+        const subContent = trimmed.substring(1).trim();
+        if (inList) {
+          html += `<li class="study-sub-item"><span class="sub-arrow">↳</span><span class="sub-content">${subContent}</span></li>`;
+        } else {
+          html += `<div class="study-sub-card"><span class="sub-arrow">↳</span><span class="sub-content">${subContent}</span></div>`;
+        }
+        continue;
+      }
+
+      // Normal paragraph
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<p class="study-paragraph">${trimmed}</p>`;
+    }
+
+    if (inList) html += '</ul>';
+    if (inSection) html += '</div></div>';
+    return html;
+  }
+
   function renderStudyNotes() {
     const box = document.getElementById('notesListContainer');
     if (!box) return;
@@ -3289,7 +3503,7 @@
             <span class="meta-tag">⏱️ ${n.readTime}</span>
           </div>
           <button class="btn-mark-read ${isRead ? 'is-read' : ''}" onclick="toggleNoteRead(${activeDay}, '${n.id}')">
-            ${isRead ? '✓ Completed (अध्ययन पूर्ण)' : '○ Mark as Read (पढ़ लिया)'}
+            ${isRead ? '✓ Completed' : '○ Mark as Read'}
           </button>
         </div>
 
@@ -3298,16 +3512,16 @@
         ${n.takeaway ? `
           <div class="note-takeaway">
             <span>🎯</span>
-            <div><strong>High-Yield Takeaway (मुख्य निष्कर्ष):</strong> ${n.takeaway}</div>
+            <div><strong>High-Yield Concept Takeaway:</strong> ${n.takeaway}</div>
           </div>
         ` : ''}
 
-        <p class="note-text">${n.content}</p>
+        <div class="note-content-blocks">${formatStudyContent(n.content)}</div>
 
         ${n.formula ? `
           <div class="formula-box">
             <div class="formula-header">
-              <span class="formula-label"><span>🧮</span> Formula Bank & Key Rules (प्रमुख सूत्र व नियम)</span>
+              <span class="formula-label"><span>🧮</span> Formula Bank & Key Rules</span>
               <button class="formula-copy-btn" onclick="copyFormulaText('${escapedFormula}', this)">
                 <span>📋</span> Copy Formulas
               </button>
@@ -3318,13 +3532,13 @@
 
         ${n.tip ? `
           <div class="exam-tip-callout">
-            <strong>⚠️ BPSC Exam Trap & Strategy (परीक्षा सावधानी):</strong> ${n.tip}
+            <strong>⚠️ BPSC Exam Trap & High-Yield Strategy:</strong> ${n.tip}
           </div>
         ` : ''}
 
         ${n.mnemonic ? `
           <div class="mnemonic-callout">
-            <strong>💡 Memory Hook / Mnemonic (याद रखने की ट्रिक):</strong> ${n.mnemonic}
+            <strong>💡 Memory Hook / CBSE Mnemonic:</strong> ${n.mnemonic}
           </div>
         ` : ''}
       `;
