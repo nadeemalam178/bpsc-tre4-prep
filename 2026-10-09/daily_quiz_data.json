@@ -42,7 +42,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "The correct Sandhi-Vichhed is 'Ut + Jwal' (उत् + ज्वल = उज्ज्वल).",
+      "explanation": "• Correct Answer: Option A — Ut + Jwal (उत् + ज्वल)\n\n• Step-by-Step Grammatical Rule:\n1. This follows the Sanskrit Paninian Vyanjan Sandhi (व्यंजन संधि) assimilation rule: त्/द् + ज्/झ् ⟶ ज्ज्.\n2. When dental consonant 'त्' (t) or 'द्' (d) precedes palatal consonant 'ज्' (j), the preceding dental assimilates into half 'ज्' (j).\n3. Formula: उत् + ज्वल = उज्ज्वल (Ujjwal).\n\n• Analysis of Options:\n- Option A (उत् + ज्वल): Grammatically authentic Sanskrit prefix 'उत्' combining with 'ज्वल'.\n- Option B (उद् + ज्वल): Hindi colloquial variation, rejected in official BPSC answer keys.\n- Option C (उज् + ज्वल): Incorrect root; 'उज्' is not a recognized Sanskrit upasarg.\n- Note on Orthography: In standard Devanagari spelling, 'उज्ज्वल' contains two consecutive half 'ज' (क्लीष्ट व्यंजन गुच्छ: उ + ज् + ज् + व + ल).",
       "aiDeepSolution": {
         "concept": "Consonant Sandhi (व्यंजन संधि) Rule: When 't' (त्) or 'd' (द्) is followed by 'j' (ज्) or 'jh' (झ्), the preceding 't/d' assimilates into 'j' (ज्).",
         "trick": "In 'Ujjwal', both 'j' letters are half (consonant cluster j + j + v + l). This is a frequent BPSC question in both Sandhi and orthography (spelling test).",
@@ -63,7 +63,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "'Yathashakti' is an authentic example of Avyayibhav Samas (अव्ययीभाव समास).",
+      "explanation": "• Correct Answer: Option B — Avyayibhav Samas (अव्ययीभाव समास)\n\n• Step-by-Step Grammatical Analysis:\n1. Disjunction (विग्रह): यथाशक्ति = शक्ति के अनुसार (According to one's capacity).\n2. First constituent (पूर्व पद): 'यथा' is an Avyaya (Indeclinable prefix) denoting proportion/extent.\n3. Principal constituent: The entire compound functions as an adverbial modifier (क्रिया-विशेषण) qualifying an action (e.g., उसने यथाशक्ति दान दिया).\n\n• Option Breakdown:\n- Option A (Tatpurush): Requires elision of Karak case endings (जैसे राजपुत्र = राजा का पुत्र), which is absent here.\n- Option B (Avyayibhav): Correct, as initial constituent is an indeclinable modifier.\n- Option C (Karmadharaya): Requires adjective-noun or upameya-upamana relationship (जैसे नीलगगन = नीला है जो गगन).",
       "aiDeepSolution": {
         "concept": "Avyayibhav Samas: A compound where the initial constituent is an Indeclinable/Prefix (Avyaya) and is the principal element, causing the whole compound to function adverbially.",
         "trick": "Look for prefixes like 'Yatha-', 'Prati-', 'Be-', 'Ba-', 'Bhar-', 'Anu-'. Yathashakti literally translates to 'according to one's capacity' (शक्ति के अनुसार).",
@@ -84,7 +84,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "The authentic feminine form of 'Kavi' is 'Kavayitri' (कवयित्री).",
+      "explanation": "• Correct Answer: Option A — Kavayitri (कवयित्री)\n\n• Morphological Rules:\n1. Gender derivation in Hindi: Masculine noun 'Kavi' (कवि) forms its feminine counterpart through the suffix '-ayitri' (अयित्री), resulting in Kav + ayitri = Kavayitri (कवयित्री).\n2. Standard Syllable Sequence: क + व + यि + त्री (Note: no short 'i' matra on 'v').\n\n• Why Options B and C are Incorrect:\n- Option B (*कवियत्री): Hypercorrection placing short 'i' on 'v'.\n- Option C (*कवयित्री with variation): Erroneous vowel placement.\n- This is one of BPSC's most recurring spelling questions across TRE 1.0, 2.0, and 3.0.",
       "aiDeepSolution": {
         "concept": "Feminine noun formation: In Hindi/Sanskrit, the feminine counterpart of Kavi is derived as Kav + ayitri, not Kavi + yatri.",
         "trick": "Remember the syllable pattern: Ka - va - yi - tree (no vowel mark on 'va').",
@@ -105,7 +105,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The prefix is 'Ati' (अति). Ati + Ant = Atyant (Yan vowel Sandhi).",
+      "explanation": "• Correct Answer: Option B — Ati (अति)\n\n• Step-by-Step Sandhi Analysis:\n1. Disjunction: अत्यंत = अति + अंत.\n2. Yan Sandhi Rule: When short 'इ' (i) is followed by a dissimilar vowel like 'अ' (a), it transforms into the semi-vowel 'य्' (y).\n3. Morphological breakdown: अति (Prefix) + अंत (Root noun) ⟶ अत् + य् + अंत ⟶ अत्यंत.\n\n• Option Breakdown:\n- Option A (अत्): 'अत्' is not an independent Sanskrit prefix.\n- Option B (अति): Correct standard prefix meaning 'excessive' or 'beyond'.\n- Option C (अत्य): Erroneous surface reading created by the phonetic assimilation.",
       "aiDeepSolution": {
         "concept": "A prefix (Upasarg) is an affix placed at the beginning of a root word. Here, 'i' of Ati combines with 'a' of Ant to form 'y' via Yan Sandhi rules.",
         "trick": "Split the word by Sandhi: Ati + Ant = Atyant. Hence the root prefix is 'Ati'.",
@@ -126,7 +126,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The grammatically correct verb is 'were'.",
+      "explanation": "• Correct Answer: Option B — were\n\n• Syntactic Rule of Proximity:\n1. Correlative Conjunctions: When subjects are conjoined by 'Neither...nor' or 'Either...or', the finite verb must agree in grammatical number and person with the closest (adjacent) subject.\n2. In this sentence: 'Neither the teacher (Singular Subject 1) nor the students (Plural Subject 2) _______ present yesterday.'\n3. The subject immediately preceding the blank is 'the students' (Plural).\n4. Time marker: 'yesterday' specifies past simple tense.\n5. Therefore, the verb must be plural past: 'were'.\n\n• Distractor Breakdown:\n- Option A ('was'): Incorrect because it mistakenly agrees with the distant subject 'teacher'. If the sentence were inverted ('Neither the students nor the teacher was...'), 'was' would be correct.\n- Option C ('has been'): Incorrect tense; 'yesterday' requires past simple, not present perfect.",
       "aiDeepSolution": {
         "concept": "Rule of Proximity: When two subjects are connected by correlative conjunctions 'Neither...nor' or 'Either...or', the finite verb agrees in number and person with the closest subject.",
         "trick": "Identify the noun adjacent to the blank: 'students' (plural) -> requires plural past verb 'were' (time marker is 'yesterday').",
@@ -147,7 +147,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The correct indefinite article is 'a'.",
+      "explanation": "• Correct Answer: Option B — a\n\n• Phonetic Law of Indefinite Articles:\n1. Indefinite article selection in English ('a' vs 'an') is strictly dictated by the initial spoken phonetic sound, not the written alphabet letter.\n2. IPA Transcription: 'European' is pronounced as /ˈjʊərəˈpiːən/, opening with the voiced palatal semi-vowel glide /j/ (identical to the consonant sound in 'yellow' or 'you').\n3. Because it opens with a consonant sound, it strictly requires the article 'a'.\n\n• Distractor Breakdown:\n- Option A ('an'): Common trap for candidates who look at vowel letter 'E' rather than the spoken sound.\n- Option C ('the'): Not applicable on first generic mention of an indefinite noun phrase.",
       "aiDeepSolution": {
         "concept": "Indefinite article choice ('a' vs 'an') is strictly determined by the initial phonetic sound of the following word, not the orthographic letter. 'European' begins with the consonant glide /juː/ (like 'you').",
         "trick": "Words like 'a European', 'a university', 'a unicorn', 'a one-rupee note' all take 'a' because they begin with consonant phonemes /j/ or /w/.",
@@ -168,7 +168,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The correct past perfect conditional form is 'had worked'.",
+      "explanation": "• Correct Answer: Option B — had worked\n\n• Third Conditional Formula:\n1. Clause Structure: If + Past Perfect (had + V3), Subject + would have + Past Participle (V3).\n2. Main clause given: 'he would have cleared the BPSC examination'.\n3. The sub-clause (If-clause) requires past perfect: 'had worked'.\n\n• Distractor Breakdown:\n- Option A ('worked'): Simple past pairs with 'would + base verb' (Second conditional for unreal present: 'If he worked, he would clear').\n- Option C ('would work'): Error; 'would' is never used in the condition clause of an If-sentence.",
       "aiDeepSolution": {
         "concept": "Third Conditional (Past Unreal Condition): If + Past Perfect (had + V3), Subject + would have + Past Participle (V3).",
         "trick": "Notice 'would have cleared' in the main clause. It strictly pairs with 'had + V3' in the If-clause.",
@@ -189,7 +189,7 @@
         "None of the above"
       ],
       "answerIndex": 2,
-      "explanation": "The correct preposition for a precise point of clock time is 'at'.",
+      "explanation": "• Correct Answer: Option C — at\n\n• Rules for Prepositions of Time:\n1. 'At' is used for exact points in time on a clock (at 8:30 AM, at 5 o'clock, at noon, at dawn).\n2. 'On' is reserved for specific calendar days and dates (on Monday, on October 9th).\n3. 'In' is used for longer durations, months, years, and centuries (in October, in 2026, in the morning).\n\n• Distractor Breakdown:\n- 'On 8:30 AM' and 'In 8:30 AM' violate standard English usage.",
       "aiDeepSolution": {
         "concept": "Prepositions of Time: Use 'at' for precise clock times and specific points of day (at 8:30 AM, at noon, at midnight).",
         "trick": "'At' = clock time | 'On' = days and dates | 'In' = months, years, and seasons.",
@@ -210,7 +210,7 @@
         "None of the above"
       ],
       "answerIndex": 2,
-      "explanation": "The 1857 revolt in Bihar initially broke out on 12 June 1857 in Rohini village (now in Deoghar district, Jharkhand) by the soldiers of the 32nd Native Infantry Regiment.",
+      "explanation": "• Correct Answer: Option C — Rohini village (Deoghar)\n\n• Detailed Historical Chronology in Bihar:\n1. 12 June 1857: Mutiny broke out in Rohini village (Deoghar district, modern-day Jharkhand) in the headquarters of the 5th Irregular Cavalry (later 32nd Native Infantry). Major Norman Leslie was killed by mutineers.\n2. 3 July 1857: Urban uprising in Patna City led by Pir Ali Khan.\n3. 25 July 1857: Three native regiments (7th, 8th, 40th) mutinied at Danapur cantonment and marched to Arrah/Jagdishpur.\n4. 26 July 1857: Babu Veer Kunwar Singh assumed commander-in-chief leadership of the rebel sepoys.\n\n• Distractor Breakdown:\n- Option A (Jagdishpur): Kunwar Singh joined in late July 1857, more than a month after Rohini.\n- Option B (Danapur): Danapur mutiny occurred on 25 July 1857.",
       "aiDeepSolution": {
         "concept": "Initial spark of 1857 in Bihar took place at Rohini village, where Lieutenant Norman Leslie was killed by mutinous soldiers.",
         "trick": "Chronology: Rohini (12 June) ⟶ Patna (3 July) ⟶ Danapur (25 July) ⟶ Jagdishpur (26 July).",
@@ -231,7 +231,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The uprising in Patna City was led by Pir Ali Khan, a local bookseller, on 3 July 1857.",
+      "explanation": "• Correct Answer: Option B — Pir Ali Khan\n\n• Detailed Historical Narrative:\n1. Pir Ali Khan was a passionate nationalist and book-seller in Patna who secretly organized rebel cells against British tyranny.\n2. On 3 July 1857, Pir Ali led an armed procession through Patna city holding the rebel flag.\n3. During the confrontation, Dr. R. Lyell, British Opium Agent, was killed while trying to disperse the assembly.\n4. Commissioner William Tayler launched a brutal crackdown; Pir Ali's house was demolished, 36 associates arrested, and Pir Ali was publicly executed by hanging on 7 July 1857.\n\n• Distractor Breakdown:\n- Option A (Babu Kunwar Singh): Led the rebellion from Jagdishpur and Shahabad district.\n- Option C (Amar Singh): Kunwar Singh's brother who fought guerrilla battles in the Kaimur hills in 1858.",
       "aiDeepSolution": {
         "concept": "Pir Ali Khan mobilized the local masses in Patna. In the ensuing clash, British Opium Agent Dr. R. Lyell was killed. Commissioner William Tayler suppressed the revolt and Pir Ali was publicly executed.",
         "trick": "Patna City = Pir Ali Khan (Bookseller). Jagdishpur = Babu Kunwar Singh.",
@@ -252,7 +252,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Babu Veer Kunwar Singh, the zamindar of Jagdishpur (Arrah), led the 1857 rebellion in Bihar.",
+      "explanation": "• Correct Answer: Option B — Babu Veer Kunwar Singh\n\n• Military Exploits of Kunwar Singh:\n1. Leader of Shahabad: At the age of nearly 80, the zamindar of Jagdishpur organized rebel infantry and cavalry.\n2. Siege of Arrah: He trapped British soldiers at the Arrah House and decisively routed Captain Dunbar's relief force (killing over 150 British soldiers).\n3. Battles in UP: He campaigned across Mirzapur, Rewa, Banda, Kanpur, and Azamgarh, defeating Colonel Milman and Lord Mark Kerr.\n4. Final Victory: Returning to Jagdishpur on 23 April 1858, he defeated Captain Le Grand's British forces. Having severed his own wounded left arm after being hit by a cannonball across the Ganga, he passed away on 26 April 1858.\n\n• Distractor Breakdown:\n- Maulvi Ahmadullah fought primarily in Faizabad/Lucknow.\n- Tatya Tope was active in Gwalior and Central India.",
       "aiDeepSolution": {
         "concept": "Kunwar Singh assumed leadership after the Danapur sepoy revolt on 25 July 1857. He defeated Dunbar near Arrah and Le Grand near Jagdishpur before succumbing to injuries on 26 April 1858.",
         "trick": "Look for keywords 'Jagdishpur' and '80 years old' ⟶ Babu Veer Kunwar Singh.",
@@ -273,7 +273,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Under the Tinkathia system, tenant farmers were legally compelled by European planters to cultivate indigo on 3/20th (3 kathas per bigha) of their most fertile land.",
+      "explanation": "• Correct Answer: Option B — 3/20th of land\n\n• Agrarian Context of the Tinkathia System:\n1. Unit Definition: In Bihar land revenue measurement, 1 Bigha consists of exactly 20 Kathas.\n2. Colonial Exploitation: European indigo planters coerced tenant peasants (ryots) through contracts (*satta*) to cultivate indigo on 3 kathas of the best, most fertile land in every bigha (3/20 ratio).\n3. Economic Ruin: Indigo cultivation exhausted soil fertility, prevented food crop cultivation, and planters paid exploitative, non-viable prices.\n\n• Distractor Breakdown:\n- 1/10th (2 kathas) and 3/10th (6 kathas) are incorrect proportions.",
       "aiDeepSolution": {
         "concept": "1 Bigha = 20 Kathas in Bihar. 'Tin-kathia' literally means 3 kathas out of 20 kathas (3/20th).",
         "trick": "Tinkathia = 3 kathas out of 1 Bigha (20 Kathas) = 3/20.",
@@ -294,7 +294,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Rajkumar Shukla, a farmer from Murli Bharhawa in Champaran, persistently pursued Mahatma Gandhi and persuaded him at the Lucknow Session (1916).",
+      "explanation": "• Correct Answer: Option B — Rajkumar Shukla\n\n• Historic Role of Rajkumar Shukla:\n1. Background: Rajkumar Shukla was an educated and determined peasant from Murli Bharhawa village in West Champaran.\n2. The Pursuit: He travelled to the 31st Session of the Indian National Congress at Lucknow in December 1916. He met Bal Gangadhar Tilak and then approached Mahatma Gandhi.\n3. Persistence: When Gandhi showed reluctance due to prior commitments, Shukla followed him to Kanpur, Sabarmati Ashram (Ahmedabad), and Calcutta until Gandhi agreed to accompany him to Champaran in April 1917.\n\n• Distractor Breakdown:\n- Dr. Rajendra Prasad and Brajkishore Prasad joined Gandhi upon his arrival in Patna and Champaran, but the individual who brought him from Lucknow was Rajkumar Shukla.",
       "aiDeepSolution": {
         "concept": "Rajkumar Shukla represented the suffering peasantry of Champaran. Gandhi accompanied him to Patna, Muzaffarpur, and finally arrived in Champaran in April 1917.",
         "trick": "Lucknow Congress 1916 invitation = Rajkumar Shukla.",
@@ -315,7 +315,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "European planters agreed to refund exactly 25% of the money they had illegally extorted from the ryots.",
+      "explanation": "• Correct Answer: Option B — 25%\n\n• Compromise & Significance of the Refund:\n1. Inquiry Findings: The Champaran Agrarian Enquiry Committee (headed by F.G. Sly, with Gandhi as member) unanimously found the planters guilty of illegal exactions (*sharahbeshi* and *tawan*).\n2. Strategic Compromise: The planters offered a 25% refund, hoping Gandhi would demand 50% or 100% and break negotiations. Gandhi accepted 25% immediately.\n3. Historical Impact: Gandhi explained that the monetary amount mattered far less than the fact that British planters had been forced to surrender their prestige and acknowledge their illegal conduct. Within a decade, the planters abandoned the estates completely.",
       "aiDeepSolution": {
         "concept": "Gandhi compromised on a 25% refund to break the prestige and moral dominance of the British planters. The Tinkathia system was formally abolished by the Champaran Agrarian Act of 1918.",
         "trick": "Gandhi accepted 25% refund because the planters' prestige was shattered more than the monetary concession.",
@@ -336,7 +336,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The total length of the Ganga river in Bihar is 445 km, passing through 12 districts.",
+      "explanation": "• Correct Answer: Option B — 445 km\n\n• Geographical Analysis of River Ganga in Bihar:\n1. Length: The Ganga flows for exactly 445 km through the state of Bihar (out of its total national course of 2,525 km).\n2. Administrative Coverage: It traverses 12 districts: Buxar, Bhojpur, Saran, Patna, Vaishali, Samastipur, Begusarai, Lakhisarai, Munger, Khagaria, Bhagalpur, and Katihar.\n3. Longest Stretch: Patna district hosts the longest course of the river (~99 km), followed by Bhagalpur.\n\n• Distractor Breakdown:\n- 405 km and 525 km are incorrect figures.",
       "aiDeepSolution": {
         "concept": "The Ganga has a total length of 2,525 km in India. In Bihar, its stretch is 445 km, entering at Chausa (Buxar) and exiting at Manihari (Katihar). It has its longest stretch in Patna district (~99 km).",
         "trick": "Remember 445 km (exactly 12 districts). Patna has the longest stretch (~99 km).",
@@ -357,7 +357,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The Ganga enters Bihar near Chausa in Buxar district.",
+      "explanation": "• Correct Answer: Option B — Chausa (Buxar)\n\n• Course & Entry Points:\n1. Entry: River Ganga crosses the UP-Bihar border near Chausa in Buxar district, forming the boundary between Buxar and Ballia (UP).\n2. Exit: It exits Bihar near Manihari in Katihar district to enter Sahibganj (Jharkhand) and West Bengal.\n\n• Distractor Breakdown:\n- Valmikinagar is the entry point of River Gandak from Nepal.\n- Sahibganj is in Jharkhand, where the Ganga briefly touches.",
       "aiDeepSolution": {
         "concept": "The Ganga enters Bihar at Chausa (Buxar) and exits near Manihari (Katihar).",
         "trick": "Entry = Chausa (Buxar) | Exit = Manihari (Katihar).",
@@ -378,7 +378,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The Kosi River merges into the Ganga at Kursela in Katihar district.",
+      "explanation": "• Correct Answer: Option B — Kursela (Katihar)\n\n• Hydrological Features of Kosi River:\n1. Origin: Formed by 7 Himalayan mountain streams (Saptakoshi) in Nepal/Tibet, cutting through the Himalayas.\n2. Entry & Confluence: Enters Bihar at Bhimnagar (Supaul district) and flows through Saharsa and Madhepura to merge with the Ganga at Kursela in Katihar district.\n3. Sorrow of Bihar: Due to immense silt load, the river frequently changes its channel; it has shifted over 120 km westward over the last 250 years.\n\n• Distractor Breakdown:\n- Pahleza is where Gandak meets Ganga.\n- Maner is where Son meets Ganga.",
       "aiDeepSolution": {
         "concept": "The Kosi River originates as Saptakoshi in Nepal, enters Bihar at Supaul, and flows through Saharsa and Madhepura to merge with the Ganga at Kursela (Katihar).",
         "trick": "Kosi ⟶ Kursela (K-K pairing).",
@@ -399,7 +399,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The Son River originates from the Amarkantak plateau (Madhya Pradesh) and joins the Ganga near Maner (Patna).",
+      "explanation": "• Correct Answer: Option B — Son River\n\n• River Son Drainage Profile:\n1. Origin: Originates from the Amarkantak plateau in Madhya Pradesh, east of the Narmada river source.\n2. Course in Bihar: Enters Bihar at Rohtas district, forming the physical boundary between Rohtas/Bhojpur and Aurangabad/Arwal.\n3. Confluence: Merges into the south bank of River Ganga near Maner (Patna district).\n\n• Distractor Breakdown:\n- Punpun meets at Fatuha.\n- Falgu (Niranjana) flows past Gaya and disappears in the plains before directly joining the Ganga.",
       "aiDeepSolution": {
         "concept": "The Son River enters Bihar at Rohtas district, flows between Rohtas/Bhojpur and Aurangabad/Arwal, and joins the Ganga near Maner.",
         "trick": "Son River: Origin = Amarkantak, Entry in Bihar = Rohtas, Confluence = Maner (Patna).",
@@ -420,7 +420,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "The Punpun River joins the Ganga at Fatuha (east of Patna).",
+      "explanation": "• Correct Answer: Option A — Fatuha\n\n• Punpun River Confluence:\n1. Originates in the Chota Nagpur Plateau (Palamu district, Jharkhand).\n2. Enters Bihar in Aurangabad district, passes through Arwal and Patna.\n3. Merges with River Ganga at Fatuha, about 25 km east of Patna city.\n\n• Distractor Breakdown:\n- Munger is further east on the Ganga.\n- Chhapra is where the Ghaghara merges from the north bank.",
       "aiDeepSolution": {
         "concept": "Originating in the Chota Nagpur Plateau of Jharkhand, the Punpun flows through Aurangabad, Arwal, and Patna before meeting the Ganga at Fatuha.",
         "trick": "Punpun meets Ganga at Fatuha.",
@@ -441,7 +441,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "The total geographical area of Bihar is 94,163 square kilometers, accounting for 2.86% of India's total geographical area (12th largest state by area).",
+      "explanation": "• Correct Answer: Option A — 94,163 sq km\n\n• Statistical Dimensions of Bihar:\n1. Total Area: 94,163 square kilometers.\n2. National Share: Represents 2.86% of the total geographical area of India.\n3. National Ranking: 12th largest state in India by geographical area (after Jammu & Kashmir bifurcation).\n4. Linear Extents: North to South = 345 km; East to West = 483 km.\n\n• Distractor Breakdown:\n- 84,163 sq km and 98,120 sq km are incorrect distractors.",
       "aiDeepSolution": {
         "concept": "Area = 94,163 sq km. North-to-South span = 345 km. East-to-West span = 483 km.",
         "trick": "Mnemonic: 94-163 (94 thousand, 163).",
@@ -462,7 +462,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "In South Bihar, older alluvium (Bangar) is locally referred to as 'Karail-Kewal' soil.",
+      "explanation": "• Correct Answer: Option B — Karail-Kewal soil\n\n• Soil Classification in Bihar:\n1. Bangar (Old Alluvium): In South Bihar plains, this soil is locally known as 'Karail-Kewal'. It is heavy, dark-colored, clayey, with high water retention and calcareous nodules (kankar).\n2. Khadar (New Alluvium): Light-colored silt deposited annually along river floodplains, highly fertile.\n\n• Distractor Breakdown:\n- Terai soil is found along the northern border with Nepal (Champaran to Kishanganj).",
       "aiDeepSolution": {
         "concept": "Karail-Kewal soil is characterized by heavy clay, high water retention, neutral to slightly alkaline pH, and presence of calcareous kankar nodules.",
         "trick": "South Bihar Older Alluvium = Karail-Kewal. Newer Alluvium = Khadar.",
@@ -483,7 +483,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The Constitution of India was adopted on 26 November 1949 (celebrated as Constitution Day / Samvidhan Divas) and came into full legal enforcement on 26 January 1950.",
+      "explanation": "• Correct Answer: Option B — 26 November 1949\n\n• Constitutional Timeline:\n1. Adoption: The Constituent Assembly completed drafting and adopted the Constitution on 26 November 1949 (celebrated as Samvidhan Divas / Constitution Day).\n2. Selective Commencement: 16 articles (including Citizenship, Elections, Provisional Parliament) came into force immediately on 26 November 1949.\n3. Full Enforcement: The remaining bulk of the Constitution came into force on 26 January 1950 (commemorating the 1930 Purna Swaraj declaration).\n\n• Distractor Breakdown:\n- 26 January 1950 is the date of full commencement/enforcement, not adoption.",
       "aiDeepSolution": {
         "concept": "The Preamble explicitly states: 'In our Constituent Assembly this twenty-sixth day of November, 1949, do hereby Adopt, Enact and Give to Ourselves this Constitution.'",
         "trick": "Adopted = 26 Nov 1949. Enforced (Republic Day) = 26 Jan 1950.",
@@ -504,7 +504,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The additive inverse of -7/19 is 7/19, because (-7/19) + (7/19) = 0.",
+      "explanation": "• Correct Answer: Option B — 7/19\n\n• Step-by-Step Mathematical Derivation:\n1. Definition: The additive inverse of any number 'a' is defined as '-a' such that a + (-a) = 0 (the additive identity).\n2. Given number: a = -7/19.\n3. Additive Inverse: -(-7/19) = +7/19.\n4. Verification: (-7/19) + (7/19) = 0/19 = 0. Confirmed!\n\n• Distractor Breakdown:\n- 19/7 is the negative reciprocal with inverted sign.\n- -19/7 is the multiplicative inverse (reciprocal).",
       "aiDeepSolution": {
         "concept": "Additive inverse of a is -a such that a + (-a) = 0 (the additive identity).",
         "trick": "Just invert the sign: negative becomes positive, positive becomes negative.",
@@ -525,7 +525,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The multiplicative inverse of -13/17 is -17/13, because (-13/17) × (-17/13) = 1.",
+      "explanation": "• Correct Answer: Option B — -17/13\n\n• Step-by-Step Reciprocal Calculation:\n1. Definition: The multiplicative inverse (reciprocal) of a non-zero rational number a/b is b/a such that (a/b) × (b/a) = 1 (the multiplicative identity).\n2. Given fraction: -13/17.\n3. Multiplicative Inverse: 1 / (-13/17) = -17/13.\n4. Verification: (-13/17) × (-17/13) = +221/221 = 1.\n\n• Distractor Breakdown:\n- 17/13 drops the negative sign (resulting in product -1, which is incorrect).\n- 13/17 is the additive inverse without reciprocation.",
       "aiDeepSolution": {
         "concept": "Multiplicative inverse of a/b is b/a such that (a/b) × (b/a) = 1. The algebraic sign remains unchanged.",
         "trick": "Reciprocal flips the fraction upside down while keeping the negative sign.",
@@ -546,7 +546,7 @@
         "None of the above"
       ],
       "answerIndex": 2,
-      "explanation": "The additive inverse is -x and the multiplicative inverse is 1/x. Their product is (-x) × (1/x) = -1.",
+      "explanation": "• Correct Answer: Option C — -1\n\n• Universal Algebraic Identity Proof:\n1. Let x be any non-zero rational number (x ≠ 0).\n2. Additive Inverse of x = -x.\n3. Multiplicative Inverse of x = 1/x.\n4. Product = (-x) × (1/x) = - (x/x) = -1.\n\n• Numerical Check (Let x = 4/5):\n- Additive inv = -4/5\n- Multiplicative inv = 5/4\n- Product = (-4/5) × (5/4) = -20/20 = -1.\nThis holds universally for every non-zero rational number.",
       "aiDeepSolution": {
         "concept": "Universal algebraic identity: Additive Inverse × Multiplicative Inverse = (-x) × (1/x) = -1 for any x ≠ 0.",
         "trick": "Take any sample number, e.g., 5: Additive inv = -5, Multiplicative inv = 1/5. Product = -5 × 1/5 = -1.",
@@ -567,7 +567,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Sum of digits = 4 + 7 + 3 + x + 2 + 4 = 20 + x. The next multiple of 9 is 27, so 20 + x = 27 ⟹ x = 7.",
+      "explanation": "• Correct Answer: Option B — 7\n\n• Step-by-Step Divisibility Test for 9:\n1. Rule: A number is divisible by 9 if and only if the sum of all its digits is a multiple of 9.\n2. Sum of digits in 473x24: 4 + 7 + 3 + x + 2 + 4 = 20 + x.\n3. Find the smallest non-negative integer x (0 ≤ x ≤ 9) such that (20 + x) is a multiple of 9.\n4. Multiples of 9: 9, 18, 27, 36...\n5. 20 + x = 27 ⟹ x = 27 - 20 = 7.\n6. Verification: 473724 ÷ 9 = 52636 (exact quotient!).",
       "aiDeepSolution": {
         "concept": "Divisibility rule for 9: A number is divisible by 9 if and only if the sum of all its digits is divisible by 9.",
         "trick": "Sum known digits: 4 + 7 + 3 + 2 + 4 = 20. Nearest multiple of 9 > 20 is 27. x = 27 - 20 = 7.",
@@ -588,7 +588,7 @@
         "None of the above"
       ],
       "answerIndex": 4,
-      "explanation": "Sum of odd-position digits = 2 + 4 + 3 + 8 = 17. Sum of even-position digits = 1 + x + 5 = 6 + x. Difference = 17 - (6 + x) = 11 - x. For divisibility by 11, 11 - x must be a multiple of 11 ⟹ x = 0. Since 0 is not listed in options (A, B, C), the correct BPSC answer is 'None of the above'.",
+      "explanation": "• Correct Answer: Option E — None of the above\n\n• Step-by-Step Divisibility Test for 11:\n1. Rule: Alternating sum of digits from right to left must be 0 or a multiple of 11.\n2. Positions from right to left in 8 5 3 x 4 1 2:\n   - Odd positions (1st, 3rd, 5th, 7th): 2 + 4 + 3 + 8 = 17.\n   - Even positions (2nd, 4th, 6th): 1 + x + 5 = 6 + x.\n3. Difference: (Sum of odd places) - (Sum of even places) = 17 - (6 + x) = 11 - x.\n4. For divisibility by 11, (11 - x) must be 0 or a multiple of 11:\n   - Case 1: 11 - x = 0 ⟹ x = 11 (invalid; x must be a single digit 0–9).\n   - Case 2: 11 - x = 11 ⟹ x = 0 (valid single digit!).\n5. Checking options: (A) 6, (B) 4, (C) 3. Since 0 is not in options A, B, or C, the correct BPSC answer is 'None of the above' (Option E).",
       "aiDeepSolution": {
         "concept": "Divisibility rule for 11: Difference between the sum of digits in odd places and even places must be either 0 or a multiple of 11.",
         "trick": "Calculate: Sum(Odd) - Sum(Even) = 17 - (6 + x) = 11 - x. For a single digit (0-9), only x = 0 satisfies this condition.",
@@ -609,7 +609,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "LCM(12, 15, 18) = 180 seconds. In minutes: 180 / 60 = 3 minutes.",
+      "explanation": "• Correct Answer: Option B — 3 minutes\n\n• Step-by-Step LCM Calculation:\n1. The bells toll together at intervals equal to the Least Common Multiple (LCM) of their individual periods.\n2. Prime factorisation:\n   - 12 = 2² × 3\n   - 15 = 3 × 5\n   - 18 = 2 × 3²\n3. LCM = 2² × 3² × 5 = 4 × 9 × 5 = 180 seconds.\n4. Convert seconds to minutes: 180 ÷ 60 = 3 minutes.\n5. Therefore, the bells will next toll together after exactly 3 minutes.",
       "aiDeepSolution": {
         "concept": "Simultaneous recurring events occur at the Least Common Multiple (LCM) of their individual time periods.",
         "trick": "12 = 2² × 3, 15 = 3 × 5, 18 = 2 × 3². LCM = 2² × 3² × 5 = 4 × 9 × 5 = 180 seconds. Convert to minutes: 180 / 60 = 3 minutes.",
@@ -630,7 +630,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "LCM of fractions = (LCM of numerators) / (HCF of denominators) = LCM(2, 4, 5) / HCF(3, 9, 6) = 20 / 3.",
+      "explanation": "• Correct Answer: Option A — 20/3\n\n• Formula for Fractions LCM:\n1. Formula: LCM of fractions = (LCM of numerators) / (HCF of denominators).\n2. Numerators: 2, 4, 5.\n   - LCM(2, 4, 5) = 20.\n3. Denominators: 3, 9, 6.\n   - Factors: 3 = 3, 9 = 3², 6 = 2 × 3.\n   - HCF(3, 9, 6) = 3.\n4. Result: 20 / 3.",
       "aiDeepSolution": {
         "concept": "Standard Fraction Formula: LCM(Fractions) = LCM(Numerators) / HCF(Denominators).",
         "trick": "Numerators = 2, 4, 5 ⟶ LCM = 20. Denominators = 3, 9, 6 ⟶ HCF = 3. Result = 20/3.",
@@ -651,7 +651,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "A blue-black coloration with dilute Iodine solution confirms the presence of starch.",
+      "explanation": "• Correct Answer: Option B — Starch\n\n• Biochemical Mechanism:\n1. Test Reagent: Dilute Iodine solution (Lugol's iodine).\n2. Reaction: Starch is composed of two polysaccharides: Amylose (helical polymer) and Amylopectin (branched polymer).\n3. Color Formation: Tri-iodide ions (I3⁻) fit inside the helical core of amylose coils, forming a charge-transfer complex that absorbs light and displays an intense blue-black coloration.\n4. Heat sensitivity: Heating unravels the helix and the blue color disappears; cooling restores it.",
       "aiDeepSolution": {
         "concept": "Iodine intercalates into the helical amylose structure of starch, producing a characteristic deep blue-black charge-transfer complex.",
         "trick": "Iodine ⟶ Blue-Black = Starch.",
@@ -672,7 +672,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "Copper Sulphate (CuSO4) and Caustic Soda (NaOH) are added to test for proteins, producing a violet color.",
+      "explanation": "• Correct Answer: Option A — Copper Sulphate and Caustic Soda (NaOH)\n\n• Biuret Reaction Details:\n1. Reagents: A few drops of 1% Copper Sulphate (CuSO4) solution and 10 drops of 10% Caustic Soda (NaOH, Sodium Hydroxide).\n2. Mechanism: In an alkaline medium provided by NaOH, copper (Cu²⁺) ions coordinate with the nitrogen atoms of four peptide bonds in the protein polypeptide chain.\n3. Color: Forms a distinct violet/purple coordination complex, confirming protein presence.",
       "aiDeepSolution": {
         "concept": "Biuret reaction: Cu²⁺ ions form a violet coordination complex with peptide bonds in alkaline (NaOH) medium.",
         "trick": "Protein Test = CuSO4 + NaOH ⟶ Violet color.",
@@ -693,7 +693,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Vitamin B-complex and Vitamin C are water-soluble vitamins, excreted regularly through urine.",
+      "explanation": "• Correct Answer: Option B — Vitamins B-Complex and C\n\n• Solubility & Storage Differences:\n1. Water-Soluble: Vitamin B-complex and Vitamin C. They dissolve easily in water and are constantly excreted by the kidneys via urine. They cannot be stored in the body and must be consumed daily.\n2. Fat-Soluble: Vitamins K, E, D, and A (K-E-D-A). They dissolve in lipids, are absorbed with dietary fat, and are stored in the liver and adipose tissues for months.\n3. Thermal Sensitivity: Vitamin C (Ascorbic acid) is extremely thermolabile and is destroyed by cooking heat.",
       "aiDeepSolution": {
         "concept": "Vitamins are classified into: Fat-soluble (K, E, D, A) stored in liver/adipose tissue; and Water-soluble (B-complex, C) which cannot be stored in the body.",
         "trick": "Mnemonic: 'K-E-D-A' is fat-soluble. 'B and C' are water-soluble.",
@@ -714,7 +714,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The formula is n = (360° / θ) - 1 when 360/θ is an even integer. Here n = (360 / 60) - 1 = 6 - 1 = 5 images.",
+      "explanation": "• Correct Answer: Option B — 5\n\n• Inclined Plane Mirrors Optics:\n1. Formula: If two plane mirrors are inclined at angle θ, calculate m = 360° / θ.\n2. In this problem: θ = 60° ⟹ m = 360 / 60 = 6.\n3. Rule: When m is an EVEN integer, the number of images formed is n = m - 1 regardless of whether the object lies symmetrically or asymmetrically.\n4. Calculation: n = 6 - 1 = 5 images.",
       "aiDeepSolution": {
         "concept": "Number of images between inclined plane mirrors: When 360/θ is even, n = (360/θ) - 1 regardless of object position.",
         "trick": "360 / 60 = 6 (even). Subtract 1: 6 - 1 = 5.",
@@ -735,7 +735,7 @@
         "None of the above"
       ],
       "answerIndex": 2,
-      "explanation": "When an object is placed between the Pole (P) and Focus (F) of a concave mirror, the reflected rays diverge and appear to meet behind the mirror, forming a virtual, erect, and magnified image.",
+      "explanation": "• Correct Answer: Option C — Between the Pole (P) and Focus (F)\n\n• Ray Optics of Concave Mirror:\n1. Position of Object: Placed between Pole (P) and Principal Focus (F).\n2. Behavior of Rays:\n   - Ray parallel to principal axis reflects through Focus.\n   - Ray through Centre of Curvature reflects back along the same path.\n   - The reflected rays diverge in front of the mirror, but appear to intersect behind the mirror when produced backwards.\n3. Image Characteristics: Virtual, erect, and magnified (enlarged).\n4. Practical Use: Dentists use concave mirrors in this specific configuration to see enlarged images of teeth.",
       "aiDeepSolution": {
         "concept": "In all other positions, a concave mirror forms a real and inverted image. Only when placed between P and F does it form a virtual, erect, and enlarged image (principle of dentist mirrors).",
         "trick": "Dentist Mirror Case: Between P and F ⟶ Virtual, Erect, Enlarged.",
@@ -756,7 +756,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Phloem translocates organic nutrients (food/sugars) bidirectionally throughout the plant.",
+      "explanation": "• Correct Answer: Option B — Phloem\n\n• Comparative Plant Vascular Biology:\n1. Phloem:\n   - Consists of sieve tube elements, companion cells, phloem parenchyma, and phloem fibers.\n   - Translocates photosynthesized organic sugars (sucrose) from sources (leaves) to sinks (roots, buds, fruits).\n   - Transport direction is bidirectional (both upward and downward).\n   - Active process requiring ATP energy.\n2. Xylem:\n   - Transports water and inorganic mineral ions from roots to leaves.\n   - Conduction is strictly unidirectional (upward only), driven passively by transpiration pull.",
       "aiDeepSolution": {
         "concept": "Phloem transports food (sucrose) in both upward and downward directions (bidirectional translocation) using energy (ATP). Xylem conducts water and minerals unidirectionally upwards.",
         "trick": "Phloem = Food (bidirectional) | Xylem = Water/Jal (unidirectional).",
@@ -777,7 +777,7 @@
         "None of the above"
       ],
       "answerIndex": 2,
-      "explanation": "Loudness of sound is directly proportional to the square of its amplitude: Loudness ∝ (Amplitude)². When amplitude is tripled (3×), loudness increases by 3² = 9 times.",
+      "explanation": "• Correct Answer: Option C — 9 times\n\n• Physical Law of Acoustic Intensity:\n1. Relationship: The loudness (and acoustic energy/intensity) of a sound wave is directly proportional to the square of the amplitude of vibration: Loudness ∝ (Amplitude)².\n2. When Amplitude A is tripled (A' = 3A):\n   - Loudness' ∝ (3A)² = 9A² = 9 × Original Loudness.\n3. Frequency vs Amplitude:\n   - Amplitude controls Loudness (measured in decibels).\n   - Frequency controls Pitch / Shrillness (measured in Hertz).",
       "aiDeepSolution": {
         "concept": "Physics of Sound: Loudness ∝ A². Pitch is determined by frequency, whereas loudness/intensity is determined by amplitude squared.",
         "trick": "Loudness ∝ A² ⟶ (3)² = 9 times.",
@@ -798,7 +798,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The Fundamental Theorem of Arithmetic states that every composite number can be uniquely expressed as a product of primes, up to the order of factors.",
+      "explanation": "• Correct Answer: Option B — Unique, apart from the order in which prime factors occur\n\n• Mathematical Statement & NCERT Theorem 1.2:\n1. Statement: Every composite natural number can be expressed (factorized) as a product of prime numbers, and this factorisation is completely unique, apart from the order in which prime factors are written.\n2. Canonical Prime Factorisation: Any integer n can be uniquely written as n = p₁ᵃ¹ · p₂ᵃ² · ... · pₖᵃᵏ where p₁ < p₂ < ... < pₖ are primes.\n3. Example: 30 = 2 × 3 × 5. While the order can be written as 3 × 5 × 2 or 5 × 2 × 3, the prime factors (2, 3, 5) and their powers are unique.",
       "aiDeepSolution": {
         "concept": "Theorem 1.2 (NCERT Class 10): Every composite number can be factored uniquely as a product of primes, apart from the order in which the prime factors occur.",
         "trick": "Fundamental Theorem = Unique Prime Factorization.",
@@ -819,7 +819,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "A rational number has a terminating decimal expansion if and only if the denominator q is of the form 2^n · 5^m, where n and m are non-negative integers.",
+      "explanation": "• Correct Answer: Option B — Only primes of the form 2^n · 5^m (n, m non-negative integers)\n\n• Rigorous Mathematical Proof:\n1. Let rational number in reduced form be x = p/q (with gcd(p, q) = 1).\n2. If x has a terminating decimal expansion of k digits, it can be written as x = N / 10ᵏ.\n3. Since 10 = 2 × 5, 10ᵏ = 2ᵏ · 5ᵏ.\n4. Thus the denominator q in reduced form must be a divisor of 10ᵏ, meaning prime factors of q can ONLY be 2 and/or 5.\n5. If any other prime (like 3, 7, 11) divides q, the fraction yields a non-terminating recurring decimal.",
       "aiDeepSolution": {
         "concept": "NCERT Theorem: Let x = p/q be a rational number such that prime factorisation of q is of the form 2^n · 5^m. Then x has a terminating decimal expansion.",
         "trick": "Terminating decimal denominator must ONLY have factors of 2 and/or 5.",
@@ -840,7 +840,7 @@
         "None of the above"
       ],
       "answerIndex": 2,
-      "explanation": "1250 = 2^1 × 5^4. The decimal expansion terminates after max(1, 4) = 4 decimal places.",
+      "explanation": "• Correct Answer: Option C — 4 decimal places\n\n• Step-by-Step Calculation:\n1. Fraction: 13 / 1250. Check if reduced: gcd(13, 1250) = 1 (yes).\n2. Prime factorize denominator 1250:\n   - 1250 = 2 × 625 = 2¹ × 5⁴.\n3. Powers: n = 1 (power of 2), m = 4 (power of 5).\n4. Theorem: Decimal terminates after max(n, m) places = max(1, 4) = 4 places.\n5. Calculation check: Multiply numerator and denominator by 2³ = 8:\n   - (13 × 8) / (2¹ × 2³ × 5⁴) = 104 / (2⁴ × 5⁴) = 104 / 10,000 = 0.0104 (exactly 4 decimal places!).",
       "aiDeepSolution": {
         "concept": "The decimal expansion of p / (2^n · 5^m) terminates after exactly max(n, m) places.",
         "trick": "1250 = 2 × 625 = 2^1 × 5^4. The highest power between 1 and 4 is 4. Hence, terminates after 4 places (0.0104).",
@@ -861,7 +861,7 @@
         "None of the above"
       ],
       "answerIndex": 2,
-      "explanation": "The graph of a quadratic polynomial P(x) = ax² + bx + c is a Parabola (opening upward if a > 0, downward if a < 0).",
+      "explanation": "• Correct Answer: Option C — Parabola\n\n• Coordinate Geometry of Polynomial Graphs:\n1. Linear Polynomial (P(x) = ax + b): Graph is a Straight Line.\n2. Quadratic Polynomial (P(x) = ax² + bx + c, a ≠ 0): Graph is a Parabola.\n3. Orientation:\n   - If leading coefficient a > 0: The parabola opens upwards (∪).\n   - If leading coefficient a < 0: The parabola opens downwards (∩).\n4. Zeros: The x-coordinates of the points where the parabola intersects the x-axis are the real zeros of the polynomial.",
       "aiDeepSolution": {
         "concept": "The graph of y = ax² + bx + c is a parabola. It intersects the x-axis at at most 2 points, corresponding to its real zeros.",
         "trick": "Linear = Straight line | Quadratic = Parabola.",
@@ -882,7 +882,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "By Vieta's formulas, sum of zeros α + β = -b/a = -(-5)/3 = 5/3.",
+      "explanation": "• Correct Answer: Option B — 5/3\n\n• Step-by-Step Calculation:\n1. Standard quadratic form: ax² + bx + c = 0.\n2. Given: 3x² - 5x - 2. Identify coefficients:\n   - a = 3\n   - b = -5\n   - c = -2\n3. Vieta's Formula for Sum of Zeros:\n   - α + β = -b / a = -(-5) / 3 = 5/3.\n4. Verification: Factorizing 3x² - 6x + x - 2 = 3x(x - 2) + 1(x - 2) = (3x + 1)(x - 2) = 0.\n   - Roots: α = 2, β = -1/3.\n   - Sum = 2 + (-1/3) = 6/3 - 1/3 = 5/3. Verified!",
       "aiDeepSolution": {
         "concept": "Vieta's formula for quadratic ax² + bx + c: Sum of roots α + β = -b/a.",
         "trick": "Here a = 3, b = -5, c = -2. Sum = -(-5)/3 = 5/3.",
@@ -903,7 +903,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Product of zeros αβ = c/a = 5/2.",
+      "explanation": "• Correct Answer: Option B — 5/2\n\n• Step-by-Step Calculation:\n1. Given polynomial: 2x² + 7x + 5.\n2. Coefficients: a = 2, b = 7, c = 5.\n3. Vieta's Formula for Product of Zeros:\n   - αβ = c / a = 5 / 2.\n4. Verification:\n   - Factorizing 2x² + 5x + 2x + 5 = x(2x + 5) + 1(2x + 5) = (2x + 5)(x + 1) = 0.\n   - Roots: α = -5/2, β = -1.\n   - Product = (-5/2) × (-1) = 5/2. Verified!",
       "aiDeepSolution": {
         "concept": "For ax² + bx + c, product of zeros is αβ = c/a.",
         "trick": "a = 2, b = 7, c = 5. αβ = c/a = 5/2.",
@@ -924,7 +924,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "1/α + 1/β = (α + β) / (αβ) = (-b/a) / (c/a) = -b/c.",
+      "explanation": "• Correct Answer: Option A — -b/c\n\n• Algebraic Derivation:\n1. Take LCM of the denominators:\n   - 1/α + 1/β = (β + α) / (αβ) = (α + β) / (αβ).\n2. Substitute Vieta's formulas:\n   - Sum α + β = -b/a\n   - Product αβ = c/a\n3. Divide the expressions:\n   - (1/α + 1/β) = (-b/a) ÷ (c/a) = (-b/a) × (a/c) = -b/c.\n4. Direct Exam Application: Never calculate roots individually; directly write -b/c!",
       "aiDeepSolution": {
         "concept": "Sum of reciprocals: 1/α + 1/β = (α + β)/(αβ). Since α + β = -b/a and αβ = c/a, the ratio is (-b/a)/(c/a) = -b/c.",
         "trick": "1/α + 1/β is always equal to -b/c. Direct exam shortcut!",
@@ -945,7 +945,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Sum of zeros = -b/a < 0 (negative) and Product of zeros = c/a > 0 (positive). Since the product is positive, both roots have the same sign. Since their sum is negative, both zeros must be strictly negative.",
+      "explanation": "• Correct Answer: Option B — Both negative\n\n• Mathematical Sign Deduction:\n1. Given: a > 0, b > 0, c > 0 in ax² + bx + c = 0.\n2. Product of roots: αβ = c/a. Since both c and a are positive, c/a > 0.\n   - A positive product means that both roots must have the SAME algebraic sign (either both positive or both negative).\n3. Sum of roots: α + β = -b/a. Since b > 0 and a > 0, -b/a is strictly negative (< 0).\n4. Conclusion: Two numbers with the same sign whose sum is negative must BOTH be strictly negative.",
       "aiDeepSolution": {
         "concept": "Sign analysis of quadratic roots: αβ = c/a > 0 means roots have identical signs. α + β = -b/a < 0 means their sum is negative. Therefore, both roots must be negative.",
         "trick": "All positive coefficients ⟶ both roots are negative.",
@@ -966,7 +966,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "For a cubic polynomial, αβ + βγ + γα = c/a. If one zero is 0 (say γ = 0), then αβ + 0 + 0 = c/a ⟹ αβ = c/a.",
+      "explanation": "• Correct Answer: Option B — c/a\n\n• Cubic Vieta's Relations Proof:\n1. Standard cubic polynomial: P(x) = ax³ + bx² + cx + d.\n2. The pairwise product relation is: αβ + βγ + γα = c/a.\n3. Let one zero be zero: γ = 0.\n4. Substitute γ = 0 into the equation:\n   - αβ + β(0) + (0)α = c/a\n   - αβ + 0 + 0 = c/a ⟹ αβ = c/a.\n5. Therefore, the product of the remaining two non-zero roots is simply c/a.",
       "aiDeepSolution": {
         "concept": "Vieta's relations for cubic: α + β + γ = -b/a, αβ + βγ + γα = c/a, αβγ = -d/a. If γ = 0, then the sum of pairwise products simplifies directly to αβ = c/a.",
         "trick": "Put γ = 0 into αβ + βγ + γα = c/a ⟶ αβ = c/a.",
@@ -987,7 +987,7 @@
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "By Remainder Theorem, Remainder = P(2) = 2(2)³ - 3(2)² + 4(2) - 5 = 2(8) - 3(4) + 8 - 5 = 16 - 12 + 8 - 5 = 7.",
+      "explanation": "• Correct Answer: Option A — 7\n\n• Step-by-Step Remainder Theorem:\n1. Theorem: When polynomial P(x) is divided by linear binomial (x - a), the remainder is equal to P(a).\n2. Divisor: (x - 2) ⟹ a = 2.\n3. Evaluate P(2) in P(x) = 2x³ - 3x² + 4x - 5:\n   - P(2) = 2(2)³ - 3(2)² + 4(2) - 5\n   - = 2(8) - 3(4) + 8 - 5\n   - = 16 - 12 + 8 - 5\n   - = 4 + 8 - 5 = 12 - 5 = 7.\n4. Therefore, the remainder is 7.",
       "aiDeepSolution": {
         "concept": "Remainder Theorem: When P(x) is divided by (x - a), the remainder is P(a).",
         "trick": "Substitute x = 2: 2(8) - 3(4) + 8 - 5 = 16 - 12 + 8 - 5 = 7.",
@@ -1008,7 +1008,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "(x - a) is a factor of P(x) if and only if P(a) = 0.",
+      "explanation": "• Correct Answer: Option B — P(a) = 0\n\n• Factor Theorem Explanation:\n1. By polynomial division algorithm: P(x) = (x - a)Q(x) + R, where R = P(a).\n2. Definition of Factor: A polynomial (x - a) is defined as an exact factor of P(x) if and only if the remainder of the division is zero (R = 0).\n3. Since Remainder = P(a), the condition is P(a) = 0.\n4. Converse: If P(a) = 0, then (x - a) is a factor of P(x).",
       "aiDeepSolution": {
         "concept": "Factor Theorem is a corollary of the Remainder Theorem: P(x) = (x - a)Q(x) + P(a). If remainder P(a) = 0, then (x - a) is a factor.",
         "trick": "Factor condition = Remainder P(a) is zero.",
@@ -1029,7 +1029,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "A pair of linear equations has a unique solution (intersecting lines) if and only if a1/a2 ≠ b1/b2.",
+      "explanation": "• Correct Answer: Option B — a1/a2 ≠ b1/b2\n\n• Comprehensive Linear System Conditions:\n1. Unique Solution (Consistent & Independent):\n   - Condition: a1/a2 ≠ b1/b2\n   - Geometry: The two straight lines have different slopes and intersect at exactly one unique point (x, y).\n2. Infinitely Many Solutions (Consistent & Dependent):\n   - Condition: a1/a2 = b1/b2 = c1/c2\n   - Geometry: Coincident lines (one line lies completely on top of the other).\n3. No Solution (Inconsistent):\n   - Condition: a1/a2 = b1/b2 ≠ c1/c2\n   - Geometry: Parallel lines (same slope, different y-intercepts, never meet).",
       "aiDeepSolution": {
         "concept": "Linear system geometric conditions: 1. Unique solution (intersecting) ⟶ a1/a2 ≠ b1/b2. 2. Infinitely many (coincident) ⟶ a1/a2 = b1/b2 = c1/c2. 3. No solution (parallel) ⟶ a1/a2 = b1/b2 ≠ c1/c2.",
         "trick": "Unique solution = Slopes are unequal = a1/a2 ≠ b1/b2.",
@@ -1050,7 +1050,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "For infinitely many solutions: a1/a2 = b1/b2 = c1/c2 ⟹ 2/(k - 1) = 3/(k + 2) = 7/(3k). From 2/(k - 1) = 3/(k + 2), 2(k + 2) = 3(k - 1) ⟹ 2k + 4 = 3k - 3 ⟹ k = 7.",
+      "explanation": "• Correct Answer: Option B — 7\n\n• Step-by-Step Parameter Solution:\n1. Given equations:\n   - 2x + 3y = 7 ⟹ a1 = 2, b1 = 3, c1 = 7\n   - (k - 1)x + (k + 2)y = 3k ⟹ a2 = (k - 1), b2 = (k + 2), c2 = 3k\n2. Condition for infinitely many solutions:\n   - a1/a2 = b1/b2 = c1/c2\n   - 2 / (k - 1) = 3 / (k + 2) = 7 / (3k)\n3. Cross-multiply first two ratios:\n   - 2(k + 2) = 3(k - 1)\n   - 2k + 4 = 3k - 3\n   - 4 + 3 = 3k - 2k ⟹ k = 7.\n4. Check consistency with third ratio:\n   - 2 / (7 - 1) = 2/6 = 1/3.\n   - 3 / (7 + 2) = 3/9 = 1/3.\n   - 7 / (3 × 7) = 7/21 = 1/3.\n   - All ratios equal 1/3! Confirmed k = 7.",
       "aiDeepSolution": {
         "concept": "Infinitely many solutions condition: a1/a2 = b1/b2 = c1/c2.",
         "trick": "Cross multiply 2(k+2) = 3(k-1) ⟶ 2k + 4 = 3k - 3 ⟶ k = 7. Verify: 2/6 = 3/9 = 7/21 = 1/3 (holds true!).",
@@ -1071,7 +1071,7 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Downstream speed = Speed of boat + Speed of stream = 15 + 3 = 18 km/h. Time taken = Distance / Speed = 36 / 18 = 2 hours.",
+      "explanation": "• Correct Answer: Option B — 2 hours\n\n• Step-by-Step Kinematics Solution:\n1. Given data:\n   - Speed of boat in still water (u) = 15 km/h\n   - Speed of stream current (v) = 3 km/h\n   - Distance to travel = 36 km\n2. Direction: Downstream (boat travels with the stream current).\n3. Effective Downstream Speed = u + v = 15 + 3 = 18 km/h.\n4. Time Taken = Distance ÷ Speed = 36 km ÷ 18 km/h = 2 hours.\n\n• Comparison with Upstream:\n- If it had been upstream, speed = u - v = 15 - 3 = 12 km/h, taking 36 / 12 = 3 hours.",
       "aiDeepSolution": {
         "concept": "Boat & Stream Kinematics: Downstream speed = u + v, Upstream speed = u - v.",
         "trick": "Downstream = 15 + 3 = 18 km/h. Time = 36 / 18 = 2 hours.",

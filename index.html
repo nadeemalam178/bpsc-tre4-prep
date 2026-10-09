@@ -547,8 +547,9 @@
 
     .explain-body-text {
       color: var(--text-body);
-      font-size: 13px;
-      line-height: 1.65;
+      font-size: 13.5px;
+      line-height: 1.75;
+      white-space: pre-line;
     }
 
     /* Controls */
@@ -3585,29 +3586,32 @@
     });
 
     // Populate Detailed Solution Drawer
-    const ai = q.ai_tutor || {};
-    document.getElementById('solExplanation').innerText = ai.step_by_step || q.explanation || 'Detailed explanation not provided.';
+    const ai = q.aiDeepSolution || q.ai_tutor || {};
+    document.getElementById('solExplanation').innerText = q.detailedExplanation || ai.step_by_step || q.explanation || 'Detailed explanation not provided.';
     
+    const conceptText = ai.concept || ai.core_concept;
     const conceptEl = document.getElementById('solConcept');
-    if (ai.core_concept) {
+    if (conceptText) {
       document.getElementById('solConceptBlock').style.display = 'block';
-      conceptEl.innerText = ai.core_concept;
+      conceptEl.innerText = conceptText;
     } else {
       document.getElementById('solConceptBlock').style.display = 'none';
     }
 
+    const trickText = ai.trick || ai.shortcut_trick;
     const trickEl = document.getElementById('solTrick');
-    if (ai.shortcut_trick) {
+    if (trickText) {
       document.getElementById('solTrickBlock').style.display = 'block';
-      trickEl.innerText = ai.shortcut_trick;
+      trickEl.innerText = trickText;
     } else {
       document.getElementById('solTrickBlock').style.display = 'none';
     }
 
+    const trapText = ai.trap;
     const trapEl = document.getElementById('solTrap');
-    if (ai.trap) {
+    if (trapText) {
       document.getElementById('solTrapBlock').style.display = 'block';
-      trapEl.innerText = ai.trap;
+      trapEl.innerText = trapText;
     } else {
       document.getElementById('solTrapBlock').style.display = 'none';
     }
