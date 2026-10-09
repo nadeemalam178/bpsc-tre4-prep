@@ -1,78 +1,81 @@
-# 📖 BPSC TRE 4.0 — Part III: Class 9 to 10 Secondary Mathematics (गणित - माध्यमिक)
+# 📖 BPSC TRE 4.0 — Part IV: Class 9 to 10 Secondary Mathematics (English Edition)
 **Total Subject Marks:** 80 Marks  
-**Standard:** NCERT / SCERT कक्षा 9-10 मुख्य पाठ्यक्रम + 11-12वीं एवं स्नातक स्तर का सैद्धांतिक विस्तार
+**Standard:** NCERT & SCERT Class 9–10 Core Standards + Higher Secondary Analytical Depth
 
 ---
 
-## 🔢 अध्याय 1: वास्तविक संख्याएँ (Real Numbers)
+## 🔢 Chapter 1: Real Numbers
 
-### 1. यूक्लिड विभाजन प्रमेयिका (Euclid's Division Lemma)
-किन्हीं दो धनात्मक पूर्णांकों $a$ और $b$ के लिए, ऐसे अद्वितीय पूर्ण संख्याएँ $q$ (भागफल) और $r$ (शेषफल) विद्यमान होते हैं कि:
-$$a = bq + r, \quad \text{जहाँ } 0 \le r < b$$
+### 1. Euclid's Division Lemma
+For any two given positive integers $a$ and $b$, there exist unique non-negative integers $q$ (quotient) and $r$ (remainder) satisfying:
+$$a = bq + r, \quad \text{where } 0 \le r < b$$
 
-- **महत्वपूर्ण अनुप्रयोग (HCF ज्ञात करना):**
-  - जब तक शेषफल $r = 0$ न हो जाए, तब तक भाजक $b$ और शेषफल $r$ पर पुनः प्रमेयिका लागू की जाती है। जिस चरण में $r = 0$ हो, उस चरण का भाजक ही $\text{HCF}(a, b)$ होता है।
-- **पूर्णांकों के प्रारूप:**
-  - प्रत्येक धनात्मक सम पूर्णांक $2q$ के रूप का होता है।
-  - प्रत्येक धनात्मक विषम पूर्णांक $2q + 1$ (या $4q+1, 4q+3$ या $6q+1, 6q+3, 6q+5$) के रूप का होता है।
+- **Iterative Application for HCF:**
+  - Repeatedly apply the lemma to divisor $b$ and remainder $r$ until $r = 0$. The divisor at the step where remainder becomes zero is the $\text{HCF}(a, b)$.
+- **Integer Forms:**
+  - Every positive even integer is of the form $2q$.
+  - Every positive odd integer is of the form $2q + 1$ (or $4q+1, 4q+3$, or $6q+1, 6q+3, 6q+5$).
 
-### 2. अंकगणित की आधारभूत प्रमेय (Fundamental Theorem of Arithmetic)
-> प्रत्येक भाज्य संख्या (Composite Number) को अभाज्य संख्याओं के एक गुणनफल के रूप में अद्वितीय रूप से व्यक्त किया जा सकता है, गुणनखंडों के क्रम को छोड़कर।
+### 2. Fundamental Theorem of Arithmetic
+> Every composite number can be uniquely expressed (factorized) as a product of prime powers, apart from the order in which the prime factors occur.
 
-- **परिणाम:** किन्हीं दो धनात्मक पूर्णांकों $a$ और $b$ के लिए:
+- **Fundamental Identity for Two Numbers:**
   $$\text{HCF}(a, b) \times \text{LCM}(a, b) = a \times b$$
-  *(चेतावनी: यह संबंध तीन या अधिक संख्याओं के लिए सीधे लागू नहीं होता!)*
+  *(Caution: This relationship does not hold directly for three or more numbers!)*
 
-### 3. अपरिमेय संख्याओं की अपरिमेयता का सत्यापन (Proof of Irrationality)
-- यदि $p$ एक अभाज्य संख्या है और $p$, $a^2$ को विभाजित करता है, तो $p$, $a$ को भी विभाजित करेगा (जहाँ $a$ एक धनात्मक पूर्णांक है)।
-- **प्रमेय:** $\sqrt{2}, \sqrt{3}, \sqrt{5}, \sqrt{p}$ अपरिमेय संख्याएँ हैं।
-- **अपरिमेय संख्याओं के बीजगणितीय गुण:**
-  - एक परिमेय संख्या ($r \neq 0$) और एक अपरिमेय संख्या ($s$) का योग ($r + s$) और अंतर ($r - s$) सदैव **अपरिमेय** होता है।
-  - एक शून्येतर परिमेय संख्या और एक अपरिमेय संख्या का गुणनफल ($r \cdot s$) और भागफल ($r / s$) सदैव **अपरिमेय** होता है।
-  - दो अपरिमेय संख्याओं का योग, अंतर, गुणनफल या भागफल परिमेय अथवा अपरिमेय **दोनों हो सकता है**।
+### 3. Irrationality of Radicals & Real Axioms
+- If $p$ is a prime number and $p$ divides $a^2$, then $p$ divides $a$ (where $a$ is a positive integer).
+- **Core Irrational Numbers:** $\sqrt{2}, \sqrt{3}, \sqrt{5}, \sqrt{p}$ are irrational.
+- **Algebraic Properties:**
+  - Sum or difference of a non-zero rational number $r$ and an irrational number $s$ ($r \pm s$) is always **irrational**.
+  - Product or quotient of a non-zero rational number $r$ and an irrational number $s$ ($r \cdot s$, $r/s$) is always **irrational**.
+  - Sum, difference, product, or quotient of two irrational numbers may be rational OR irrational.
 
-### 4. परिमेय संख्याओं का दशमलव प्रसार (Decimal Expansion)
-माना $x = \frac{p}{q}$ एक ऐसी परिमेय संख्या है जहाँ $p$ और $q$ सह-अभाज्य (Coprime) हैं।
-1. **सांत दशमलव (Terminating Decimal):** $x$ का दशमलव प्रसार सांत होगा यदि और केवल यदि हर $q$ का अभाज्य गुणनखंडन निम्नलिखित रूप का हो:
-   $$q = 2^n \cdot 5^m, \quad \text{जहाँ } n, m \text{ ऋणेतर पूर्णांक (Non-negative integers) हैं।}$$
-   - दशमलव के कितने स्थानों के बाद सांत होगा? $\max(n, m)$ स्थानों के बाद।
-2. **अशांत आवर्ती (Non-terminating Repeating Decimal):** यदि $q$ के अभाज्य गुणनखंडन में $2$ और $5$ के अतिरिक्त कोई अन्य अभाज्य संख्या (जैसे $3, 7, 11$) उपस्थित हो, तो दशमलव प्रसार अशांत आवर्ती होगा।
+### 4. Decimal Expansion Criteria
+Let $x = \frac{p}{q}$ be a rational number in simplest form ($\gcd(p, q) = 1$).
+1. **Terminating Decimal:** $x$ has a terminating decimal expansion if and only if the prime factorization of denominator $q$ is strictly of the form:
+   $$q = 2^n \cdot 5^m, \quad \text{where } n, m \text{ are non-negative integers.}$$
+   - The decimal terminates after exactly $\max(n, m)$ decimal places.
+2. **Non-terminating Repeating Decimal:** If prime factors of $q$ contain any prime other than $2$ or $5$ (e.g., $3, 7, 11$), the decimal expansion is non-terminating and periodic.
 
 ---
 
-## 📈 अध्याय 2: बहुपद (Polynomials)
+## 📈 Chapter 2: Polynomials & Parabolic Algebra
 
-### 1. बहुपद की घात एवं ज्यामितीय अर्थ (Degree & Geometrical Meaning)
-- $P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$ ($a_n \neq 0$) की घात $n$ है।
-- **शून्यक का ज्यामितीय अर्थ:** $y = P(x)$ का ग्राफ $X$-अक्ष को जितने बिंदुओं पर प्रतिच्छेद करता है, बहुपद के वास्तविक शून्यकों (Zeroes) की संख्या ठीक उतनी ही होती है।
-  - रैखिक बहुपद ($ax + b$): अधिकतम $1$ शून्यक (सरल रेखा)।
-  - द्विघात बहुपद ($ax^2 + bx + c$): परवलय (Parabola), अधिकतम $2$ शून्यक। यदि $a > 0$ तो ऊपर खुला ($U$-आकार), यदि $a < 0$ तो नीचे खुला ($\cap$-आकार)।
-  - त्रिघात बहुपद ($ax^3 + bx^2 + cx + d$): अधिकतम $3$ शून्यक।
+### 1. Degree and Geometrical Representation
+- For $P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$ ($a_n \neq 0$), degree is $n$.
+- **Geometrical Meaning of Zeroes:** The number of real zeroes of $P(x)$ equals the exact number of times the Cartesian curve $y = P(x)$ intersects the $X$-axis.
+  - Linear ($ax + b$): Exactly 1 zero (straight line).
+  - Quadratic ($ax^2 + bx + c$): Parabola with at most 2 real zeroes. Opens upward ($U$-shape) if $a > 0$; opens downward ($\cap$-shape) if $a < 0$.
+  - Cubic ($ax^3 + bx^2 + cx + d$): At most 3 real zeroes.
 
-### 2. शून्यकों और गुणांकों के बीच संबंध (Zeroes & Coefficients)
+### 2. Relationships Between Zeroes and Coefficients
 
-#### (A) द्विघात बहुपद: $P(x) = ax^2 + bx + c$ ($a \neq 0$)
-यदि शून्यक $\alpha$ और $\beta$ हों:
-1. **शून्यकों का योग (Sum of zeroes):**
-   $$\alpha + \beta = -\frac{b}{a} = -\frac{x \text{ का गुणांक}}{x^2 \text{ का गुणांक}}$$
-2. **शून्यकों का गुणनफल (Product of zeroes):**
-   $$\alpha \beta = \frac{c}{a} = \frac{\text{अचर पद}}{x^2 \text{ का गुणांक}}$$
-3. **द्विघात बहुपद का निर्माण:**
-   $$P(x) = k \left[ x^2 - (\alpha + \beta)x + \alpha\beta \right]$$
+#### (A) Quadratic Polynomial: $P(x) = ax^2 + bx + c$ ($a \neq 0$)
+Let $\alpha$ and $\beta$ be the zeroes:
+1. **Sum of zeroes:**
+   $$\alpha + \beta = -\frac{b}{a}$$
+2. **Product of zeroes:**
+   $$\alpha \beta = \frac{c}{a}$$
+3. **Sum of Reciprocals Identity:**
+   $$\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha \beta} = \frac{-b/a}{c/a} = -\frac{b}{c}$$
+4. **Reconstructing Polynomial from Zeroes:**
+   $$P(x) = k \cdot [x^2 - (\alpha + \beta)x + \alpha \beta]$$
 
-#### (B) महत्वपूर्ण सर्वसमिकाएँ (High-Yield Problem Solving Formulas):
-- $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \left(-\frac{b}{a}\right)^2 - 2\left(\frac{c}{a}\right) = \frac{b^2 - 2ac}{a^2}$
-- $(\alpha - \beta)^2 = (\alpha + \beta)^2 - 4\alpha\beta = \frac{b^2 - 4ac}{a^2}$
-- $|\alpha - \beta| = \frac{\sqrt{b^2 - 4ac}}{|a|} = \frac{\sqrt{D}}{|a|}$
-- $\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{-b/a}{c/a} = -\frac{b}{c}$
-- $\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta)$
+#### (B) Cubic Polynomial: $P(x) = ax^3 + bx^2 + cx + d$ ($a \neq 0$)
+Let $\alpha, \beta, \gamma$ be the zeroes:
+1. **Sum of zeroes:** $\alpha + \beta + \gamma = -\frac{b}{a}$
+2. **Sum of pairwise products:** $\alpha \beta + \beta \gamma + \gamma \alpha = \frac{c}{a}$
+3. **Product of zeroes:** $\alpha \beta \gamma = -\frac{d}{a}$
+4. **Special Case:** If one zero is $0$ (say $\gamma = 0$), then $\alpha \beta + 0 + 0 = \frac{c}{a} \implies \text{Product of the other two zeroes} = \frac{c}{a}$.
 
-#### (C) त्रिघात बहुपद: $P(x) = ax^3 + bx^2 + cx + d$ ($a \neq 0$)
-यदि शून्यक $\alpha, \beta, \gamma$ हों:
-1. $\alpha + \beta + \gamma = -\frac{b}{a}$
-2. $\alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}$
-3. $\alpha\beta\gamma = -\frac{d}{a}$
+---
 
-### 3. शेषफल एवं गुणनखंड प्रमेय (Remainder & Factor Theorems)
-- **शेषफल प्रमेय (Remainder Theorem):** यदि बहुपद $P(x)$ को $(x - a)$ से विभाजित किया जाए, तो प्राप्त शेषफल $R = P(a)$ होता है।
-- **गुणनखंड प्रमेय (Factor Theorem):** $(x - a)$, $P(x)$ का एक गुणनखंड होगा यदि और केवल यदि $P(a) = 0$।
+## ⚡ Chapter 3: Discriminant Analysis ($D = b^2 - 4ac$)
+
+| Discriminant Value | Nature of Roots | Parabola X-axis Intersections |
+|:---|:---|:---|
+| $D > 0$ (Perfect Square) | Two distinct, rational roots | Intersects at 2 distinct rational points |
+| $D > 0$ (Not Perfect Square) | Two distinct, irrational conjugate roots ($p \pm \sqrt{q}$) | Intersects at 2 irrational points |
+| $D = 0$ | Two equal, real roots ($x = -b / 2a$) | Touches the X-axis at exactly 1 vertex point |
+| $D < 0$ | No real roots (Complex conjugate roots) | Does not touch or intersect the X-axis at all |

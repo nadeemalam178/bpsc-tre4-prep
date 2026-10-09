@@ -1,78 +1,85 @@
-# 📖 BPSC TRE 4.0 — Part II: General Studies (सामान्य अध्ययन)
-**Total Marks in Exam:** 40 Marks (Marks count directly towards Merit Ranking!)  
-**Syllabus Focus:** Indian National Movement (Bihar Special), Geography, General Science, Elementary Mental Ability.
+# 📖 BPSC TRE 4.0 — Part II: General Studies (Comprehensive English Notes)
+**Total Marks in Exam:** 40 Marks (Directly counts toward final merit score)  
+**Syllabus Focus:** Indian National Movement (Bihar Special), Physical Geography & Drainage, General Science, Elementary Mental Ability.
 
 ---
 
-## 🏛️ Section 1: भारतीय राष्ट्रीय आंदोलन (1857 की क्रांति एवं बिहार)
+## 🏛️ Section 1: Indian National Movement (1857 Great Revolt in Bihar)
 
-### 1. 1857 की क्रांति और बिहार का योगदान
-* **आरंभ (Start in Bihar):**
-  - 12 जून 1857 को देवघर जिले (वर्तमान झारखंड) के **रोहिणी गाँव** में 32वीं रेजिमेंट के सैनिकों द्वारा विद्रोह की शुरुआत हुई।
-* **पटना में विद्रोह (Patna Uprising - 3 जुलाई 1857):**
-  - पटना में विद्रोह का नेतृत्व **पीर अली खाँ (पुस्तक विक्रेता)** ने किया।
-  - इस विद्रोह में अफीम एजेंट डॉ. आर. लॉयल (Dr. R. Lyell) मारा गया।
-  - कमिश्नर विलियम टेलर ने पीर अली सहित कई क्रांतिकारियों को फाँसी दे दी।
-* **दानापुर छावनी विद्रोह (25 जुलाई 1857):**
-  - दानापुर की 7वीं, 8वीं और 40वीं रेजिमेंट के सैनिकों ने बगावत की और शाहबाद (आरा) की ओर कूच किया।
-* **बाबू वीर कुंवर सिंह (Jagdishpur / Arrah):**
-  - 80 वर्ष की आयु में जगदीशपुर के जमींदार बाबू कुंवर सिंह ने बिहार में 1857 क्रांति की कमान संभाली।
-  - उन्होंने ब्रिटिश कैप्टन डनबर, मेजर विन्सेंट आयर और ली ग्रांड की सेना को परास्त किया।
-  - गंगा पार करते समय गोली लगने पर उन्होंने अपना बायाँ हाथ काटकर गंगा माता को समर्पित कर दिया था।
-  - 26 अप्रैल 1858 को उनकी मृत्यु हुई। इसके बाद उनके छोटे भाई **बाबू अमर सिंह** ने कैमूर की पहाड़ियों से छापामार युद्ध जारी रखा।
-
----
-
-## 🌾 Section 2: चंपारण सत्याग्रह (1917) — भारत में गांधीजी का प्रथम प्रयोग
-
-### प्रमुख तथ्य (High-Frequency BPSC Exam Points):
-1. **कारण (Cause):** तिनकठिया प्रथा (Tinkathia System) — किसानों को अपनी कुल कृषि योग्य भूमि के $3/20$ भाग पर नील (Indigo) की खेती अनिवार्य रूप से करनी पड़ती थी।
-2. **निमंत्रणकर्ता:** **राजकुमार शुक्ल** ने कांग्रेस के 1916 के लखनऊ अधिवेशन में महात्मा गांधी से मिलकर चंपारण आने का अनुरोध किया।
-   - *साथी सहयोगी जिन्होंने सहायता की:* ब्रजकिशोर प्रसाद, डॉ. राजेन्द्र प्रसाद, अनुग्रह नारायण सिन्हा, जे.बी. कृपलानी, मजहरुल हक, धरणीधर।
-3. **गांधीजी का बिहार आगमन:**
-   - गांधीजी 10 अप्रैल 1917 को पटना पहुंचे और 15 अप्रैल 1917 को मोतिहारी पहुंचे।
-4. **चंपारण एग्रेरियन समिति (Champaran Agrarian Committee):**
-   - उप-राज्यपाल एडवर्ड गेट ने एक जांच समिति गठित की, जिसके सदस्य गांधीजी भी बने।
-   - परिणाम: तिनकठिया प्रथा समाप्त हुई और अवैध वसूली का **25% धन** किसानों को वापस लौटाया गया।
-5. **रवींद्रनाथ टैगोर:** इसी सत्याग्रह की सफलता के बाद रवींद्रनाथ टैगोर ने गांधीजी को **'महात्मा'** की उपाधि दी।
+### 1. Outbreak and Chronology in Bihar
+* **Initial Outbreak (12 June 1857):**
+  - The revolt began at **Rohini village** (Deoghar district, modern Jharkhand) initiated by sepoys of the 32nd Native Infantry regiment.
+* **Patna Uprising (3 July 1857):**
+  - Led by **Peer Ali Khan** (a local bookseller) in the heart of Patna city.
+  - The British Opium Agent, **Dr. R. Lyell**, was shot and killed.
+  - British Commissioner **William Tayler** ruthlessly suppressed the rebellion, hanging Peer Ali and his associates publicly to strike terror.
+* **Danapur Cantonment Revolt (25 July 1857):**
+  - Soldiers of the 7th, 8th, and 40th Native Infantry regiments revolted, crossed the Son River, and advanced to Shahabad (Arrah) to unite under Babu Veer Kunwar Singh.
+* **Babu Veer Kunwar Singh (Zamindar of Jagdishpur):**
+  - Took command of the Bihar rebellion at the age of 80.
+  - Routed British forces under Captain Dunbar, Major Vincent Eyre, and Captain Le Grand.
+  - Severed his wounded left arm and offered it to the sacred Ganga after taking a bullet near the banks.
+  - Died on **26 April 1858**. Following his martyrdom, his younger brother **Babu Amar Singh** maintained active guerrilla warfare from the Kaimur hills until the end of 1858.
 
 ---
 
-## 🗺️ Section 3: बिहार का भूगोल (Physical Geography & Drainage System)
+## 🌾 Section 2: Champaran Satyagraha (1917) — Mahatma Gandhi's First Experiment in India
 
-### 1. बिहार की भौगोलिक अवस्थिति एवं सीमाएँ
-- **अक्षांश व देशांतर:** $24^\circ 20' 10''\text{ N}$ से $27^\circ 31' 15''\text{ N}$ और $83^\circ 19' 50''\text{ E}$ से $88^\circ 17' 40''\text{ E}$
-- **क्षेत्रफल:** $94,163 \text{ वर्ग किमी}$ (भारत के कुल क्षेत्रफल का लगभग $2.86\%$, 12वाँ सबसे बड़ा राज्य)।
-- **चौहद्दी (Boundaries):**
-  - उत्तर: नेपाल (अंतर्राष्ट्रीय सीमा — 7 जिले छूते हैं: प. चंपारण, पू. चंपारण, सीतामढ़ी, मधुबनी, सुपौल, अररिया, किशनगंज)
-  - दक्षिण: झारखंड (8 जिले)
-  - पूर्व: पश्चिम बंगाल (3 जिले: किशनगंज, पूर्णिया, कटिहार)
-  - पश्चिम: उत्तर प्रदेश (8 जिले)
-
-### 2. गंगा नदी एवं बिहार की प्रमुख नदियाँ
-- **गंगा नदी (Ganga River):**
-  - बिहार में प्रवेश: **चौसा (बक्सर)** के निकट।
-  - बिहार में कुल लंबाई: **445 किमी** (कुल लंबाई 2525 किमी)।
-  - गंगा बिहार को दो असमान भागों में बांटती है: उत्तरी बिहार का मैदान और दक्षिणी बिहार का मैदान।
-  - बिहार के **12 जिलों** से होकर बहती है (सर्वाधिक लंबाई पटना जिले में - लगभग 99 किमी)।
-- **उत्तर दिशा से मिलने वाली नदियाँ (हिमालयी नदियाँ):**
-  - **घाघरा (सरयू):** सीवान/छपरा के निकट गंगा में मिलती है।
-  - **गंडक:** वाल्मीकि नगर (प. चंपारण) से प्रवेश, पहलेजा (हाजीपुर) के पास गंगा में मिलती है।
-  - **बूढ़ी गंडक:** सोमेश्वर श्रेणी से निकलकर मुंगेर के पास गंगा में मिलती है (सर्वाधिक तीव्र धारा)।
-  - **कोसी (Kosi):** "बिहार का शोक" (Sorrow of Bihar) — मार्ग परिवर्तन के लिए कुख्यात; कुरसेला (कटिहार) में गंगा में मिलती है।
-- **दक्षिण दिशा से मिलने वाली नदियाँ (पठारी नदियाँ):**
-  - **कर्मनाशा:** अपवित्र मानी जाने वाली नदी; चौसा के पास गंगा में मिलती है।
-  - **सोन (Son):** अमरकंटक (MP) से निकलती है; मनेर (पटना) के निकट गंगा में मिलती है।
-  - **पुनपुन:** पलामू पठार से निकलकर फतुहा (पटना) में गंगा में मिलती है।
-  - **फल्गु (निरंजना):** बोधगया में भगवान बुद्ध को इसी नदी के तट पर ज्ञान प्राप्त हुआ था (विष्णु पद मंदिर एवं पितृपक्ष मेला)।
+### High-Frequency BPSC Exam Facts:
+1. **Root Cause:** The oppressive **Tinkathia System** required tenant peasants to compulsorily cultivate Indigo on $3/20$th of their most fertile agricultural land.
+2. **The Catalyst:** **Rajkumar Shukla**, an ordinary peasant from Murli Bharhawa, met Mahatma Gandhi during the 1916 Lucknow Session of the Indian National Congress and persistently implored him to visit Champaran.
+   - *Key Leaders Who Accompanied & Assisted Gandhi:* Dr. Rajendra Prasad, Brajkishore Prasad, Mazharul Haque, Anugrah Narayan Sinha, J.B. Kripalani, Dharnidhar, Shambhu Saran.
+3. **Gandhi's Arrival in Bihar:**
+   - Arrived in Patna on 10 April 1917, and reached Motihari on 15 April 1917.
+4. **Champaran Agrarian Committee:**
+   - Sir Edward Gait (Lieutenant Governor of Bihar and Orissa) appointed an inquiry committee with Mahatma Gandhi as an official member.
+   - **Resolution:** The Tinkathia system was formally abolished by law, and European planters were forced to refund **25%** of the illegally extorted dues to the peasants.
+5. **The Title 'Mahatma':**
+   - Following the historic triumph of Champaran, Rabindranath Tagore bestowed the title **'Mahatma'** on Mohandas Karamchand Gandhi.
 
 ---
 
-## ⚡ Section 4: Elementary Science & Mental Ability Highlights
-1. **प्रकाश का अपवर्तन व वर्ण विक्षेपण:** श्वेत प्रकाश का प्रिज्म से गुजरने पर 7 रंगों में विभाजन (VIBGYOR) — लाल रंग का तरंगदैर्ध्य (Wavelength) सबसे अधिक व प्रकीर्णन (Scattering) सबसे कम; बैंगनी का प्रकीर्णन सबसे अधिक।
-2. **मानव शरीर प्रमुख ग्रंथियां:**
-   - सबसे बड़ी ग्रंथि: यकृत (Liver)
-   - मास्टर ग्रंथि: पीयूष ग्रंथि (Pituitary Gland)
-   - अंतःस्रावी व बहिःस्रावी दोनों कार्य करने वाली मिश्रित ग्रंथि: अग्न्याशय (Pancreas - इंसुलिन का स्राव $\beta$-कोशिकाओं से)।
-3. **Number Series Reasoning Pattern:**
-   - Alternate difference, square/cube relations, Fibonacci sequences.
+## 🗺️ Section 3: Physical Geography & Drainage System of Bihar
+
+### 1. Geographical Location & Administrative Boundaries
+* **Geographical Coordinates:** $24^\circ 20' 10''\text{ N}$ to $27^\circ 31' 15''\text{ N}$ Latitude and $83^\circ 19' 50''\text{ E}$ to $88^\circ 17' 40''\text{ E}$ Longitude.
+* **Surface Area:** $94,163 \text{ sq km}$ (accounts for $2.86\%$ of India's total geographical area; 12th largest state in India).
+* **Boundaries:**
+  - **North:** International border with Nepal (7 districts touch: West Champaran, East Champaran, Sitamarhi, Madhubani, Supaul, Araria, Kishanganj).
+  - **South:** Jharkhand (8 districts).
+  - **East:** West Bengal (3 districts: Kishanganj, Purnia, Katihar).
+  - **West:** Uttar Pradesh (8 districts: West Champaran, Gopalganj, Siwan, Saran, Bhojpur, Buxar, Kaimur, Rohtas).
+
+### 2. River Ganga & Major Drainage Basins
+* **River Ganga:**
+  - **Entry Point:** Enters Bihar near **Chausa (Buxar)**.
+  - **Exit Point:** Leaves Bihar near **Manihari (Katihar)**.
+  - **Total Distance in Bihar:** **445 km** (out of total national length of 2525 km).
+  - Divides Bihar into two unequal halves: North Bihar Plains and South Bihar Plains.
+  - Traverses through **12 districts** (longest river stretch is in Patna district, ~99 km).
+* **North Bank (Himalayan) Tributaries:**
+  - **Ghaghra (Saryu):** Joins Ganga near Revelganj / Chhapra.
+  - **Gandak:** Originates in Nepal, enters Bihar at Valmikinagar, joins Ganga at Pahleza Ghat (Sonpur).
+  - **Burhi Gandak:** Originates from Someshwar hills; has the highest current velocity; meets Ganga near Khagaria / Munger.
+  - **Kosi ('Sorrow of Bihar'):** Originates as Saptakoshi in Nepal; notorious for devastating shifts in channel course (shifted ~120 km westward over 250 years); merges with Ganga at Kursela (Katihar).
+  - **Mahananda:** Originates in Darjeeling hills; joins Ganga in West Bengal near the eastern border of Bihar.
+* **South Bank (Peninsular Plateau) Tributaries:**
+  - **Karmanasha:** Considered religiously unpropitious; meets Ganga near Chausa.
+  - **Son:** Originates from Amarkantak plateau (MP), enters at Rohtas, forms the boundary between Bhojpur and Patna, meets Ganga near Maner.
+  - **Punpun:** Originates in Palamu plateau, joins Ganga at Fatuha.
+  - **Falgu (Niranjana):** Formed by the union of Lilajan and Mohana rivers; flows past Gaya; Lord Buddha achieved enlightenment under the Bodhi tree on its banks; home to Vishnupad Temple and annual Pitrapaksha Mela.
+
+---
+
+## ⚡ Section 4: General Science & Mental Ability Highlights
+
+1. **Optics & Dispersion:**
+   - White light dispersion via a glass prism splits into seven colors (VIBGYOR).
+   - **Red Light:** Longest wavelength, lowest frequency, least scattered by air molecules (used for danger signals).
+   - **Violet Light:** Shortest wavelength, highest frequency, maximum scattering.
+2. **Major Glands of the Human Body:**
+   - **Largest Gland:** Liver (secretes bile for fat emulsification; stores glycogen).
+   - **Master Gland:** Pituitary Gland (regulates endocrine functions via tropic hormones).
+   - **Dual Mixed Gland:** Pancreas (exocrine digestive juices + endocrine hormones insulin & glucagon from Islets of Langerhans).
+3. **Quantitative Reasoning Series Patterns:**
+   - Prime number sequences, squares/cubes difference ($n^2 \pm 1$), and Fibonacci progressions.

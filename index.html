@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#0a0e17">
+  <meta name="theme-color" content="#080c14">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="BPSC TRE 4.0">
@@ -13,11 +13,11 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
   
   <style>
     /* ========================================================
-       DESIGN TOKENS & COLOR THEMES (LIGHT & DARK)
+       DESIGN TOKENS & SYSTEM VARIABLES (LIGHT & DARK)
        ======================================================== */
     :root {
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -27,29 +27,29 @@
       --radius-lg: 14px;
       --radius-full: 9999px;
       
-      /* Subject Accent Colors */
+      /* Distinct Subject Colors */
       --color-lang: #8b5cf6;
-      --color-lang-glow: rgba(139, 92, 246, 0.15);
+      --color-lang-glow: rgba(139, 92, 246, 0.16);
       --color-gs: #f59e0b;
-      --color-gs-glow: rgba(245, 158, 11, 0.15);
+      --color-gs-glow: rgba(245, 158, 11, 0.16);
       --color-middle: #10b981;
-      --color-middle-glow: rgba(16, 185, 129, 0.15);
+      --color-middle-glow: rgba(16, 185, 129, 0.16);
       --color-sec: #0ea5e9;
-      --color-sec-glow: rgba(14, 165, 233, 0.15);
+      --color-sec-glow: rgba(14, 165, 233, 0.16);
     }
 
-    /* DARK THEME (DEFAULT) */
+    /* DARK THEME (Obsidian Precision) */
     [data-theme="dark"] {
-      --bg-page: #090d16;
-      --bg-mesh: radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.12) 0px, transparent 50%),
-                 radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
-      --bg-surface: #111827;
-      --bg-surface-elevated: #162032;
+      --bg-page: #080c14;
+      --bg-mesh: radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.12), transparent 45%),
+                 radial-gradient(circle at 90% 90%, rgba(139, 92, 246, 0.1), transparent 45%);
+      --bg-surface: #111726;
+      --bg-surface-elevated: #162034;
       --bg-card: #141c2c;
       --bg-option: #0d131f;
-      --bg-option-hover: #172236;
-      --border: #1e2b40;
-      --border-subtle: #182335;
+      --bg-option-hover: #172338;
+      --border: #1f2d42;
+      --border-subtle: #172233;
       --border-focus: #3b82f6;
       --text-main: #f8fafc;
       --text-body: #cbd5e1;
@@ -59,11 +59,11 @@
       --accent-gradient: linear-gradient(135deg, #2563eb, #3b82f6);
       --accent-hover: #1d4ed8;
       
-      --state-correct-bg: rgba(16, 185, 129, 0.15);
+      --state-correct-bg: rgba(16, 185, 129, 0.16);
       --state-correct-text: #34d399;
       --state-correct-border: #059669;
       
-      --state-wrong-bg: rgba(239, 68, 68, 0.15);
+      --state-wrong-bg: rgba(239, 68, 68, 0.16);
       --state-wrong-text: #f87171;
       --state-wrong-border: #dc2626;
 
@@ -71,11 +71,11 @@
       --theme-toggle-text: #f8fafc;
     }
 
-    /* LIGHT THEME */
+    /* LIGHT THEME (Editorial Clean) */
     [data-theme="light"] {
       --bg-page: #f8fafc;
-      --bg-mesh: radial-gradient(at 0% 0%, rgba(191, 219, 254, 0.5) 0px, transparent 50%),
-                 radial-gradient(at 100% 100%, rgba(233, 213, 255, 0.4) 0px, transparent 50%);
+      --bg-mesh: radial-gradient(circle at 10% 10%, rgba(191, 219, 254, 0.5), transparent 50%),
+                 radial-gradient(circle at 90% 90%, rgba(233, 213, 255, 0.45), transparent 50%);
       --bg-surface: #ffffff;
       --bg-surface-elevated: #ffffff;
       --bg-card: #f8fafc;
@@ -104,9 +104,7 @@
       --theme-toggle-text: #0f172a;
     }
 
-    /* ========================================================
-       RESET & BASE STYLES
-       ======================================================== */
+    /* RESET & BASE */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -124,11 +122,11 @@
       color: var(--text-main);
       min-height: 100vh;
       line-height: 1.6;
-      padding-bottom: 50px;
+      padding-bottom: 60px;
     }
 
     .container {
-      max-width: 780px;
+      max-width: 840px;
       margin: 0 auto;
       padding: 16px 14px;
     }
@@ -198,7 +196,7 @@
       background: var(--theme-toggle-bg);
       border: 1px solid var(--border);
       color: var(--theme-toggle-text);
-      padding: 6px 11px;
+      padding: 6px 12px;
       border-radius: var(--radius-md);
       font-size: 12px;
       font-weight: 600;
@@ -213,7 +211,7 @@
     }
 
     /* ========================================================
-       NAVIGATION TABS
+       PRIMARY VIEW TABS
        ======================================================== */
     .view-tabs {
       display: grid;
@@ -230,9 +228,9 @@
       background: transparent;
       border: none;
       color: var(--text-muted);
-      padding: 9px 14px;
+      padding: 10px 14px;
       border-radius: var(--radius-md);
-      font-size: 13px;
+      font-size: 13.5px;
       font-weight: 700;
       cursor: pointer;
       text-align: center;
@@ -240,6 +238,7 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
+      transition: all 0.2s ease;
     }
 
     .tab-btn.active {
@@ -249,13 +248,13 @@
     }
 
     /* ========================================================
-       QUESTION CARD & PRACTICE VIEW
+       QUESTION PRACTICE VIEW
        ======================================================== */
     .card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 20px 18px;
+      padding: 22px 20px;
       box-shadow: var(--shadow-card);
       position: relative;
       overflow: hidden;
@@ -323,7 +322,7 @@
     /* Dynamic Progress Bar */
     .progress-track {
       width: 100%;
-      height: 4px;
+      height: 5px;
       background: var(--border-subtle);
       border-radius: var(--radius-full);
       margin-bottom: 16px;
@@ -394,7 +393,7 @@
       flex: 1;
     }
 
-    /* Option States */
+    /* Option Feedback States */
     .option-row.selected {
       border-color: #3b82f6;
       background: rgba(59, 130, 246, 0.1);
@@ -434,9 +433,7 @@
       color: var(--state-wrong-text) !important;
     }
 
-    /* ========================================================
-       EXPLANATION ACCORDION (COLORFUL CHIPS)
-       ======================================================== */
+    /* Explanation Drawer */
     .explain-toggle-btn {
       width: 100%;
       background: var(--bg-card);
@@ -521,9 +518,7 @@
       line-height: 1.65;
     }
 
-    /* ========================================================
-       ACTION BUTTONS & BOTTOM BAR
-       ======================================================== */
+    /* Controls */
     .nav-actions {
       display: flex;
       gap: 10px;
@@ -590,59 +585,437 @@
     }
 
     /* ========================================================
-       STUDY NOTES VIEW
+       ENHANCED DAILY STUDY NOTES SYSTEM
        ======================================================== */
+    .notes-banner {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .notes-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #8b5cf6, #3b82f6, #10b981, #0ea5e9);
+    }
+
+    .notes-banner-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .notes-banner-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .notes-banner-sub {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .mastery-stats-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .mastery-label {
+      color: var(--text-muted);
+    }
+
+    .mastery-pct {
+      color: #10b981;
+      font-family: var(--font-mono);
+    }
+
+    .mastery-progress-track {
+      width: 100%;
+      height: 6px;
+      background: var(--border-subtle);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+
+    .mastery-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      width: 0%;
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Live Search Box */
+    .notes-search-box {
+      position: relative;
+      margin-bottom: 14px;
+    }
+
+    .notes-search-input {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 10px 38px 10px 38px;
+      border-radius: var(--radius-md);
+      font-size: 13.5px;
+      font-weight: 500;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .notes-search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    .notes-search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .notes-search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .notes-search-clear {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--border-subtle);
+      border: none;
+      color: var(--text-muted);
+      font-size: 11px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .notes-search-clear:hover {
+      background: var(--border);
+      color: var(--text-main);
+    }
+
+    /* Category Filter Pills */
+    .notes-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .notes-filter-pills {
+      display: flex;
+      gap: 7px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 4px;
+      width: 100%;
+    }
+
+    .notes-filter-pills::-webkit-scrollbar { display: none; }
+
+    .note-pill-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 13px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .note-pill-btn:hover {
+      border-color: var(--border-focus);
+      color: var(--text-main);
+    }
+
+    .note-pill-btn.active {
+      background: var(--text-main);
+      color: var(--bg-page);
+      border-color: var(--text-main);
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Note Card */
     .notes-stack {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 18px;
     }
 
     .note-card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 20px;
+      padding: 22px 20px;
       box-shadow: var(--shadow-card);
       position: relative;
       overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .note-card:hover {
+      border-color: var(--border-focus);
+    }
+
+    .note-card.is-read-card {
+      border-color: rgba(16, 185, 129, 0.4);
+    }
+
+    .note-card-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      bottom: 0;
     }
 
     .note-top-strip {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .note-tags-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .meta-tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-option);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .btn-mark-read {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 4px 11px;
+      border-radius: var(--radius-full);
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-mark-read:hover {
+      border-color: #10b981;
+      color: #10b981;
+    }
+
+    .btn-mark-read.is-read {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: #10b981;
+      color: #10b981;
     }
 
     .note-headline {
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 17.5px;
+      font-weight: 800;
       color: var(--text-main);
       margin-bottom: 12px;
+      letter-spacing: -0.2px;
+      line-height: 1.4;
+    }
+
+    .note-takeaway {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(139, 92, 246, 0.08));
+      border: 1px solid rgba(59, 130, 246, 0.22);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.5;
+    }
+
+    .note-takeaway strong {
+      color: #3b82f6;
     }
 
     .note-text {
       font-size: 14px;
-      line-height: 1.7;
+      line-height: 1.75;
       color: var(--text-body);
       white-space: pre-line;
     }
 
-    .code-callout {
+    /* Formula Bank Box */
+    .formula-box {
       background: var(--bg-option);
       border: 1px solid var(--border);
+      border-left: 3px solid #38bdf8;
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      margin-top: 14px;
+    }
+
+    .formula-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .formula-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .formula-copy-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
       border-radius: var(--radius-sm);
-      padding: 10px 12px;
-      margin-top: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .formula-copy-btn:hover {
+      color: var(--text-main);
+      border-color: var(--border-focus);
+    }
+
+    .formula-body {
       font-family: var(--font-mono);
-      font-size: 12px;
+      font-size: 12.5px;
       color: #38bdf8;
       line-height: 1.6;
+      white-space: pre-wrap;
+    }
+
+    /* Exam Tip & Trap */
+    .exam-tip-callout {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: var(--radius-md);
+      padding: 11px 14px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--text-body);
+      line-height: 1.55;
+    }
+
+    .exam-tip-callout strong {
+      color: #f59e0b;
+    }
+
+    /* Mnemonic Anchor */
+    .mnemonic-callout {
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: var(--radius-md);
+      padding: 11px 14px;
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--text-body);
+      line-height: 1.55;
+    }
+
+    .mnemonic-callout strong {
+      color: #a78bfa;
+    }
+
+    /* Floating Toast */
+    .toast-notification {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #111726;
+      border: 1px solid #10b981;
+      color: #ffffff;
+      padding: 10px 22px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 2000;
+      pointer-events: none;
+    }
+
+    .toast-notification.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
     }
 
     /* ========================================================
-       MODALS (PALETTE, SYNC, SCORECARD)
+       MODALS
        ======================================================== */
     .modal-backdrop {
       position: fixed;
@@ -733,7 +1106,7 @@
   <header>
     <div class="brand-group">
       <span class="brand-badge">BPSC</span>
-      <h1 class="brand-title">TRE 4.0 Prep</h1>
+      <h1 class="brand-title">TRE 4.0 Prep Hub</h1>
     </div>
 
     <div class="header-actions">
@@ -754,7 +1127,7 @@
     </div>
   </header>
 
-  <!-- NAVIGATION TABS -->
+  <!-- PRIMARY NAVIGATION TABS -->
   <div class="view-tabs">
     <button class="tab-btn active" id="tabPracticeBtn" onclick="switchView('practice')">
       <span>📝</span>
@@ -766,7 +1139,7 @@
     </button>
   </div>
 
-  <!-- PRACTICE VIEW -->
+  <!-- VIEW 1: PRACTICE -->
   <div id="practiceView">
     <div class="card">
       <div class="card-accent-line" id="cardAccentLine"></div>
@@ -838,10 +1211,59 @@
     </div>
   </div>
 
-  <!-- STUDY NOTES VIEW -->
+  <!-- VIEW 2: DAILY STUDY NOTES -->
   <div id="notesView" style="display: none;">
+    <!-- Notes Banner & Mastery Tracker -->
+    <div class="notes-banner">
+      <div class="notes-banner-top">
+        <h2 class="notes-banner-title" id="notesDayTitle">
+          <span>📖</span> Day 01 Syllabus Notes
+        </h2>
+        <span class="meta-tag" id="notesCountTag">4 Core Modules</span>
+      </div>
+      <p class="notes-banner-sub">
+        Comprehensive NCERT/SCERT aligned revision notes covering Language, General Studies, Class 6–8 Maths & Science, and Class 9–10 Secondary Maths.
+      </p>
+      <div class="mastery-stats-row">
+        <span class="mastery-label">Daily Revision Mastery</span>
+        <span class="mastery-pct" id="notesMasteryText">0 of 4 Completed (0%)</span>
+      </div>
+      <div class="mastery-progress-track">
+        <div class="mastery-progress-fill" id="notesMasteryFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Live Search Box -->
+    <div class="notes-search-box">
+      <span class="notes-search-icon">🔍</span>
+      <input type="text" class="notes-search-input" id="notesSearchInput" placeholder="Search concepts, formulas, keywords (e.g. Champaran, Sandhi, Boat, Xylem)..." oninput="handleNotesSearch(this.value)">
+      <button class="notes-search-clear" id="notesSearchClear" onclick="clearNotesSearch()" title="Clear search">✕</button>
+    </div>
+
+    <!-- Filter Pills Toolbar -->
+    <div class="notes-toolbar">
+      <div class="notes-filter-pills">
+        <button class="note-pill-btn active" onclick="filterNotesCategory('all')">
+          <span>All Topics</span>
+        </button>
+        <button class="note-pill-btn" onclick="filterNotesCategory('language')">
+          <span>Part I: Language</span>
+        </button>
+        <button class="note-pill-btn" onclick="filterNotesCategory('gs')">
+          <span>Part II: GS & Bihar</span>
+        </button>
+        <button class="note-pill-btn" onclick="filterNotesCategory('middle')">
+          <span>Part III: 6–8 Math & Sci</span>
+        </button>
+        <button class="note-pill-btn" onclick="filterNotesCategory('secondary')">
+          <span>Part IV: 9–10 Maths</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dynamic Notes Stack -->
     <div class="notes-stack" id="notesListContainer">
-      <!-- In-app English Study Notes -->
+      <!-- Rendered dynamically -->
     </div>
   </div>
 
@@ -919,11 +1341,21 @@
   </div>
 </div>
 
+<!-- FLOATING TOAST -->
+<div class="toast-notification" id="appToast">
+  <span id="toastIcon">✓</span>
+  <span id="toastMessage">Formula copied to clipboard!</span>
+</div>
+
 <script>
   let activeDay = 1;
   let testData = null;
   let currentIdx = 0;
   let userProgress = {};
+  let currentNoteCategory = 'all';
+  let searchQuery = '';
+  let readNotesSet = new Set();
+  let toastTimer = null;
 
   const SECTION_CONFIG = {
     'language': {
@@ -948,90 +1380,359 @@
     }
   };
 
-  const DAY_NOTES = {
+  // ========================================================
+  // COMPREHENSIVE HIGH-YIELD ENGLISH STUDY NOTES REPOSITORY
+  // ========================================================
+  const COMPREHENSIVE_STUDY_NOTES = {
     1: [
       {
-        part: 'Part I: Language Qualifying (Hindi & English)',
+        id: 'd1_lang',
+        category: 'language',
+        part: 'Part I: Language Qualifying',
         badge: 'badge-language',
-        title: 'Essential Grammar: Sandhi, Samas & Rule of Proximity',
-        text: `• Consonant Sandhi (Vyanjan Sandhi): Ut + Jwal = Ujjwal (त्/द् assimilates into ज्).
-• Orthography: Kavayitri (कवयित्री), Ujjwal (उज्ज्वल), Aashirvaad (आशीर्वाद).
-• Rule of Proximity: With 'Neither...nor' and 'Either...or', the verb agrees in number with the closest subject.
-  Example: "Neither the teacher nor the students were present yesterday."
-• Indefinite Articles: Determined by phonetic sound, NOT letter. 'A European' and 'A university' take 'a' due to initial consonant glide /juː/.`
+        color: '#8b5cf6',
+        readTime: '3 min read',
+        level: 'Matric Level Grammatical Standards',
+        title: 'Hindi & English Grammar: Sandhi, Compounds & Proximity Rules',
+        takeaway: 'Master consonant assimilation rules in Hindi and nearest-subject agreement in correlative English conjunctions.',
+        content: `1. Consonant Sandhi (Vyanjan Sandhi) Mechanisms:
+• Dental Assimilation: When dental stops 't' (त्) or 'd' (द्) precede palatal affricates 'j' (ज्) or 'jh' (झ्), the preceding dental consonant assimilates directly into 'j' (ज्).
+  - Ut + Jwal = Ujjwal (उत् + ज्वल = उज्ज्वल). Notice that both 'j' letters are half consonants.
+• Chh-Conversion Rule: When 't' (त्) precedes palatal sibilant 'sh' (श्), 't' transforms into 'ch' (च्) and 'sh' transforms into 'chh' (छ्).
+  - Ut + Shvaas = Uchhvaas (उत् + श्वास = उच्छ्वास).
+  - Sat + Shaastra = Sachhaastra (सत् + शास्त्र = सच्छास्त्र).
+
+2. Six Principal Compound Formations (Samas):
+• Avyayibhav Samas: The initial constituent is an indeclinable modifier (Avyaya) and carries chief semantic weight, imparting an adverbial function.
+  - Yathashakti (यथाशक्ति - according to capacity)
+  - Pratidin (प्रतिदिन - each and every day)
+  - Bebuniyad (बेबुनियाद - without foundation)
+• Tatpurush Samas: Characterized by the grammatical elision of case postpositions (Karak Vibhakti).
+  - Rajputra (राजा का पुत्र - King's son: Sambandh Tatpurush)
+  - Vidyalay (विद्या के लिए आलय - House for learning: Sampradan Tatpurush)
+• Dvigu Samas: The initial constituent is explicitly a cardinal number denoting a collection.
+  - Chauraha (चार राहों का समाहार - four-way intersection)
+  - Tribhuvan (तीन भुवनों का समूह - three realms).
+
+3. English Rule of Proximity:
+• In correlative conjunction structures using 'Neither...nor' or 'Either...or', the finite verb agrees strictly in number and person with the closest adjacent subject.
+  - "Neither the teacher nor the students WERE present in the seminar yesterday." (Students is plural and closest -> 'were')
+  - "Neither the students nor the teacher WAS present in the seminar yesterday." (Teacher is singular and closest -> 'was')
+
+4. Phonetic Article Selection:
+• The choice between indefinite articles 'a' and 'an' depends strictly on the INITIAL PHONETIC SOUND, never on the orthographic alphabet.
+• Words beginning with the semi-vowel glide /juː/ require 'a':
+  - "a European scholar", "a university professor", "a unique opportunity", "a uniform".
+• Words beginning with a silent 'h' produce an initial vowel sound and require 'an':
+  - "an hour", "an honest officer", "an heir to the throne".`,
+        formula: `• Dental Sandhi: त्/द् + ज् ⟶ ज्ज् (उत् + ज्वल = उज्ज्वल)
+• English Proximity: Neither S1 nor S2 + Verb(agrees with S2)
+• Indefinite Article Rule: Phonetic vowel sound ⟶ 'an' | Glide /juː/ ⟶ 'a'`,
+        tip: `BPSC Qualifying Strategy: 30 total questions (22 Hindi + 8 English). You need only 9 marks (30%) to qualify. Focus on Sandhi spelling accuracy and English article phonetics for guaranteed safety.`,
+        mnemonic: `Remember: 'Neither/Nor' verb is a loyal neighbor—it only looks at the closest subject beside it!`
       },
       {
+        id: 'd1_gs',
+        category: 'gs',
         part: 'Part II: General Studies & Bihar Special',
         badge: 'badge-gs',
-        title: '1857 Revolt in Bihar & Champaran Satyagraha (1917)',
-        text: `• Patna Uprising (3 July 1857): Led by bookseller Peer Ali Khan. Opium agent Dr. R. Lyell was killed; Peer Ali was subsequently executed by Commissioner William Tayler.
-• Jagdishpur Leader: Babu Veer Kunwar Singh and his brother Amar Singh led the resistance in Shahabad/Bhojpur.
-• Champaran Satyagraha (1917): Peasant leader Rajkumar Shukla persuaded Mahatma Gandhi at the 1916 Lucknow Congress. Abolished the Tinkathia system (compulsory indigo on 3/20th land); European planters refunded 25% of illegal exactions.
-• River Ganga in Bihar: Enters at Chausa (Buxar) from UP, flows for 445 km through 12 districts.
-• Kosi River ('Sorrow of Bihar'): Originates as Saptakoshi in Nepal, carries immense silt causing westward course shifts; merges with Ganga at Kursela (Katihar).`
+        color: '#f59e0b',
+        readTime: '5 min read',
+        level: 'BPSC Primary & Secondary GS Core',
+        title: '1857 Great Revolt in Bihar, Champaran Satyagraha & Drainage Geography',
+        takeaway: 'Understand Kunwar Singh’s military campaign, Rajkumar Shukla’s role in Champaran, and the exact course of River Ganga across Bihar.',
+        content: `1. 1857 Freedom Struggle in Bihar:
+• Outbreak: Began on 12 June 1857 at Rohini village (Deoghar, now Jharkhand) by sepoys of the 32nd Native Infantry regiment.
+• Patna Uprising (3 July 1857): Bookseller Peer Ali Khan led a heroic rebellion in Patna city, mortally shooting British opium agent Dr. R. Lyell. British Commissioner William Tayler ruthlessly quelled the revolt and hanged Peer Ali.
+• Danapur Mutiny (25 July 1857): The 7th, 8th, and 40th regiments of Native Infantry revolted and marched to Shahabad (Arrah) to join Kunwar Singh.
+• Babu Veer Kunwar Singh: At the age of 80, the zamindar of Jagdishpur defeated British commanders Captain Dunbar, Major Vincent Eyre, and Captain Le Grand. After his death on 26 April 1858, his brother Amar Singh continued sustained guerrilla operations in the Kaimur hills.
+
+2. Champaran Satyagraha (1917) — Gandhi's First Experiment:
+• Oppressive Cause: The Tinkathia system compelled tenant peasants to cultivate Indigo on 3/20th of their fertile land.
+• The Catalyst: Rajkumar Shukla, a peasant from Murli Bharhawa, persistently persuaded Mahatma Gandhi at the 1916 Lucknow Congress to visit Champaran.
+• Leaders Accompanying Gandhi: Dr. Rajendra Prasad, Brajkishore Prasad, Mazharul Haque, Anugrah Narayan Sinha, J.B. Kripalani, Dharnidhar.
+• Agrarian Committee: Lt. Governor Sir Edward Gait appointed the Champaran Agrarian Committee with Gandhi as a member. The Tinkathia system was abolished and European planters were forced to refund 25% of the illegal exactions.
+• Title: Rabindranath Tagore conferred the title 'Mahatma' upon Gandhi following the movement's success.
+
+3. Drainage System & Geography of Bihar:
+• Spatial Extent: 94,163 sq km (2.86% of India's landmass, 12th largest state). Borders Nepal (7 districts), Jharkhand (8 districts), UP (8 districts), and West Bengal (3 districts: Kishanganj, Purnia, Katihar).
+• River Ganga: Enters Bihar near Chausa (Buxar) and exits near Bhagalpur/Katihar. Flows 445 km across 12 districts, dividing Bihar into North and South plains. Patna hosts the longest stretch (~99 km).
+• Northern Himalayan Tributaries:
+  - Ghaghra: Joins Ganga near Revelganj/Chhapra.
+  - Gandak: Enters at Valmikinagar, joins Ganga at Pahleza Ghat/Sonpur.
+  - Burhi Gandak: Originates from Someshwar range, fastest flowing stream, joins near Munger.
+  - Kosi ('Sorrow of Bihar'): Originates as Saptakoshi in Nepal. Enormous silt discharge causes continuous course shifting (shifted ~120 km west over 250 years); meets Ganga at Kursela (Katihar).
+• Southern Tributaries:
+  - Son: Originates from Amarkantak (MP), enters at Rohtas, joins Ganga near Maner (Patna).
+  - Punpun: Originates from Chhota Nagpur plateau, joins at Fatuha.
+  - Falgu (Niranjana): Flows past Gaya, sacred for Pind Daan; Buddha attained enlightenment on its banks.`,
+        formula: `• Tinkathia Proportion: Compulsory Indigo on 3/20th of farmland
+• Planters Extortion Refund: Exactly 25% of illegal dues
+• Ganga in Bihar: 445 km | 12 Districts | Enters at Chausa (Buxar)`,
+        tip: `BPSC PYQ Pattern: BPSC frequently tests specific river confluence points (Son at Maner, Kosi at Kursela, Punpun at Fatuha). Memorize these confluences!`,
+        mnemonic: `Confluence Hook: 'Son meets Maner for dinner; Punpun goes to Fatuha; Kosi rushes to Kursela!'`
       },
       {
-        part: 'Part III: Class 6–8 (Middle School Maths & Science)',
+        id: 'd1_middle',
+        category: 'middle',
+        part: 'Part III: Class 6–8 Maths & Science',
         badge: 'badge-middle_math_sci',
-        title: 'Rational Numbers, Optics & Human Nutrition',
-        text: `• Rational Properties: (Additive Inverse) × (Multiplicative Inverse) = -1 for any non-zero rational number.
-• Divisibility by 9: A number is divisible by 9 if and only if the sum of its digits is a multiple of 9.
-• Plane Mirror Reflections: Number of images between mirrors inclined at angle θ = (360° / θ) - 1 when 360/θ is an even integer (e.g. at 60°, images = 6 - 1 = 5).
-• Food Biochemical Tests: Starch + Dilute Iodine ⟶ Blue-black coloration; Protein + CuSO4 + NaOH (Biuret test) ⟶ Violet coloration.
-• Vitamin Classification: K, E, D, A are fat-soluble ('KEDA'); B-complex and C (Ascorbic acid) are water-soluble.`
+        color: '#10b981',
+        readTime: '4 min read',
+        level: 'NCERT / SCERT Class 6–8 Curriculum',
+        title: 'Middle School Maths (Rational Numbers) & Fundamental Sciences',
+        takeaway: 'Cover rational inverses, divisibility rules, bell synchronization, nutrient test reagents, and mirror reflection physics.',
+        content: `1. Rational Numbers & Arithmetic Axioms:
+• Definition: Any number expressible as p/q where p, q are integers and q ≠ 0.
+• Axioms of Inverse:
+  - Additive Inverse of a is -a (Sum = a + (-a) = 0).
+  - Multiplicative Inverse (Reciprocal) of a/b is b/a (Product = (a/b) · (b/a) = 1). Zero has NO multiplicative inverse!
+  - Universal Identity: For any non-zero rational x: (Additive Inverse) × (Multiplicative Inverse) = (-x) × (1/x) = -1.
+
+2. Divisibility Tests & Synchronization Problems:
+• Divisibility by 9: The sum of all digits must be divisible by 9.
+• Divisibility by 11: The difference between the sum of digits at odd places and even places must be either 0 or a multiple of 11.
+• Bell Synchronization: When multiple bells toll at intervals of t1, t2, t3, they toll together simultaneously at time intervals equal to LCM(t1, t2, t3).
+
+3. Human Nutrition & Diagnostic Food Tests:
+• Starch (Carbohydrate): Add dilute Iodine solution ⟶ Turns intense Blue-Black.
+• Protein: Add 2 drops Copper Sulphate (CuSO4) + 10 drops Caustic Soda (NaOH) ⟶ Turns Violet (Biuret reaction).
+• Vitamin Classification:
+  - Fat-Soluble: Vitamins K, E, D, A (Stored in adipose tissue).
+  - Water-Soluble: Vitamins B-complex and Vitamin C (Ascorbic acid). Excreted regularly via urine.
+• Nutritional Deficiencies: Scurvy (Vitamin C), Night Blindness (Vitamin A), Rickets (Vitamin D), Beriberi (Vitamin B1), Goitre (Iodine).
+
+4. Geometric Optics & Reflection:
+• Inclined Plane Mirrors: The number of images formed between two plane mirrors inclined at angle θ is n = (360° / θ) - 1 (when 360/θ is an even integer). At 60°, n = (360/60) - 1 = 5 images.
+• Spherical Mirrors:
+  - Concave Mirror: Converging mirror. Produces real, inverted images in all positions EXCEPT when object is between Pole (P) and Focus (F), where it produces virtual, erect, and magnified image (used by dentists and in shaving mirrors).
+  - Convex Mirror: Diverging mirror. Always forms virtual, erect, and diminished images with a broad field of view (used as rear-view mirrors in vehicles).`,
+        formula: `• Rational Inverse Identity: (Add. Inv.) × (Mult. Inv.) = -1
+• Inclined Mirrors: n = (360° / θ) - 1 (when 360/θ is even)
+• Negative Power Law: (a/b)^(-n) = (b/a)^n`,
+        tip: `High-Yield Science: Vitamin C is sensitive to temperature and easily destroyed during boiling and cooking, whereas Vitamin D is synthesized by skin upon UV exposure.`,
+        mnemonic: `Vitamin Fat-Soluble Hook: 'K-E-D-A' stays inside fat; B & C wash away in water!`
       },
       {
-        part: 'Part IV: Class 9–10 (Secondary Mathematics)',
+        id: 'd1_sec',
+        category: 'secondary',
+        part: 'Part IV: Class 9–10 Secondary Mathematics',
         badge: 'badge-sec_math',
-        title: 'Euclid Division, Polynomials & Decimal Expansions',
-        text: `• Euclid's Division Lemma: a = bq + r with condition 0 ≤ r < b.
-• Terminating Decimal Expansion: A rational number p/q in simplest form has a terminating decimal if and only if q = 2^n · 5^m; it terminates after exactly max(n, m) decimal places.
-• Quadratic Zeroes & Coefficients: For ax² + bx + c = 0, sum of roots α + β = -b/a, product αβ = c/a, and 1/α + 1/β = -b/c.
-• Root Signs: If all coefficients a, b, c of a quadratic polynomial are positive, both roots are strictly negative.
-• Cubic Zeroes: If one root of ax³ + bx² + cx + d is zero, the product of the other two roots equals c/a.`
+        color: '#0ea5e9',
+        readTime: '5 min read',
+        level: 'NCERT Exemplar Class 9–10 Standards',
+        title: 'Secondary Mathematics: Real Numbers, Polynomials & Zeroes Algebra',
+        takeaway: 'Master terminating decimal conditions, Vieta’s root formulas for polynomials, and geometric parabola properties.',
+        content: `1. Euclid's Division Lemma & Decimal Expansions:
+• Fundamental Theorem of Arithmetic: Every composite number can be expressed uniquely as a product of prime factors.
+• Terminating Decimals: A rational number in lowest terms p/q has a terminating decimal expansion if and only if prime factors of q are strictly of the form:
+  q = 2^n · 5^m (where n, m are non-negative integers).
+  The decimal terminates after exactly max(n, m) decimal places!
+  Example: 13 / 1250 ⟶ 1250 = 2^1 · 5^4 ⟶ terminates after max(1, 4) = 4 places.
+
+2. Quadratic Polynomials & Parabolic Zeroes:
+• Standard Form: P(x) = ax² + bx + c (a ≠ 0). The geometrical graph is a Parabola.
+  - Opens upward if a > 0; opens downward if a < 0.
+• Vieta's Relations for Zeroes (α, β):
+  1. Sum of zeroes: α + β = -b/a
+  2. Product of zeroes: αβ = c/a
+  3. Sum of reciprocals: 1/α + 1/β = (α + β) / (αβ) = (-b/a) / (c/a) = -b/c
+• Root Signs Rule: If all coefficients a, b, c > 0, then both roots α and β must be strictly negative.
+
+3. Cubic Polynomials (Degree 3):
+• Standard Form: P(x) = ax³ + bx² + cx + d (a ≠ 0).
+• Root Relations (α, β, γ):
+  - Sum of roots: α + β + γ = -b/a
+  - Sum of pairwise products: αβ + βγ + γα = c/a
+  - Product of roots: αβγ = -d/a
+• BPSC PYQ Identity: If one zero is zero (γ = 0), then αβ + 0 + 0 = c/a ⟶ The product of the remaining two zeroes is equal to c/a.
+
+4. Remainder and Factor Theorems:
+• Remainder Theorem: When polynomial P(x) is divided by linear divisor (x - a), the remainder is P(a).
+• Factor Theorem: (x - a) is a factor of P(x) if and only if P(a) = 0.`,
+        formula: `• Quadratic Roots: α + β = -b/a | αβ = c/a | 1/α + 1/β = -b/c
+• Decimal Termination: q = 2^n · 5^m terminates in max(n, m) places
+• Cubic Zero Rule: If one root is 0, product of other two roots = c/a`,
+        tip: `Algebra Shortcut: Whenever asked for 1/α + 1/β, write -b/c directly in 2 seconds without computing the individual roots!`,
+        mnemonic: `Parabola Sign: Positive 'a' smiles upward (∪); Negative 'a' frowns downward (∩)!`
       }
     ],
     2: [
       {
-        part: 'Part I: Language Qualifying (Hindi & English)',
+        id: 'd2_lang',
+        category: 'language',
+        part: 'Part I: Language Qualifying',
         badge: 'badge-language',
-        title: 'Prefixes, Vocabulary & Third Conditional Sentences',
-        text: `• Prefixes (Upasarg): In 'Atyant', the root prefix is 'Ati' (Ati + Ant = Atyant via Yan Sandhi).
-• Synonyms & Antonyms: 'Ratri' has multiple synonyms: Vibhavari, Rajani, Nisheeth (triggers BPSC Option D). Aastik (Theist) ⟷ Naastik (Atheist).
-• Third Conditional: Expresses unfulfilled past situations. Formula: If + Past Perfect (had + V3) ⟶ would have + V3.
-  Example: "If you had studied hard, you would have passed the examination."
-• Preposition of Time: Specific clock points take 'at' ("at 8:30 PM sharp").`
+        color: '#8b5cf6',
+        readTime: '3 min read',
+        level: 'Matric Level Grammatical Standards',
+        title: 'Prefixes, Vocabulary Classification & Advanced Conditionals',
+        takeaway: 'Deconstruct Sanskrit Upasarg prefixes in Sandhi clusters, navigate BPSC multi-synonym traps, and master past conditionals.',
+        content: `1. Sanskrit & Hindi Prefixes (Upasarg):
+• Upasarg Concept: An affix attached to the beginning of a root word that modifies or intensifies its meaning.
+• Sandhi-Coupled Prefixes: In words like 'Atyant' (अत्यंत), the underlying prefix is 'Ati' (अति). By Yan Sandhi: Ati + Ant = Atyant (i + a ⟶ ya).
+• High-Frequency Exam Examples:
+  - Adhyaksh (अध्यक्ष): Adhi + Aksh (Prefix: Adhi / अधि)
+  - Pratyek (प्रत्येक): Prati + Ek (Prefix: Prati / प्रति)
+  - Anveshan (अन्वेषण): Anu + Eshan (Prefix: Anu / अनु)
+  - Durbal (दुर्बल): Dur + Bal (Prefix: Dur / दुर्)
+
+2. Synonyms & The BPSC 5-Option Paradigm:
+• 'Ratri' (Night) Synonyms: Vibhavari, Rajani, Nisheeth, Yamini, Tamasvini.
+  - Exam Trap: Because BPSC includes multiple authentic synonyms in options, Option (D) 'More than one of the above' is frequently the correct answer!
+• Standard Antonym Pairs:
+  - Aastik (Theist) ↔ Naastik (Atheist)
+  - Anurag (Affection) ↔ Virag (Aversion)
+  - Utkarsh (Elevation) ↔ Apakarsh (Degradation)
+
+3. English Conditional Sentences:
+• Third Conditional (Hypothetical Past): Expresses regrets or impossible conditions that never occurred in the past.
+  - Formula: If + Past Perfect (had + V3), Subject + would have + Past Participle (V3).
+  - Example: "If you HAD STUDIED diligently, you WOULD HAVE PASSED the examination."
+• Second Conditional (Hypothetical Present):
+  - Formula: If + Simple Past (V2), Subject + would + Base Verb (V1).
+  - Example: "If I knew his address, I would write to him."
+
+4. Prepositions of Time Precision:
+• 'At' is reserved for specific points on a clock: at 8:30 PM, at noon, at midnight.
+• 'On' is applied to specific calendar days and dates: on Monday, on 15th August.
+• 'In' applies to months, seasons, and years: in October, in summer, in 2026.`,
+        formula: `• Third Conditional: If + had + V3 ⟶ would have + V3
+• Prefix Extraction: Always decompose Sandhi cluster (Ati + Ant ⟶ Atyant)
+• Preposition Rule: At (clock time) | On (days/dates) | In (months/years)`,
+        tip: `Exam Technique: Check whether a sentence refers to past impossibility (had + V3) or future probability (if + V1 ⟶ will + V1). Never mix tenses across clauses.`,
+        mnemonic: `Prefix Rule: If you see 'Ty' or 'Dy' (अत्य / अध्य), think 'Ati' and 'Adhi'!`
       },
       {
+        id: 'd2_gs',
+        category: 'gs',
         part: 'Part II: General Studies & Bihar Special',
         badge: 'badge-gs',
-        title: '1942 Quit India (Patna Secretariat) & Bihar Soils',
-        text: `• Patna Secretariat Firing: Occurred on 11 August 1942. 7 student martyrs were shot by order of DM W.G. Archer while attempting to hoist the tricolour.
-• Azad Dasta: Guerrilla organization founded by Jayaprakash Narayan (JP) in Nepal Terai after escaping Hazaribagh Jail on Diwali night in 1942.
-• Soils of Bihar: Older Alluvial (Bangar / Karail-Kewal, clayey with kankar nodules) and Newer Alluvial (Khadar, fertile annual floodplain).
-• Blood pH: Normal arterial blood pH is tightly regulated between 7.35 and 7.45 (slightly alkaline).
-• Mithila Makhana: Darbhanga and Madhubani lead national production of Fox Nut (GI tag protected).`
+        color: '#f59e0b',
+        readTime: '5 min read',
+        level: 'BPSC Primary & Secondary GS Core',
+        title: '1942 Quit India (Secretariat Martyrs), Azad Dasta & Soil Profiles',
+        takeaway: 'Know the 7 student martyrs of Patna Secretariat firing, JP’s escape to Nepal Terai, and differences between Bangar and Khadar soils.',
+        content: `1. 1942 Quit India Movement in Bihar:
+• All-India Spark: Launched on 8 August 1942 at Gowalia Tank, Bombay ('Do or Die'). British forces launched Operation Zero Hour early on 9 August, arresting top Congress leadership.
+• Patna Secretariat Firing (11 August 1942):
+  - A heroic procession of students marched to hoist the national tricolour on top of the Patna Secretariat building.
+  - Patna District Magistrate W.G. Archer ordered police firing, martyring 7 students:
+    1. Umakant Prasad Sinha (Ram Mohan Roy Seminary, Class 9)
+    2. Ramanand Singh (Ram Mohan Roy Seminary, Class 9)
+    3. Satish Prasad Jha (Patna Collegiate, Class 10)
+    4. Jagatpati Kumar (BN College, 2nd Year)
+    5. Devipada Choudhary (Miller High School, Class 9)
+    6. Rajendra Singh (Patna High School, Matric)
+    7. Ramgovind Singh (Punpun High School, Class 9)
+  - The Martyr's Memorial (Shaheed Smarak) stands today facing the Bihar Legislative Assembly.
+
+2. Jayaprakash Narayan & 'Azad Dasta':
+• The Prison Break: On Diwali night (9 November 1942), Jayaprakash Narayan (JP) along with Ramanandan Mishra, Suraj Narayan Singh, Shaligram Singh, Yogendra Shukla, and Gulab Chand Gupta escaped from Hazaribagh Central Jail.
+• Formation of Guerrilla Force: In the dense forests of Nepal Terai (Bakro Ka Tapu), JP founded 'Azad Dasta' to disrupt British wartime communication, railways, and telegraphs.
+• Underground Radio: Dr. Rammanohar Lohia ran the clandestine underground Azad Dasta radio broadcasting unit.
+
+3. Alluvial Soils & Agriculture of Bihar:
+• Bangar (Older Alluvium): Found in upland interfluves above flood levels. Known locally as 'Karail-Kewal' soil in South Bihar. High clay content, highly retentive of moisture, contains calcium carbonate kankar nodules.
+• Khadar (Newer Alluvium): Found in annual floodplains along northern rivers (Gandak, Kosi, Ganga). Silt-rich, light in colour, extremely fertile for paddy, wheat, and jute.
+• Mithila Makhana (Fox Nut): Concentrated in Darbhanga, Madhubani, and Saharsa wetland ecosystems. Bihar produces over 85% of global Makhana, safeguarded by an official Geographical Indication (GI) tag.`,
+        formula: `• Secretariat Firing Date: 11 August 1942 (7 Martyrs)
+• JP Jail Escape: 9 November 1942 (Diwali Night, Hazaribagh Jail)
+• Soil Types: Bangar = Older Alluvium | Khadar = Newer Flood Alluvium`,
+        tip: `BPSC Focus: Remember the names of the schools and colleges of the 7 martyrs; BPSC TRE has previously asked about their institutions.`,
+        mnemonic: `JP Escape Date: Diwali light guided JP over Hazaribagh walls on 9th November!`
       },
       {
-        part: 'Part III: Class 6–8 (Middle School Maths & Science)',
+        id: 'd2_middle',
+        category: 'middle',
+        part: 'Part III: Class 6–8 Maths & Science',
         badge: 'badge-middle_math_sci',
-        title: 'Fractions, Plant Physiology & Sound Wave Physics',
-        text: `• Fractions Formula: LCM(Fractions) = [LCM of Numerators] / [HCF of Denominators].
-• Marked Price & Discount: MP/CP = (100 + Profit%) / (100 - Discount%). With 20% discount and 20% profit, MP is 50% above CP.
-• Plant Transport: Phloem translocates organic nutrients (sucrose) bidirectionally; Xylem transports water and minerals unidirectionally.
-• Sound Wave Intensity: Loudness is directly proportional to the square of the vibration amplitude (Loudness ∝ A²). Pitch is determined by frequency.
-• Neutralization Reaction: Aqueous Acid + Aqueous Base ⟶ Ionic Salt + Water + Heat.`
+        color: '#10b981',
+        readTime: '4 min read',
+        level: 'NCERT / SCERT Class 6–8 Curriculum',
+        title: 'Commercial Arithmetic, Acid-Base Chemistry & Plant Physiology',
+        takeaway: 'Solve profit and discount markup identities, understand natural acid indicators, and distinguish sound pitch vs loudness.',
+        content: `1. LCM & HCF of Fractional Numbers:
+• LCM of Fractions = [LCM of Numerators] / [HCF of Denominators]
+• HCF of Fractions = [HCF of Numerators] / [LCM of Denominators]
+  Example: Find LCM of 2/3, 4/9, 5/6:
+  - Numerators (2, 4, 5) ⟶ LCM = 20
+  - Denominators (3, 9, 6) ⟶ HCF = 3
+  - Result = 20/3.
+
+2. Commercial Math (Marked Price & Discount):
+• Universal Profit-Discount Relation:
+  MP / CP = (100 + Profit%) / (100 - Discount%)
+  Example: If discount is 20% and profit is 20%:
+  MP / CP = (100 + 20) / (100 - 20) = 120 / 80 = 3/2 = 1.5
+  Therefore, Marked Price is set 50% above Cost Price!
+
+3. Acids, Bases & Neutralization:
+• The pH Scale: Formulated by Sørensen (0 to 14). pH < 7 (Acidic), pH = 7 (Neutral), pH > 7 (Basic/Alkaline).
+  - Human blood is slightly alkaline: 7.35 to 7.45.
+  - Gastric juice contains concentrated HCl: pH 1.2 to 2.0.
+• Naturally Occurring Organic Acids:
+  - Ant Sting: Methanoic acid (Formic acid, HCOOH) — causes burning; neutralized by baking soda (NaHCO3) or calamine.
+  - Vinegar: Acetic acid (Ethanoic acid, CH3COOH).
+  - Curd: Lactic acid.
+  - Tamarind / Grapes: Tartaric acid.
+  - Tomato: Oxalic acid.
+• Neutralization Reaction: Acid + Base ⟶ Salt + Water + Heat.
+
+4. Plant Vascular Transport & Sound Physics:
+• Phloem: Complex vascular tissue responsible for translocating soluble organic nutrients (sucrose) bidirectionally from photosynthetic leaves to non-green tissues.
+• Xylem: Transports water and inorganic minerals unidirectionally from soil roots upward via transpiration pull.
+• Sound Wave Loudness: Loudness is proportional to the SQUARE OF AMPLITUDE (Loudness ∝ A²). If amplitude is tripled, loudness increases 9-fold! Pitch depends on Frequency.`,
+        formula: `• Markup Identity: MP / CP = (100 + P%) / (100 - D%)
+• Blood pH Balance: 7.35 ≤ pH ≤ 7.45 (Bicarbonate buffer system)
+• Sound Intensity: Loudness ∝ (Amplitude)²`,
+        tip: `Physics Trap: Frequency governs Pitch/Shrillness (treble/bass), while Amplitude governs Loudness/Volume. Do not confuse them!`,
+        mnemonic: `Vascular Hook: 'Ph'loem moves 'Ph'ood (sucrose); 'X'ylem moves 'W'ater and minerals!`
       },
       {
-        part: 'Part IV: Class 9–10 (Secondary Mathematics)',
+        id: 'd2_sec',
+        category: 'secondary',
+        part: 'Part IV: Class 9–10 Secondary Mathematics',
         badge: 'badge-sec_math',
-        title: 'Linear Systems in Two Variables & Coordinate Geometry',
-        text: `• System Consistency Conditions:
-  1. Unique Solution (Intersecting lines, Consistent): a1/a2 ≠ b1/b2.
-  2. Infinitely Many Solutions (Coincident lines, Dependent): a1/a2 = b1/b2 = c1/c2.
-  3. No Solution (Parallel lines, Inconsistent): a1/a2 = b1/b2 ≠ c1/c2.
-• Relative Speed in Streams: Downstream speed = u + v; Upstream speed = u - v.
-• Geometric Orientation: The line x = 0 (Y-axis) and the horizontal line y = -4 are mutually perpendicular in the Cartesian plane.`
+        color: '#0ea5e9',
+        readTime: '5 min read',
+        level: 'NCERT Exemplar Class 9–10 Standards',
+        title: 'Linear Systems in Two Variables: Consistency, Methods & Kinematics',
+        takeaway: 'Evaluate system consistency parameters, solve boat/stream relative speeds, and master coordinate perpendicularity.',
+        content: `1. Pair of Linear Equations in Two Variables:
+• General Algebraic Form:
+  a1·x + b1·y + c1 = 0
+  a2·x + b2·y + c2 = 0
+• Three Fundamental Geometric Consistency Conditions:
+  1. Unique Solution (Consistent): a1/a2 ≠ b1/b2.
+     Lines intersect at exactly one point (x, y).
+  2. Infinitely Many Solutions (Consistent & Dependent): a1/a2 = b1/b2 = c1/c2.
+     Lines are coincident (overlap completely).
+  3. No Solution (Inconsistent): a1/a2 = b1/b2 ≠ c1/c2.
+     Lines are parallel and never intersect in the plane.
+
+2. Parameter Evaluation for Infinite Solutions:
+• For 2x + 3y = 7 and (k-1)x + (k+2)y = 3k to have infinite solutions:
+  2/(k-1) = 3/(k+2) = 7/(3k)
+  ⟶ 2(k+2) = 3(k-1) ⟶ 2k + 4 = 3k - 3 ⟶ k = 7.
+
+3. Stream & Boat Kinematics:
+• Let boat speed in still water = u km/h, stream current speed = v km/h.
+  - Downstream Speed (with current) = u + v
+  - Upstream Speed (against current) = u - v
+  - Speed of boat in still water u = (Downstream + Upstream) / 2
+  - Speed of stream v = (Downstream - Upstream) / 2
+  - Example: If u = 15 km/h, v = 3 km/h ⟶ Downstream = 18 km/h. Time for 36 km = 36/18 = 2 hours.
+
+4. Cartesian Plane Line Orientations:
+• The equation x = 0 represents the Y-axis (vertical line).
+• The equation y = k (such as y = -4) represents a horizontal line parallel to the X-axis.
+• Geometric Rule: A vertical line (x = c) and a horizontal line (y = k) always intersect at right angles (90°) and are therefore MUTUALLY PERPENDICULAR.`,
+        formula: `• Parallel Lines (No Sol): a1/a2 = b1/b2 ≠ c1/c2
+• Downstream Velocity: u + v | Upstream Velocity: u - v
+• Difference of Squares: x² - y² = (x + y)(x - y)`,
+        tip: `Time Saver: In boat and stream problems, calculate downstream speed (u+v) immediately and do not confuse with upstream speed (u-v).`,
+        mnemonic: `Relative Velocity: Downstream pushes you faster (+); Upstream drags you backward (-)!`
       }
     ]
   };
@@ -1042,6 +1743,7 @@
   window.addEventListener('DOMContentLoaded', () => {
     initTheme();
     loadStoredProgress();
+    loadStoredReadNotes();
     initDayDropdown();
   });
 
@@ -1073,7 +1775,7 @@
     if (theme === 'dark') {
       icon.innerText = '☀️';
       label.innerText = 'Light';
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#090d16');
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#080c14');
     } else {
       icon.innerText = '🌙';
       label.innerText = 'Dark';
@@ -1082,13 +1784,37 @@
   }
 
   // ========================================================
-  // DAY DATA LOADER
+  // TAB NAVIGATION (PRACTICE VS STUDY NOTES)
+  // ========================================================
+  function switchView(viewName) {
+    const pBtn = document.getElementById('tabPracticeBtn');
+    const nBtn = document.getElementById('tabNotesBtn');
+    const pView = document.getElementById('practiceView');
+    const nView = document.getElementById('notesView');
+
+    if (viewName === 'practice') {
+      pBtn.classList.add('active');
+      nBtn.classList.remove('active');
+      pView.style.display = 'block';
+      nView.style.display = 'none';
+    } else {
+      nBtn.classList.add('active');
+      pBtn.classList.remove('active');
+      pView.style.display = 'none';
+      nView.style.display = 'block';
+      renderStudyNotes();
+    }
+  }
+
+  // ========================================================
+  // DAY DATA LOADER & REGISTRY
   // ========================================================
   async function initDayDropdown() {
     try {
       const resp = await fetch('data/index.json');
       if (resp.ok) {
         const data = await resp.json();
+        window.bpscDayList = data.days || [];
         const sel = document.getElementById('daySelect');
         sel.innerHTML = '';
         data.days.forEach(d => {
@@ -1108,7 +1834,12 @@
     activeDay = parseInt(dayNum);
     document.getElementById('daySelect').value = activeDay;
 
-    const dataPath = activeDay === 2 ? '2026-10-10/daily_quiz_data.json' : '2026-10-09/daily_quiz_data.json';
+    let dataPath = activeDay === 2 ? '2026-10-10/daily_quiz_data.json' : '2026-10-09/daily_quiz_data.json';
+    if (window.bpscDayList && window.bpscDayList.length > 0) {
+      const found = window.bpscDayList.find(d => d.day === activeDay);
+      if (found && found.path) dataPath = found.path;
+    }
+
     try {
       const resp = await fetch(dataPath);
       testData = await resp.json();
@@ -1117,31 +1848,10 @@
     }
 
     currentIdx = 0;
-    renderStudyNotes(DAY_NOTES[activeDay] || DAY_NOTES[1]);
+    document.getElementById('notesDayTitle').innerHTML = `<span>📖</span> Day ${String(activeDay).padStart(2, '0')} Syllabus Notes`;
+    renderStudyNotes();
     renderQuestion();
     updateAnsweredCounter();
-  }
-
-  // ========================================================
-  // TAB NAVIGATION
-  // ========================================================
-  function switchView(viewName) {
-    const pBtn = document.getElementById('tabPracticeBtn');
-    const nBtn = document.getElementById('tabNotesBtn');
-    const pView = document.getElementById('practiceView');
-    const nView = document.getElementById('notesView');
-
-    if (viewName === 'practice') {
-      pBtn.classList.add('active');
-      nBtn.classList.remove('active');
-      pView.style.display = 'block';
-      nView.style.display = 'none';
-    } else {
-      nBtn.classList.add('active');
-      pBtn.classList.remove('active');
-      nView.style.display = 'none';
-      pView.style.display = 'block';
-    }
   }
 
   // ========================================================
@@ -1180,8 +1890,6 @@
       row.className = 'option-row';
 
       if (chosen === idx) row.classList.add('selected');
-
-      // Instant Feedback state if already answered
       if (chosen !== undefined) {
         if (idx === q.answerIndex) {
           row.classList.add('correct');
@@ -1190,31 +1898,31 @@
         }
       }
 
-      row.innerHTML = `
-        <span class="option-key">${letters[idx]}</span>
-        <span class="option-content">${optText}</span>
-      `;
-
       row.onclick = () => selectOption(q.id, idx);
+
+      row.innerHTML = `
+        <div class="option-key">${letters[idx]}</div>
+        <div class="option-content">${optText}</div>
+      `;
       container.appendChild(row);
     });
 
-    // Populate Detailed Solution
-    const ai = q.aiDeepSolution || {};
-    document.getElementById('solExplanation').innerText = q.explanation || 'Refer to the standard formula above.';
-
+    // Populate Detailed Solution Drawer
+    const ai = q.ai_tutor || {};
+    document.getElementById('solExplanation').innerText = ai.step_by_step || q.explanation || 'Detailed explanation not provided.';
+    
     const conceptEl = document.getElementById('solConcept');
-    if (ai.concept) {
+    if (ai.core_concept) {
       document.getElementById('solConceptBlock').style.display = 'block';
-      conceptEl.innerText = ai.concept;
+      conceptEl.innerText = ai.core_concept;
     } else {
       document.getElementById('solConceptBlock').style.display = 'none';
     }
 
     const trickEl = document.getElementById('solTrick');
-    if (ai.trick) {
+    if (ai.shortcut_trick) {
       document.getElementById('solTrickBlock').style.display = 'block';
-      trickEl.innerText = ai.trick;
+      trickEl.innerText = ai.shortcut_trick;
     } else {
       document.getElementById('solTrickBlock').style.display = 'none';
     }
@@ -1269,23 +1977,195 @@
   }
 
   // ========================================================
-  // STUDY NOTES RENDERER
+  // ENHANCED STUDY NOTES RENDERER & INTERACTION
   // ========================================================
-  function renderStudyNotes(notes) {
+  function filterNotesCategory(cat) {
+    currentNoteCategory = cat;
+    document.querySelectorAll('.note-pill-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${cat}'`));
+    });
+    renderStudyNotes();
+  }
+
+  function handleNotesSearch(val) {
+    searchQuery = val.trim().toLowerCase();
+    const clearBtn = document.getElementById('notesSearchClear');
+    clearBtn.style.display = searchQuery ? 'flex' : 'none';
+    renderStudyNotes();
+  }
+
+  function clearNotesSearch() {
+    document.getElementById('notesSearchInput').value = '';
+    searchQuery = '';
+    document.getElementById('notesSearchClear').style.display = 'none';
+    renderStudyNotes();
+  }
+
+  function toggleNoteRead(day, noteId) {
+    const key = `d${day}_${noteId}`;
+    if (readNotesSet.has(key)) {
+      readNotesSet.delete(key);
+      showToast('Marked as unread', '○');
+    } else {
+      readNotesSet.add(key);
+      showToast('Module marked as completed!', '✓');
+    }
+    saveReadNotes();
+    renderStudyNotes();
+    updateNotesMasteryBar();
+  }
+
+  function saveReadNotes() {
+    localStorage.setItem('bpsc_read_notes', JSON.stringify(Array.from(readNotesSet)));
+  }
+
+  function loadStoredReadNotes() {
+    try {
+      const saved = localStorage.getItem('bpsc_read_notes');
+      if (saved) readNotesSet = new Set(JSON.parse(saved));
+    } catch (e) {}
+  }
+
+  function updateNotesMasteryBar() {
+    const notesList = COMPREHENSIVE_STUDY_NOTES[activeDay] || COMPREHENSIVE_STUDY_NOTES[1];
+    const total = notesList.length;
+    let readCount = 0;
+    notesList.forEach(n => {
+      if (readNotesSet.has(`d${activeDay}_${n.id}`)) readCount++;
+    });
+    const pct = total > 0 ? Math.round((readCount / total) * 100) : 0;
+    const txt = `${readCount} of ${total} Completed (${pct}%)`;
+    
+    const textEl = document.getElementById('notesMasteryText');
+    const fillEl = document.getElementById('notesMasteryFill');
+    if (textEl) textEl.innerText = txt;
+    if (fillEl) fillEl.style.width = `${pct}%`;
+  }
+
+  function copyFormulaText(formulaStr, btn) {
+    navigator.clipboard.writeText(formulaStr).then(() => {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '✓ Copied!';
+      btn.style.color = '#10b981';
+      btn.style.borderColor = '#10b981';
+      showToast('Formula bank copied to clipboard!', '📋');
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.color = '';
+        btn.style.borderColor = '';
+      }, 2000);
+    }).catch(() => {
+      showToast('Failed to copy. Please select manually.', '⚠️');
+    });
+  }
+
+  function showToast(message, icon = '✓') {
+    const toast = document.getElementById('appToast');
+    document.getElementById('toastIcon').innerText = icon;
+    document.getElementById('toastMessage').innerText = message;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2400);
+  }
+
+  function renderStudyNotes() {
     const box = document.getElementById('notesListContainer');
+    if (!box) return;
     box.innerHTML = '';
-    notes.forEach(n => {
-      const card = document.createElement('div');
-      card.className = 'note-card';
-      card.innerHTML = `
-        <div class="note-top-strip">
-          <span class="section-badge ${n.badge}">${n.part}</span>
+
+    const notesList = COMPREHENSIVE_STUDY_NOTES[activeDay] || COMPREHENSIVE_STUDY_NOTES[1];
+    
+    // Category filter
+    let filtered = currentNoteCategory === 'all' 
+      ? notesList 
+      : notesList.filter(n => n.category === currentNoteCategory);
+
+    // Search query filter
+    if (searchQuery) {
+      filtered = filtered.filter(n => {
+        const hay = `${n.title} ${n.takeaway} ${n.content} ${n.formula || ''} ${n.tip || ''}`.toLowerCase();
+        return hay.includes(searchQuery);
+      });
+    }
+
+    const countTag = document.getElementById('notesCountTag');
+    if (countTag) countTag.innerText = `${filtered.length} ${filtered.length === 1 ? 'Module' : 'Modules'}`;
+
+    if (filtered.length === 0) {
+      box.innerHTML = `
+        <div style="text-align: center; padding: 40px 20px; background: var(--bg-surface); border: 1px dashed var(--border); border-radius: var(--radius-lg); color: var(--text-muted);">
+          <div style="font-size: 28px; margin-bottom: 8px;">🔍</div>
+          <div style="font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">No matching notes found</div>
+          <p style="font-size: 13px;">Try searching for other keywords or clear the topic filter.</p>
+          <button onclick="clearNotesSearch()" class="btn btn-secondary" style="margin: 14px auto 0; max-width: 140px; padding: 6px 14px; font-size: 12px;">Reset Search</button>
         </div>
+      `;
+      updateNotesMasteryBar();
+      return;
+    }
+
+    filtered.forEach(n => {
+      const isRead = readNotesSet.has(`d${activeDay}_${n.id}`);
+      const card = document.createElement('div');
+      card.className = `note-card ${isRead ? 'is-read-card' : ''}`;
+      
+      const escapedFormula = (n.formula || '').replace(/'/g, "\\'").replace(/\n/g, '\\n');
+
+      card.innerHTML = `
+        <div class="note-card-bar" style="background: ${n.color};"></div>
+        
+        <div class="note-top-strip">
+          <div class="note-tags-group">
+            <span class="section-badge ${n.badge}">${n.part}</span>
+            <span class="meta-tag">${n.level}</span>
+            <span class="meta-tag">⏱️ ${n.readTime}</span>
+          </div>
+          <button class="btn-mark-read ${isRead ? 'is-read' : ''}" onclick="toggleNoteRead(${activeDay}, '${n.id}')">
+            ${isRead ? '✓ Completed' : '○ Mark as Read'}
+          </button>
+        </div>
+
         <h3 class="note-headline">${n.title}</h3>
-        <p class="note-text">${n.text}</p>
+
+        ${n.takeaway ? `
+          <div class="note-takeaway">
+            <span>🎯</span>
+            <div><strong>High-Yield Takeaway:</strong> ${n.takeaway}</div>
+          </div>
+        ` : ''}
+
+        <p class="note-text">${n.content}</p>
+
+        ${n.formula ? `
+          <div class="formula-box">
+            <div class="formula-header">
+              <span class="formula-label"><span>🧮</span> Formula Bank & Identities</span>
+              <button class="formula-copy-btn" onclick="copyFormulaText('${escapedFormula}', this)">
+                <span>📋</span> Copy Formulas
+              </button>
+            </div>
+            <div class="formula-body">${n.formula}</div>
+          </div>
+        ` : ''}
+
+        ${n.tip ? `
+          <div class="exam-tip-callout">
+            <strong>⚠️ BPSC Exam Trap & Strategy:</strong> ${n.tip}
+          </div>
+        ` : ''}
+
+        ${n.mnemonic ? `
+          <div class="mnemonic-callout">
+            <strong>💡 Memory Hook / Mnemonic:</strong> ${n.mnemonic}
+          </div>
+        ` : ''}
       `;
       box.appendChild(card);
     });
+
+    updateNotesMasteryBar();
   }
 
   // ========================================================
@@ -1384,7 +2264,7 @@
     const area = document.getElementById('syncExportArea');
     area.select();
     navigator.clipboard.writeText(area.value);
-    alert('Sync code successfully copied to clipboard!');
+    showToast('Sync code copied to clipboard!', '↻');
   }
 
   function importSyncCode() {
@@ -1394,7 +2274,7 @@
       const decoded = decodeURIComponent(escape(atob(input)));
       userProgress = JSON.parse(decoded);
       saveProgress();
-      alert('Progress imported successfully!');
+      showToast('Progress imported successfully!', '✓');
       closeSync();
       renderQuestion();
       updateAnsweredCounter();

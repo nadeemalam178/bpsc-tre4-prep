@@ -1,95 +1,87 @@
-# 📖 BPSC TRE 4.0 — Part III: Class 6 to 8 (Maths & Science / गणित एवं विज्ञान)
+# 📖 BPSC TRE 4.0 — Part III: Class 6 to 8 (Mathematics & Science)
 **Total Marks:** 80 Marks (~40 Marks Mathematics + ~40 Marks Science)  
-**Standard:** SCERT / NCERT Curriculum (कक्षा 6 से 8) + स्नातक स्तरीय कठिनाई संबंध
+**Curriculum Scope:** NCERT & SCERT Class 6–8 Standards with Graduate-Level Conceptual Depth
 
 ---
 
-## 📐 भाग 1: गणित (Mathematics - कक्षा 6-8)
+## 📐 Section 1: Mathematics (Class 6–8 NCERT/SCERT)
 
-### 1. संख्या पद्धति एवं परिमेय संख्याएँ (Rational Numbers)
-- **परिमेय संख्या (Rational Number):** कोई भी संख्या जिसे $\frac{p}{q}$ के रूप में व्यक्त किया जा सके, जहाँ $p$ और $q$ पूर्णांक हैं तथा $q \neq 0$।
-- **मुख्य गुणधर्म (Properties):**
-  1. **संवृत गुण (Closure):** परिमेय संख्याएँ योग, व्यवकलन (घटाव), और गुणन के अंतर्गत संवृत हैं। भाग के अंतर्गत संवृत नहीं हैं (यदि $0$ से भाग दिया जाए)।
-  2. **क्रमविनिमेयता (Commutativity):**
-     - योग: $a + b = b + a$  
-     - गुणन: $a \times b = b \times a$  
-     - *(घटाव और भाग में क्रमविनिमेय नियम लागू नहीं होता)*
-  3. **साहचर्य गुण (Associativity):**
-     - योग: $(a + b) + c = a + (b + c)$  
-     - गुणन: $(a \times b) \times c = a \times (b \times c)$
-  4. **वितरण नियम (Distributivity):** $a \times (b + c) = (a \times b) + (a \times c)$
-  5. **योज्य तत्समक (Additive Identity):** $0$ (क्योंकि $a + 0 = a$)
-  6. **योज्य प्रतिलोम (Additive Inverse):** $a$ का योज्य प्रतिलोम $-a$ होता है ($a + (-a) = 0$)।
-  7. **गुणात्मक तत्समक (Multiplicative Identity):** $1$ (क्योंकि $a \times 1 = a$)
-  8. **गुणात्मक प्रतिलोम / व्युत्क्रम (Multiplicative Inverse / Reciprocal):** $\frac{p}{q}$ का व्युत्क्रम $\frac{q}{p}$ है ($\frac{p}{q} \times \frac{q}{p} = 1$)। शून्य ($0$) का कोई व्युत्क्रम नहीं होता।
+### 1. Number Systems & Rational Numbers
+- **Rational Number Definition:** Any number that can be expressed in the form $\frac{p}{q}$, where $p$ and $q$ are integers and $q \neq 0$.
+- **Fundamental Algebraic Properties:**
+  1. **Closure Property:** Rational numbers are closed under addition, subtraction, and multiplication. They are not closed under division (since division by zero is undefined).
+  2. **Commutative Property:**
+     - Addition: $a + b = b + a$  
+     - Multiplication: $a \times b = b \times a$  
+     - *(Subtraction and division are NOT commutative)*
+  3. **Associative Property:**
+     - Addition: $(a + b) + c = a + (b + c)$  
+     - Multiplication: $(a \times b) \times c = a \times (b \times c)$
+  4. **Distributive Law:** $a \times (b + c) = (a \times b) + (a \times c)$
+  5. **Additive Identity:** $0$ ($a + 0 = a$)
+  6. **Additive Inverse:** $-a$ ($a + (-a) = 0$)
+  7. **Multiplicative Identity:** $1$ ($a \times 1 = a$)
+  8. **Multiplicative Inverse (Reciprocal):** The reciprocal of $\frac{p}{q}$ is $\frac{q}{p}$ ($\frac{p}{q} \times \frac{q}{p} = 1$). Zero ($0$) has NO reciprocal.
+  9. **Universal Inversion Identity:** For any non-zero rational $x$: $(\text{Additive Inverse}) \times (\text{Multiplicative Inverse}) = (-x) \times \left(\frac{1}{x}\right) = -1$.
 
-### 2. विभाज्यता के नियम (Divisibility Rules - Quick Tricks)
-- **3 से विभाज्यता:** सभी अंकों का योग 3 से विभाज्य होना चाहिए।
-- **4 से विभाज्यता:** अंतिम दो अंकों से बनी संख्या 4 से विभाज्य हो या अंतिम दो अंक '00' हों।
-- **7 से विभाज्यता:** इकाई अंक का दुगुना शेष संख्या से घटाने पर 0 या 7 का गुणज प्राप्त हो।
-- **8 से विभाज्यता:** अंतिम तीन अंकों से बनी संख्या 8 से विभाज्य हो या '000' हो।
-- **9 से विभाज्यता:** सभी अंकों का योग 9 से विभाज्य होना चाहिए।
-- **11 से विभाज्यता:** विषम स्थानों के अंकों का योग और सम स्थानों के अंकों के योग का अंतर $0$ या $11$ का गुणज हो।
-  - *उदाहरण:* 1331 $\rightarrow (1+3) - (3+1) = 4 - 4 = 0$ (11 से विभाज्य)।
+### 2. Divisibility Tests (High-Yield Arithmetic Rules)
+- **Divisible by 3:** Sum of all digits must be divisible by 3.
+- **Divisible by 4:** Number formed by the last two digits is divisible by 4, or ends in '00'.
+- **Divisible by 8:** Number formed by the last three digits is divisible by 8, or ends in '000'.
+- **Divisible by 9:** Sum of all digits must be divisible by 9.
+- **Divisible by 11:** The difference between the sum of digits at odd places and the sum of digits at even places must be $0$ or a multiple of $11$.
+  - *Example:* $1331 \rightarrow (1+3) - (3+1) = 4 - 4 = 0$ (divisible by 11).
 
-### 3. म.स.प. एवं ल.स.प. (HCF and LCM Applications)
-- **मूल सूत्र:** $\text{दो संख्याओं का गुणनफल} = \text{HCF} \times \text{LCM}$
+### 3. HCF & LCM Core Applications
+- **Fundamental Identity:** $\text{Product of Two Numbers} = \text{HCF} \times \text{LCM}$
   $$a \times b = \text{HCF}(a, b) \times \text{LCM}(a, b)$$
-- **भिन्नों का ल.स.प. और म.स.प.:**
-  $$\text{भिन्नों का LCM} = \frac{\text{अंशों का LCM}}{\text{हरों का HCF}}, \quad \text{भिन्नों का HCF} = \frac{\text{अंशों का HCF}}{\text{हरों का LCM}}$$
-- **घंटी बजने / धावकों के मिलने वाले प्रश्न:** जब 3 घंटियाँ $12, 15, 18$ सेकंड के अंतराल पर बजती हैं, तो वे पुनः अपने **LCM** (180 सेकंड = 3 मिनट) के बाद एक साथ बजेंगी।
+- **Fractions LCM & HCF Formulas:**
+  $$\text{LCM of Fractions} = \frac{\text{LCM of Numerators}}{\text{HCF of Denominators}}, \quad \text{HCF of Fractions} = \frac{\text{HCF of Numerators}}{\text{LCM of Denominators}}$$
+- **Synchronization Problems (Church Bells & Circular Track Runners):**
+  When bells toll at intervals of $t_1, t_2, t_3$, they toll together after time interval equal to $\text{LCM}(t_1, t_2, t_3)$.
 
-### 4. घातांक एवं घात (Exponents & Powers)
+### 4. Laws of Exponents & Powers
 - $a^m \times a^n = a^{m+n}$
 - $\frac{a^m}{a^n} = a^{m-n}$ ($a \ne 0$)
 - $(a^m)^n = a^{m \cdot n}$
 - $(ab)^n = a^n \cdot b^n$
-- $a^{-n} = \frac{1}{a^n}$
+- $a^{-n} = \frac{1}{a^n}$ and $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n$
 - $a^0 = 1$ ($a \neq 0$)
 
 ---
 
-## 🔬 भाग 2: विज्ञान (Science - कक्षा 6-8)
+## 🔬 Section 2: General Science (Class 6–8 NCERT/SCERT)
 
-### 1. भोजन के घटक एवं पोषण (Components of Food & Nutrition)
-- **कार्बोहाइड्रेट (Carbohydrates):** ऊर्जा प्रदाता (Energy-giving food)।
-  - *मंड परीक्षण (Starch Test):* खाद्य पदार्थ में तनु आयोडीन (Dilute Iodine) डालने पर **नीला-काला (Blue-Black)** रंग आता है।
-- **प्रोटीन (Proteins):** शरीर वर्धक (Body-building food)।
-  - *परीक्षण (Biuret Test):* कॉपर सल्फेट विलयन ($CuSO_4$) + कास्टिक सोडा ($NaOH$) डालने पर **बैंगनी (Violet)** रंग आता है।
-- **वसा (Fats):** कार्बोहाइड्रेट की तुलना में समान मात्रा में अधिक ऊर्जा।
-  - *परीक्षण:* कागज पर रगड़ने पर पारभासी (translucent) तैलीय धब्बा।
-- **विटामिन एवं अभावजन्य रोग (Vitamins & Deficiency Diseases):**
+### 1. Human Nutrition & Diagnostic Food Reagent Tests
+- **Carbohydrates (Starch):** Energy source.
+  - *Iodine Test:* Add dilute Iodine solution $\rightarrow$ produces an intense **Blue-Black** color.
+- **Proteins:** Body-building and tissue repair.
+  - *Biuret Test:* Add 2 drops Copper Sulphate solution ($CuSO_4$) + 10 drops Caustic Soda ($NaOH$) $\rightarrow$ produces a rich **Violet** color.
+- **Fats (Lipids):** High energy storage.
+  - *Grease Spot Test:* Translucent oily patch formed on white paper.
+- **Vitamin Solubility Breakdown:**
+  - **Fat-Soluble:** Vitamins **K, E, D, A** (stored in liver and adipose tissue).
+  - **Water-Soluble:** Vitamins **B-complex** and **Vitamin C** (regularly excreted in urine; require daily dietary replenishment).
+  - *Deficiency Diseases:* Scurvy (Vitamin C), Rickets (Vitamin D), Beriberi (Vitamin B1), Night Blindness (Vitamin A), Goitre (Iodine).
 
-| विटामिन | घुलनशीलता | मुख्य कार्य / स्रोत | हीनताजन्य रोग (Deficiency Disease) | प्रमुख लक्षण |
-|:---|:---|:---|:---|:---|
-| **विटामिन A** (रेटिनॉल) | वसा (Fat) | आँख व त्वचा का स्वास्थ्य, गाजर | रतौंधी (Night Blindness) | मंद प्रकाश में कम दिखना |
-| **विटामिन B1** (थायमिन) | जल (Water) | कार्बोहाइड्रेट उपापचय | बेरी-बेरी (Beri-beri) | दुर्बल पेशियां, काम करने में असमर्थता |
-| **विटामिन C** (एस्कॉर्बिक अम्ल) | जल (Water) | रोग प्रतिरोधक क्षमता, आंवला | स्कर्वी (Scurvy) | मसूड़ों से खून आना, घाव भरने में देरी |
-| **विटामिन D** (कैल्सीफेरॉल) | वसा (Fat) | कैल्शियम अवशोषण, धूप/दूध | रिकेट्स (Rickets) / ऑस्टियोमलेशिया | हड्डियां मुलायम होकर मुड़ जाना |
-| **विटामिन K** (फिलोक्विनोन) | वसा (Fat) | रक्त का थक्का जमना | रक्त का थक्का न जमना | अत्यधिक रक्तस्राव |
-| **आयोडीन (खनिज)** | - | थायरॉक्सिन हार्मोन निर्माण | घेंघा (Goitre) | गर्दन की ग्रंथि का फूल जाना |
-| **आयरन (खनिज)** | - | हीमोग्लोबिन निर्माण | अरक्तता (Anaemia) | कमजोरी एवं थकान |
+### 2. Plant Nutrition & Physiological Processes
+- **Modes of Nutrition:**
+  - *Autotrophic:* Green plants utilizing chlorophyll and sunlight.
+  - *Parasitic:* Cuscuta (*Amarbel*) lacks chlorophyll; absorbs nutrition from host plant via haustoria.
+  - *Insectivorous:* Pitcher plant (*Nepenthes*), Venus flytrap (trap insects to fulfill nitrogen deficiency in acidic soil).
+  - *Saprotrophic:* Fungi (release digestive enzymes on decaying organic matter).
+- **Photosynthesis Biochemical Equation:**
+  $$6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow[\text{Chlorophyll}]{\text{Sunlight}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$$
+- **Stomatal Regulation:** Tiny pores on leaves guarded by kidney-shaped Guard Cells that regulate transpiration and gas exchange ($O_2 / CO_2$).
 
-> 📌 **याद रखने की ट्रिक:** वसा में घुलनशील विटामिन = **K E D A (कीड़ा)**, जल में घुलनशील = **B और C**।
-
----
-
-### 2. प्रकाश, परावर्तन एवं दर्पण (Light, Reflection & Mirrors)
-- **प्रकाश का सरल रेखीय संचरण:** प्रकाश सदैव सीधी रेखा में गमन करता है (छाया एवं सूर्य/चंद्र ग्रहण इसी सिद्धांत पर बनते हैं)।
-- **परावर्तन के नियम (Laws of Reflection):**
-  1. आपतन कोण ($\angle i$) = परावर्तन कोण ($\angle r$)।
-  2. आपतित किरण, परावर्तित किरण और आपतन बिंदु पर अभिलंब तीनों एक ही तल में होते हैं।
-- **समतल दर्पण (Plane Mirror):**
-  - प्रतिबिंब आभासी (Virtual), सीधा (Erect), वस्तु के समान आकार का और पार्श्व परिवर्तित (Laterally Inverted) होता है।
-  - वस्तु की दर्पण से दूरी = प्रतिबिंब की दर्पण से दूरी।
-  - दो समतल दर्पणों के बीच $\theta$ कोण होने पर बनने वाले प्रतिबिंबों की संख्या:
-    $$n = \frac{360^\circ}{\theta} - 1 \quad (\text{यदि } \frac{360^\circ}{\theta} \text{ सम संख्या हो})$$
-- **गोलीय दर्पण (Spherical Mirrors):**
-  - **अवतल दर्पण (Concave Mirror - अभिसारी):**
-    - अधिकांश स्थितियों में वास्तविक (Real) और उल्टा (Inverted) प्रतिबिंब बनाता है।
-    - *विशेष स्थिति:* जब वस्तु ध्रुव (P) और फोकस (F) के बीच हो, तो प्रतिबिंब **आभासी, सीधा और बड़ा (Enlarged)** बनता है।
-    - *उपयोग:* दंत चिकित्सक (Dentist mirror), शेविंग मिरर, सर्चलाइट, सोलर कुकर।
-  - **उत्तल दर्पण (Convex Mirror - अपसारी):**
-    - सदैव **आभासी, सीधा और छोटा (Diminished)** प्रतिबिंब बनाता है।
-    - दृष्टि क्षेत्र (Field of view) बहुत विस्तृत होता है।
-    - *उपयोग:* वाहनों के पश्च दृश्य दर्पण (Side/Rear-view mirror), सुरक्षा निगरानी दर्पण।
+### 3. Optics & Laws of Reflection
+- **Laws of Reflection:**
+  1. Incident ray, reflected ray, and normal to the surface at the point of incidence all lie in the same geometric plane.
+  2. Angle of Incidence equals Angle of Reflection: $\angle i = \angle r$.
+- **Plane Mirror Characteristics:**
+  - Virtual, erect, same size as object.
+  - Distance of object from mirror equals distance of image behind mirror ($u = v$).
+  - **Lateral Inversion:** Left appears right and vice versa.
+  - Minimum mirror height required to view full image of a person of height $H$ is $\frac{H}{2}$.
+  - Number of images between two mirrors inclined at angle $\theta$:
+    $$n = \frac{360^\circ}{\theta} - 1 \quad (\text{when } 360/\theta \text{ is an even integer})$$
