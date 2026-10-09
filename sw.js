@@ -1,5 +1,5 @@
 // Service Worker for BPSC TRE 4.0 PWA
-const CACHE_NAME = 'bpsc-tre4-v2';
+const CACHE_NAME = 'bpsc-tre4-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

@@ -6,10 +6,26 @@
   "durationMinutes": 35,
   "negativeMarking": 0.33,
   "sections": [
-    { "id": "language", "name": "Part I: Language Qualifying (भाषा अहर्ता)", "questionsCount": 5 },
-    { "id": "gs", "name": "Part II: General Studies (सामान्य अध्ययन)", "questionsCount": 8 },
-    { "id": "middle_math_sci", "name": "Part III: Class 6-8 (Maths & Science)", "questionsCount": 10 },
-    { "id": "sec_math", "name": "Part IV: Class 9-10 Secondary Mathematics", "questionsCount": 7 }
+    {
+      "id": "language",
+      "name": "Part I: Language Qualifying (भाषा अहर्ता)",
+      "questionsCount": 5
+    },
+    {
+      "id": "gs",
+      "name": "Part II: General Studies (सामान्य अध्ययन)",
+      "questionsCount": 8
+    },
+    {
+      "id": "middle_math_sci",
+      "name": "Part III: Class 6-8 (Maths & Science)",
+      "questionsCount": 10
+    },
+    {
+      "id": "sec_math",
+      "name": "Part IV: Class 9-10 Secondary Mathematics",
+      "questionsCount": 7
+    }
   ],
   "questions": [
     {
@@ -17,20 +33,20 @@
       "section": "language",
       "subject": "Hindi Grammar",
       "source": "BPSC TRE 2.0 (Dec 2023) PYQ",
-      "question": "'उज्ज्वल' का सही संधि-विच्छेद निम्नलिखित में से कौन-सा है?\n(What is the correct Sandhi-Vichhed of 'Ujjwal'?)",
+      "question": "What is the correct grammatical Sandhi-Vichhed (disjunction) of the Sanskrit loanword 'Ujjwal' (उज्ज्वल)?",
       "options": [
-        "उत् + ज्वल",
-        "उद् + ज्वल",
-        "उज् + ज्वल",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Ut + Jwal (उत् + ज्वल)",
+        "Ud + Jwal (उद् + ज्वल)",
+        "Uj + Jwal (उज् + ज्वल)",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "उत् + ज्वल = उज्ज्वल।",
+      "explanation": "The correct Sandhi-Vichhed is 'Ut + Jwal' (उत् + ज्वल = उज्ज्वल).",
       "aiDeepSolution": {
-        "concept": "व्यंजन संधि नियम: जब 'त्' या 'द्' के बाद 'ज्' या 'झ्' आता है, तो 'त्/द्' का 'ज्' में आदेश हो जाता है।",
-        "trick": "उज्ज्वल में दोनों 'ज' आधे होते हैं (उ + ज् + ज् + व + ल)। यह शब्द संधि के साथ-साथ शुद्ध वर्तनी में भी बार-बार पूछा जाता है।",
-        "trap": "परीक्षक का जाल: छात्र (B) 'उद् + ज्वल' में भ्रमित होते हैं, परंतु मानक पाणिनीय व्याकरण व BPSC की आधिकारिक उत्तरकुंजी के अनुसार 'उत्' ही शुद्ध उपसर्ग है। अतः (D) नहीं होगा।"
+        "concept": "Consonant Sandhi (Vyanjan Sandhi) Rule: When 't' (त्) or 'd' (द्) is followed by 'j' (ज्) or 'jh' (झ्), the preceding 't/d' assimilates into 'j' (ज्).",
+        "trick": "In 'Ujjwal', both 'j' letters are half (consonant cluster j + j + v + l). This is a frequent BPSC question in both Sandhi and orthography (spelling test).",
+        "trap": "Students often pick 'Ud + Jwal' due to colloquial Hindi variations, but according to Paninian Sanskrit grammar and official BPSC answer keys, 'Ut' is the standard prefix."
       }
     },
     {
@@ -38,20 +54,20 @@
       "section": "language",
       "subject": "Hindi Grammar",
       "source": "BPSC TRE 1.0 (Aug 2023) PYQ",
-      "question": "'यथाशक्ति' शब्द में कौन-सा समास है?\n(Which Samas is present in the word 'Yathashakti'?)",
+      "question": "Which type of compound (Samas) is present in the compound word 'Yathashakti' (यथाशक्ति)?",
       "options": [
-        "तत्पुरुष समास",
-        "अव्ययीभाव समास",
-        "कर्मधारय समास",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Tatpurush Samas",
+        "Avyayibhav Samas",
+        "Karmadharaya Samas",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "अव्ययीभाव समास।",
+      "explanation": "'Yathashakti' is an example of Avyayibhav Samas.",
       "aiDeepSolution": {
-        "concept": "जिस समास का प्रथम पद अव्यय/उपसर्ग हो और वही पद प्रधान हो, तथा समस्त पद क्रिया-विशेषण की भाँति कार्य करे, वह अव्ययीभाव समास कहलाता है।",
-        "trick": "शुरुआत में 'यथा', 'प्रति', 'बे', 'बा', 'भर', 'अनु' दिखे तो 99% अव्ययीभाव होगा। यथाशक्ति = शक्ति के अनुसार।",
-        "trap": "तत्पुरुष में कारक चिह्न का लोप होता है, जबकि यहाँ 'यथा' एक अव्यय है।"
+        "concept": "Avyayibhav Samas: A compound where the initial constituent is an Indeclinable/Prefix (Avyaya) and is the principal element, causing the whole compound to function adverbially.",
+        "trick": "Look for prefixes like 'Yatha-', 'Prati-', 'Be-', 'Ba-', 'Bhar-', 'Anu-'. Yathashakti literally translates to 'according to one's capacity'.",
+        "trap": "Tatpurush involves elision of case endings (Karak), whereas here 'Yatha' is an indeclinable modifier."
       }
     },
     {
@@ -59,20 +75,20 @@
       "section": "language",
       "subject": "Hindi Grammar",
       "source": "BPSC TRE 3.0 (July 2024 Re-Exam) PYQ",
-      "question": "निम्नलिखित में से कौन-सा शब्द वर्तनी की दृष्टि से शुद्ध है?\n(Which of the following words is correctly spelt?)",
+      "question": "Which of the following spellings is orthographically correct in Hindi?",
       "options": [
-        "कवयित्री",
-        "कवियत्री",
-        "कवियित्री",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Kavayitri (कवयित्री)",
+        "Kaviyatri (कवियत्री)",
+        "Kavayitri (कवियित्री)",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "शुद्ध रूप 'कवयित्री' है।",
+      "explanation": "The authentic feminine form of 'Kavi' is 'Kavayitri' (कवयित्री).",
       "aiDeepSolution": {
-        "concept": "'कवि' का स्त्रीलिंग रूप 'कवयित्री' होता है। यहाँ 'व' पर छोटी 'इ' की मात्रा नहीं लगती, बल्कि 'य' पर छोटी 'इ' और 'त्र' पर बड़ी 'ई' की मात्रा लगती है।",
-        "trick": "क-व-यि-त्री (कवि + यित्री नहीं, कव + यित्री)।",
-        "trap": "अधिकांश छात्र 'कवि' देखकर 'कवियत्री' (विकल्प B) चुनते हैं जो पूर्णतः अशुद्ध है।"
+        "concept": "Feminine noun formation: In Hindi/Sanskrit, the feminine counterpart of Kavi is derived as Kav + ayitri, not Kavi + yatri.",
+        "trick": "Remember the syllable pattern: Ka - va - yi - tree (no vowel mark on 'va').",
+        "trap": "Most candidates intuitively place a short 'i' on 'v' (*Kaviyatri), which is an erroneous hypercorrection."
       }
     },
     {
@@ -85,14 +101,14 @@
         "was",
         "were",
         "has been",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Correct verb is 'were'.",
+      "explanation": "The grammatically correct verb is 'were'.",
       "aiDeepSolution": {
-        "concept": "Rule of Proximity: When two subjects are connected by 'Neither...nor' or 'Either...or', the verb agrees with the subject nearest to it.",
-        "trick": "Look at the subject right next to the blank: 'students' (Plural) -> Verb must be Plural ('were'). Since the event occurred 'yesterday', past tense 'were' is required.",
+        "concept": "Rule of Proximity: When two subjects are connected by correlative conjunctions 'Neither...nor' or 'Either...or', the finite verb agrees in number and person with the closest subject.",
+        "trick": "Identify the noun adjacent to the blank: 'students' (plural) -> requires plural past verb 'were' (time marker is 'yesterday').",
         "trap": "If the sentence were inverted ('Neither the students nor the teacher...'), the verb would be singular ('was'). Here 'students' governs the verb."
       }
     },
@@ -101,20 +117,20 @@
       "section": "language",
       "subject": "English Grammar",
       "source": "BPSC TRE 1.0 English PYQ",
-      "question": "Choose the appropriate article:\n'He is _______ European scholar whom we met in Patna.'",
+      "question": "Choose the appropriate article to fill in the blank:\n'He is _______ European scholar whom we met in Patna.'",
       "options": [
         "an",
         "a",
         "the",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Article 'a' is correct.",
+      "explanation": "The correct indefinite article is 'a'.",
       "aiDeepSolution": {
-        "concept": "Article usage is based on the initial phonetic sound of the word, NOT the letter. 'European' starts with a consonant sound /juː/ ('य').",
-        "trick": "A university, a European, a unique, a one-rupee note all take 'A' because they begin with consonant sounds ('yu' or 'wa').",
-        "trap": "Do not rush to mark 'an' just because the first letter is vowel 'E'!"
+        "concept": "Indefinite article choice ('a' vs 'an') is strictly determined by the initial phonetic sound of the following word, not the orthographic letter. 'European' begins with the consonant glide /juː/ (like 'you').",
+        "trick": "Words like 'a European', 'a university', 'a unicorn', 'a one-rupee note' all take 'a' because they begin with consonant phonemes /j/ or /w/.",
+        "trap": "Do not mechanically pick 'an' merely because the word opens with vowel letter 'E'."
       }
     },
     {
@@ -122,20 +138,20 @@
       "section": "gs",
       "subject": "National Movement",
       "source": "BPSC TRE 1.0 (Aug 2023) GS PYQ",
-      "question": "1857 की क्रांति के दौरान बिहार के पटना शहर में 3 जुलाई 1857 को हुए विद्रोह का नेतृत्व किसने किया था?\n(Who led the rebellion in Patna city on 3rd July 1857 during the Revolt of 1857?)",
+      "question": "Who led the rebellion in Patna city on 3rd July 1857 during the Great Revolt of 1857?",
       "options": [
-        "बाबू वीर कुंवर सिंह",
-        "पीर अली खाँ",
-        "अमर सिंह",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Babu Veer Kunwar Singh",
+        "Peer Ali Khan",
+        "Amar Singh",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "पीर अली खाँ।",
+      "explanation": "The Patna uprising of 3rd July 1857 was led by bookseller Peer Ali Khan.",
       "aiDeepSolution": {
-        "concept": "3 जुलाई 1857 को पटना में पुस्तक विक्रेता पीर अली खाँ के नेतृत्व में विद्रोह हुआ जिसमें अफीम एजेंट डॉ. आर. लॉयल मारा गया था। कमिश्नर विलियम टेलर ने पीर अली को फांसी दी थी।",
-        "trick": "प से पटना, प से पीर अली। कुंवर सिंह ने जगदीशपुर (शाहाबाद/आरा) में नेतृत्व किया था।",
-        "trap": "जल्दबाजी में छात्र (A) कुंवर सिंह चुन लेते हैं। ध्यान रहे, प्रश्न विशेष रूप से 'पटना शहर' का पूछ रहा है।"
+        "concept": "Peer Ali Khan, a bookseller in Patna, mobilized the masses and attacked the colonial administration, killing British opium agent Dr. R. Lyell. Commissioner William Tayler executed Peer Ali along with his associates.",
+        "trick": "P for Patna = Peer Ali. Veer Kunwar Singh led the rebellion in Jagdishpur (Bhojpur / Shahabad).",
+        "trap": "Students frequently rush to mark Kunwar Singh, overlooking that the question specifically specifies 'Patna city'."
       }
     },
     {
@@ -143,20 +159,20 @@
       "section": "gs",
       "subject": "Champaran Satyagraha",
       "source": "BPSC TRE 2.0 GS PYQ",
-      "question": "1916 के कांग्रेस के लखनऊ अधिवेशन में गांधीजी को चंपारण आने का निमंत्रण किसने दिया था?\n(Who invited Mahatma Gandhi to visit Champaran at the Lucknow Congress Session of 1916?)",
+      "question": "Who persuaded and invited Mahatma Gandhi to visit Champaran at the Lucknow Congress Session of 1916?",
       "options": [
-        "डॉ. राजेन्द्र प्रसाद",
-        "राजकुमार शुक्ल",
-        "ब्रजकिशोर प्रसाद",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Dr. Rajendra Prasad",
+        "Rajkumar Shukla",
+        "Brajkishore Prasad",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "राजकुमार शुक्ल।",
+      "explanation": "Peasant leader Rajkumar Shukla invited Mahatma Gandhi.",
       "aiDeepSolution": {
-        "concept": "चंपारण के मुरली भरहवा गाँव के किसान राजकुमार शुक्ल ने लखनऊ कांग्रेस (1916) में गांधीजी से मिलकर चंपारण के नीलहे किसानों की व्यथा सुनाई थी।",
-        "trick": "शुक्ल जी ने लगातार आग्रह किया और कोलकाता से गांधीजी को 10 अप्रैल 1917 को पटना लाए।",
-        "trap": "राजेंद्र प्रसाद और ब्रजकिशोर प्रसाद गांधीजी के बाद में सहयोगी बने, निमंत्रण शुक्ल जी ने ही दिया था।"
+        "concept": "Rajkumar Shukla, an indigo farmer from Murli Bharhawa village in Champaran, met Gandhi at the 1916 Lucknow Congress and persistently followed him to Kanpur and Kolkata until Gandhi agreed to visit Bihar in April 1917.",
+        "trick": "Shukla was described by Gandhi in his autobiography as 'resolute and determined'.",
+        "trap": "Dr. Rajendra Prasad and Brajkishore Prasad joined Gandhi's inquiry team after his arrival in Bihar; the invitation was exclusively initiated by Shukla."
       }
     },
     {
@@ -164,20 +180,20 @@
       "section": "gs",
       "subject": "Champaran Satyagraha",
       "source": "BPSC TRE 1.0 & TRE 3.0 GS PYQ",
-      "question": "चंपारण सत्याग्रह (1917) में तिनकठिया पद्धति के विरोध के बाद गठित 'चंपारण एग्रेरियन कमेटी' की सिफारिश पर यूरोपीय नीलहे बगान मालिकों द्वारा अवैध वसूली का कितना प्रतिशत धन किसानों को वापस लौटाया गया?\n(On the recommendation of the Champaran Agrarian Committee, what percentage of illegally extorted money was refunded to the peasants?)",
+      "question": "Following the Champaran Satyagraha (1917), what percentage of illegally extorted dues did the European indigo planters agree to refund to the peasants upon the Champaran Agrarian Committee's recommendation?",
       "options": [
         "20%",
         "25%",
         "50%",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "25% धन किसानों को लौटाया गया।",
+      "explanation": "European planters agreed to refund 25% of the extorted money.",
       "aiDeepSolution": {
-        "concept": "चंपारण एग्रेरियन कमेटी के सदस्य गांधीजी भी थे। बगान मालिक 25% अवैध वसूली वापस करने को तैयार हुए जिसे गांधीजी ने स्वीकार कर लिया क्योंकि इसने अंग्रेजों के अजेय होने के घमंड को तोड़ा था।",
-        "trick": "तिनकठिया = 3/20 भाग। अवैध वसूली वापसी = ठीक 25% (एक-चौथाई)।",
-        "trap": "कई छात्र सोचते हैं कि गांधीजी ने पूरा 100% या 50% वापस लिया होगा, परीक्षा में 25% ही सही आधिकारिक उत्तर है।"
+        "concept": "The Champaran Agrarian Committee (which included Gandhi) abolished the oppressive Tinkathia system. The planters offered a 25% refund, which Gandhi accepted because it shattered the psychological myth of planter prestige and British invincibility.",
+        "trick": "Tinkathia = 3/20th part of land. Extorted money refund = exactly 25% (one-fourth).",
+        "trap": "A common distractor assumption is 50% or 100%, but the historical compromise was exactly 25%."
       }
     },
     {
@@ -185,20 +201,20 @@
       "section": "gs",
       "subject": "Bihar Geography",
       "source": "BPSC TRE 2.0 GS PYQ",
-      "question": "गंगा नदी बिहार के किस जिले में सर्वप्रथम प्रवेश करती है?\n(In which district does the Ganga River first enter the state of Bihar?)",
+      "question": "In which district does the Ganga River first enter the territory of Bihar from Uttar Pradesh?",
       "options": [
-        "भोजपुर",
-        "बक्सर",
-        "सारण",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Bhojpur",
+        "Buxar",
+        "Saran",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "बक्सर जिले के चौसा के पास।",
+      "explanation": "Ganga enters Bihar near Chausa in Buxar district.",
       "aiDeepSolution": {
-        "concept": "गंगा नदी उत्तर प्रदेश से बिहार में बक्सर जिले के चौसा के निकट प्रवेश करती है। बिहार में इसकी लंबाई 445 किमी है और यह 12 जिलों से होकर गुजरती है।",
-        "trick": "चौसा की ऐतिहासिक लड़ाई (हुमायूँ बनाम शेरशाह, 1539) बक्सर में गंगा किनारे हुई थी।",
-        "trap": "भोजपुर में गंगा बाद में पहुँचती है, प्रवेश बिंदु बक्सर है।"
+        "concept": "The Ganga flows for 445 km through Bihar, entering near Chausa in Buxar and exiting at Bhagalpur/Katihar into West Bengal. It touches 12 districts in Bihar.",
+        "trick": "Associate with the historic Battle of Chausa (1539, Sher Shah vs Humayun) situated on the banks of Ganga in Buxar.",
+        "trap": "Bhojpur lies downstream from Buxar; Buxar is the primary entry point."
       }
     },
     {
@@ -206,20 +222,20 @@
       "section": "gs",
       "subject": "Bihar Rivers",
       "source": "BPSC TRE 3.0 GS PYQ",
-      "question": "बिहार की निम्नलिखित में से कौन-सी नदी अपने अत्यधिक मार्ग परिवर्तन (Course Shifting) और विनाशकारी बाढ़ के लिए जानी जाती है तथा कुरसेला (कटिहार) में गंगा से मिलती है?\n(Which river of Bihar is known for excessive course shifting and devastating floods, meeting Ganga at Kursela?)",
+      "question": "Which river of Bihar is notoriously called the 'Sorrow of Bihar' due to frequent course shifts and devastating floods, joining the Ganga at Kursela (Katihar)?",
       "options": [
-        "गंडक नदी",
-        "कोसी नदी",
-        "बूढ़ी गंडक नदी",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Gandak River",
+        "Kosi River",
+        "Burhi Gandak River",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "कोसी नदी ('बिहार का शोक')।",
+      "explanation": "The Kosi River is known as the 'Sorrow of Bihar'.",
       "aiDeepSolution": {
-        "concept": "कोसी नदी तिब्बत व नेपाल के हिमालयी क्षेत्रों (सप्तकोशी) से निकलती है और अत्यधिक गाद (Silt) लाने के कारण मार्ग बदलती है। कुरसेला (कटिहार) में गंगा में मिलती है।",
-        "trick": "शोक = कोसी। 2008 की कुसहा त्रासदी इसका प्रमुख उदाहरण है।",
-        "trap": "बूढ़ी गंडक तीव्र धारा वाली है, लेकिन मार्ग बदलने और शोक की उपाधि कोसी को ही प्राप्त है।"
+        "concept": "Originating in Nepal and Tibet as Saptakoshi, the Kosi carries enormous silt loads that block its bed, causing it to shift over 120 km westwards over the last 250 years. It merges with Ganga at Kursela in Katihar.",
+        "trick": "Sorrow of Bihar = Kosi (merges at Kursela).",
+        "trap": "The Burhi Gandak has the fastest discharge velocity, but course shifting and catastrophic flooding belong to the Kosi."
       }
     },
     {
@@ -227,20 +243,20 @@
       "section": "gs",
       "subject": "General Science",
       "source": "BPSC TRE 1.0 Science PYQ",
-      "question": "मानव शरीर में इंसुलिन (Insulin) हार्मोन का स्राव किस ग्रंथि के किस भाग द्वारा होता है?\n(Which part of which gland secretes insulin hormone in the human body?)",
+      "question": "Which specific endocrine cells in which human gland secrete the hormone Insulin?",
       "options": [
-        "यकृत की कुप्फर कोशिकाएं",
-        "अग्न्याशय की बीटा-कोशिकाएं (β-cells of Islets of Langerhans)",
-        "पीयूष ग्रंथि का अग्र भाग",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Kupffer cells of the Liver",
+        "Beta (β) cells of the Islets of Langerhans in the Pancreas",
+        "Anterior Pituitary gland",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "अग्न्याशय की बीटा-कोशिकाएं।",
+      "explanation": "Beta (β) cells of the Islets of Langerhans in the Pancreas secrete Insulin.",
       "aiDeepSolution": {
-        "concept": "अग्न्याशय (Pancreas) एक मिश्रित ग्रंथि है। इसके अंतःस्रावी भाग 'लैंगरहैंस की द्वीपिकाएं' की β-कोशिकाएं इंसुलिन स्रावित करती हैं, जो रक्त ग्लूकोज को ग्लाइकोजन में बदलता है।",
-        "trick": "बीटा = इंसुलिन (शर्करा घटाना)। अल्फा = ग्लूकागन (शर्करा बढ़ाना)।",
-        "trap": "कुप्फर कोशिकाएं यकृत में फेगोसाइटिक होती हैं, हार्मोन नहीं बनातीं।"
+        "concept": "The Pancreas is a heterocrine (mixed) gland. Its endocrine tissue, the Islets of Langerhans, consists of Alpha cells (Glucagon) and Beta cells (Insulin). Insulin facilitates glucose uptake and stimulates glycogenesis.",
+        "trick": "Beta cells = Insulin (lowers blood sugar). Alpha cells = Glucagon (raises blood sugar).",
+        "trap": "Kupffer cells are specialized macrophages residing in the liver, not hormone-secreting endocrine cells."
       }
     },
     {
@@ -248,20 +264,20 @@
       "section": "gs",
       "subject": "General Science",
       "source": "BPSC TRE 2.0 Science PYQ",
-      "question": "श्वेत प्रकाश जब किसी कांच के प्रिज्म से गुजरता है, तो किस रंग के प्रकाश का प्रकीर्णन (Scattering) एवं विचलन (Deviation) न्यूनतम होता है?\n(When white light passes through a glass prism, which colour experiences minimum deviation and scattering?)",
+      "question": "When white light passes through a glass triangular prism, which spectral colour undergoes the minimum deviation and minimum scattering?",
       "options": [
-        "बैंगनी (Violet)",
-        "लाल (Red)",
-        "पीला (Yellow)",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Violet",
+        "Red",
+        "Yellow",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "लाल रंग (Red light)।",
+      "explanation": "Red light suffers minimum deviation and scattering.",
       "aiDeepSolution": {
-        "concept": "रेले का प्रकीर्णन नियम: Scattering ∝ 1/λ⁴। लाल रंग की तरंगदैर्ध्य (λ ≈ 700 nm) दृश्य प्रकाश में सबसे लंबी होती है, अतः इसका प्रकीर्णन एवं विचलन न्यूनतम होता है।",
-        "trick": "खतरे का सिग्नल लाल इसलिए होता है क्योंकि इसका प्रकीर्णन सबसे कम होता है और यह कोहरे में भी दूर से दिखता है।",
-        "trap": "बैंगनी का विचलन व प्रकीर्णन अधिकतम होता है, न्यूनतम पूछा जाए तो सदैव 'लाल' होगा।"
+        "concept": "According to Rayleigh Scattering ($I \\propto 1/\\lambda^4$), scattering is inversely proportional to the fourth power of wavelength. Red light has the longest visible wavelength (approx. 700 nm), smallest refractive index in glass, and hence minimum deviation ($\\\\delta = (\\mu - 1)A$).",
+        "trick": "VIBGYOR: Violet has maximum deviation; Red has minimum deviation.",
+        "trap": "Violet has maximum scattering and maximum refractive index; the question asks for MINIMUM."
       }
     },
     {
@@ -269,20 +285,20 @@
       "section": "gs",
       "subject": "Mental Ability",
       "source": "BPSC TRE 3.0 GS PYQ",
-      "question": "दिए गए संख्या अनुक्रम में अगला पद ज्ञात कीजिए: 2, 5, 10, 17, 26, ?\n(Find the next term in the given number sequence: 2, 5, 10, 17, 26, ?)",
+      "question": "Determine the next term in the arithmetic-square progression sequence: 2, 5, 10, 17, 26, ?",
       "options": [
         "35",
         "37",
         "39",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "37।",
+      "explanation": "The next term in the sequence is 37.",
       "aiDeepSolution": {
-        "concept": "वर्ग अनुक्रम नियम (n² + 1):\n1² + 1 = 2\n2² + 1 = 5\n3² + 1 = 10\n4² + 1 = 17\n5² + 1 = 26\nअतः अगला पद = 6² + 1 = 36 + 1 = 37।",
-        "trick": "अंतर भी देख सकते हैं: +3, +5, +7, +9, अगला अंतर +11 होगा: 26 + 11 = 37।",
-        "trap": "विकल्प (A) 35 में छात्र जल्दबाजी में 5×7 सोच लेते हैं, लेकिन अंतर विषम संख्याएं हैं।"
+        "concept": "The pattern follows $n^2 + 1$: $1^2+1=2$, $2^2+1=5$, $3^2+1=10$, $4^2+1=17$, $5^2+1=26$, $6^2+1=37$. Alternatively, consecutive odd differences: +3, +5, +7, +9, +11 -> 26 + 11 = 37.",
+        "trick": "Sequence of differences is consecutive odd numbers: 3, 5, 7, 9, 11.",
+        "trap": "35 is $6^2 - 1$, which candidates mistakenly pick by reversing the sign."
       }
     },
     {
@@ -290,20 +306,20 @@
       "section": "middle_math_sci",
       "subject": "Mathematics (6-8)",
       "source": "BPSC TRE 2.0 (Class 6-8 Maths & Sci) PYQ",
-      "question": "यदि दो धनात्मक संख्याओं का महत्तम समापवर्तक (HCF) 12 और लघुत्तम समापवर्त्य (LCM) 144 है, तथा उनमें से एक संख्या 36 है, तो दूसरी संख्या क्या होगी?\n(If HCF and LCM of two numbers are 12 and 144, and one is 36, what is the other?)",
+      "question": "If the HCF and LCM of two positive integers are 12 and 144 respectively, and one of the integers is 36, what is the value of the other integer?",
       "options": [
         "48",
         "54",
         "72",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "48।",
+      "explanation": "The second integer is 48.",
       "aiDeepSolution": {
-        "concept": "आधारभूत सूत्र: संख्या A × संख्या B = HCF × LCM।",
-        "trick": "संख्या B = (HCF × LCM) / संख्या A = (12 × 144) / 36 = 144 / 3 = 48। सीधे 10 सेकंड में हल!",
-        "trap": "यह सूत्र केवल दो संख्याओं के लिए सत्य होता है, तीन संख्याओं के लिए सीधे लागू नहीं होता।"
+        "concept": "Fundamental Theorem of Arithmetic property for two positive integers: $\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b$.",
+        "trick": "Calculation: $12 \\times 144 = 36 \\times b \\implies b = \\frac{12 \\times 144}{36} = \\frac{144}{3} = 48$.",
+        "trap": "This product formula holds strictly for two numbers only; do not attempt for three numbers without modification."
       }
     },
     {
@@ -311,20 +327,20 @@
       "section": "middle_math_sci",
       "subject": "Mathematics (6-8)",
       "source": "Bihar SCERT Class 6 & BPSC TRE 1.0 PYQ",
-      "question": "संख्या 5432k7 यदि 9 से पूर्णतः विभाज्य है, तो अंक 'k' का मान क्या होगा?\n(If number 5432k7 is divisible by 9, what is the value of digit 'k'?)",
+      "question": "If the 6-digit number 5432k7 is completely divisible by 9, what must be the single-digit value of 'k'?",
       "options": [
         "6",
         "7",
         "5",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "6।",
+      "explanation": "The value of digit k is 6.",
       "aiDeepSolution": {
-        "concept": "9 से विभाज्यता का नियम: किसी संख्या के सभी अंकों का योग 9 से विभाज्य होना चाहिए।",
-        "trick": "योग = 5 + 4 + 3 + 2 + k + 7 = 21 + k। 21 के तुरंत बाद 9 का गुणज 27 है। k = 27 - 21 = 6।",
-        "trap": "कैलकुलेशन में 5+4 को सीधे 9 मानकर काट सकते हैं (Casting out nines विधि): 3+2+7 = 12 -> 1+2 = 3। 3 में 6 जोड़ें तो 9 बनता है। उत्तर 6।"
+        "concept": "Divisibility Rule of 9: A number is divisible by 9 if and only if the sum of its constituent digits is a multiple of 9.",
+        "trick": "Sum of digits: $5 + 4 + 3 + 2 + k + 7 = 21 + k$. The next multiple of 9 after 21 is 27. Therefore, $21 + k = 27 \\implies k = 6$.",
+        "trap": "Do not confuse divisibility of 9 with divisibility of 3 ($k=0, 3, 6, 9$ work for 3, but only $k=6$ works for 9)."
       }
     },
     {
@@ -332,20 +348,20 @@
       "section": "middle_math_sci",
       "subject": "Mathematics (6-8)",
       "source": "NCERT Class 8 & BPSC TRE 3.0 PYQ",
-      "question": "परिमेय संख्या -7/19 का योज्य प्रतिलोम (Additive Inverse) और गुणात्मक प्रतिलोम (Multiplicative Inverse) का गुणनफल क्या होगा?\n(What is the product of additive inverse and multiplicative inverse of -7/19?)",
+      "question": "What is the product of the additive inverse and the multiplicative inverse of the rational number -7/19?",
       "options": [
         "1",
         "-1",
         "0",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "-1।",
+      "explanation": "The product is -1.",
       "aiDeepSolution": {
-        "concept": "संख्या = x। योज्य प्रतिलोम = -x। गुणात्मक प्रतिलोम = 1/x। अतः गुणनफल = (-x) × (1/x) = -1। यह किसी भी अशून्य संख्या के लिए सार्वभौमिक सत्य है!",
-        "trick": "संख्या चाहे -7/19 हो या कोई भी कठिन भिन्न, (योज्य प्रतिलोम) × (गुणात्मक प्रतिलोम) सदैव -1 ही होता है!",
-        "trap": "छात्र गणना करने में 1 मिनट गंवा देते हैं, जबकि बीजगणितीय सिद्धांत से इसका उत्तर 1 सेकंड में -1 आता है।"
+        "concept": "For any non-zero rational number $x$: Additive Inverse = $-x$; Multiplicative Inverse (reciprocal) = $1/x$. Their product is $(-x) \\times (1/x) = -1$.",
+        "trick": "Universal Property: The product of the additive inverse and multiplicative inverse of ANY non-zero number is ALWAYS -1.",
+        "trap": "Candidates calculate $(7/19) \\times (-19/7) = -1$. Do not lose the negative sign."
       }
     },
     {
@@ -353,20 +369,20 @@
       "section": "middle_math_sci",
       "subject": "Mathematics (6-8)",
       "source": "NCERT Class 8 & BPSC TRE 2.0 PYQ",
-      "question": "मान ज्ञात कीजिए: (1/2)^(-2) + (1/3)^(-2) + (1/4)^(-2)\n(Evaluate: (1/2)^(-2) + (1/3)^(-2) + (1/4)^(-2))",
+      "question": "Evaluate the exponential numerical expression: $(1/2)^{-2} + (1/3)^{-2} + (1/4)^{-2}$",
       "options": [
         "29",
         "36",
         "61/144",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "29।",
+      "explanation": "The evaluated value is 29.",
       "aiDeepSolution": {
-        "concept": "ऋणात्मक घात नियम: (1/a)^(-n) = a^n।",
-        "trick": "(1/2)^(-2) = 2² = 4। (1/3)^(-2) = 3² = 9। (1/4)^(-2) = 4² = 16। कुल योग = 4 + 9 + 16 = 29।",
-        "trap": "ऋणात्मक चिह्न देखकर छात्र ल.स.प. निकालने लगते हैं (जैसे विकल्प C 61/144), जो कि गलत दृष्टिकोण है।"
+        "concept": "Law of Negative Exponents: $(a/b)^{-n} = (b/a)^n$. Hence, $(1/2)^{-2} = 2^2 = 4$, $(1/3)^{-2} = 3^2 = 9$, $(1/4)^{-2} = 4^2 = 16$.",
+        "trick": "Direct calculation: $4 + 9 + 16 = 29$.",
+        "trap": "Option C (61/144) is the result of $(1/4 + 1/9 + 1/16)$, where the negative exponent is erroneously ignored."
       }
     },
     {
@@ -374,20 +390,20 @@
       "section": "middle_math_sci",
       "subject": "Science (Physics)",
       "source": "BPSC TRE 3.0 Science PYQ",
-      "question": "दो समतल दर्पण एक-दूसरे से 60° के कोण पर झुके हुए हैं। उनके बीच सममित रूप से रखी एक वस्तु के बनने वाले प्रतिबिंबों की कुल संख्या क्या होगी?\n(Two plane mirrors are inclined at 60°. How many images are formed?)",
+      "question": "Two plane mirrors are inclined to each other at an angle of 60°. How many distinct images of an object placed symmetrically between them will be formed?",
       "options": [
         "5",
         "6",
         "4",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "5 प्रतिबिंब।",
+      "explanation": "Exactly 5 images will be formed.",
       "aiDeepSolution": {
-        "concept": "समतल दर्पणों के बीच प्रतिबिंबों की संख्या का सूत्र: n = (360° / θ) - 1 (जब 360/θ एक सम संख्या हो)।",
-        "trick": "360 / 60 = 6 (सम संख्या)। अतः n = 6 - 1 = 5 प्रतिबिंब।",
-        "trap": "यदि कोई छात्र -1 घटाना भूल जाए तो वह (B) 6 टिक कर देगा, जो गलत हो जाएगा।"
+        "concept": "Image formation formula by inclined mirrors: $m = 360^\\circ / \\theta$. Here $m = 360 / 60 = 6$. Since $m$ is an EVEN integer, number of images $n = m - 1 = 6 - 1 = 5$ (regardless of position).",
+        "trick": "If $360/\\theta$ is even, subtract 1: $6 - 1 = 5$.",
+        "trap": "Candidates often forget the '-1' subtraction and incorrectly choose 6."
       }
     },
     {
@@ -395,20 +411,20 @@
       "section": "middle_math_sci",
       "subject": "Science (Biology)",
       "source": "NCERT Class 6 & BPSC TRE 1.0 PYQ",
-      "question": "खाद्य पदार्थ में प्रोटीन की उपस्थिति की जांच करने के लिए किस अभिकर्मक (Reagents) का उपयोग किया जाता है और कौन-सा रंग प्राप्त होता है?\n(Which reagents test for proteins and what colour indicates positive test?)",
+      "question": "Which combination of chemical reagents is used to test for the presence of proteins in food, and what positive colour reaction confirms it?",
       "options": [
-        "आयोडीन विलयन (नीला-काला रंग)",
-        "कॉपर सल्फेट और कास्टिक सोडा (बैंगनी रंग)",
-        "बेनेडिक्ट विलयन (ईंट जैसा लाल रंग)",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Dilute Iodine solution (Blue-black colouration)",
+        "Copper sulphate solution and Caustic soda (Violet colouration)",
+        "Benedict's solution (Brick red precipitate)",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "कॉपर सल्फेट और कास्टिक सोडा (बैंगनी रंग)।",
+      "explanation": "Copper sulphate and Caustic soda produce a violet colour, confirming proteins (Biuret test).",
       "aiDeepSolution": {
-        "concept": "ब्यूरेट परीक्षण (Biuret Test): 2 बूंद कॉपर सल्फेट (CuSO4) और 10 बूंद कास्टिक सोडा (NaOH) विलयन मिलाने पर प्रोटीन पेप्टाइड बंधों के कारण बैंगनी (Violet) रंग देता है।",
-        "trick": "आयोडीन = स्टार्च (कार्बोहाइड्रेट)। CuSO4 + NaOH = प्रोटीन।",
-        "trap": "आयोडीन विलयन नीला-काला रंग स्टार्च परीक्षण में देता है, प्रोटीन में नहीं।"
+        "concept": "Biuret test for peptide bonds: In an alkaline medium (Caustic soda / NaOH), Copper(II) ions ($CuSO_4$) chelate with peptide nitrogen atoms to form a violet/purple complex.",
+        "trick": "Iodine = Starch (Blue-Black). Biuret ($CuSO_4 + NaOH$) = Protein (Violet).",
+        "trap": "Option A is the diagnostic test for carbohydrates (starch), not proteins."
       }
     },
     {
@@ -416,20 +432,20 @@
       "section": "middle_math_sci",
       "subject": "Science (Biology)",
       "source": "BPSC TRE 2.0 Class 6-8 Science PYQ",
-      "question": "निम्नलिखित में से कौन-सा विटामिन जल में घुलनशील (Water-soluble) है?\n(Which of the following vitamins is water-soluble?)",
+      "question": "Which of the following essential vitamins is water-soluble in human nutrition?",
       "options": [
-        "विटामिन A",
-        "विटामिन C",
-        "विटामिन D",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Vitamin A",
+        "Vitamin C",
+        "Vitamin D",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "विटामिन C।",
+      "explanation": "Vitamin C is water-soluble.",
       "aiDeepSolution": {
-        "concept": "विटामिन दो वर्गों में बंटे होते हैं: जल में घुलनशील (B-complex, C) और वसा में घुलनशील (A, D, E, K)।",
-        "trick": "याद रखने का कोड: 'KEDA' (कीड़ा) वसा में तैरता है, बाकी B और C जल में घुल जाते हैं।",
-        "trap": "जल में घुलनशील विटामिन शरीर में संचित नहीं होते और मूत्र के साथ उत्सर्जित हो जाते हैं, इसलिए इन्हें प्रतिदिन भोजन में लेना आवश्यक है।"
+        "concept": "Vitamins are classified into: Fat-soluble (Vitamins K, E, D, A) and Water-soluble (Vitamin B-complex and Vitamin C / Ascorbic acid). Water-soluble vitamins are readily excreted in urine and must be supplied regularly.",
+        "trick": "Mnemonic: 'KEDA' are fat-soluble. 'B and C' dissolve in water.",
+        "trap": "Do not confuse Vitamin D (fat-soluble) with Vitamin C."
       }
     },
     {
@@ -437,20 +453,20 @@
       "section": "middle_math_sci",
       "subject": "Science (Physics)",
       "source": "Bihar SCERT Class 7 & BPSC TRE 1.0 PYQ",
-      "question": "वाहनों में पीछे का दृश्य देखने (Rear-view mirror) के लिए किस दर्पण का उपयोग किया जाता है?\n(Which mirror is used as a rear-view mirror in vehicles?)",
+      "question": "Which optical mirror is installed as a rear-view mirror in motor vehicles to provide a wide field of view?",
       "options": [
-        "अवतल दर्पण",
-        "उत्तल दर्पण",
-        "समतल दर्पण",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Concave mirror",
+        "Convex mirror",
+        "Plane mirror",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "उत्तल दर्पण (Convex Mirror)।",
+      "explanation": "Convex mirrors are used as rear-view mirrors.",
       "aiDeepSolution": {
-        "concept": "उत्तल दर्पण सदैव आभासी, सीधा एवं छोटा प्रतिबिंब बनाता है तथा बाहर की ओर वक्रित होने के कारण इसका दृष्टि क्षेत्र (Field of View) बहुत विस्तृत होता है।",
-        "trick": "उत्तल = ऊपर उठा हुआ = बड़ा क्षेत्र दिखाता है। अवतल = दंत चिकित्सक और दाढ़ी बनाने वाला दर्पण।",
-        "trap": "अवतल दर्पण अधिकांशतः उल्टा प्रतिबिंब बनाता है, जिससे पीछे का वाहन उल्टा दिखाई देगा!"
+        "concept": "Convex mirrors always form virtual, erect, and diminished images of distant objects, and curve outwards, giving the driver a significantly wider field of view than a plane mirror.",
+        "trick": "Convex = Diverging mirror = Erect diminished image + Wide panorama.",
+        "trap": "Concave mirrors produce inverted images for distant objects, making them unusable as rear-view mirrors."
       }
     },
     {
@@ -458,20 +474,20 @@
       "section": "middle_math_sci",
       "subject": "Science (Biology)",
       "source": "BPSC TRE 2.0 Science PYQ",
-      "question": "'स्कर्वी' (Scurvy) रोग किस विटामिन की कमी से होता है?\n(Scurvy disease is caused by the deficiency of which vitamin?)",
+      "question": "Scurvy is a clinical deficiency disease caused by the prolonged lack of which vitamin in the human diet?",
       "options": [
-        "विटामिन B1",
-        "विटामिन C",
-        "विटामिन D",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Vitamin B1 (Thiamine)",
+        "Vitamin C (Ascorbic acid)",
+        "Vitamin D (Calciferol)",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "विटामिन C (एस्कॉर्बिक एसिड)।",
+      "explanation": "Scurvy is caused by Vitamin C deficiency.",
       "aiDeepSolution": {
-        "concept": "विटामिन C की कमी से कोलेजन प्रोटीन का निर्माण बाधित होता है जिससे मसूड़ों से रक्तस्राव, दांत कमजोर होना तथा घाव भरने में अत्यधिक समय लगता है।",
-        "trick": "C से Citrus (खट्टे फल आंवला, नींबू) -> C की कमी से स्कर्वी। B1 से बेरी-बेरी। D से रिकेट्स।",
-        "trap": "गर्म करने पर विटामिन C सबसे पहले नष्ट हो जाता है।"
+        "concept": "Vitamin C (Ascorbic acid) is an essential cofactor for collagen synthesis. Deficiency leads to fragile blood capillaries, bleeding gums, poor wound healing, and scurvy.",
+        "trick": "C for Citrus = C for Ascorbic acid = C for Scurvy prevention.",
+        "trap": "Vitamin B1 deficiency causes Beriberi; Vitamin D deficiency causes Rickets."
       }
     },
     {
@@ -479,20 +495,20 @@
       "section": "middle_math_sci",
       "subject": "Science (Physics)",
       "source": "NCERT Class 10 & BPSC TRE 3.0 PYQ",
-      "question": "किसी अवतल दर्पण के फोकस (F) और ध्रुव (P) के बीच रखी वस्तु का प्रतिबिंब कैसा बनता है?\n(What nature of image is formed by concave mirror when object is between F and P?)",
+      "question": "What is the nature and size of the image formed by a concave spherical mirror when an object is placed between its Principal Focus (F) and Pole (P)?",
       "options": [
-        "वास्तविक, उल्टा और बड़ा",
-        "आभासी, सीधा और आवर्धित (बड़ा)",
-        "वास्तविक, उल्टा और छोटा",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Real, inverted, and magnified",
+        "Virtual, erect, and magnified (enlarged)",
+        "Real, inverted, and diminished",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "आभासी, सीधा और आवर्धित (Enlarged)।",
+      "explanation": "The image is virtual, erect, and magnified, formed behind the mirror.",
       "aiDeepSolution": {
-        "concept": "अवतल दर्पण केवल एक ही स्थिति में आभासी और सीधा प्रतिबिंब बनाता है - जब वस्तु ध्रुव (P) और फोकस (F) के बीच हो। प्रतिबिंब दर्पण के पीछे बनता है।",
-        "trick": "यही स्थिति शेविंग मिरर और दंत चिकित्सक के दर्पण में उपयोग की जाती है ताकि चेहरे या दांत का बड़ा सीधा चित्र दिखे।",
-        "trap": "बाकी सभी स्थितियों में (अनंत, C पर, C से परे, C व F के बीच) अवतल दर्पण वास्तविक और उल्टा प्रतिबिंब बनाता है।"
+        "concept": "This is the single exceptional case for concave mirrors. When the object is inside the focal length ($u < f$), the reflected rays diverge and appear to meet behind the mirror, creating a virtual, upright, and magnified image (utilized in shaving/dentist mirrors).",
+        "trick": "Inside Focus = Virtual and Magnified. Beyond Focus = Real and Inverted.",
+        "trap": "All other positions for concave mirrors yield REAL and INVERTED images; this is the only virtual case."
       }
     },
     {
@@ -500,20 +516,20 @@
       "section": "sec_math",
       "subject": "Mathematics (9-10)",
       "source": "BPSC TRE 1.0 (Class 9-10 Maths) PYQ",
-      "question": "यूक्लिड विभाजन प्रमेयिका के अनुसार, दो धनात्मक पूर्णांकों a और b के लिए a = bq + r में r के मान पर क्या प्रतिबंध होता है?\n(According to Euclid's Division Lemma, for positive integers a and b, what is the condition on remainder r in a = bq + r?)",
+      "question": "According to Euclid's Division Lemma, for any two positive integers a and b, there exist unique whole numbers q and r such that $a = bq + r$. What is the mandatory condition on remainder r?",
       "options": [
-        "0 ≤ r < b",
-        "0 < r ≤ b",
-        "0 ≤ r ≤ b",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "$0 \\le r < b$",
+        "$0 < r \\le b$",
+        "$0 \\le r \\le b$",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "0 ≤ r < b।",
+      "explanation": "The remainder must satisfy $0 \\le r < b$.",
       "aiDeepSolution": {
-        "concept": "यूक्लिड विभाजन प्रमेयिका: किन्हीं दो धनात्मक पूर्णांकों a और b के लिए अद्वितीय पूर्ण संख्याएं q और r विद्यमान होती हैं कि a = bq + r, जहाँ 0 ≤ r < b।",
-        "trick": "शेषफल (r) शून्य हो सकता है (पूरा भाग लगने पर), परंतु वह कभी भी भाजक (b) के बराबर या बड़ा नहीं हो सकता।",
-        "trap": "विकल्प C में r ≤ b दिया है, जो गलत है क्योंकि यदि r = b हो जाए तो भाग एक बार और चला जाएगा!"
+        "concept": "Euclid's Division Lemma formalizes the long division algorithm: the remainder can be zero or strictly positive, but it MUST be strictly smaller than the divisor $b$. If $r = b$, the quotient increases by 1.",
+        "trick": "Strict inequality at the upper bound: $0 \\le r < b$.",
+        "trap": "Option C includes $r \\le b$, which is invalid because a remainder can never equal the divisor."
       }
     },
     {
@@ -521,20 +537,20 @@
       "section": "sec_math",
       "subject": "Mathematics (9-10)",
       "source": "BPSC TRE 2.0 Class 9-10 & NCERT Exemplar",
-      "question": "परिमेय संख्या 13/1250 का दशमलव प्रसार दशमलव के कितने स्थानों के बाद सांत (Terminate) होगा?\n(After how many decimal places will the decimal expansion of 13/1250 terminate?)",
+      "question": "After how many decimal places will the decimal expansion of the rational number 13/1250 terminate?",
       "options": [
         "3",
         "4",
         "5",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "4 स्थानों के बाद।",
+      "explanation": "The decimal expansion terminates after 4 decimal places.",
       "aiDeepSolution": {
-        "concept": "यदि परिमेय संख्या p/q में q = 2^n · 5^m हो, तो दशमलव प्रसार max(n, m) स्थानों के बाद सांत होता है।",
-        "trick": "1250 = 2¹ × 5⁴। यहाँ अधिकतम घात max(1, 4) = 4 है। बिना भाग दिए सीधे 4 उत्तर टिक करें!",
-        "trap": "13/1250 = (13 × 2³) / (1250 × 2³) = 104 / 10000 = 0.0104 (दशमलव के बाद ठीक 4 अंक)।"
+        "concept": "Let $x = p/q$ in simplest terms. If $q = 2^n \\cdot 5^m$, the decimal terminates after $\\max(n, m)$ places. Here $1250 = 2^1 \\times 5^4$. The powers are $n=1, m=4$. $\\max(1, 4) = 4$.",
+        "trick": "Prime factorize denominator: $1250 = 2 \\times 625 = 2^1 \\times 5^4$. Highest exponent is 4 -> terminates in 4 decimal places ($13/1250 = 0.0104$).",
+        "trap": "Do not divide manually in exam conditions; apply the $\\max(n, m)$ exponent rule directly."
       }
     },
     {
@@ -542,20 +558,20 @@
       "section": "sec_math",
       "subject": "Mathematics (9-10)",
       "source": "BPSC TRE 2.0 (Class 9-10 Maths) PYQ",
-      "question": "यदि α और β द्विघात बहुपद P(x) = 2x² - 5x + 7 के शून्यक हैं, तो 1/α + 1/β का मान क्या होगा?\n(If α and β are the zeroes of P(x) = 2x² - 5x + 7, what is the value of 1/α + 1/β?)",
+      "question": "If $\\alpha$ and $\\beta$ are the zeroes of the quadratic polynomial $P(x) = 2x^2 - 5x + 7$, what is the exact numerical value of $(1/\\alpha + 1/\\beta)$?",
       "options": [
         "5/7",
         "-5/7",
         "5/2",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "5/7।",
+      "explanation": "The value of $(1/\\alpha + 1/\\beta)$ is 5/7.",
       "aiDeepSolution": {
-        "concept": "1/α + 1/β = (α + β) / (αβ) = (-b/a) / (c/a) = -b/c।",
-        "trick": "सीधा सूत्र याद रखें: 1/α + 1/β = -b / c। यहाँ b = -5, c = 7। अतः -(-5) / 7 = 5/7। 5 सेकंड में हल!",
-        "trap": "चिह्न की गलती: b = -5 है, अतः -b धनात्मक (+5) हो जाएगा।"
+        "concept": "Sum of roots $\\alpha + \\beta = -b/a = -(-5)/2 = 5/2$. Product of roots $\\alpha\\beta = c/a = 7/2$. Then $1/\\alpha + 1/\\beta = (\\alpha + \\beta)/(\\alpha\\beta) = (5/2)/(7/2) = 5/7$.",
+        "trick": "Direct BPSC Shortcut: $1/\\alpha + 1/\\beta = -b/c = -(-5)/7 = 5/7$. Solve in 3 seconds!",
+        "trap": "Sign error: candidates forget the leading minus in $-b/c$ and answer $-5/7$."
       }
     },
     {
@@ -563,20 +579,20 @@
       "section": "sec_math",
       "subject": "Mathematics (9-10)",
       "source": "NCERT Exemplar & BPSC TRE 2.0 Exact PYQ",
-      "question": "यदि द्विघात बहुपद x² + 99x + 127 के शून्यक α और β हैं, तो दोनों शून्यकों के चिह्न क्या होंगे?\n(If the zeroes of x² + 99x + 127 are α and β, what are the signs of both zeroes?)",
+      "question": "If $\\alpha$ and $\\beta$ are the zeroes of the quadratic polynomial $x^2 + 99x + 127$, what are the algebraic signs of both zeroes?",
       "options": [
-        "दोनों धनात्मक होंगे (Both positive)",
-        "दोनों ऋणात्मक होंगे (Both negative)",
-        "एक धनात्मक और एक ऋणात्मक होगा (One positive and one negative)",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Both positive",
+        "Both negative",
+        "One positive and one negative",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "दोनों ऋणात्मक होंगे।",
+      "explanation": "Both zeroes are strictly negative.",
       "aiDeepSolution": {
-        "concept": "P(x) = ax² + bx + c। यदि a, b, c तीनों समान चिह्न (धनात्मक) के हों, तो दोनों शून्यक ऋणात्मक होंगे।",
-        "trick": "α + β = -99 (योग ऋणात्मक), αβ = 127 (गुणनफल धनात्मक)। दो संख्याओं का गुणनफल धनात्मक तभी होगा जब दोनों समान चिह्न की हों; और योग ऋणात्मक है तो दोनों निश्चित रूप से ऋणात्मक होंगी।",
-        "trap": "द्विघात सूत्र लगाकर मान निकालने की आवश्यकता नहीं है, केवल चिह्नों के संबंध से सीधे हल होता है।"
+        "concept": "For $ax^2 + bx + c$, if $a, b, c > 0$: Product $\\alpha\\beta = c/a = 127/1 > 0$ implies both roots have the same sign. Sum $\\alpha + \\beta = -b/a = -99 < 0$ implies both must be negative.",
+        "trick": "Rule: If all coefficients of a quadratic polynomial are positive, both roots MUST be negative.",
+        "trap": "Do not solve the discriminant or use quadratic formula; inspect signs of sum and product."
       }
     },
     {
@@ -584,20 +600,20 @@
       "section": "sec_math",
       "subject": "Mathematics (9-10)",
       "source": "NCERT Exemplar & BPSC TRE 1.0 PYQ",
-      "question": "यदि एक त्रिघात बहुपद P(x) = ax³ + bx² + cx + d का एक शून्यक 0 है, तो अन्य दो शून्यकों का गुणनफल क्या होगा?\n(If one zero of cubic polynomial P(x) = ax³ + bx² + cx + d is 0, product of other two is:)",
+      "question": "If one of the zeroes of the cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ is equal to 0, what is the product of the other two zeroes?",
       "options": [
         "-c/a",
         "c/a",
         "-b/a",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "c/a।",
+      "explanation": "The product of the other two zeroes is c/a.",
       "aiDeepSolution": {
-        "concept": "त्रिघात बहुपद के दो-दो शून्यकों के गुणनफलों का योग: αβ + βγ + γα = c/a।",
-        "trick": "यदि α = 0 रख दें, तो 0·β + βγ + γ·0 = c/a => βγ = c/a।",
-        "trap": "छात्र तीनों शून्यकों के गुणनफल αβγ = -d/a से भ्रमित होकर -d/a या -c/a लगा देते हैं। ध्यान रहे, यहाँ दो-दो के गुणनफल का सूत्र काम आता है।"
+        "concept": "In a cubic polynomial with roots $\\alpha, \\beta, \\gamma$, the sum of pairwise products is $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = c/a$. If $\\gamma = 0$, then $\\alpha\\beta + 0 + 0 = c/a \\implies \\alpha\\beta = c/a$.",
+        "trick": "Set $\\gamma = 0$ in $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = c/a$ -> $\\alpha\\beta = c/a$.",
+        "trap": "Do not confuse with the product of all three roots $\\alpha\\beta\\gamma = -d/a$."
       }
     },
     {
@@ -605,20 +621,20 @@
       "section": "sec_math",
       "subject": "Mathematics (9-10)",
       "source": "BPSC TRE 3.0 (Class 9-10 Maths) PYQ",
-      "question": "निम्नलिखित कथनों में से कौन-सा/से कथन सत्य है/हैं?\n1. एक परिमेय संख्या और एक अपरिमेय संख्या का योग सदैव अपरिमेय होता है।\n2. दो अपरिमेय संख्याओं का गुणनफल सदैव अपरिमेय होता है।\n3. प्रत्येक वास्तविक संख्या या तो परिमेय होती है या अपरिमेय।\n(Which of the following statements is/are true?)",
+      "question": "Consider the following statements regarding real numbers:\n1. The sum of a rational and an irrational number is always irrational.\n2. The product of two irrational numbers is always irrational.\n3. Every real number is either rational or irrational.\nWhich of the above statements is/are mathematically TRUE?",
       "options": [
-        "केवल 1 और 3",
-        "केवल 1 और 2",
-        "1, 2 और 3 तीनों",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "Only 1 and 3",
+        "Only 1 and 2",
+        "All 1, 2, and 3",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "केवल 1 और 3 सत्य हैं।",
+      "explanation": "Statements 1 and 3 are true; Statement 2 is false.",
       "aiDeepSolution": {
-        "concept": "कथन 1 सत्य है (2 + √3 अपरिमेय है)। कथन 3 सत्य है (वास्तविक संख्याएँ = परिमेय ∪ अपरिमेय)।",
-        "trick": "कथन 2 असत्य है: √2 × √2 = 2 (जो परिमेय संख्या है)। अतः दो अपरिमेय का गुणनफल परिमेय भी हो सकता है।",
-        "trap": "BPSC ऐसे बहु-कथन वाले प्रश्नों में 'उपर्युक्त में से एक से अधिक' (D) का जाल बिछाता है, परंतु यहाँ सही उत्तर विशिष्ट रूप से (A) 'केवल 1 और 3' है।"
+        "concept": "Statement 1 is TRUE (Rational + Irrational = Irrational). Statement 2 is FALSE: e.g. $\\sqrt{2} \\times \\sqrt{2} = 2$ (rational) or $\\sqrt{2} \\times \\sqrt{3} = \\sqrt{6}$ (irrational). Statement 3 is TRUE: $\\mathbb{R} = \\mathbb{Q} \\cup \\mathbb{Q}'$.",
+        "trick": "Counterexample for statement 2: $(\\sqrt{3}) \\times (\\sqrt{3}) = 3$ (rational). Thus 2 is false.",
+        "trap": "Believing irrational numbers are closed under multiplication is a classic mathematical trap."
       }
     },
     {
@@ -626,20 +642,20 @@
       "section": "sec_math",
       "subject": "Mathematics (9-10)",
       "source": "NCERT Class 9 Polynomials & BPSC TRE 2.0 PYQ",
-      "question": "यदि बहुपद P(x) = x³ - 3x² + 5x - 3 को (x - 2) से विभाजित किया जाए, तो शेषफल क्या होगा?\n(If P(x) = x³ - 3x² + 5x - 3 is divided by (x - 2), what will be the remainder?)",
+      "question": "When the polynomial $P(x) = x^3 - 3x^2 + 5x - 3$ is divided by $(x - 2)$, what is the remainder obtained according to the Remainder Theorem?",
       "options": [
         "3",
         "-3",
-        "5",
-        "उपर्युक्त में से एक से अधिक / More than one of the above",
-        "उपर्युक्त में से कोई नहीं / None of the above"
+        "1",
+        "More than one of the above",
+        "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "3।",
+      "explanation": "The remainder is 3.",
       "aiDeepSolution": {
-        "concept": "शेषफल प्रमेय (Remainder Theorem): यदि P(x) को (x - a) से भाग दिया जाए, तो शेषफल R = P(a) होता है।",
-        "trick": "सीधे x = 2 बहुपद में रख दें: P(2) = 2³ - 3(2)² + 5(2) - 3 = 8 - 12 + 10 - 3 = 18 - 15 = 3।",
-        "trap": "लंबा भाग (Long division) देने की कोई आवश्यकता नहीं है, शेषफल प्रमेय से 10 सेकंड में उत्तर प्राप्त होता है।"
+        "concept": "Remainder Theorem: When polynomial $P(x)$ is divided by $(x - a)$, the remainder is simply $P(a)$. Here $a = 2$.",
+        "trick": "Substitute $x = 2$: $P(2) = 2^3 - 3(2^2) + 5(2) - 3 = 8 - 12 + 10 - 3 = 18 - 15 = 3$.",
+        "trap": "Arithmetic error while evaluating signs of terms."
       }
     }
   ]

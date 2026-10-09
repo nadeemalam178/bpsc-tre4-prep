@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-BPSC TRE 4.0 - Clean Daily Study Pack Generator
+BPSC TRE 4.0 - Clean Daily Study Pack Generator (English Edition)
 Generates syllabus-aligned daily notes and authentic BPSC 5-option practice sets.
 Usage: python new_day.py
 Or run: CREATE_TODAY_PACK.bat
@@ -16,36 +16,36 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CURRICULUM_ROADMAP = {
     1: {
         "title": "Day 01: Foundations & Real Numbers",
-        "lang_title": "संधि, समास, वर्तनी शुद्धि एवं Subject-Verb Agreement",
-        "lang_body": "• स्वर व व्यंजन संधि (उज्ज्वल = उत् + ज्वल)\n• 6 समास (यथाशक्ति = अव्ययीभाव समास)\n• वर्तनी: कवयित्री, उज्ज्वल, आशीर्वाद\n• English: Rule of Proximity with Neither...nor (closest subject)",
-        "gs_title": "1857 क्रांति (बिहार) एवं 1917 चंपारण सत्याग्रह",
-        "gs_body": "• पटना में पीर अली का विद्रोह (3 जुलाई 1857, डॉ. लॉयल)\n• जगदीशपुर में बाबू वीर कुंवर सिंह व अमर सिंह\n• चंपारण (1917): राजकुमार शुक्ल का निमंत्रण, 3/20 तिनकठिया, 25% अवैध वसूली वापसी\n• गंगा नदी बिहार में चौसा (बक्सर) से प्रवेश करती है (445 किमी, 12 जिले)\n• कोसी नदी: बिहार का शोक, कुरसेला (कटिहार) में गंगा से मिलन",
-        "middle_title": "परिमेय संख्याएँ, विभाज्यता, पोषक तत्व एवं गोलीय दर्पण",
-        "middle_body": "• परिमेय संख्याएँ: (योज्य प्रतिलोम) × (गुणात्मक प्रतिलोम) = -1\n• 9 से विभाज्यता: अंकों का योग 9 से कटना चाहिए\n• प्रकाश: 60° पर झुके दर्पण में बनने वाले प्रतिबिंब = (360/60) - 1 = 5\n• भोजन: स्टार्च (आयोडीन -> नीला-काला), प्रोटीन (CuSO4 + NaOH -> बैंगनी)\n• विटामिन C (एस्कॉर्बिक एसिड) की कमी से स्कर्वी",
-        "sec_title": "वास्तविक संख्याएँ एवं बहुपद (NCERT Exemplar & PYQs)",
-        "sec_body": "• यूक्लिड प्रमेयिका: a = bq + r (0 ≤ r < b)\n• सांत दशमलव: q = 2^n · 5^m होने पर max(n, m) स्थानों के बाद सांत\n• बहुपद: 1/α + 1/β = -b/c\n• x² + 99x + 127: सभी गुणांक धनात्मक होने पर दोनों शून्यक सदैव ऋणात्मक\n• त्रिघात: एक शून्यक 0 होने पर अन्य दो का गुणन = c/a"
+        "lang_title": "Grammar: Sandhi, Samas, Orthography & Subject-Verb Agreement",
+        "lang_body": "• Consonant Sandhi: Ut + Jwal = Ujjwal (त्/द् assimilates to ज्)\n• Samas: Yathashakti (Avyayibhav), Rajputra (Tatpurush), Chauraha (Dvigu)\n• English Grammar: Rule of Proximity with 'Neither...nor' / 'Either...or'\n• Articles: 'A European', 'A university' (begins with consonant glide /juː/)",
+        "gs_title": "1857 Great Revolt (Bihar) & 1917 Champaran Satyagraha",
+        "gs_body": "• Patna Uprising (3 July 1857): Bookseller Peer Ali Khan martyred Dr. R. Lyell\n• Jagdishpur (Bhojpur): Babu Veer Kunwar Singh & Amar Singh\n• Champaran (1917): Rajkumar Shukla invitation, Tinkathia abolition, 25% refund\n• River Ganga in Bihar: Enters at Chausa (Buxar), length 445 km across 12 districts\n• Kosi River: 'Sorrow of Bihar', merges with Ganga at Kursela (Katihar)",
+        "middle_title": "Rational Numbers, Optics & Human Nutrition",
+        "middle_body": "• Rational Numbers: (Additive Inverse) × (Multiplicative Inverse) = -1\n• Divisibility by 9: Sum of digits must be a multiple of 9\n• Plane Mirror Reflections: Images formed at 60° = (360/60) - 1 = 5\n• Food Tests: Starch (Dilute Iodine -> Blue-black), Protein (CuSO4 + NaOH -> Violet)\n• Vitamins: KEDA are fat-soluble; B-complex and C are water-soluble",
+        "sec_title": "Real Numbers & Polynomials (NCERT Exemplar & PYQs)",
+        "sec_body": "• Euclid's Division Lemma: a = bq + r, where 0 ≤ r < b\n• Terminating Decimal Expansion: q = 2^n · 5^m terminates after max(n, m) places\n• Quadratic Polynomial: Sum of roots α + β = -b/a, Product αβ = c/a, 1/α + 1/β = -b/c\n• If all coefficients of ax² + bx + c = 0 are positive, both roots are strictly negative\n• Cubic Polynomial: If one root is 0, the product of the other two roots is c/a"
     },
     2: {
         "title": "Day 02: Linear Equations & Chemical Systems",
-        "lang_title": "उपसर्ग, प्रत्यय, पर्यायवाची, विलोम एवं Tenses",
-        "lang_body": "• उपसर्ग एवं प्रत्यय के भेद व BPSC में पूछे गए शब्द\n• प्रमुख पर्यायवाची व विलोम शब्द संग्रह\n• English: Conditionals (If clause rules: If + Past Perfect -> Would have + V3)",
-        "gs_title": "1942 भारत छोड़ो आंदोलन (बिहार) एवं बिहार की मृदा",
-        "gs_body": "• 1942 अगस्त क्रांति: पटना सचिवालय गोलीकांड (11 अगस्त 1942, 7 शहीद छात्र, डीएम आर्चर)\n• जयप्रकाश नारायण एवं आजाद दस्ता (नेपाल की तराई, हजारीबाग जेल से पलायन)\n• बिहार की मृदा: पुरानी जलोढ़ (बांगर) एवं नवीन जलोढ़ (खादर - बाढ़ क्षेत्र)\n• बिहार का कृषि-जलवायु क्षेत्र (Zone I, II, IIIA, IIIB)",
-        "middle_title": "भिन्न, दशमलव, घातांक एवं अम्ल-क्षार-लवण",
-        "middle_body": "• भिन्नों का ल.स.प. व म.स.प. सूत्र\n• अम्ल, क्षार व लवण: लिटमस, हल्दी, फेनोल्फथलीन सूचक रंग परिवर्तन\n• pH पैमाना (सोरेनसन): रक्त का pH 7.4, आमाशय का HCl pH 1.5-2.0\n• उदासीनीकरण अभिक्रिया (Neutralization) एवं लवण निर्माण",
-        "sec_title": "दो चरों वाले रैखिक समीकरण युग्म (Linear Equations in 2 Variables)",
-        "sec_body": "• संगत व असंगत की शर्तें:\n  1. a1/a2 ≠ b1/b2 -> अद्वितीय हल (प्रतिच्छेदी रेखाएँ, संगत)\n  2. a1/a2 = b1/b2 = c1/c2 -> अनंत अनेक हल (संपाती रेखाएँ, आश्रित/संगत)\n  3. a1/a2 = b1/b2 ≠ c1/c2 -> कोई हल नहीं (समांतर रेखाएँ, असंगत)\n• धारा के अनुकूल (Downstream: u + v) व प्रतिकूल (Upstream: u - v) वाले प्रश्न\n• विलोपन एवं वज्र-गुणन विधियों के त्वरित नियम"
+        "lang_title": "Prefixes, Suffixes, Vocabulary & Conditional Sentences",
+        "lang_body": "• Prefixes: Atyant = Ati + Ant (Prefix is 'Ati')\n• Synonyms & Antonyms: Ratri = Vibhavari, Rajani, Nisheeth; Aastik <-> Naastik\n• Third Conditionals: If + Past Perfect (had + V3) -> would have + V3\n• Prepositions of Time: Use 'at' for specific clock times ('at 8:30 PM')",
+        "gs_title": "1942 Quit India Movement (Bihar) & Soils of Bihar",
+        "gs_body": "• Patna Secretariat Firing: 11 August 1942 (7 student martyrs, DM W.G. Archer)\n• Azad Dasta: Founded by Jayaprakash Narayan (JP) in Nepal Terai after Hazaribagh jail escape\n• Soils of Bihar: Older Alluvium (Bangar / Karail-Kewal), Newer Alluvium (Khadar)\n• Acid-Base: Blood pH is slightly alkaline (7.35 - 7.45); Acids turn Blue litmus Red\n• Makhana: Mithila Makhana GI Tag (Darbhanga & Madhubani lead production)",
+        "middle_title": "Fractions, Exponents, Plant Transport & Sound",
+        "middle_body": "• LCM of Fractions = (LCM of Numerators) / (HCF of Denominators)\n• Profit & Discount: MP/CP = (100 + P%) / (100 - D%) -> 20% disc & 20% profit gives 50% markup\n• Ant sting: Injects Methanoic acid (Formic acid, HCOOH); neutralized by baking soda\n• Plant Vascular Tissues: Phloem conducts food (sucrose); Xylem transports water\n• Sound Physics: Loudness is directly proportional to the square of Amplitude (A²)",
+        "sec_title": "Pair of Linear Equations in Two Variables",
+        "sec_body": "• Consistency Conditions:\n  1. a1/a2 ≠ b1/b2 -> Unique solution (Intersecting lines, Consistent)\n  2. a1/a2 = b1/b2 = c1/c2 -> Infinitely many solutions (Coincident lines, Dependent)\n  3. a1/a2 = b1/b2 ≠ c1/c2 -> No solution (Parallel lines, Inconsistent)\n• Relative Speed: Downstream = u + v, Upstream = u - v\n• Algebraic Identity: x² - y² = (x + y)(x - y) -> Instant evaluation"
     },
     3: {
         "title": "Day 03: Quadratic Systems & Life Processes",
-        "lang_title": "मुहावरे, लोकोक्तियाँ, अनेक शब्दों के एक शब्द एवं Prepositions",
-        "lang_body": "• मुहावरे एवं लोकोक्तियाँ: BPSC में पूछे गए प्रमुख मुहावरे\n• Prepositions of Place and Time (In, At, On, Between, Among)\n• अनेक शब्दों के लिए एक शब्द संकलन",
-        "gs_title": "असहयोग आंदोलन (बिहार) एवं बिहार की जलवायु",
-        "gs_body": "• 1920-22 असहयोग आंदोलन: सदाकत आश्रम (मजहरुल हक), बिहार विद्यापीठ स्थापना\n• बिहार की जलवायु: उपोष्ण मानसूनी (Cwg वर्गीकरण)\n• कालवैशाखी (Nor'westers) एवं आम्र वर्षा (Mango showers)",
-        "middle_title": "बीजीय व्यंजक, पादप पोषण एवं प्रकाश संश्लेषण",
-        "middle_body": "• मानक सर्वसमिकाएँ: (a+b)², (a-b)², a²-b² अनुप्रयोग\n• पौधों में पोषण: प्रकाश संश्लेषण समीकरण (6CO2 + 12H2O -> C6H12O6 + 6O2 + 6H2O)\n• क्लोरोफिल में मैग्नीशियम (Mg) धातु की उपस्थिति",
-        "sec_title": "द्विघात समीकरण (Quadratic Equations & Discriminant D)",
-        "sec_body": "• विविक्तकर: D = b² - 4ac\n  1. D > 0: दो भिन्न वास्तविक मूल\n  2. D = 0: दो बराबर वास्तविक मूल (-b/2a)\n  3. D < 0: कोई वास्तविक मूल नहीं (काल्पनिक मूल)\n• द्विघात सूत्र: x = (-b ± √D) / 2a\n• मूलों के व्युत्क्रम का योग = -b/c"
+        "lang_title": "Idioms, One-Word Substitution & Prepositions of Place",
+        "lang_body": "• Common Idioms and standard usage in competitive exams\n• Prepositions of Place: In, At, On, Between (two), Among (more than two)\n• Key One-Word Substitutions for BPSC Language Paper",
+        "gs_title": "Non-Cooperation Movement (Bihar) & Bihar Agro-Climatic Zones",
+        "gs_body": "• 1920-22 Non-Cooperation: Sadaqat Ashram founded by Mazharul Haque, Bihar Vidyapeeth\n• Bihar Climate: Humid Subtropical (Cwg classification)\n• Nor'westers (Kalbaishakhi) and Mango Showers in early summer",
+        "middle_title": "Algebraic Expressions, Photosynthesis & Circulation",
+        "middle_body": "• Standard Identities: (a+b)², (a-b)², a²-b² applications\n• Photosynthesis Equation: 6CO2 + 12H2O -> C6H12O6 + 6O2 + 6H2O\n• Chlorophyll coordination compound contains Magnesium (Mg) at its core",
+        "sec_title": "Quadratic Equations & Nature of Roots (Discriminant D)",
+        "sec_body": "• Discriminant: D = b² - 4ac\n  1. D > 0: Two distinct real roots\n  2. D = 0: Two equal real roots (-b / 2a)\n  3. D < 0: No real roots (Complex roots)\n• Quadratic Formula: x = (-b ± √D) / (2a)\n• Sum of reciprocals of roots: 1/α + 1/β = -b/c"
     }
 }
 
@@ -81,16 +81,16 @@ def generate_pack(force_date=None, force_day=None):
     
     # 1. DAY_OVERVIEW.md
     with open(os.path.join(target_folder, "DAY_OVERVIEW.md"), "w", encoding="utf-8") as f:
-        f.write(f"""# BPSC TRE 4.0 — दैनिक अध्ययन: Day {day_num:02d} ({target_date})
-पाठ्यक्रम: माध्यमिक (9–10 गणित) एवं मध्य विद्यालय (6–8 गणित-विज्ञान)
+        f.write(f"""# BPSC TRE 4.0 — Daily Study Module: Day {day_num:02d} ({target_date})
+Syllabus: Secondary (9–10 Maths) & Middle School (6–8 Maths & Science)
 
-## आज के विषय
-- भाग I (भाषा अहर्ता): {c['lang_title']}
-- भाग II (सामान्य अध्ययन): {c['gs_title']}
-- भाग III (6–8 गणित-विज्ञान): {c['middle_title']}
-- भाग IV (9–10 माध्यमिक गणित): {c['sec_title']}
+## Today's Core Topics
+- Part I (Language Qualifying): {c['lang_title']}
+- Part II (General Studies): {c['gs_title']}
+- Part III (6–8 Maths & Science): {c['middle_title']}
+- Part IV (9–10 Secondary Maths): {c['sec_title']}
 
-## अध्ययन सामग्री
+## Available Study Modules
 1. PART_1_LANGUAGE_QUALIFYING.md
 2. PART_2_GENERAL_STUDIES.md
 3. PART_3_CLASS_6_TO_8_MATHS_SCIENCE.md
@@ -101,32 +101,32 @@ def generate_pack(force_date=None, force_day=None):
 
     # 2. PART_1_LANGUAGE_QUALIFYING.md
     with open(os.path.join(target_folder, "PART_1_LANGUAGE_QUALIFYING.md"), "w", encoding="utf-8") as f:
-        f.write(f"""# BPSC TRE 4.0 — भाग I: भाषा अहर्ता (Day {day_num:02d})
-विषय: {c['lang_title']}
+        f.write(f"""# BPSC TRE 4.0 — Part I: Language Qualifying (Day {day_num:02d})
+Topic: {c['lang_title']}
 
 {c['lang_body']}
 """)
 
     # 3. PART_2_GENERAL_STUDIES.md
     with open(os.path.join(target_folder, "PART_2_GENERAL_STUDIES.md"), "w", encoding="utf-8") as f:
-        f.write(f"""# BPSC TRE 4.0 — भाग II: सामान्य अध्ययन (Day {day_num:02d})
-विषय: {c['gs_title']}
+        f.write(f"""# BPSC TRE 4.0 — Part II: General Studies (Day {day_num:02d})
+Topic: {c['gs_title']}
 
 {c['gs_body']}
 """)
 
     # 4. PART_3_CLASS_6_TO_8_MATHS_SCIENCE.md
     with open(os.path.join(target_folder, "PART_3_CLASS_6_TO_8_MATHS_SCIENCE.md"), "w", encoding="utf-8") as f:
-        f.write(f"""# BPSC TRE 4.0 — भाग III: 6–8 गणित एवं विज्ञान (Day {day_num:02d})
-विषय: {c['middle_title']}
+        f.write(f"""# BPSC TRE 4.0 — Part III: Class 6–8 Maths & Science (Day {day_num:02d})
+Topic: {c['middle_title']}
 
 {c['middle_body']}
 """)
 
     # 5. PART_4_CLASS_9_TO_10_MATHS.md
     with open(os.path.join(target_folder, "PART_4_CLASS_9_TO_10_MATHS.md"), "w", encoding="utf-8") as f:
-        f.write(f"""# BPSC TRE 4.0 — भाग IV: 9–10 माध्यमिक गणित (Day {day_num:02d})
-विषय: {c['sec_title']}
+        f.write(f"""# BPSC TRE 4.0 — Part IV: Class 9–10 Secondary Mathematics (Day {day_num:02d})
+Topic: {c['sec_title']}
 
 {c['sec_body']}
 """)
@@ -158,7 +158,7 @@ def generate_pack(force_date=None, force_day=None):
             f.write(f"| **{day_num:02d}** | `{target_date}` | [x] Notes | [x] Quiz Data | — / 30 | — % | 🟡 Active |\n")
 
     print("------------------------------------------------------------")
-    print(f"Day {day_num:02d} ({target_date}) study pack ready in folder: {target_folder}")
+    print(f"Day {day_num:02d} ({target_date}) study pack ready in: {target_folder}")
     print("------------------------------------------------------------")
 
 if __name__ == "__main__":

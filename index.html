@@ -1,58 +1,134 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#090d16">
+  <meta name="theme-color" content="#0a0e17">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="BPSC TRE 4.0">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.svg">
-  <title>BPSC TRE 4.0 — अध्ययन एवं अभ्यास</title>
+  <title>BPSC TRE 4.0 — Study & Practice Hub</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   
   <style>
+    /* ========================================================
+       DESIGN TOKENS & COLOR THEMES (LIGHT & DARK)
+       ======================================================== */
     :root {
-      --bg: #090d16;
-      --surface: #121824;
-      --surface-hover: #172030;
-      --surface-active: #1e293b;
-      --border: #202b3c;
-      --border-focus: #3b82f6;
-      --text: #f1f5f9;
-      --text-muted: #8b98a9;
-      --primary: #2563eb;
-      --primary-soft: rgba(37, 99, 235, 0.12);
-      --correct: #059669;
-      --correct-soft: rgba(5, 150, 105, 0.12);
-      --wrong: #dc2626;
-      --wrong-soft: rgba(220, 38, 38, 0.12);
-      --radius: 8px;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-full: 9999px;
+      
+      /* Subject Accent Colors */
+      --color-lang: #8b5cf6;
+      --color-lang-glow: rgba(139, 92, 246, 0.15);
+      --color-gs: #f59e0b;
+      --color-gs-glow: rgba(245, 158, 11, 0.15);
+      --color-middle: #10b981;
+      --color-middle-glow: rgba(16, 185, 129, 0.15);
+      --color-sec: #0ea5e9;
+      --color-sec-glow: rgba(14, 165, 233, 0.15);
     }
 
+    /* DARK THEME (DEFAULT) */
+    [data-theme="dark"] {
+      --bg-page: #090d16;
+      --bg-mesh: radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.12) 0px, transparent 50%),
+                 radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
+      --bg-surface: #111827;
+      --bg-surface-elevated: #162032;
+      --bg-card: #141c2c;
+      --bg-option: #0d131f;
+      --bg-option-hover: #172236;
+      --border: #1e2b40;
+      --border-subtle: #182335;
+      --border-focus: #3b82f6;
+      --text-main: #f8fafc;
+      --text-body: #cbd5e1;
+      --text-muted: #8292a8;
+      --shadow-card: 0 4px 24px -2px rgba(0, 0, 0, 0.45);
+      
+      --accent-gradient: linear-gradient(135deg, #2563eb, #3b82f6);
+      --accent-hover: #1d4ed8;
+      
+      --state-correct-bg: rgba(16, 185, 129, 0.15);
+      --state-correct-text: #34d399;
+      --state-correct-border: #059669;
+      
+      --state-wrong-bg: rgba(239, 68, 68, 0.15);
+      --state-wrong-text: #f87171;
+      --state-wrong-border: #dc2626;
+
+      --theme-toggle-bg: #1e293b;
+      --theme-toggle-text: #f8fafc;
+    }
+
+    /* LIGHT THEME */
+    [data-theme="light"] {
+      --bg-page: #f8fafc;
+      --bg-mesh: radial-gradient(at 0% 0%, rgba(191, 219, 254, 0.5) 0px, transparent 50%),
+                 radial-gradient(at 100% 100%, rgba(233, 213, 255, 0.4) 0px, transparent 50%);
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #ffffff;
+      --bg-card: #f8fafc;
+      --bg-option: #ffffff;
+      --bg-option-hover: #f1f5f9;
+      --border: #e2e8f0;
+      --border-subtle: #edf2f7;
+      --border-focus: #2563eb;
+      --text-main: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+      
+      --accent-gradient: linear-gradient(135deg, #2563eb, #1d4ed8);
+      --accent-hover: #1e40af;
+      
+      --state-correct-bg: rgba(16, 185, 129, 0.12);
+      --state-correct-text: #065f46;
+      --state-correct-border: #10b981;
+      
+      --state-wrong-bg: rgba(239, 68, 68, 0.12);
+      --state-wrong-text: #991b1b;
+      --state-wrong-border: #ef4444;
+
+      --theme-toggle-bg: #e2e8f0;
+      --theme-toggle-text: #0f172a;
+    }
+
+    /* ========================================================
+       RESET & BASE STYLES
+       ======================================================== */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, sans-serif;
+      font-family: var(--font-sans);
       -webkit-font-smoothing: antialiased;
       -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+      background-color: var(--bg-page);
+      background-image: var(--bg-mesh);
+      background-attachment: fixed;
+      color: var(--text-main);
       min-height: 100vh;
-      padding-bottom: 40px;
+      line-height: 1.6;
+      padding-bottom: 50px;
     }
 
     .container {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
       padding: 16px 14px;
     }
@@ -63,21 +139,41 @@
       }
     }
 
-    /* Minimal Header */
+    /* ========================================================
+       TOP HEADER & BRAND
+       ======================================================== */
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-bottom: 14px;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-badge {
+      background: var(--accent-gradient);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 8px;
+      border-radius: var(--radius-sm);
+      letter-spacing: 0.5px;
     }
 
     .brand-title {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-      color: var(--text);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      color: var(--text-main);
     }
 
     .header-actions {
@@ -86,386 +182,545 @@
       gap: 8px;
     }
 
-    .day-select {
-      background: var(--surface);
+    .day-selector {
+      background: var(--bg-surface);
       border: 1px solid var(--border);
-      color: var(--text);
-      padding: 6px 10px;
-      border-radius: var(--radius);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: var(--radius-md);
       font-size: 13px;
-      font-weight: 500;
+      font-weight: 600;
+      cursor: pointer;
       outline: none;
-      cursor: pointer;
     }
 
-    .btn-sync {
-      background: transparent;
+    .btn-icon {
+      background: var(--theme-toggle-bg);
       border: 1px solid var(--border);
-      color: var(--text-muted);
-      padding: 6px 10px;
-      border-radius: var(--radius);
+      color: var(--theme-toggle-text);
+      padding: 6px 11px;
+      border-radius: var(--radius-md);
       font-size: 12px;
+      font-weight: 600;
       cursor: pointer;
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
     }
 
-    .btn-sync:hover {
-      color: var(--text);
+    .btn-icon:hover {
       border-color: var(--border-focus);
     }
 
-    /* Clean 2-Tab Navigation */
+    /* ========================================================
+       NAVIGATION TABS
+       ======================================================== */
     .view-tabs {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 8px;
-      margin-bottom: 18px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      padding: 5px;
+      border-radius: var(--radius-lg);
+      margin-bottom: 20px;
     }
 
     .tab-btn {
-      flex: 1;
-      background: var(--surface);
-      border: 1px solid var(--border);
+      background: transparent;
+      border: none;
       color: var(--text-muted);
-      padding: 10px 14px;
-      border-radius: var(--radius);
-      font-size: 14px;
-      font-weight: 600;
+      padding: 9px 14px;
+      border-radius: var(--radius-md);
+      font-size: 13px;
+      font-weight: 700;
       cursor: pointer;
       text-align: center;
-      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
     }
 
     .tab-btn.active {
-      background: var(--surface-active);
-      color: var(--text);
-      border-color: var(--primary);
+      background: var(--accent-gradient);
+      color: #ffffff;
+      box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
     }
 
-    /* Practice Card */
+    /* ========================================================
+       QUESTION CARD & PRACTICE VIEW
+       ======================================================== */
     .card {
-      background: var(--surface);
+      background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: var(--radius-lg);
       padding: 20px 18px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
       margin-bottom: 16px;
+    }
+
+    .card-accent-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--accent-gradient);
     }
 
     .meta-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 12px;
-      color: var(--text-muted);
       margin-bottom: 14px;
-      font-weight: 500;
+      flex-wrap: wrap;
+      gap: 8px;
     }
 
-    .question-body {
+    .q-number-pill {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .section-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-language {
+      background: var(--color-lang-glow);
+      color: var(--color-lang);
+      border: 1px solid var(--color-lang);
+    }
+
+    .badge-gs {
+      background: var(--color-gs-glow);
+      color: var(--color-gs);
+      border: 1px solid var(--color-gs);
+    }
+
+    .badge-middle_math_sci {
+      background: var(--color-middle-glow);
+      color: var(--color-middle);
+      border: 1px solid var(--color-middle);
+    }
+
+    .badge-sec_math {
+      background: var(--color-sec-glow);
+      color: var(--color-sec);
+      border: 1px solid var(--color-sec);
+    }
+
+    /* Dynamic Progress Bar */
+    .progress-track {
+      width: 100%;
+      height: 4px;
+      background: var(--border-subtle);
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #8b5cf6, #3b82f6, #10b981);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .question-statement {
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 1.65;
-      color: #ffffff;
+      color: var(--text-main);
       white-space: pre-line;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
-    /* Clean Options */
+    /* Options Stack */
     .options-list {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      margin-bottom: 18px;
+      gap: 9px;
+      margin-bottom: 20px;
     }
 
-    .option-item {
-      background: var(--bg);
+    .option-row {
+      background: var(--bg-option);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: var(--radius-md);
       padding: 12px 14px;
       display: flex;
       align-items: flex-start;
       gap: 12px;
       cursor: pointer;
-      transition: border-color 0.15s, background-color 0.15s;
+      position: relative;
     }
 
-    .option-item:hover {
-      border-color: #334155;
-      background: var(--surface-hover);
+    .option-row:hover {
+      background: var(--bg-option-hover);
+      border-color: var(--border-focus);
     }
 
     .option-key {
-      font-weight: 700;
-      font-size: 13px;
+      min-width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--border-subtle);
       color: var(--text-muted);
-      min-width: 22px;
-      padding-top: 1px;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
 
-    .option-text {
+    .option-content {
       font-size: 14px;
-      color: #cbd5e1;
+      font-weight: 500;
+      color: var(--text-body);
       line-height: 1.5;
+      padding-top: 2px;
       flex: 1;
     }
 
-    .option-item.selected {
-      border-color: var(--primary);
-      background: var(--primary-soft);
+    /* Option States */
+    .option-row.selected {
+      border-color: #3b82f6;
+      background: rgba(59, 130, 246, 0.1);
     }
 
-    .option-item.selected .option-key {
-      color: #60a5fa;
+    .option-row.selected .option-key {
+      background: #3b82f6;
+      color: #ffffff;
     }
 
-    .option-item.correct {
-      border-color: var(--correct) !important;
-      background: var(--correct-soft) !important;
+    .option-row.correct {
+      border-color: var(--state-correct-border) !important;
+      background: var(--state-correct-bg) !important;
     }
 
-    .option-item.correct .option-key,
-    .option-item.correct .option-text {
-      color: #34d399 !important;
+    .option-row.correct .option-key {
+      background: var(--state-correct-border) !important;
+      color: #ffffff !important;
     }
 
-    .option-item.wrong {
-      border-color: var(--wrong) !important;
-      background: var(--wrong-soft) !important;
+    .option-row.correct .option-content {
+      color: var(--state-correct-text) !important;
+      font-weight: 600;
     }
 
-    .option-item.wrong .option-key,
-    .option-item.wrong .option-text {
-      color: #f87171 !important;
+    .option-row.wrong {
+      border-color: var(--state-wrong-border) !important;
+      background: var(--state-wrong-bg) !important;
     }
 
-    /* Explanation Accordion */
-    .explain-btn {
+    .option-row.wrong .option-key {
+      background: var(--state-wrong-border) !important;
+      color: #ffffff !important;
+    }
+
+    .option-row.wrong .option-content {
+      color: var(--state-wrong-text) !important;
+    }
+
+    /* ========================================================
+       EXPLANATION ACCORDION (COLORFUL CHIPS)
+       ======================================================== */
+    .explain-toggle-btn {
       width: 100%;
-      background: transparent;
+      background: var(--bg-card);
       border: 1px dashed var(--border);
-      color: var(--text-muted);
-      padding: 9px 12px;
-      border-radius: var(--radius);
+      color: var(--text-body);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
       font-size: 13px;
+      font-weight: 600;
       cursor: pointer;
-      text-align: left;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .explain-btn:hover {
-      color: var(--text);
+    .explain-toggle-btn:hover {
       border-color: var(--border-focus);
+      color: var(--text-main);
     }
 
-    .explain-box {
+    .explain-panel {
       display: none;
-      margin-top: 10px;
-      padding: 14px;
-      background: #060a10;
+      margin-top: 12px;
+      padding: 16px;
+      background: var(--bg-option);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: var(--radius-md);
       font-size: 13px;
-      line-height: 1.6;
-      color: #cbd5e1;
+      line-height: 1.65;
     }
 
-    .explain-box.show {
+    .explain-panel.open {
       display: block;
     }
 
-    .explain-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: #60a5fa;
-      margin-bottom: 4px;
+    .chip-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
       text-transform: uppercase;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
     }
 
-    .explain-section {
-      margin-bottom: 10px;
+    .chip-answer {
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.3);
     }
 
-    .explain-section:last-child {
+    .chip-concept {
+      background: rgba(59, 130, 246, 0.15);
+      color: #3b82f6;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .chip-shortcut {
+      background: rgba(245, 158, 11, 0.15);
+      color: #f59e0b;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .chip-trap {
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .explain-block {
+      margin-bottom: 12px;
+    }
+
+    .explain-block:last-child {
       margin-bottom: 0;
     }
 
-    /* Action Controls */
-    .nav-controls {
+    .explain-body-text {
+      color: var(--text-body);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    /* ========================================================
+       ACTION BUTTONS & BOTTOM BAR
+       ======================================================== */
+    .nav-actions {
       display: flex;
       gap: 10px;
-      margin-top: 14px;
+      margin-top: 18px;
     }
 
     .btn {
       flex: 1;
-      padding: 11px 16px;
-      border-radius: var(--radius);
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
       border: none;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
     }
 
-    .btn-prev {
-      background: var(--surface);
+    .btn-secondary {
+      background: var(--bg-card);
       border: 1px solid var(--border);
-      color: var(--text);
+      color: var(--text-main);
     }
 
-    .btn-prev:hover {
-      background: var(--surface-hover);
+    .btn-secondary:hover {
+      background: var(--bg-option-hover);
     }
 
-    .btn-prev:disabled {
+    .btn-secondary:disabled {
       opacity: 0.35;
       cursor: not-allowed;
     }
 
-    .btn-next {
-      background: var(--primary);
+    .btn-primary {
+      background: var(--accent-gradient);
       color: #ffffff;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
     }
 
-    .btn-next:hover {
-      background: #1d4ed8;
+    .btn-primary:hover {
+      opacity: 0.95;
     }
 
-    /* Utility Links Bar */
-    .quick-links {
+    .sub-action-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 12px;
+      padding-top: 14px;
       font-size: 12px;
       color: var(--text-muted);
     }
 
-    .link-action {
+    .sub-link {
       color: var(--text-muted);
       cursor: pointer;
+      font-weight: 600;
       text-decoration: none;
     }
 
-    .link-action:hover {
-      color: #60a5fa;
+    .sub-link:hover {
+      color: #3b82f6;
     }
 
-    /* Study Notes View */
-    .notes-container {
+    /* ========================================================
+       STUDY NOTES VIEW
+       ======================================================== */
+    .notes-stack {
       display: flex;
       flex-direction: column;
       gap: 14px;
     }
 
-    .note-block {
-      background: var(--surface);
+    .note-card {
+      background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px;
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
     }
 
-    .note-part {
-      font-size: 11px;
-      font-weight: 700;
-      color: #60a5fa;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 4px;
+    .note-top-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
     }
 
-    .note-heading {
+    .note-headline {
       font-size: 16px;
       font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 10px;
+      color: var(--text-main);
+      margin-bottom: 12px;
     }
 
-    .note-content {
+    .note-text {
       font-size: 14px;
-      line-height: 1.65;
-      color: #cbd5e1;
+      line-height: 1.7;
+      color: var(--text-body);
       white-space: pre-line;
     }
 
-    /* Modal */
-    .modal-overlay {
+    .code-callout {
+      background: var(--bg-option);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      margin-top: 10px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: #38bdf8;
+      line-height: 1.6;
+    }
+
+    /* ========================================================
+       MODALS (PALETTE, SYNC, SCORECARD)
+       ======================================================== */
+    .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
       display: none;
       align-items: center;
       justify-content: center;
       padding: 16px;
-      z-index: 100;
+      z-index: 1000;
     }
 
-    .modal-overlay.open {
+    .modal-backdrop.open {
       display: flex;
     }
 
-    .modal-card {
-      background: var(--surface);
+    .modal-box {
+      background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      max-width: 420px;
+      border-radius: var(--radius-lg);
+      max-width: 440px;
       width: 100%;
-      padding: 20px;
+      padding: 22px;
       max-height: 85vh;
       overflow-y: auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     .modal-title {
       font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 12px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      color: var(--text-main);
     }
 
-    .palette-grid {
+    .palette-30 {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 6px;
-      margin-bottom: 16px;
+      gap: 7px;
+      margin-bottom: 18px;
     }
 
-    .palette-num {
+    .palette-cell {
       aspect-ratio: 1;
-      background: var(--bg);
+      background: var(--bg-option);
       border: 1px solid var(--border);
-      border-radius: 6px;
+      border-radius: var(--radius-sm);
       color: var(--text-muted);
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .palette-num.answered {
-      background: var(--correct);
-      border-color: var(--correct);
+    .palette-cell.answered {
+      background: #10b981;
+      border-color: #059669;
       color: #ffffff;
     }
 
-    .palette-num.current {
-      border-color: #38bdf8;
-      color: #ffffff;
+    .palette-cell.current {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+      color: var(--text-main);
     }
 
-    .modal-close-btn {
+    .modal-close {
       width: 100%;
-      padding: 9px;
-      background: var(--bg);
+      padding: 10px;
+      background: var(--bg-card);
       border: 1px solid var(--border);
-      color: var(--text);
-      border-radius: var(--radius);
+      color: var(--text-main);
+      border-radius: var(--radius-md);
       font-size: 13px;
+      font-weight: 700;
       cursor: pointer;
     }
   </style>
@@ -474,152 +729,193 @@
 
 <div class="container">
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
-    <div class="brand-title">BPSC TRE 4.0</div>
+    <div class="brand-group">
+      <span class="brand-badge">BPSC</span>
+      <h1 class="brand-title">TRE 4.0 Prep</h1>
+    </div>
+
     <div class="header-actions">
-      <select class="day-select" id="daySelect" onchange="loadDay(this.value)">
+      <select class="day-selector" id="daySelect" onchange="loadDay(this.value)">
         <option value="1">Day 01 (09 Oct)</option>
         <option value="2">Day 02 (10 Oct)</option>
       </select>
-      <button class="btn-sync" onclick="openSync()" title="सिंक कोड">
-        सिंक
+      
+      <button class="btn-icon" id="themeToggleBtn" onclick="toggleTheme()" title="Switch Light/Dark Theme">
+        <span id="themeIcon">☀️</span>
+        <span id="themeLabel">Light</span>
+      </button>
+
+      <button class="btn-icon" onclick="openSync()" title="Sync Across Devices">
+        <span>↻</span>
+        <span>Sync</span>
       </button>
     </div>
   </header>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION TABS -->
   <div class="view-tabs">
     <button class="tab-btn active" id="tabPracticeBtn" onclick="switchView('practice')">
-      अभ्यास (30 प्रश्न)
+      <span>📝</span>
+      <span>Practice (30 MCQs)</span>
     </button>
     <button class="tab-btn" id="tabNotesBtn" onclick="switchView('notes')">
-      दैनिक नोट्स (Study Notes)
+      <span>📖</span>
+      <span>Daily Study Notes</span>
     </button>
   </div>
 
   <!-- PRACTICE VIEW -->
   <div id="practiceView">
     <div class="card">
+      <div class="card-accent-line" id="cardAccentLine"></div>
+
       <div class="meta-bar">
-        <span id="qIndexLabel">प्रश्न 1 / 30</span>
-        <span id="qSectionLabel">भाषा अहर्ता</span>
+        <span class="q-number-pill" id="qNumberPill">Question 1 of 30</span>
+        <span class="section-badge" id="sectionBadge">Language</span>
       </div>
 
-      <div class="question-body" id="qStatement">
-        लोड हो रहा है...
+      <!-- Completion Track -->
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="question-statement" id="questionStatement">
+        Loading question...
       </div>
 
       <div class="options-list" id="optionsContainer">
-        <!-- 5 Options -->
+        <!-- 5 Options Rendered Here -->
       </div>
 
-      <button class="explain-btn" onclick="toggleExplanation()">
-        <span id="explainBtnText">व्याख्या एवं हल देखें</span>
-        <span id="explainIcon">▾</span>
+      <!-- Explanation Drawer -->
+      <button class="explain-toggle-btn" onclick="toggleExplanation()">
+        <span>View Detailed Solution & Shortcuts</span>
+        <span id="explainArrow">▾</span>
       </button>
 
-      <div class="explain-box" id="explainBox">
-        <div class="explain-section">
-          <div class="explain-title">उत्तर एवं मूल व्याख्या</div>
-          <div id="explainText"></div>
+      <div class="explain-panel" id="explainPanel">
+        <div class="explain-block">
+          <span class="chip-badge chip-answer">Detailed Solution</span>
+          <p class="explain-body-text" id="solExplanation"></p>
         </div>
-        <div class="explain-section" id="trickContainer" style="display: none;">
-          <div class="explain-title">महत्वपूर्ण बिंदु / शॉर्टकट</div>
-          <div id="trickText"></div>
+
+        <div class="explain-block" id="solConceptBlock">
+          <span class="chip-badge chip-concept">Core Concept</span>
+          <p class="explain-body-text" id="solConcept"></p>
+        </div>
+
+        <div class="explain-block" id="solTrickBlock">
+          <span class="chip-badge chip-shortcut">Exam Technique / Shortcut</span>
+          <p class="explain-body-text" id="solTrick"></p>
+        </div>
+
+        <div class="explain-block" id="solTrapBlock">
+          <span class="chip-badge chip-trap">BPSC Trap & Option Analysis</span>
+          <p class="explain-body-text" id="solTrap"></p>
         </div>
       </div>
 
-      <div class="nav-controls">
-        <button class="btn btn-prev" id="btnPrev" onclick="navigateQ(-1)">
-          ← पिछला
+      <!-- Bottom Navigation -->
+      <div class="nav-actions">
+        <button class="btn btn-secondary" id="btnPrev" onclick="navigateQuestion(-1)">
+          ← Previous
         </button>
-        <button class="btn btn-next" id="btnNext" onclick="navigateQ(1)">
-          अगला →
+        <button class="btn btn-primary" id="btnNext" onclick="navigateQuestion(1)">
+          Next →
         </button>
       </div>
 
-      <div class="quick-links">
-        <span class="link-action" onclick="openPalette()">
-          प्रश्नों की सूची (<span id="answeredCounter">0</span>/30 हल)
+      <div class="sub-action-row">
+        <span class="sub-link" onclick="openPalette()">
+          Question Grid (<span id="answeredCounter">0</span>/30 Answered)
         </span>
-        <span class="link-action" onclick="showScorecard()">
-          परिणाम देखें
+        <span class="sub-link" onclick="showScorecard()">
+          View Scorecard
         </span>
       </div>
     </div>
   </div>
 
-  <!-- NOTES VIEW -->
+  <!-- STUDY NOTES VIEW -->
   <div id="notesView" style="display: none;">
-    <div class="notes-container" id="notesListContainer">
-      <!-- Notes generated dynamically -->
+    <div class="notes-stack" id="notesListContainer">
+      <!-- In-app English Study Notes -->
     </div>
   </div>
 
 </div>
 
-<!-- PALETTE MODAL -->
-<div class="modal-overlay" id="paletteModal">
-  <div class="modal-card">
-    <div class="modal-title">प्रश्न सूची</div>
-    <div class="palette-grid" id="paletteGrid"></div>
-    <button class="modal-close-btn" onclick="closePalette()">बंद करें</button>
+<!-- QUESTION PALETTE MODAL -->
+<div class="modal-backdrop" id="paletteModal">
+  <div class="modal-box">
+    <div class="modal-title">Select Question (30 MCQs)</div>
+    <div class="palette-30" id="paletteGrid"></div>
+    <button class="modal-close" onclick="closePalette()">Close</button>
   </div>
 </div>
 
 <!-- SYNC MODAL -->
-<div class="modal-overlay" id="syncModal">
-  <div class="modal-card">
-    <div class="modal-title">प्रगति सिंक (Sync)</div>
-    <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">
-      मोबाइल और कंप्यूटर के बीच एक क्लिक में अपनी प्रगति ट्रांसफर करें।
+<div class="modal-backdrop" id="syncModal">
+  <div class="modal-box">
+    <div class="modal-title">Sync Across Devices</div>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">
+      Seamlessly transfer your answers and progress between your mobile phone and PC.
     </p>
 
     <div style="margin-bottom: 12px;">
-      <label style="font-size: 11px; color: #60a5fa; font-weight: 600;">आपका सिंक कोड (Export):</label>
-      <textarea id="syncExportArea" readonly style="width: 100%; height: 50px; background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 6px; border-radius: 4px; font-size: 11px; margin-top: 4px; font-family: monospace;"></textarea>
-      <button class="modal-close-btn" style="margin-top: 4px; background: var(--primary);" onclick="copySync()">कोड कॉपी करें</button>
+      <label style="font-size: 11px; font-weight: 700; color: #3b82f6;">Your Sync Code (Export):</label>
+      <textarea id="syncExportArea" readonly style="width: 100%; height: 50px; background: var(--bg-option); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 11px; margin-top: 4px; font-family: var(--font-mono);"></textarea>
+      <button class="modal-close" style="margin-top: 4px; background: #2563eb; color: #ffffff;" onclick="copySyncCode()">Copy Code</button>
     </div>
 
     <div style="margin-bottom: 14px;">
-      <label style="font-size: 11px; color: #34d399; font-weight: 600;">दूसरे डिवाइस का कोड पेस्ट करें (Import):</label>
-      <textarea id="syncImportArea" placeholder="कोड यहाँ पेस्ट करें..." style="width: 100%; height: 50px; background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 6px; border-radius: 4px; font-size: 11px; margin-top: 4px; font-family: monospace;"></textarea>
-      <button class="modal-close-btn" style="margin-top: 4px; background: var(--correct);" onclick="importSync()">प्रगति लागू करें</button>
+      <label style="font-size: 11px; font-weight: 700; color: #10b981;">Paste Code from Other Device (Import):</label>
+      <textarea id="syncImportArea" placeholder="Paste sync code here..." style="width: 100%; height: 50px; background: var(--bg-option); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 11px; margin-top: 4px; font-family: var(--font-mono);"></textarea>
+      <button class="modal-close" style="margin-top: 4px; background: #059669; color: #ffffff;" onclick="importSyncCode()">Apply Progress</button>
     </div>
 
-    <button class="modal-close-btn" onclick="closeSync()">बंद करें</button>
+    <button class="modal-close" onclick="closeSync()">Cancel</button>
   </div>
 </div>
 
 <!-- SCORECARD MODAL -->
-<div class="modal-overlay" id="scorecardModal">
-  <div class="modal-card" style="text-align: center;">
-    <div class="modal-title">आज का परिणाम</div>
-    
-    <div style="font-size: 36px; font-weight: 800; color: #38bdf8; margin: 6px 0;" id="scoreNet">0.0</div>
-    <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 16px;">कुल प्राप्तांक (30 में से)</div>
+<div class="modal-backdrop" id="scorecardModal">
+  <div class="modal-box" style="text-align: center;">
+    <div class="modal-title">Exam Performance Summary</div>
+    <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">BPSC Marking Scheme (+1.0 Correct, -0.33 Negative)</p>
+
+    <div style="font-size: 40px; font-weight: 800; color: #38bdf8; margin: 4px 0;" id="scoreNet">0.00</div>
+    <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 18px;">Net Score (out of 30)</div>
 
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px;">
-      <div style="background: var(--bg); border: 1px solid var(--border); padding: 8px; border-radius: 6px;">
-        <div style="font-size: 16px; font-weight: 700; color: #34d399;" id="scoreCorrect">0</div>
-        <div style="font-size: 11px; color: var(--text-muted);">सही</div>
+      <div style="background: var(--bg-option); border: 1px solid var(--border); padding: 10px; border-radius: var(--radius-sm);">
+        <div style="font-size: 18px; font-weight: 800; color: #10b981;" id="scoreCorrect">0</div>
+        <div style="font-size: 11px; color: var(--text-muted);">Correct</div>
       </div>
-      <div style="background: var(--bg); border: 1px solid var(--border); padding: 8px; border-radius: 6px;">
-        <div style="font-size: 16px; font-weight: 700; color: #f87171;" id="scoreWrong">0</div>
-        <div style="font-size: 11px; color: var(--text-muted);">गलत</div>
+      <div style="background: var(--bg-option); border: 1px solid var(--border); padding: 10px; border-radius: var(--radius-sm);">
+        <div style="font-size: 18px; font-weight: 800; color: #ef4444;" id="scoreWrong">0</div>
+        <div style="font-size: 11px; color: var(--text-muted);">Incorrect</div>
       </div>
-      <div style="background: var(--bg); border: 1px solid var(--border); padding: 8px; border-radius: 6px;">
-        <div style="font-size: 16px; font-weight: 700; color: var(--text-muted);" id="scoreSkipped">0</div>
-        <div style="font-size: 11px; color: var(--text-muted);">शेष</div>
+      <div style="background: var(--bg-option); border: 1px solid var(--border); padding: 10px; border-radius: var(--radius-sm);">
+        <div style="font-size: 18px; font-weight: 800; color: var(--text-muted);" id="scoreSkipped">0</div>
+        <div style="font-size: 11px; color: var(--text-muted);">Unattempted</div>
       </div>
     </div>
 
-    <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px; text-align: left; background: var(--bg); padding: 10px; border-radius: 6px; border: 1px solid var(--border);">
-      भाषा अहर्ता स्थिति (≥30%): <strong id="scoreLang" style="color: #34d399;">उत्तीर्ण</strong>
+    <div style="background: var(--bg-option); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px; text-align: left; font-size: 13px; margin-bottom: 16px;">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+        <span style="color: var(--text-muted);">Accuracy:</span>
+        <strong id="scoreAccuracy" style="color: #3b82f6;">0%</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between;">
+        <span style="color: var(--text-muted);">Language Qualifying (≥30%):</span>
+        <strong id="scoreLangStatus" style="color: #10b981;">PASSED</strong>
+      </div>
     </div>
 
-    <button class="modal-close-btn" onclick="closeScorecard()">समीक्षा जारी रखें</button>
+    <button class="modal-close" onclick="closeScorecard()">Continue Review</button>
   </div>
 </div>
 
@@ -629,77 +925,166 @@
   let currentIdx = 0;
   let userProgress = {};
 
-  const DAY_MODULES = {
-    1: {
-      path: '2026-10-09/daily_quiz_data.json',
-      title: 'Day 01',
-      notes: [
-        {
-          part: 'भाग I: भाषा अहर्ता',
-          title: 'संधि, समास एवं शुद्ध वर्तनी',
-          content: '• संधि: उत् + ज्वल = उज्ज्वल (व्यंजन संधि), महा + ईश = महेश (गुण संधि)\n• समास: यथाशक्ति (अव्ययीभाव), राजपुत्र (तत्पुरुष), चौराहा (द्विगु)\n• वर्तनी: कवयित्री, उज्ज्वल, आशीर्वाद, ज्योत्स्ना\n• English: Rule of Proximity with Neither...nor (closest subject decides verb)\n• Articles: A European, a university (consonant sound /juː/)'
-        },
-        {
-          part: 'भाग II: सामान्य अध्ययन',
-          title: '1857 क्रांति (बिहार) एवं 1917 चंपारण',
-          content: '• 1857 पटना विद्रोह: पुस्तक विक्रेता पीर अली खाँ (3 जुलाई 1857, डॉ. लॉयल शहीद)\n• जगदीशपुर: बाबू वीर कुंवर सिंह एवं अमर सिंह\n• 1917 चंपारण: राजकुमार शुक्ल का निमंत्रण, तिनकठिया प्रथा (3/20), 25% अवैध वसूली वापसी\n• गंगा नदी: बिहार में चौसा (बक्सर) से प्रवेश (445 किमी, 12 जिले)\n• कोसी नदी: बिहार का शोक, कुरसेला (कटिहार) में गंगा से मिलन'
-        },
-        {
-          part: 'भाग III: 6–8 गणित-विज्ञान',
-          title: 'परिमेय संख्याएँ, प्रकाश एवं पोषक तत्व',
-          content: '• परिमेय संख्याएँ: (योज्य प्रतिलोम) × (गुणात्मक प्रतिलोम) = -1\n• 9 से विभाज्यता: अंकों का योग 9 से कटना चाहिए\n• प्रकाश: 60° पर झुके दर्पण में बनने वाले प्रतिबिंब = (360/60) - 1 = 5\n• भोजन परीक्षण: स्टार्च (आयोडीन ⟶ नीला-काला), प्रोटीन (CuSO4 + NaOH ⟶ बैंगनी)\n• विटामिन: K, E, D, A वसा में घुलनशील; B व C जल में घुलनशील'
-        },
-        {
-          part: 'भाग IV: 9–10 माध्यमिक गणित',
-          title: 'वास्तविक संख्याएँ एवं बहुपद',
-          content: '• यूक्लिड प्रमेयिका: a = bq + r (0 ≤ r < b)\n• सांत दशमलव: q = 2^n · 5^m होने पर max(n, m) स्थानों के बाद सांत\n• द्विघात बहुपद: 1/α + 1/β = -b/c\n• x² + 99x + 127: सभी गुणांक धनात्मक होने पर दोनों शून्यक सदैव ऋणात्मक\n• त्रिघात: एक शून्यक 0 होने पर अन्य दो का गुणन = c/a'
-        }
-      ]
+  const SECTION_CONFIG = {
+    'language': {
+      title: 'Part I: Language Qualifying',
+      badgeClass: 'badge-language',
+      color: '#8b5cf6'
     },
-    2: {
-      path: '2026-10-10/daily_quiz_data.json',
-      title: 'Day 02',
-      notes: [
-        {
-          part: 'भाग I: भाषा अहर्ता',
-          title: 'उपसर्ग, प्रत्यय, पर्यायवाची व काल',
-          content: '• उपसर्ग: अत्यंत = अति + अंत (मूल उपसर्ग अति)\n• पर्यायवाची: रात्रि = विभावरी, रजनी, निशीथ (उपर्युक्त में से एक से अधिक)\n• विलोम: आस्तिक ⟷ नास्तिक\n• English: Conditionals (If + had + V3 ⟶ would have + V3)\n• Preposition: At 8:30 PM (निश्चित समय हेतु At)'
-        },
-        {
-          part: 'भाग II: सामान्य अध्ययन',
-          title: '1942 भारत छोड़ो एवं बिहार की मृदा',
-          content: '• पटना सचिवालय गोलीकांड: 11 अगस्त 1942 (7 शहीद छात्र, डीएम डब्ल्यू जी आर्चर)\n• आजाद दस्ता: जयप्रकाश नारायण ने हजारीबाग जेल से पलायन कर स्थापना की\n• बिहार की मृदा: पुरानी जलोढ़ (बांगर), नवीन जलोढ़ (खादर)\n• pH पैमाना: रक्त का pH 7.35 - 7.45 (हल्का क्षारीय)\n• मखाना: दरभंगा और मधुबनी शीर्ष उत्पादक'
-        },
-        {
-          part: 'भाग III: 6–8 गणित-विज्ञान',
-          title: 'भिन्न, अम्ल-क्षार व संवहन',
-          content: '• भिन्नों का LCM: अंशों का LCM / हरों का HCF = 20/3\n• लाभ-हानि: MP/CP = (100+P)/(100-D) = 120/80 = 50% अधिक\n• चींटी का डंक: मेथेनोइक (फॉर्मिक) अम्ल\n• संवहन ऊतक: फ्लोएम भोजन का संवहन करता है, जाइलम जल का\n• ध्वनि: प्रबलता (Loudness) आयाम (Amplitude) के वर्ग के समानुपाती'
-        },
-        {
-          part: 'भाग IV: 9–10 माध्यमिक गणित',
-          title: 'दो चरों वाले रैखिक समीकरण युग्म',
-          content: '• कोई हल नहीं: a1/a2 = b1/b2 ≠ c1/c2 (समांतर रेखाएँ, असंगत)\n• अपरिमित अनेक हल: a1/a2 = b1/b2 = c1/c2\n• नाव व धारा: Downstream = u + v, Upstream = u - v\n• सर्वसमिका: x² - y² = (x+y)(x-y) = 10 × 4 = 40\n• x = 0 (Y-अक्ष) और y = -4 (क्षैतिज रेखा) परस्पर लंबवत (Perpendicular) होती हैं'
-        }
-      ]
+    'gs': {
+      title: 'Part II: General Studies',
+      badgeClass: 'badge-gs',
+      color: '#f59e0b'
+    },
+    'middle_math_sci': {
+      title: 'Part III: Class 6–8 Maths & Science',
+      badgeClass: 'badge-middle_math_sci',
+      color: '#10b981'
+    },
+    'sec_math': {
+      title: 'Part IV: Class 9–10 Secondary Maths',
+      badgeClass: 'badge-sec_math',
+      color: '#0ea5e9'
     }
   };
 
-  const SECTION_NAMES = {
-    'language': 'भाग I: भाषा अहर्ता',
-    'gs': 'भाग II: सामान्य अध्ययन',
-    'middle_math_sci': 'भाग III: 6–8 गणित-विज्ञान',
-    'sec_math': 'भाग IV: 9–10 गणित'
+  const DAY_NOTES = {
+    1: [
+      {
+        part: 'Part I: Language Qualifying (Hindi & English)',
+        badge: 'badge-language',
+        title: 'Essential Grammar: Sandhi, Samas & Rule of Proximity',
+        text: `• Consonant Sandhi (Vyanjan Sandhi): Ut + Jwal = Ujjwal (त्/द् assimilates into ज्).
+• Orthography: Kavayitri (कवयित्री), Ujjwal (उज्ज्वल), Aashirvaad (आशीर्वाद).
+• Rule of Proximity: With 'Neither...nor' and 'Either...or', the verb agrees in number with the closest subject.
+  Example: "Neither the teacher nor the students were present yesterday."
+• Indefinite Articles: Determined by phonetic sound, NOT letter. 'A European' and 'A university' take 'a' due to initial consonant glide /juː/.`
+      },
+      {
+        part: 'Part II: General Studies & Bihar Special',
+        badge: 'badge-gs',
+        title: '1857 Revolt in Bihar & Champaran Satyagraha (1917)',
+        text: `• Patna Uprising (3 July 1857): Led by bookseller Peer Ali Khan. Opium agent Dr. R. Lyell was killed; Peer Ali was subsequently executed by Commissioner William Tayler.
+• Jagdishpur Leader: Babu Veer Kunwar Singh and his brother Amar Singh led the resistance in Shahabad/Bhojpur.
+• Champaran Satyagraha (1917): Peasant leader Rajkumar Shukla persuaded Mahatma Gandhi at the 1916 Lucknow Congress. Abolished the Tinkathia system (compulsory indigo on 3/20th land); European planters refunded 25% of illegal exactions.
+• River Ganga in Bihar: Enters at Chausa (Buxar) from UP, flows for 445 km through 12 districts.
+• Kosi River ('Sorrow of Bihar'): Originates as Saptakoshi in Nepal, carries immense silt causing westward course shifts; merges with Ganga at Kursela (Katihar).`
+      },
+      {
+        part: 'Part III: Class 6–8 (Middle School Maths & Science)',
+        badge: 'badge-middle_math_sci',
+        title: 'Rational Numbers, Optics & Human Nutrition',
+        text: `• Rational Properties: (Additive Inverse) × (Multiplicative Inverse) = -1 for any non-zero rational number.
+• Divisibility by 9: A number is divisible by 9 if and only if the sum of its digits is a multiple of 9.
+• Plane Mirror Reflections: Number of images between mirrors inclined at angle θ = (360° / θ) - 1 when 360/θ is an even integer (e.g. at 60°, images = 6 - 1 = 5).
+• Food Biochemical Tests: Starch + Dilute Iodine ⟶ Blue-black coloration; Protein + CuSO4 + NaOH (Biuret test) ⟶ Violet coloration.
+• Vitamin Classification: K, E, D, A are fat-soluble ('KEDA'); B-complex and C (Ascorbic acid) are water-soluble.`
+      },
+      {
+        part: 'Part IV: Class 9–10 (Secondary Mathematics)',
+        badge: 'badge-sec_math',
+        title: 'Euclid Division, Polynomials & Decimal Expansions',
+        text: `• Euclid's Division Lemma: a = bq + r with condition 0 ≤ r < b.
+• Terminating Decimal Expansion: A rational number p/q in simplest form has a terminating decimal if and only if q = 2^n · 5^m; it terminates after exactly max(n, m) decimal places.
+• Quadratic Zeroes & Coefficients: For ax² + bx + c = 0, sum of roots α + β = -b/a, product αβ = c/a, and 1/α + 1/β = -b/c.
+• Root Signs: If all coefficients a, b, c of a quadratic polynomial are positive, both roots are strictly negative.
+• Cubic Zeroes: If one root of ax³ + bx² + cx + d is zero, the product of the other two roots equals c/a.`
+      }
+    ],
+    2: [
+      {
+        part: 'Part I: Language Qualifying (Hindi & English)',
+        badge: 'badge-language',
+        title: 'Prefixes, Vocabulary & Third Conditional Sentences',
+        text: `• Prefixes (Upasarg): In 'Atyant', the root prefix is 'Ati' (Ati + Ant = Atyant via Yan Sandhi).
+• Synonyms & Antonyms: 'Ratri' has multiple synonyms: Vibhavari, Rajani, Nisheeth (triggers BPSC Option D). Aastik (Theist) ⟷ Naastik (Atheist).
+• Third Conditional: Expresses unfulfilled past situations. Formula: If + Past Perfect (had + V3) ⟶ would have + V3.
+  Example: "If you had studied hard, you would have passed the examination."
+• Preposition of Time: Specific clock points take 'at' ("at 8:30 PM sharp").`
+      },
+      {
+        part: 'Part II: General Studies & Bihar Special',
+        badge: 'badge-gs',
+        title: '1942 Quit India (Patna Secretariat) & Bihar Soils',
+        text: `• Patna Secretariat Firing: Occurred on 11 August 1942. 7 student martyrs were shot by order of DM W.G. Archer while attempting to hoist the tricolour.
+• Azad Dasta: Guerrilla organization founded by Jayaprakash Narayan (JP) in Nepal Terai after escaping Hazaribagh Jail on Diwali night in 1942.
+• Soils of Bihar: Older Alluvial (Bangar / Karail-Kewal, clayey with kankar nodules) and Newer Alluvial (Khadar, fertile annual floodplain).
+• Blood pH: Normal arterial blood pH is tightly regulated between 7.35 and 7.45 (slightly alkaline).
+• Mithila Makhana: Darbhanga and Madhubani lead national production of Fox Nut (GI tag protected).`
+      },
+      {
+        part: 'Part III: Class 6–8 (Middle School Maths & Science)',
+        badge: 'badge-middle_math_sci',
+        title: 'Fractions, Plant Physiology & Sound Wave Physics',
+        text: `• Fractions Formula: LCM(Fractions) = [LCM of Numerators] / [HCF of Denominators].
+• Marked Price & Discount: MP/CP = (100 + Profit%) / (100 - Discount%). With 20% discount and 20% profit, MP is 50% above CP.
+• Plant Transport: Phloem translocates organic nutrients (sucrose) bidirectionally; Xylem transports water and minerals unidirectionally.
+• Sound Wave Intensity: Loudness is directly proportional to the square of the vibration amplitude (Loudness ∝ A²). Pitch is determined by frequency.
+• Neutralization Reaction: Aqueous Acid + Aqueous Base ⟶ Ionic Salt + Water + Heat.`
+      },
+      {
+        part: 'Part IV: Class 9–10 (Secondary Mathematics)',
+        badge: 'badge-sec_math',
+        title: 'Linear Systems in Two Variables & Coordinate Geometry',
+        text: `• System Consistency Conditions:
+  1. Unique Solution (Intersecting lines, Consistent): a1/a2 ≠ b1/b2.
+  2. Infinitely Many Solutions (Coincident lines, Dependent): a1/a2 = b1/b2 = c1/c2.
+  3. No Solution (Parallel lines, Inconsistent): a1/a2 = b1/b2 ≠ c1/c2.
+• Relative Speed in Streams: Downstream speed = u + v; Upstream speed = u - v.
+• Geometric Orientation: The line x = 0 (Y-axis) and the horizontal line y = -4 are mutually perpendicular in the Cartesian plane.`
+      }
+    ]
   };
 
+  // ========================================================
+  // INITIALIZATION & LIFECYCLE
+  // ========================================================
   window.addEventListener('DOMContentLoaded', () => {
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').catch(e => console.log('SW', e));
-    }
-    loadStored();
-    initDayIndex();
+    initTheme();
+    loadStoredProgress();
+    initDayDropdown();
   });
 
-  async function initDayIndex() {
+  // ========================================================
+  // THEME MANAGEMENT (LIGHT & DARK)
+  // ========================================================
+  function initTheme() {
+    const savedTheme = localStorage.getItem('bpsc_theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(prefersDark ? 'dark' : 'light');
+    }
+  }
+
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+  }
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('bpsc_theme', theme);
+    
+    const icon = document.getElementById('themeIcon');
+    const label = document.getElementById('themeLabel');
+    if (theme === 'dark') {
+      icon.innerText = '☀️';
+      label.innerText = 'Light';
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#090d16');
+    } else {
+      icon.innerText = '🌙';
+      label.innerText = 'Dark';
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f8fafc');
+    }
+  }
+
+  // ========================================================
+  // DAY DATA LOADER
+  // ========================================================
+  async function initDayDropdown() {
     try {
       const resp = await fetch('data/index.json');
       if (resp.ok) {
@@ -714,7 +1099,7 @@
         });
       }
     } catch (e) {
-      // Use fallback
+      console.warn('Fallback to local day registry', e);
     }
     loadDay(activeDay);
   }
@@ -723,20 +1108,23 @@
     activeDay = parseInt(dayNum);
     document.getElementById('daySelect').value = activeDay;
 
-    const meta = DAY_MODULES[activeDay] || DAY_MODULES[1];
+    const dataPath = activeDay === 2 ? '2026-10-10/daily_quiz_data.json' : '2026-10-09/daily_quiz_data.json';
     try {
-      const resp = await fetch(meta.path);
+      const resp = await fetch(dataPath);
       testData = await resp.json();
     } catch (e) {
-      console.warn('Failed loading day', e);
+      console.error('Quiz fetch failed', e);
     }
 
     currentIdx = 0;
-    renderNotes(meta.notes);
+    renderStudyNotes(DAY_NOTES[activeDay] || DAY_NOTES[1]);
     renderQuestion();
-    updateCounter();
+    updateAnsweredCounter();
   }
 
+  // ========================================================
+  // TAB NAVIGATION
+  // ========================================================
   function switchView(viewName) {
     const pBtn = document.getElementById('tabPracticeBtn');
     const nBtn = document.getElementById('tabNotesBtn');
@@ -751,123 +1139,172 @@
     } else {
       nBtn.classList.add('active');
       pBtn.classList.remove('active');
-      nView.style.display = 'block';
-      pView.style.display = 'none';
+      nView.style.display = 'none';
+      pView.style.display = 'block';
     }
   }
 
-  function renderNotes(notes) {
-    const box = document.getElementById('notesListContainer');
-    box.innerHTML = '';
-    notes.forEach(n => {
-      const el = document.createElement('div');
-      el.className = 'note-block';
-      el.innerHTML = `
-        <div class="note-part">${n.part}</div>
-        <div class="note-heading">${n.title}</div>
-        <div class="note-content">${n.content}</div>
-      `;
-      box.appendChild(el);
-    });
-  }
-
+  // ========================================================
+  // RENDER QUESTION & OPTIONS
+  // ========================================================
   function renderQuestion() {
     if (!testData || !testData.questions) return;
     const q = testData.questions[currentIdx];
     const total = testData.questions.length;
+    const secCfg = SECTION_CONFIG[q.section] || { title: q.section, badgeClass: 'badge-gs', color: '#3b82f6' };
 
-    document.getElementById('qIndexLabel').innerText = `प्रश्न ${q.id} / ${total}`;
-    document.getElementById('qSectionLabel').innerText = SECTION_NAMES[q.section] || q.section;
-    document.getElementById('qStatement').innerText = q.question;
+    // Meta & Badges
+    document.getElementById('qNumberPill').innerText = `Question ${q.id} of ${total}`;
+    const badge = document.getElementById('sectionBadge');
+    badge.className = `section-badge ${secCfg.badgeClass}`;
+    badge.innerText = secCfg.title;
+    
+    // Top Accent line
+    document.getElementById('cardAccentLine').style.background = secCfg.color;
 
-    const optContainer = document.getElementById('optionsContainer');
-    optContainer.innerHTML = '';
+    // Progress Bar
+    const progressPct = ((currentIdx + 1) / total) * 100;
+    document.getElementById('progressFill').style.width = `${progressPct}%`;
+
+    // Statement
+    document.getElementById('questionStatement').innerText = q.question;
+
+    // Render Options (A to E)
+    const container = document.getElementById('optionsContainer');
+    container.innerHTML = '';
     const letters = ['A', 'B', 'C', 'D', 'E'];
     const chosen = (userProgress[activeDay]?.answers || {})[q.id];
 
     q.options.forEach((optText, idx) => {
       const row = document.createElement('div');
-      row.className = 'option-item';
+      row.className = 'option-row';
 
       if (chosen === idx) row.classList.add('selected');
+
+      // Instant Feedback state if already answered
       if (chosen !== undefined) {
-        if (idx === q.answerIndex) row.classList.add('correct');
-        else if (chosen === idx) row.classList.add('wrong');
+        if (idx === q.answerIndex) {
+          row.classList.add('correct');
+        } else if (chosen === idx) {
+          row.classList.add('wrong');
+        }
       }
 
       row.innerHTML = `
-        <span class="option-key">(${letters[idx]})</span>
-        <span class="option-text">${optText}</span>
+        <span class="option-key">${letters[idx]}</span>
+        <span class="option-content">${optText}</span>
       `;
-      row.onclick = () => selectAnswer(q.id, idx);
-      optContainer.appendChild(row);
+
+      row.onclick = () => selectOption(q.id, idx);
+      container.appendChild(row);
     });
 
-    // Explanation
+    // Populate Detailed Solution
     const ai = q.aiDeepSolution || {};
-    let fullExplain = q.explanation || '';
+    document.getElementById('solExplanation').innerText = q.explanation || 'Refer to the standard formula above.';
+
+    const conceptEl = document.getElementById('solConcept');
     if (ai.concept) {
-      fullExplain += '\n\n' + ai.concept;
-    }
-    document.getElementById('explainText').innerText = fullExplain;
-
-    if (ai.trick) {
-      document.getElementById('trickContainer').style.display = 'block';
-      document.getElementById('trickText').innerText = ai.trick;
+      document.getElementById('solConceptBlock').style.display = 'block';
+      conceptEl.innerText = ai.concept;
     } else {
-      document.getElementById('trickContainer').style.display = 'none';
+      document.getElementById('solConceptBlock').style.display = 'none';
     }
 
-    document.getElementById('explainBox').classList.remove('show');
-    document.getElementById('explainIcon').innerText = '▾';
-    document.getElementById('btnPrev').disabled = currentIdx === 0;
-    document.getElementById('btnNext').innerText = currentIdx === total - 1 ? 'पूर्ण करें' : 'अगला →';
+    const trickEl = document.getElementById('solTrick');
+    if (ai.trick) {
+      document.getElementById('solTrickBlock').style.display = 'block';
+      trickEl.innerText = ai.trick;
+    } else {
+      document.getElementById('solTrickBlock').style.display = 'none';
+    }
 
-    updateCounter();
+    const trapEl = document.getElementById('solTrap');
+    if (ai.trap) {
+      document.getElementById('solTrapBlock').style.display = 'block';
+      trapEl.innerText = ai.trap;
+    } else {
+      document.getElementById('solTrapBlock').style.display = 'none';
+    }
+
+    // Reset Accordion
+    document.getElementById('explainPanel').classList.remove('open');
+    document.getElementById('explainArrow').innerText = '▾';
+
+    // Buttons
+    document.getElementById('btnPrev').disabled = currentIdx === 0;
+    document.getElementById('btnNext').innerText = currentIdx === total - 1 ? 'Finish & Review' : 'Next →';
   }
 
-  function selectAnswer(qId, idx) {
+  function selectOption(qId, idx) {
     if (!userProgress[activeDay]) userProgress[activeDay] = { answers: {} };
     userProgress[activeDay].answers[qId] = idx;
     saveProgress();
     renderQuestion();
+    updateAnsweredCounter();
   }
 
   function toggleExplanation() {
-    const box = document.getElementById('explainBox');
-    const isShow = box.classList.contains('show');
-    box.classList.toggle('show');
-    document.getElementById('explainIcon').innerText = isShow ? '▾' : '▴';
+    const panel = document.getElementById('explainPanel');
+    const isOpen = panel.classList.contains('open');
+    panel.classList.toggle('open');
+    document.getElementById('explainArrow').innerText = isOpen ? '▾' : '▴';
   }
 
-  function navigateQ(delta) {
+  function navigateQuestion(delta) {
     const total = testData.questions.length;
-    const newIdx = currentIdx + delta;
-    if (newIdx >= 0 && newIdx < total) {
-      currentIdx = newIdx;
+    const next = currentIdx + delta;
+    if (next >= 0 && next < total) {
+      currentIdx = next;
       renderQuestion();
-    } else if (newIdx >= total) {
+    } else if (next >= total) {
       showScorecard();
     }
   }
 
-  function updateCounter() {
-    const count = Object.keys(userProgress[activeDay]?.answers || {}).length;
+  function updateAnsweredCounter() {
+    const ansMap = userProgress[activeDay]?.answers || {};
+    const count = Object.keys(ansMap).length;
     document.getElementById('answeredCounter').innerText = count;
   }
 
+  // ========================================================
+  // STUDY NOTES RENDERER
+  // ========================================================
+  function renderStudyNotes(notes) {
+    const box = document.getElementById('notesListContainer');
+    box.innerHTML = '';
+    notes.forEach(n => {
+      const card = document.createElement('div');
+      card.className = 'note-card';
+      card.innerHTML = `
+        <div class="note-top-strip">
+          <span class="section-badge ${n.badge}">${n.part}</span>
+        </div>
+        <h3 class="note-headline">${n.title}</h3>
+        <p class="note-text">${n.text}</p>
+      `;
+      box.appendChild(card);
+    });
+  }
+
+  // ========================================================
+  // QUESTION PALETTE MODAL
+  // ========================================================
   function openPalette() {
     if (!testData) return;
     const grid = document.getElementById('paletteGrid');
     grid.innerHTML = '';
-    const ans = userProgress[activeDay]?.answers || {};
+    const answers = userProgress[activeDay]?.answers || {};
 
     testData.questions.forEach((q, idx) => {
       const btn = document.createElement('button');
-      btn.className = 'palette-num';
+      btn.className = 'palette-cell';
       btn.innerText = q.id;
-      if (ans[q.id] !== undefined) btn.classList.add('answered');
+
+      if (answers[q.id] !== undefined) btn.classList.add('answered');
       if (idx === currentIdx) btn.classList.add('current');
+
       btn.onclick = () => {
         currentIdx = idx;
         renderQuestion();
@@ -875,6 +1312,7 @@
       };
       grid.appendChild(btn);
     });
+
     document.getElementById('paletteModal').classList.add('open');
   }
 
@@ -882,31 +1320,44 @@
     document.getElementById('paletteModal').classList.remove('open');
   }
 
+  // ========================================================
+  // SCORECARD & PERFORMANCE MODAL
+  // ========================================================
   function showScorecard() {
     if (!testData) return;
     let correct = 0, wrong = 0, skipped = 0;
     const ans = userProgress[activeDay]?.answers || {};
 
     testData.questions.forEach(q => {
-      const val = ans[q.id];
-      if (val === undefined) skipped++;
-      else if (val === q.answerIndex) correct++;
-      else wrong++;
+      const userChoice = ans[q.id];
+      if (userChoice === undefined) {
+        skipped++;
+      } else if (userChoice === q.answerIndex) {
+        correct++;
+      } else {
+        wrong++;
+      }
     });
 
     const net = Math.max(0, (correct * 1.0) - (wrong * 0.33)).toFixed(2);
+    const totalAttempted = correct + wrong;
+    const accuracy = totalAttempted > 0 ? Math.round((correct / totalAttempted) * 100) : 0;
+
     document.getElementById('scoreNet').innerText = net;
     document.getElementById('scoreCorrect').innerText = correct;
     document.getElementById('scoreWrong').innerText = wrong;
     document.getElementById('scoreSkipped').innerText = skipped;
+    document.getElementById('scoreAccuracy').innerText = `${accuracy}%`;
 
+    // Language Qualifying check (Q1 to Q5: need ≥ 30%)
     let langCorrect = 0;
     for (let i = 1; i <= 5; i++) {
-      if (ans[i] === testData.questions[i-1].answerIndex) langCorrect++;
+      if (ans[i] === testData.questions[i - 1].answerIndex) langCorrect++;
     }
     const passed = (langCorrect / 5) >= 0.3;
-    document.getElementById('scoreLang').innerText = passed ? `उत्तीर्ण (${langCorrect}/5)` : `अनुत्तीर्ण (${langCorrect}/5)`;
-    document.getElementById('scoreLang').style.color = passed ? '#34d399' : '#f87171';
+    const langStatusEl = document.getElementById('scoreLangStatus');
+    langStatusEl.innerText = passed ? `PASSED (${langCorrect}/5)` : `FAILED (${langCorrect}/5)`;
+    langStatusEl.style.color = passed ? '#10b981' : '#ef4444';
 
     document.getElementById('scorecardModal').classList.add('open');
   }
@@ -915,6 +1366,9 @@
     document.getElementById('scorecardModal').classList.remove('open');
   }
 
+  // ========================================================
+  // CROSS-DEVICE PROGRESS SYNC
+  // ========================================================
   function openSync() {
     const raw = JSON.stringify(userProgress);
     document.getElementById('syncExportArea').value = btoa(unescape(encodeURIComponent(raw)));
@@ -926,26 +1380,26 @@
     document.getElementById('syncModal').classList.remove('open');
   }
 
-  function copySync() {
-    const box = document.getElementById('syncExportArea');
-    box.select();
-    navigator.clipboard.writeText(box.value);
-    alert('सिंक कोड कॉपी हो गया।');
+  function copySyncCode() {
+    const area = document.getElementById('syncExportArea');
+    area.select();
+    navigator.clipboard.writeText(area.value);
+    alert('Sync code successfully copied to clipboard!');
   }
 
-  function importSync() {
-    const val = document.getElementById('syncImportArea').value.trim();
-    if (!val) return;
+  function importSyncCode() {
+    const input = document.getElementById('syncImportArea').value.trim();
+    if (!input) return;
     try {
-      const json = decodeURIComponent(escape(atob(val)));
-      userProgress = JSON.parse(json);
+      const decoded = decodeURIComponent(escape(atob(input)));
+      userProgress = JSON.parse(decoded);
       saveProgress();
-      alert('प्रगति लोड हो गई।');
+      alert('Progress imported successfully!');
       closeSync();
       renderQuestion();
-      updateCounter();
+      updateAnsweredCounter();
     } catch (e) {
-      alert('अमान्य कोड।');
+      alert('Invalid sync code format. Please verify and try again.');
     }
   }
 
@@ -953,7 +1407,7 @@
     localStorage.setItem('bpsc_tre4_progress', JSON.stringify(userProgress));
   }
 
-  function loadStored() {
+  function loadStoredProgress() {
     try {
       const s = localStorage.getItem('bpsc_tre4_progress');
       if (s) userProgress = JSON.parse(s);
