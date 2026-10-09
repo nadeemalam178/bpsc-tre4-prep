@@ -1528,6 +1528,322 @@
       }
     }
 
+
+    /* ========================================================
+       MATERIAL YOU (M3) DESIGN SYSTEM TOKENS & ELEVATION
+       ======================================================== */
+    :root {
+      --m3-shape-corner-xs: 8px;
+      --m3-shape-corner-sm: 12px;
+      --m3-shape-corner-md: 16px;
+      --m3-shape-corner-lg: 24px;
+      --m3-shape-corner-full: 9999px;
+      --m3-motion-spring: cubic-bezier(0.2, 0, 0, 1);
+    }
+
+    /* M3 Dark Theme (Obsidian Tonal Elevation) */
+    [data-theme="dark"] {
+      --bg-page: #0c0f17;
+      --bg-mesh: radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.14), transparent 40%),
+                 radial-gradient(circle at 85% 90%, rgba(139, 92, 246, 0.12), transparent 45%);
+      --bg-surface: #131722;
+      --bg-surface-elevated: #1a2030;
+      --bg-card: #151a27;
+      --bg-option: #10141f;
+      --bg-option-hover: #1b2234;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-subtle: rgba(255, 255, 255, 0.04);
+      --border-focus: #3b82f6;
+      --text-main: #f8fafc;
+      --text-body: #cbd5e1;
+      --text-muted: #8392a5;
+      
+      --m3-primary-container: rgba(59, 130, 246, 0.18);
+      --m3-on-primary-container: #93c5fd;
+      --m3-success-container: rgba(16, 185, 129, 0.18);
+      --m3-on-success-container: #6ee7b7;
+      --m3-error-container: rgba(239, 68, 68, 0.18);
+      --m3-on-error-container: #fca5a5;
+
+      --dock-bg: rgba(19, 23, 34, 0.88);
+      --dock-border: rgba(255, 255, 255, 0.12);
+      --dock-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.65);
+    }
+
+    /* M3 Light Theme (Pastel Tonal Depth) */
+    [data-theme="light"] {
+      --bg-page: #f4f6fb;
+      --bg-mesh: radial-gradient(circle at 10% 10%, rgba(219, 234, 254, 0.7), transparent 45%),
+                 radial-gradient(circle at 90% 90%, rgba(237, 233, 254, 0.6), transparent 50%);
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-option: #f8fafc;
+      --bg-option-hover: #edf2f7;
+      --border: #e2e8f0;
+      --border-subtle: #edf2f7;
+      --border-focus: #2563eb;
+      --text-main: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      
+      --m3-primary-container: #dbeafe;
+      --m3-on-primary-container: #1d4ed8;
+      --m3-success-container: #d1fae5;
+      --m3-on-success-container: #047857;
+      --m3-error-container: #fee2e2;
+      --m3-on-error-container: #b91c1c;
+
+      --dock-bg: rgba(255, 255, 255, 0.90);
+      --dock-border: rgba(226, 232, 240, 0.85);
+      --dock-shadow: 0 10px 30px -4px rgba(15, 23, 42, 0.14);
+    }
+
+    /* Polished Card & Shapes */
+    .card {
+      border-radius: var(--m3-shape-corner-lg) !important;
+      border: 1px solid var(--border) !important;
+      box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.25) !important;
+      transition: all 0.25s var(--m3-motion-spring) !important;
+    }
+
+    .option-row {
+      border-radius: var(--m3-shape-corner-md) !important;
+      min-height: 52px !important;
+      padding: 13px 16px !important;
+      transition: all 0.2s var(--m3-motion-spring) !important;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .option-row:active {
+      transform: scale(0.985);
+    }
+
+    /* ========================================================
+       AI SMART TUTOR — AUTOMATIC REVEAL & VERDICT BANNER
+       ======================================================== */
+    .ai-verdict-banner {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: var(--m3-shape-corner-md);
+      margin-bottom: 14px;
+      animation: fadeInSlide 0.3s var(--m3-motion-spring);
+    }
+
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .ai-verdict-banner.wrong {
+      background: var(--m3-error-container);
+      border: 1.5px solid rgba(239, 68, 68, 0.4);
+      color: var(--m3-on-error-container);
+    }
+
+    .ai-verdict-banner.correct {
+      background: var(--m3-success-container);
+      border: 1.5px solid rgba(16, 185, 129, 0.4);
+      color: var(--m3-on-success-container);
+    }
+
+    .ai-verdict-icon {
+      font-size: 24px;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .ai-verdict-title {
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 3px;
+      letter-spacing: -0.2px;
+    }
+
+    .ai-verdict-sub {
+      font-size: 12.5px;
+      line-height: 1.45;
+      opacity: 0.95;
+    }
+
+    .explain-panel {
+      border-radius: var(--m3-shape-corner-lg) !important;
+      border: 1.5px solid rgba(59, 130, 246, 0.25) !important;
+      background: var(--bg-surface-elevated) !important;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25) !important;
+      transition: all 0.3s var(--m3-motion-spring) !important;
+    }
+
+    .explain-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--m3-shape-corner-md);
+      padding: 14px 16px;
+      margin-bottom: 10px;
+    }
+
+    .explain-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .explain-toggle-btn {
+      border-radius: var(--m3-shape-corner-md) !important;
+      background: var(--bg-surface-elevated) !important;
+      padding: 12px 16px !important;
+      font-weight: 700 !important;
+      font-size: 13.5px !important;
+      transition: all 0.2s ease !important;
+    }
+
+    /* ========================================================
+       FLOATING MATERIAL YOU BOTTOM DOCK (MOBILE & DESKTOP)
+       ======================================================== */
+    body {
+      padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px)) !important;
+    }
+
+    .m3-dock-container {
+      position: fixed;
+      bottom: max(14px, env(safe-area-inset-bottom, 0px));
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+      pointer-events: none;
+      padding: 0 12px;
+    }
+
+    .m3-dock-pill {
+      pointer-events: auto;
+      background: var(--dock-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--dock-border);
+      border-radius: var(--m3-shape-corner-full);
+      box-shadow: var(--dock-shadow);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      max-width: 100%;
+      animation: dockFloatIn 0.35s var(--m3-motion-spring);
+    }
+
+    @keyframes dockFloatIn {
+      from { transform: translateY(24px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .m3-dock-item {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 8px 14px;
+      border-radius: var(--m3-shape-corner-full);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.2s var(--m3-motion-spring);
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .m3-dock-item.active {
+      background: var(--m3-primary-container);
+      color: var(--m3-on-primary-container);
+    }
+
+    .m3-dock-item:active {
+      transform: scale(0.95);
+    }
+
+    .m3-dock-action-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s var(--m3-motion-spring);
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .m3-dock-action-btn:hover {
+      background: var(--bg-option-hover);
+      border-color: var(--border-focus);
+    }
+
+    .m3-dock-action-btn.primary {
+      background: var(--accent-gradient);
+      color: #ffffff;
+      border: none;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    }
+
+    .m3-dock-action-btn:active {
+      transform: scale(0.92);
+    }
+
+    .m3-dock-action-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      transform: none !important;
+    }
+
+    .m3-dock-center-pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 7px 12px;
+      border-radius: var(--m3-shape-corner-full);
+      font-size: 12.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.2s var(--m3-motion-spring);
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .m3-dock-center-pill:hover {
+      border-color: #3b82f6;
+      color: #3b82f6;
+    }
+
+    .m3-dock-center-pill:active {
+      transform: scale(0.95);
+    }
+
+    /* Hide the old duplicate desktop nav buttons & redundant tabs to keep UI clean */
+    .view-tabs {
+      display: none !important;
+    }
+
+    .nav-actions {
+      display: none !important;
+    }
+
+    .mobile-thumb-bar {
+      display: none !important;
+    }
+
   </style>
 </head>
 <body>
@@ -1652,8 +1968,11 @@
       </button>
 
       <div class="explain-panel" id="explainPanel">
+        <!-- AI Smart Verdict Banner (Appears on Selection) -->
+        <div id="aiVerdictBanner" style="display: none;"></div>
+
         <div class="explain-block">
-          <span class="chip-badge chip-answer">Detailed Solution (हल)</span>
+          <span class="chip-badge chip-answer">🤖 AI Step-by-Step Solution (विस्तृत हल)</span>
           <p class="explain-body-text" id="solExplanation"></p>
         </div>
 
@@ -2572,24 +2891,30 @@
   // TAB NAVIGATION (PRACTICE VS STUDY NOTES)
   // ========================================================
   function switchView(viewName) {
-    const pBtn = document.getElementById('tabPracticeBtn');
-    const nBtn = document.getElementById('tabNotesBtn');
     const pView = document.getElementById('practiceView');
     const nView = document.getElementById('notesView');
+    const dockPBtn = document.getElementById('dockPracticeBtn');
+    const dockNBtn = document.getElementById('dockNotesBtn');
+    const dockPrev = document.getElementById('dockPrevBtn');
+    const dockNext = document.getElementById('dockNextBtn');
+    const dockQPill = document.querySelector('.m3-dock-center-pill');
 
-    const thumbBar = document.getElementById('mobileThumbBar');
     if (viewName === 'practice') {
-      pBtn.classList.add('active');
-      nBtn.classList.remove('active');
       pView.style.display = 'block';
       nView.style.display = 'none';
-      if (thumbBar && window.innerWidth <= 768) thumbBar.style.display = 'flex';
+      if (dockPBtn) dockPBtn.classList.add('active');
+      if (dockNBtn) dockNBtn.classList.remove('active');
+      if (dockPrev) dockPrev.style.display = 'flex';
+      if (dockNext) dockNext.style.display = 'flex';
+      if (dockQPill) dockQPill.style.display = 'flex';
     } else {
-      nBtn.classList.add('active');
-      pBtn.classList.remove('active');
       pView.style.display = 'none';
       nView.style.display = 'block';
-      if (thumbBar) thumbBar.style.display = 'none';
+      if (dockNBtn) dockNBtn.classList.add('active');
+      if (dockPBtn) dockPBtn.classList.remove('active');
+      if (dockPrev) dockPrev.style.display = 'none';
+      if (dockNext) dockNext.style.display = 'none';
+      if (dockQPill) dockQPill.style.display = 'none';
       renderStudyNotes();
     }
   }
@@ -2727,21 +3052,80 @@
     document.getElementById('explainPanel').classList.remove('open');
     document.getElementById('explainArrow').innerText = '▾';
 
-    // Buttons
-    document.getElementById('btnPrev').disabled = currentIdx === 0;
-    document.getElementById('btnNext').innerText = currentIdx === total - 1 ? 'Finish & Review (समाप्त करें)' : 'Next (अगला) →';
+    // Update Dock Indicators
+    const dockPrev = document.getElementById('dockPrevBtn');
+    if (dockPrev) dockPrev.disabled = currentIdx === 0;
+    const dockNext = document.getElementById('dockNextBtn');
+    if (dockNext) {
+      dockNext.innerHTML = currentIdx === total - 1 ? '<span>✓</span>' : '<span>▶</span>';
+      dockNext.title = currentIdx === total - 1 ? 'Finish & Review' : 'Next Question';
+    }
+    const dockQNum = document.getElementById('dockQuestionNumber');
+    if (dockQNum) dockQNum.innerText = `${currentIdx + 1}/${total}`;
 
-    const thumbPrev = document.getElementById('thumbBtnPrev');
-    if (thumbPrev) thumbPrev.disabled = currentIdx === 0;
-    const thumbNext = document.getElementById('thumbBtnNext');
-    if (thumbNext) thumbNext.innerHTML = currentIdx === total - 1 ? '<span>Finish</span><span>✓</span>' : '<span>Next</span><span>→</span>';
+    // Auto-reveal AI Solution if user has already answered this question
+    handleAiExplanationDisplay(chosen, q.answerIndex);
+  }
+
+  function handleAiExplanationDisplay(chosen, answerIndex, didJustSelect = false) {
+    const banner = document.getElementById('aiVerdictBanner');
+    const panel = document.getElementById('explainPanel');
+    const arrow = document.getElementById('explainArrow');
+    const letters = ['A', 'B', 'C', 'D', 'E'];
+
+    if (chosen === undefined) {
+      if (banner) banner.style.display = 'none';
+      if (panel) panel.classList.remove('open');
+      if (arrow) arrow.innerText = '▾';
+      return;
+    }
+
+    const isCorrect = chosen === answerIndex;
+
+    if (banner) {
+      banner.style.display = 'flex';
+      banner.className = `ai-verdict-banner ${isCorrect ? 'correct' : 'wrong'}`;
+
+      if (isCorrect) {
+        banner.innerHTML = `
+          <div class="ai-verdict-icon">🎉</div>
+          <div>
+            <div class="ai-verdict-title">बिल्कुल सही उत्तर (+1.0 Marks)!</div>
+            <div class="ai-verdict-sub">आपने <strong>Option ${letters[chosen]}</strong> चुना। नीचे दिया गया मूल सिद्धांत और ट्रिक पढ़ें:</div>
+          </div>
+        `;
+      } else {
+        banner.innerHTML = `
+          <div class="ai-verdict-icon">⚠️</div>
+          <div>
+            <div class="ai-verdict-title">गलत उत्तर (-0.33 Negative Marks)</div>
+            <div class="ai-verdict-sub">आपने <strong>Option ${letters[chosen]}</strong> चुना था, सही उत्तर <strong>Option ${letters[answerIndex]}</strong> है। नीचे AI विस्तृत हल समझें:</div>
+          </div>
+        `;
+      }
+    }
+
+    // ALWAYS AUTO-OPEN ON WRONG ANSWER or if freshly clicked!
+    if (!isCorrect || didJustSelect) {
+      if (panel) panel.classList.add('open');
+      if (arrow) arrow.innerText = '▴';
+      if (didJustSelect && !isCorrect) {
+        setTimeout(() => {
+          panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 120);
+      }
+    }
   }
 
   function selectOption(qId, idx) {
     if (!userProgress[activeDay]) userProgress[activeDay] = { answers: {} };
     userProgress[activeDay].answers[qId] = idx;
     saveActiveUserData();
+    
+    // Re-render question options
+    const q = testData.questions[currentIdx];
     renderQuestion();
+    handleAiExplanationDisplay(idx, q.answerIndex, true);
     updateAnsweredCounter();
   }
 
@@ -3158,6 +3542,40 @@
     <span>Next</span>
     <span>→</span>
   </button>
+</div>
+
+
+<!-- MATERIAL YOU FLOATING BOTTOM DOCK -->
+<div class="m3-dock-container" id="bottomDock">
+  <div class="m3-dock-pill">
+    <!-- View Switcher: Practice -->
+    <button class="m3-dock-item active" id="dockPracticeBtn" onclick="switchView('practice')" title="Practice (अभ्यास)">
+      <span>📝</span>
+      <span>Practice</span>
+    </button>
+
+    <!-- Navigation: Prev -->
+    <button class="m3-dock-action-btn" id="dockPrevBtn" onclick="navigateQuestion(-1)" title="Previous Question (पिछला)">
+      <span>◀</span>
+    </button>
+
+    <!-- Center: Question Grid Pill -->
+    <button class="m3-dock-center-pill" onclick="openPalette()" title="Question Grid (प्रश्नावली)">
+      <span id="dockQuestionNumber">1/30</span>
+      <span style="color:#3b82f6;">▦</span>
+    </button>
+
+    <!-- Navigation: Next -->
+    <button class="m3-dock-action-btn primary" id="dockNextBtn" onclick="navigateQuestion(1)" title="Next Question (अगला)">
+      <span>▶</span>
+    </button>
+
+    <!-- View Switcher: Notes -->
+    <button class="m3-dock-item" id="dockNotesBtn" onclick="switchView('notes')" title="Daily Notes (दैनिक नोट्स)">
+      <span>📖</span>
+      <span>Notes</span>
+    </button>
+  </div>
 </div>
 
 </body>
