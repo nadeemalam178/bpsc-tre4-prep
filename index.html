@@ -1190,9 +1190,392 @@
       padding: 14px;
       margin-bottom: 14px;
     }
+
+    /* ========================================================
+       LOGIN & ONBOARDING OVERLAY (PERSONALIZED DATA PRIVACY)
+       ======================================================== */
+    .login-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(8, 12, 20, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    [data-theme="light"] .login-overlay {
+      background: rgba(248, 250, 252, 0.94);
+    }
+
+    .login-overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .login-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-focus);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      animation: modalSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .login-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-gradient);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .login-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .login-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    .avatar-picker-row {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .avatar-choice-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--bg-option);
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      touch-action: manipulation;
+    }
+
+    .avatar-choice-btn:hover, .avatar-choice-btn.selected {
+      border-color: #3b82f6;
+      background: rgba(59, 130, 246, 0.15);
+      transform: scale(1.08);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+    }
+
+    .login-input-wrap {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .login-input-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-body);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .login-input {
+      width: 100%;
+      background: var(--bg-option);
+      border: 1.5px solid var(--border);
+      color: var(--text-main);
+      padding: 13px 16px;
+      border-radius: var(--radius-md);
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+    }
+
+    .login-input:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+      background: var(--bg-surface);
+    }
+
+    .btn-login-submit {
+      width: 100%;
+      min-height: 48px;
+      background: var(--accent-gradient);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-md);
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+      transition: all 0.2s ease;
+      touch-action: manipulation;
+    }
+
+    .btn-login-submit:active {
+      transform: scale(0.98);
+    }
+
+    .existing-users-box {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px dashed var(--border);
+      text-align: left;
+    }
+
+    .existing-users-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .existing-users-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .user-pill-tag {
+      background: var(--bg-option);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 7px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      touch-action: manipulation;
+    }
+
+    .user-pill-tag:hover {
+      border-color: #3b82f6;
+      background: var(--bg-option-hover);
+    }
+
+    /* ========================================================
+       MOBILE-FIRST THUMB-ZONE BAR & TOUCH TARGETS
+       ======================================================== */
+    .mobile-thumb-bar {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .container {
+        padding: 10px 10px;
+      }
+
+      header {
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+        gap: 8px;
+      }
+
+      .brand-title {
+        font-size: 16px;
+      }
+
+      .header-actions {
+        gap: 6px;
+      }
+
+      .user-pill-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        min-height: 38px;
+      }
+
+      .day-selector {
+        padding: 6px 8px;
+        font-size: 12px;
+        min-height: 38px;
+      }
+
+      .btn-icon {
+        padding: 6px 10px;
+        min-height: 38px;
+        font-size: 12px;
+      }
+
+      /* Options Touch Size */
+      .option-btn {
+        min-height: 52px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        font-size: 14.5px;
+        line-height: 1.45;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .option-btn:active {
+        transform: scale(0.985);
+      }
+
+      .option-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+        flex-shrink: 0;
+      }
+
+      /* Mobile Thumb Bar */
+      .mobile-thumb-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--bg-surface);
+        border-top: 1px solid var(--border);
+        padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .thumb-nav-btn {
+        flex: 1;
+        min-height: 48px;
+        border-radius: var(--radius-md);
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        border: none;
+        cursor: pointer;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+        transition: all 0.15s ease;
+      }
+
+      .thumb-nav-btn:active {
+        transform: scale(0.97);
+      }
+
+      .thumb-btn-prev {
+        background: var(--bg-option);
+        border: 1px solid var(--border);
+        color: var(--text-main);
+      }
+
+      .thumb-btn-grid {
+        flex: 0 0 52px;
+        background: var(--bg-option);
+        border: 1px solid var(--border);
+        color: #3b82f6;
+        font-size: 18px;
+      }
+
+      .thumb-btn-next {
+        background: var(--accent-gradient);
+        color: #ffffff;
+        box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+      }
+
+      /* Hide Desktop In-Card Nav on Mobile to keep page uncluttered */
+      .nav-actions {
+        display: none !important;
+      }
+    }
+
   </style>
 </head>
 <body>
+
+
+<!-- FULL-PAGE LOGIN & WELCOME SCREEN (PRIVATE USER DATA) -->
+<div class="login-overlay hidden" id="loginOverlay">
+  <div class="login-card">
+    <div class="login-badge">🎯 BPSC TRE 4.0 Prep Hub</div>
+    <h1 class="login-title">Student Login<br><span style="font-size:16px; font-weight:600; color:var(--text-muted);">(अपना नाम दर्ज करें)</span></h1>
+    <p class="login-subtitle">
+      आपका अभ्यास, हल किए हुए प्रश्न, और स्कोरकार्ड आपके नाम से सुरक्षित रहेंगे ताकि कोई दूसरा आपका डेटा न बदले।
+    </p>
+
+    <!-- Avatar Picker -->
+    <div style="font-size:11.5px; font-weight:700; color:var(--text-muted); margin-bottom:8px; text-transform:uppercase;">
+      Choose Avatar (अवतार चुनें)
+    </div>
+    <div class="avatar-picker-row" id="avatarPickerRow">
+      <button type="button" class="avatar-choice-btn selected" onclick="selectLoginAvatar('👤', this)">👤</button>
+      <button type="button" class="avatar-choice-btn" onclick="selectLoginAvatar('🎯', this)">🎯</button>
+      <button type="button" class="avatar-choice-btn" onclick="selectLoginAvatar('📚', this)">📚</button>
+      <button type="button" class="avatar-choice-btn" onclick="selectLoginAvatar('🏆', this)">🏆</button>
+      <button type="button" class="avatar-choice-btn" onclick="selectLoginAvatar('🚀', this)">🚀</button>
+      <button type="button" class="avatar-choice-btn" onclick="selectLoginAvatar('⭐', this)">⭐</button>
+    </div>
+
+    <!-- Name Input Form -->
+    <form onsubmit="handleLoginSubmit(event)">
+      <div class="login-input-wrap">
+        <label class="login-input-label" for="loginNameInput">Your Name (नाम):</label>
+        <input type="text" class="login-input" id="loginNameInput" placeholder="उदा. Nadeem, Rohit, Pooja..." autocomplete="name" required autofocus>
+      </div>
+
+      <button type="submit" class="btn-login-submit">
+        <span>🚀 Start Preparation (तैयारी शुरू करें)</span>
+      </button>
+    </form>
+
+    <!-- Existing Local Profiles Switcher -->
+    <div class="existing-users-box" id="existingUsersBox" style="display: none;">
+      <div class="existing-users-title">Already using on this device:</div>
+      <div class="existing-users-pills" id="existingUsersPills">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="container">
 
@@ -1399,7 +1782,10 @@
       </div>
     </div>
 
-    <button class="modal-close" onclick="closeUserModal()">Close (बंद करें)</button>
+    <div style="display:flex; gap:8px; margin-top:8px;">
+      <button class="modal-close" style="flex:1; background:rgba(239, 68, 68, 0.15); border:1px solid rgba(239, 68, 68, 0.4); color:#ef4444;" onclick="handleLogout()">🔒 Logout (लॉगआउट)</button>
+      <button class="modal-close" style="flex:1;" onclick="closeUserModal()">Close (बंद करें)</button>
+    </div>
   </div>
 </div>
 
@@ -1899,8 +2285,10 @@
   });
 
   // ========================================================
-  // MULTI-USER PROFILES & LOGIN SYSTEM
+  // MULTI-USER PROFILES & LOGIN SYSTEM (NAME-BASED PRIVACY)
   // ========================================================
+  let selectedLoginAvatar = '👤';
+
   function initUsers() {
     try {
       const saved = localStorage.getItem('bpsc_user_profiles');
@@ -1909,20 +2297,113 @@
       }
     } catch (e) {}
 
-    if (!usersList || usersList.length === 0) {
-      usersList = [
-        { id: 'usr_nadeem', name: 'Nadeem', avatar: '👤', createdAt: Date.now() }
-      ];
+    if (!usersList) usersList = [];
+
+    // Check if active user is stored on this device
+    const savedActiveId = localStorage.getItem('bpsc_active_user_id');
+    const exists = usersList.find(u => u.id === savedActiveId);
+
+    if (savedActiveId && exists) {
+      currentUserId = savedActiveId;
+      hideLoginOverlay();
+      updateUserUI();
+      loadActiveUserData();
+    } else {
+      // Show login overlay for new user
+      currentUserId = null;
+      showLoginOverlay();
+    }
+  }
+
+  function showLoginOverlay() {
+    const overlay = document.getElementById('loginOverlay');
+    if (overlay) overlay.classList.remove('hidden');
+
+    const input = document.getElementById('loginNameInput');
+    if (input) {
+      input.value = '';
+      setTimeout(() => input.focus(), 150);
+    }
+
+    renderExistingUsersInLogin();
+  }
+
+  function hideLoginOverlay() {
+    const overlay = document.getElementById('loginOverlay');
+    if (overlay) overlay.classList.add('hidden');
+  }
+
+  function selectLoginAvatar(avatar, btn) {
+    selectedLoginAvatar = avatar;
+    document.querySelectorAll('.avatar-choice-btn').forEach(b => b.classList.remove('selected'));
+    if (btn) btn.classList.add('selected');
+  }
+
+  function renderExistingUsersInLogin() {
+    const box = document.getElementById('existingUsersBox');
+    const container = document.getElementById('existingUsersPills');
+    if (!box || !container) return;
+
+    if (usersList && usersList.length > 0) {
+      box.style.display = 'block';
+      container.innerHTML = '';
+      usersList.forEach(u => {
+        const pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'user-pill-tag';
+        pill.innerHTML = `<span>${u.avatar || '👤'}</span><span>${u.name}</span>`;
+        pill.onclick = () => {
+          loginAsUser(u.id);
+        };
+        container.appendChild(pill);
+      });
+    } else {
+      box.style.display = 'none';
+    }
+  }
+
+  function handleLoginSubmit(e) {
+    if (e) e.preventDefault();
+    const input = document.getElementById('loginNameInput');
+    const name = (input.value || '').trim();
+    if (!name) {
+      showToast('कृपया अपना नाम दर्ज करें (Please enter name)', 'warning');
+      input.focus();
+      return;
+    }
+
+    // Check if user already exists
+    let user = usersList.find(u => u.name.toLowerCase() === name.toLowerCase());
+    if (!user) {
+      user = {
+        id: 'usr_' + Date.now() + '_' + Math.random().toString(36).substr(2, 4),
+        name: name,
+        avatar: selectedLoginAvatar || '👤',
+        createdAt: Date.now()
+      };
+      usersList.push(user);
       localStorage.setItem('bpsc_user_profiles', JSON.stringify(usersList));
     }
 
-    const savedActiveId = localStorage.getItem('bpsc_active_user_id');
-    const exists = usersList.find(u => u.id === savedActiveId);
-    currentUserId = exists ? savedActiveId : usersList[0].id;
-    localStorage.setItem('bpsc_active_user_id', currentUserId);
+    loginAsUser(user.id);
+  }
 
+  function loginAsUser(userId) {
+    currentUserId = userId;
+    localStorage.setItem('bpsc_active_user_id', currentUserId);
+    hideLoginOverlay();
     updateUserUI();
     loadActiveUserData();
+    const u = getActiveUser();
+    showToast(`स्वागत है ${u.name}! (Logged in as ${u.name})`, 'success');
+  }
+
+  function handleLogout() {
+    localStorage.removeItem('bpsc_active_user_id');
+    currentUserId = null;
+    closeUserModal();
+    showLoginOverlay();
+    showToast('लॉगआउट सफल (Logged out)', 'info');
   }
 
   function getActiveUser() {
@@ -2096,16 +2577,19 @@
     const pView = document.getElementById('practiceView');
     const nView = document.getElementById('notesView');
 
+    const thumbBar = document.getElementById('mobileThumbBar');
     if (viewName === 'practice') {
       pBtn.classList.add('active');
       nBtn.classList.remove('active');
       pView.style.display = 'block';
       nView.style.display = 'none';
+      if (thumbBar && window.innerWidth <= 768) thumbBar.style.display = 'flex';
     } else {
       nBtn.classList.add('active');
       pBtn.classList.remove('active');
       pView.style.display = 'none';
       nView.style.display = 'block';
+      if (thumbBar) thumbBar.style.display = 'none';
       renderStudyNotes();
     }
   }
@@ -2246,6 +2730,11 @@
     // Buttons
     document.getElementById('btnPrev').disabled = currentIdx === 0;
     document.getElementById('btnNext').innerText = currentIdx === total - 1 ? 'Finish & Review (समाप्त करें)' : 'Next (अगला) →';
+
+    const thumbPrev = document.getElementById('thumbBtnPrev');
+    if (thumbPrev) thumbPrev.disabled = currentIdx === 0;
+    const thumbNext = document.getElementById('thumbBtnNext');
+    if (thumbNext) thumbNext.innerHTML = currentIdx === total - 1 ? '<span>Finish</span><span>✓</span>' : '<span>Next</span><span>→</span>';
   }
 
   function selectOption(qId, idx) {
@@ -2654,6 +3143,22 @@
     }
   }
 </script>
+
+
+<!-- MOBILE THUMB BAR (REACHABLE WITH ONE THUMB) -->
+<div class="mobile-thumb-bar" id="mobileThumbBar">
+  <button class="thumb-nav-btn thumb-btn-prev" onclick="navigateQuestion(-1)" id="thumbBtnPrev" title="Previous Question">
+    <span>←</span>
+    <span>Prev</span>
+  </button>
+  <button class="thumb-nav-btn thumb-btn-grid" onclick="openPalette()" title="Question Grid">
+    <span>▦</span>
+  </button>
+  <button class="thumb-nav-btn thumb-btn-next" onclick="navigateQuestion(1)" id="thumbBtnNext" title="Next Question">
+    <span>Next</span>
+    <span>→</span>
+  </button>
+</div>
 
 </body>
 </html>
