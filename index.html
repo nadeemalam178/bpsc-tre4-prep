@@ -210,6 +210,17 @@
       border-color: var(--border-focus);
     }
 
+    .btn-sync-highlight {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: #10b981;
+      color: #10b981;
+    }
+
+    .btn-sync-highlight:hover {
+      background: #10b981;
+      color: #ffffff;
+    }
+
     /* ========================================================
        PRIMARY VIEW TABS
        ======================================================== */
@@ -1037,10 +1048,10 @@
       background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      max-width: 440px;
+      max-width: 480px;
       width: 100%;
       padding: 22px;
-      max-height: 85vh;
+      max-height: 88vh;
       overflow-y: auto;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
@@ -1048,7 +1059,7 @@
     .modal-title {
       font-size: 16px;
       font-weight: 800;
-      margin-bottom: 14px;
+      margin-bottom: 8px;
       color: var(--text-main);
     }
 
@@ -1096,6 +1107,15 @@
       font-weight: 700;
       cursor: pointer;
     }
+
+    /* Sync Tabs */
+    .sync-method-card {
+      background: var(--bg-option);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      margin-bottom: 14px;
+    }
   </style>
 </head>
 <body>
@@ -1120,9 +1140,9 @@
         <span id="themeLabel">Light</span>
       </button>
 
-      <button class="btn-icon" onclick="openSync()" title="Sync Across Devices">
+      <button class="btn-icon btn-sync-highlight" onclick="openSync()" title="Sync Across Phone & PC (डिवाइस सिंक)">
         <span>↻</span>
-        <span>Sync</span>
+        <span>Sync (सिंक)</span>
       </button>
     </div>
   </header>
@@ -1131,11 +1151,11 @@
   <div class="view-tabs">
     <button class="tab-btn active" id="tabPracticeBtn" onclick="switchView('practice')">
       <span>📝</span>
-      <span>Practice (30 MCQs)</span>
+      <span>Practice (30 MCQs अभ्यास)</span>
     </button>
     <button class="tab-btn" id="tabNotesBtn" onclick="switchView('notes')">
       <span>📖</span>
-      <span>Daily Study Notes</span>
+      <span>Daily Study Notes (दैनिक नोट्स)</span>
     </button>
   </div>
 
@@ -1164,28 +1184,28 @@
 
       <!-- Explanation Drawer -->
       <button class="explain-toggle-btn" onclick="toggleExplanation()">
-        <span>View Detailed Solution & Shortcuts</span>
+        <span>View Detailed Solution & Shortcuts (विस्तृत हल व ट्रिक्स देखें)</span>
         <span id="explainArrow">▾</span>
       </button>
 
       <div class="explain-panel" id="explainPanel">
         <div class="explain-block">
-          <span class="chip-badge chip-answer">Detailed Solution</span>
+          <span class="chip-badge chip-answer">Detailed Solution (हल)</span>
           <p class="explain-body-text" id="solExplanation"></p>
         </div>
 
         <div class="explain-block" id="solConceptBlock">
-          <span class="chip-badge chip-concept">Core Concept</span>
+          <span class="chip-badge chip-concept">Core Concept (मूल संकल्पना)</span>
           <p class="explain-body-text" id="solConcept"></p>
         </div>
 
         <div class="explain-block" id="solTrickBlock">
-          <span class="chip-badge chip-shortcut">Exam Technique / Shortcut</span>
+          <span class="chip-badge chip-shortcut">Exam Technique / Shortcut (परीक्षा ट्रिक)</span>
           <p class="explain-body-text" id="solTrick"></p>
         </div>
 
         <div class="explain-block" id="solTrapBlock">
-          <span class="chip-badge chip-trap">BPSC Trap & Option Analysis</span>
+          <span class="chip-badge chip-trap">BPSC Trap & Option Analysis (सावधानी)</span>
           <p class="explain-body-text" id="solTrap"></p>
         </div>
       </div>
@@ -1193,10 +1213,10 @@
       <!-- Bottom Navigation -->
       <div class="nav-actions">
         <button class="btn btn-secondary" id="btnPrev" onclick="navigateQuestion(-1)">
-          ← Previous
+          ← Previous (पिछला)
         </button>
         <button class="btn btn-primary" id="btnNext" onclick="navigateQuestion(1)">
-          Next →
+          Next (अगला) →
         </button>
       </div>
 
@@ -1205,7 +1225,7 @@
           Question Grid (<span id="answeredCounter">0</span>/30 Answered)
         </span>
         <span class="sub-link" onclick="showScorecard()">
-          View Scorecard
+          View Scorecard (स्कोरकार्ड)
         </span>
       </div>
     </div>
@@ -1222,10 +1242,10 @@
         <span class="meta-tag" id="notesCountTag">4 Core Modules</span>
       </div>
       <p class="notes-banner-sub">
-        Comprehensive NCERT/SCERT aligned revision notes covering Language, General Studies, Class 6–8 Maths & Science, and Class 9–10 Secondary Maths.
+        Comprehensive NCERT/SCERT aligned revision notes covering Language (भाषा अहर्ता), General Studies (सामान्य अध्ययन), Class 6–8 Maths & Science, and Class 9–10 Secondary Maths.
       </p>
       <div class="mastery-stats-row">
-        <span class="mastery-label">Daily Revision Mastery</span>
+        <span class="mastery-label">Daily Revision Mastery (रिवीजन प्रगति)</span>
         <span class="mastery-pct" id="notesMasteryText">0 of 4 Completed (0%)</span>
       </div>
       <div class="mastery-progress-track">
@@ -1236,7 +1256,7 @@
     <!-- Live Search Box -->
     <div class="notes-search-box">
       <span class="notes-search-icon">🔍</span>
-      <input type="text" class="notes-search-input" id="notesSearchInput" placeholder="Search concepts, formulas, keywords (e.g. Champaran, Sandhi, Boat, Xylem)..." oninput="handleNotesSearch(this.value)">
+      <input type="text" class="notes-search-input" id="notesSearchInput" placeholder="Search concepts, formulas, keywords (e.g. Champaran, संधि, Boat, Xylem, कुंवर सिंह)..." oninput="handleNotesSearch(this.value)">
       <button class="notes-search-clear" id="notesSearchClear" onclick="clearNotesSearch()" title="Clear search">✕</button>
     </div>
 
@@ -1244,19 +1264,19 @@
     <div class="notes-toolbar">
       <div class="notes-filter-pills">
         <button class="note-pill-btn active" onclick="filterNotesCategory('all')">
-          <span>All Topics</span>
+          <span>All Topics (सभी विषय)</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('language')">
-          <span>Part I: Language</span>
+          <span>Part I: Language (भाषा)</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('gs')">
-          <span>Part II: GS & Bihar</span>
+          <span>Part II: GS & Bihar (सामान्य अध्ययन)</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('middle')">
-          <span>Part III: 6–8 Math & Sci</span>
+          <span>Part III: 6–8 Math & Sci (गणित-विज्ञान)</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('secondary')">
-          <span>Part IV: 9–10 Maths</span>
+          <span>Part IV: 9–10 Maths (माध्यमिक गणित)</span>
         </button>
       </div>
     </div>
@@ -1278,34 +1298,66 @@
   </div>
 </div>
 
-<!-- SYNC MODAL -->
+<!-- SYNC MODAL (BILINGUAL & QR AUTO-SYNC) -->
 <div class="modal-backdrop" id="syncModal">
   <div class="modal-box">
-    <div class="modal-title">Sync Across Devices</div>
-    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">
-      Seamlessly transfer your answers and progress between your mobile phone and PC.
+    <div class="modal-title">📱 Sync Phone & PC (डिवाइस सिंक)</div>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.5;">
+      अपने फोन और कंप्यूटर के बीच अपने हल किए हुए प्रश्न, स्कोर और नोट्स की प्रगति 1-क्लिक में सिंक करें।
     </p>
 
-    <div style="margin-bottom: 12px;">
-      <label style="font-size: 11px; font-weight: 700; color: #3b82f6;">Your Sync Code (Export):</label>
-      <textarea id="syncExportArea" readonly style="width: 100%; height: 50px; background: var(--bg-option); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 11px; margin-top: 4px; font-family: var(--font-mono);"></textarea>
-      <button class="modal-close" style="margin-top: 4px; background: #2563eb; color: #ffffff;" onclick="copySyncCode()">Copy Code</button>
+    <!-- METHOD 1: QR & 1-CLICK AUTO LINK -->
+    <div class="sync-method-card">
+      <div style="font-size: 13px; font-weight: 800; color: #10b981; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+        <span>⚡ तरीका 1: 1-Click QR Code या Direct Link (सबसे आसान)</span>
+      </div>
+      <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
+        अपने फोन के कैमरे से यह QR कोड स्कैन करें, या लिंक को WhatsApp/Notes में खोलें — पूरी प्रोग्रेस फोन में अपने आप लोड हो जाएगी!
+      </p>
+
+      <div style="text-align: center; margin-bottom: 10px;" id="qrCodeContainer">
+        <img id="syncQrCodeImg" src="" alt="Scan QR Code" style="width: 140px; height: 140px; background: #ffffff; padding: 6px; border-radius: 8px; border: 1px solid var(--border); display: inline-block;">
+      </div>
+
+      <div style="display: flex; gap: 6px;">
+        <input type="text" id="syncDirectUrl" readonly style="flex: 1; background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-main); padding: 7px 10px; border-radius: var(--radius-sm); font-size: 11px; font-family: var(--font-mono);">
+        <button class="modal-close" style="width: auto; padding: 7px 14px; background: #10b981; color: #ffffff;" onclick="copyDirectSyncUrl()">
+          📋 Copy Link
+        </button>
+      </div>
     </div>
 
-    <div style="margin-bottom: 14px;">
-      <label style="font-size: 11px; font-weight: 700; color: #10b981;">Paste Code from Other Device (Import):</label>
-      <textarea id="syncImportArea" placeholder="Paste sync code here..." style="width: 100%; height: 50px; background: var(--bg-option); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 11px; margin-top: 4px; font-family: var(--font-mono);"></textarea>
-      <button class="modal-close" style="margin-top: 4px; background: #059669; color: #ffffff;" onclick="importSyncCode()">Apply Progress</button>
+    <!-- METHOD 2: MANUAL BACKUP CODE -->
+    <div class="sync-method-card" style="margin-bottom: 14px;">
+      <div style="font-size: 12px; font-weight: 700; color: #3b82f6; margin-bottom: 6px;">
+        📋 तरीका 2: कोड कॉपी-पेस्ट (Offline Backup)
+      </div>
+
+      <div style="margin-bottom: 10px;">
+        <label style="font-size: 11px; font-weight: 600; color: var(--text-muted);">Current Progress Code (कोड कॉपी करें):</label>
+        <div style="display: flex; gap: 6px; margin-top: 4px;">
+          <input type="text" id="syncExportArea" readonly style="flex: 1; background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 11px; font-family: var(--font-mono);">
+          <button class="modal-close" style="width: auto; padding: 6px 12px; background: #2563eb; color: #ffffff;" onclick="copySyncCode()">Copy Code</button>
+        </div>
+      </div>
+
+      <div>
+        <label style="font-size: 11px; font-weight: 600; color: var(--text-muted);">Paste Code from other device (यहाँ कोड पेस्ट करें):</label>
+        <div style="display: flex; gap: 6px; margin-top: 4px;">
+          <input type="text" id="syncImportArea" placeholder="Paste code here..." style="flex: 1; background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 11px; font-family: var(--font-mono);">
+          <button class="modal-close" style="width: auto; padding: 6px 12px; background: #059669; color: #ffffff;" onclick="importSyncCode()">Apply</button>
+        </div>
+      </div>
     </div>
 
-    <button class="modal-close" onclick="closeSync()">Cancel</button>
+    <button class="modal-close" onclick="closeSync()">Done (बंद करें)</button>
   </div>
 </div>
 
 <!-- SCORECARD MODAL -->
 <div class="modal-backdrop" id="scorecardModal">
   <div class="modal-box" style="text-align: center;">
-    <div class="modal-title">Exam Performance Summary</div>
+    <div class="modal-title">Exam Performance Summary (परीक्षा परिणाम)</div>
     <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">BPSC Marking Scheme (+1.0 Correct, -0.33 Negative)</p>
 
     <div style="font-size: 40px; font-weight: 800; color: #38bdf8; margin: 4px 0;" id="scoreNet">0.00</div>
@@ -1314,30 +1366,30 @@
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px;">
       <div style="background: var(--bg-option); border: 1px solid var(--border); padding: 10px; border-radius: var(--radius-sm);">
         <div style="font-size: 18px; font-weight: 800; color: #10b981;" id="scoreCorrect">0</div>
-        <div style="font-size: 11px; color: var(--text-muted);">Correct</div>
+        <div style="font-size: 11px; color: var(--text-muted);">Correct (सही)</div>
       </div>
       <div style="background: var(--bg-option); border: 1px solid var(--border); padding: 10px; border-radius: var(--radius-sm);">
         <div style="font-size: 18px; font-weight: 800; color: #ef4444;" id="scoreWrong">0</div>
-        <div style="font-size: 11px; color: var(--text-muted);">Incorrect</div>
+        <div style="font-size: 11px; color: var(--text-muted);">Incorrect (गलत)</div>
       </div>
       <div style="background: var(--bg-option); border: 1px solid var(--border); padding: 10px; border-radius: var(--radius-sm);">
         <div style="font-size: 18px; font-weight: 800; color: var(--text-muted);" id="scoreSkipped">0</div>
-        <div style="font-size: 11px; color: var(--text-muted);">Unattempted</div>
+        <div style="font-size: 11px; color: var(--text-muted);">Unattempted (छोड़े गए)</div>
       </div>
     </div>
 
     <div style="background: var(--bg-option); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px; text-align: left; font-size: 13px; margin-bottom: 16px;">
       <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-        <span style="color: var(--text-muted);">Accuracy:</span>
+        <span style="color: var(--text-muted);">Accuracy (सटीकता):</span>
         <strong id="scoreAccuracy" style="color: #3b82f6;">0%</strong>
       </div>
       <div style="display: flex; justify-content: space-between;">
-        <span style="color: var(--text-muted);">Language Qualifying (≥30%):</span>
+        <span style="color: var(--text-muted);">Language Qualifying (≥30% पास अहर्ता):</span>
         <strong id="scoreLangStatus" style="color: #10b981;">PASSED</strong>
       </div>
     </div>
 
-    <button class="modal-close" onclick="closeScorecard()">Continue Review</button>
+    <button class="modal-close" onclick="closeScorecard()">Continue Review (समीक्षा जारी रखें)</button>
   </div>
 </div>
 
@@ -1359,380 +1411,361 @@
 
   const SECTION_CONFIG = {
     'language': {
-      title: 'Part I: Language Qualifying',
+      title: 'Part I: Language Qualifying (भाषा अहर्ता)',
       badgeClass: 'badge-language',
       color: '#8b5cf6'
     },
     'gs': {
-      title: 'Part II: General Studies',
+      title: 'Part II: General Studies (सामान्य अध्ययन)',
       badgeClass: 'badge-gs',
       color: '#f59e0b'
     },
     'middle_math_sci': {
-      title: 'Part III: Class 6–8 Maths & Science',
+      title: 'Part III: Class 6–8 Maths & Science (गणित-विज्ञान)',
       badgeClass: 'badge-middle_math_sci',
       color: '#10b981'
     },
     'sec_math': {
-      title: 'Part IV: Class 9–10 Secondary Maths',
+      title: 'Part IV: Class 9–10 Secondary Maths (माध्यमिक गणित)',
       badgeClass: 'badge-sec_math',
       color: '#0ea5e9'
     }
   };
 
   // ========================================================
-  // COMPREHENSIVE HIGH-YIELD ENGLISH STUDY NOTES REPOSITORY
+  // COMPREHENSIVE HIGH-YIELD BILINGUAL STUDY NOTES
   // ========================================================
   const COMPREHENSIVE_STUDY_NOTES = {
     1: [
       {
         id: 'd1_lang',
         category: 'language',
-        part: 'Part I: Language Qualifying',
+        part: 'Part I: Language Qualifying (भाषा अहर्ता)',
         badge: 'badge-language',
         color: '#8b5cf6',
         readTime: '3 min read',
-        level: 'Matric Level Grammatical Standards',
-        title: 'Hindi & English Grammar: Sandhi, Compounds & Proximity Rules',
-        takeaway: 'Master consonant assimilation rules in Hindi and nearest-subject agreement in correlative English conjunctions.',
-        content: `1. Consonant Sandhi (Vyanjan Sandhi) Mechanisms:
-• Dental Assimilation: When dental stops 't' (त्) or 'd' (द्) precede palatal affricates 'j' (ज्) or 'jh' (झ्), the preceding dental consonant assimilates directly into 'j' (ज्).
-  - Ut + Jwal = Ujjwal (उत् + ज्वल = उज्ज्वल). Notice that both 'j' letters are half consonants.
-• Chh-Conversion Rule: When 't' (त्) precedes palatal sibilant 'sh' (श्), 't' transforms into 'ch' (च्) and 'sh' transforms into 'chh' (छ्).
-  - Ut + Shvaas = Uchhvaas (उत् + श्वास = उच्छ्वास).
-  - Sat + Shaastra = Sachhaastra (सत् + शास्त्र = सच्छास्त्र).
+        level: 'Matric Level Grammatical Standards (मैट्रिक स्तर)',
+        title: 'Hindi & English Grammar: Sandhi, Compounds & Proximity Rules (संधि, समास व नियम)',
+        takeaway: 'व्यंजन संधि में दंत्य वर्णों का तालव्य में परिवर्तन तथा English में Neither...nor के साथ निकटतम कर्ता (nearest subject) के अनुसार क्रिया।',
+        content: `1. व्यंजन संधि (Consonant Sandhi) के प्रमुख नियम:
+• दंत्य वर्णों का तालव्य 'ज्' में परिवर्तन (Dental Assimilation): जब 'त्' या 'द्' के बाद 'ज्' या 'झ्' आए, तो 'त्/द्' का 'ज्' हो जाता है।
+  - उत् + ज्वल = उज्ज्वल (Ujjwal) — ध्यान दें: इसमें दोनों 'ज' आधे (ह्स्व) होते हैं।
+• 'त्' का 'च्' तथा 'श्' का 'छ्' में परिवर्तन (Chh-Conversion Rule):
+  - उत् + श्वास = उच्छ्वास (Uchhvaas).
+  - सत् + शास्त्र = सच्छास्त्र (Sachhaastra).
 
-2. Six Principal Compound Formations (Samas):
-• Avyayibhav Samas: The initial constituent is an indeclinable modifier (Avyaya) and carries chief semantic weight, imparting an adverbial function.
-  - Yathashakti (यथाशक्ति - according to capacity)
-  - Pratidin (प्रतिदिन - each and every day)
-  - Bebuniyad (बेबुनियाद - without foundation)
-• Tatpurush Samas: Characterized by the grammatical elision of case postpositions (Karak Vibhakti).
-  - Rajputra (राजा का पुत्र - King's son: Sambandh Tatpurush)
-  - Vidyalay (विद्या के लिए आलय - House for learning: Sampradan Tatpurush)
-• Dvigu Samas: The initial constituent is explicitly a cardinal number denoting a collection.
-  - Chauraha (चार राहों का समाहार - four-way intersection)
-  - Tribhuvan (तीन भुवनों का समूह - three realms).
+2. समास (Compound Formations) के 6 भेद:
+• अव्ययीभाव समास (Avyayibhav): पहला पद प्रधान (अव्यय/उपसर्ग) होता है तथा पूरा पद क्रिया-विशेषण की तरह कार्य करता है।
+  - यथाशक्ति (शक्ति के अनुसार), प्रतिदिन (प्रत्येक दिन), बेबुनियाद (बिना बुनियाद के).
+• तत्पुरुष समास (Tatpurush): उत्तर पद प्रधान तथा कारक चिह्नों (कारक विभक्ति) का लोप होता है।
+  - राजपुत्र (राजा का पुत्र - संबंध तत्पुरुष), विद्यालय (विद्या के लिए आलय - संप्रदान तत्पुरुष).
+• द्विगु समास (Dvigu): पहला पद संख्यावाचक विशेषण होता है जो समूह का बोध कराता है।
+  - चौराहा (चार राहों का समाहार), त्रिभुवन (तीन भुवनों का समूह).
 
-3. English Rule of Proximity:
-• In correlative conjunction structures using 'Neither...nor' or 'Either...or', the finite verb agrees strictly in number and person with the closest adjacent subject.
-  - "Neither the teacher nor the students WERE present in the seminar yesterday." (Students is plural and closest -> 'were')
-  - "Neither the students nor the teacher WAS present in the seminar yesterday." (Teacher is singular and closest -> 'was')
+3. English Grammar: Rule of Proximity (समीपवर्ती नियम):
+• जब दो Subjects को 'Neither...nor' या 'Either...or' से जोड़ा जाता है, तो Verb हमेशा अपने निकटतम Subject (समीपवर्ती कर्ता) के Number और Person के अनुसार आती है।
+  - "Neither the teacher nor the students WERE present yesterday." (Students plural है और verb के पास है ⟶ 'were')
+  - "Neither the students nor the teacher WAS present yesterday." (Teacher singular है ⟶ 'was')
 
-4. Phonetic Article Selection:
-• The choice between indefinite articles 'a' and 'an' depends strictly on the INITIAL PHONETIC SOUND, never on the orthographic alphabet.
-• Words beginning with the semi-vowel glide /juː/ require 'a':
-  - "a European scholar", "a university professor", "a unique opportunity", "a uniform".
-• Words beginning with a silent 'h' produce an initial vowel sound and require 'an':
+4. Phonetic Article Selection (ध्वनि आधारित आर्टिकल):
+• 'a' और 'an' का प्रयोग केवल प्रथम ध्वनि (Initial Phonetic Sound) पर निर्भर करता है, अक्षर पर नहीं।
+• /juː/ (यूनिवर्सिटी, यूरोपियन) जैसे व्यंजन अर्ध-स्वर से शुरू होने वाले शब्दों के पहले 'a' लगता है:
+  - "a European scholar", "a university professor", "a unique opportunity".
+• Silent 'h' (मूक 'ह') से शुरू होने वाले शब्दों में पहली ध्वनि स्वर होती है, अतः 'an' लगता है:
   - "an hour", "an honest officer", "an heir to the throne".`,
-        formula: `• Dental Sandhi: त्/द् + ज् ⟶ ज्ज् (उत् + ज्वल = उज्ज्वल)
+        formula: `• संधि सूत्र: त्/द् + ज् ⟶ ज्ज् (उत् + ज्वल = उज्ज्वल)
 • English Proximity: Neither S1 nor S2 + Verb(agrees with S2)
-• Indefinite Article Rule: Phonetic vowel sound ⟶ 'an' | Glide /juː/ ⟶ 'a'`,
-        tip: `BPSC Qualifying Strategy: 30 total questions (22 Hindi + 8 English). You need only 9 marks (30%) to qualify. Focus on Sandhi spelling accuracy and English article phonetics for guaranteed safety.`,
-        mnemonic: `Remember: 'Neither/Nor' verb is a loyal neighbor—it only looks at the closest subject beside it!`
+• Article Rule: Vowel Sound ⟶ 'an' | /juː/ Glide ⟶ 'a'`,
+        tip: `BPSC भाषा अहर्ता रणनीति: कुल 30 प्रश्न (22 हिंदी + 8 अंग्रेजी). केवल 9 अंक (30%) लाना अनिवार्य है. 'उज्ज्वल' की वर्तनी और English Articles पक्के कर लें.`,
+        mnemonic: `नियम याद रखें: 'Neither...nor' की क्रिया पड़ोसी जैसी होती है—जो सबसे पास है, उसी की बात मानती है!`
       },
       {
         id: 'd1_gs',
         category: 'gs',
-        part: 'Part II: General Studies & Bihar Special',
+        part: 'Part II: General Studies & Bihar Special (सामान्य अध्ययन व बिहार)',
         badge: 'badge-gs',
         color: '#f59e0b',
         readTime: '5 min read',
-        level: 'BPSC Primary & Secondary GS Core',
-        title: '1857 Great Revolt in Bihar, Champaran Satyagraha & Drainage Geography',
-        takeaway: 'Understand Kunwar Singh’s military campaign, Rajkumar Shukla’s role in Champaran, and the exact course of River Ganga across Bihar.',
-        content: `1. 1857 Freedom Struggle in Bihar:
-• Outbreak: Began on 12 June 1857 at Rohini village (Deoghar, now Jharkhand) by sepoys of the 32nd Native Infantry regiment.
-• Patna Uprising (3 July 1857): Bookseller Peer Ali Khan led a heroic rebellion in Patna city, mortally shooting British opium agent Dr. R. Lyell. British Commissioner William Tayler ruthlessly quelled the revolt and hanged Peer Ali.
-• Danapur Mutiny (25 July 1857): The 7th, 8th, and 40th regiments of Native Infantry revolted and marched to Shahabad (Arrah) to join Kunwar Singh.
-• Babu Veer Kunwar Singh: At the age of 80, the zamindar of Jagdishpur defeated British commanders Captain Dunbar, Major Vincent Eyre, and Captain Le Grand. After his death on 26 April 1858, his brother Amar Singh continued sustained guerrilla operations in the Kaimur hills.
+        level: 'BPSC Primary & Secondary Core GS',
+        title: '1857 Revolt in Bihar, Champaran (1917) & Ganga Drainage (1857 क्रांति, चंपारण व अपवाह तंत्र)',
+        takeaway: 'बाबू कुंवर सिंह का जगदीशपुर अभियान, राजकुमार शुक्ल का चंपारण आमंत्रण (तिनकठिया 3/20), तथा गंगा नदी का बिहार में 445 किमी का प्रवाह।',
+        content: `1. 1857 की क्रांति और बिहार का योगदान:
+• विद्रोह का आरंभ: 12 जून 1857 को देवघर जिले के रोहिणी गाँव (वर्तमान झारखंड) में 32वीं नेटिव इन्फैंट्री रेजिमेंट द्वारा।
+• पटना में विद्रोह (3 जुलाई 1857): पुस्तक विक्रेता पीर अली खाँ ने नेतृत्व किया। अफीम एजेंट डॉ. आर. लॉयल (Dr. R. Lyell) मारा गया। कमिश्नर विलियम टेलर ने पीर अली को फाँसी दे दी।
+• दानापुर छावनी विद्रोह (25 जुलाई 1857): 7वीं, 8वीं और 40वीं रेजिमेंट के सैनिकों ने बगावत कर जगदीशपुर (आरा) में बाबू कुंवर सिंह का नेतृत्व स्वीकार किया।
+• बाबू वीर कुंवर सिंह: 80 वर्ष की उम्र में जगदीशपुर के जमींदार कुंवर सिंह ने कैप्टन डनबर, विन्सेंट आयर और ली ग्रांड की सेना को पराजित किया। 26 अप्रैल 1858 को उनके देहांत के बाद उनके भाई अमर सिंह ने कैमूर की पहाड़ियों से छापामार युद्ध जारी रखा।
 
-2. Champaran Satyagraha (1917) — Gandhi's First Experiment:
-• Oppressive Cause: The Tinkathia system compelled tenant peasants to cultivate Indigo on 3/20th of their fertile land.
-• The Catalyst: Rajkumar Shukla, a peasant from Murli Bharhawa, persistently persuaded Mahatma Gandhi at the 1916 Lucknow Congress to visit Champaran.
-• Leaders Accompanying Gandhi: Dr. Rajendra Prasad, Brajkishore Prasad, Mazharul Haque, Anugrah Narayan Sinha, J.B. Kripalani, Dharnidhar.
-• Agrarian Committee: Lt. Governor Sir Edward Gait appointed the Champaran Agrarian Committee with Gandhi as a member. The Tinkathia system was abolished and European planters were forced to refund 25% of the illegal exactions.
-• Title: Rabindranath Tagore conferred the title 'Mahatma' upon Gandhi following the movement's success.
+2. चंपारण सत्याग्रह (1917) — गांधीजी का भारत में प्रथम प्रयोग:
+• मूल कारण: तिनकठिया प्रथा — किसानों को अपनी सबसे उपजाऊ 3/20 भाग भूमि पर नील (Indigo) की खेती अनिवार्य रूप से करनी पड़ती थी।
+• आमंत्रणकर्ता: मुरली भरहवा के किसान राजकुमार शुक्ल ने 1916 के लखनऊ कांग्रेस अधिवेशन में गांधीजी को चंपारण आने के लिए राजी किया।
+• सहयोगी: डॉ. राजेंद्र प्रसाद, ब्रजकिशोर प्रसाद, अनुग्रह नारायण सिन्हा, जे.बी. कृपलानी, मजहरुल हक, धरणीधर।
+• जांच समिति: उप-राज्यपाल एडवर्ड गेट ने 'चंपारण एग्रेरियन समिति' बनाई (गांधीजी सदस्य थे)। तिनकठिया प्रथा समाप्त हुई तथा यूरोपीय बागान मालिकों को अवैध वसूली का 25% धन वापस करना पड़ा।
+• महात्मा उपाधि: सफलता के बाद रवींद्रनाथ टैगोर ने गांधीजी को 'महात्मा' की उपाधि दी।
 
-3. Drainage System & Geography of Bihar:
-• Spatial Extent: 94,163 sq km (2.86% of India's landmass, 12th largest state). Borders Nepal (7 districts), Jharkhand (8 districts), UP (8 districts), and West Bengal (3 districts: Kishanganj, Purnia, Katihar).
-• River Ganga: Enters Bihar near Chausa (Buxar) and exits near Bhagalpur/Katihar. Flows 445 km across 12 districts, dividing Bihar into North and South plains. Patna hosts the longest stretch (~99 km).
-• Northern Himalayan Tributaries:
-  - Ghaghra: Joins Ganga near Revelganj/Chhapra.
-  - Gandak: Enters at Valmikinagar, joins Ganga at Pahleza Ghat/Sonpur.
-  - Burhi Gandak: Originates from Someshwar range, fastest flowing stream, joins near Munger.
-  - Kosi ('Sorrow of Bihar'): Originates as Saptakoshi in Nepal. Enormous silt discharge causes continuous course shifting (shifted ~120 km west over 250 years); meets Ganga at Kursela (Katihar).
-• Southern Tributaries:
-  - Son: Originates from Amarkantak (MP), enters at Rohtas, joins Ganga near Maner (Patna).
-  - Punpun: Originates from Chhota Nagpur plateau, joins at Fatuha.
-  - Falgu (Niranjana): Flows past Gaya, sacred for Pind Daan; Buddha attained enlightenment on its banks.`,
-        formula: `• Tinkathia Proportion: Compulsory Indigo on 3/20th of farmland
-• Planters Extortion Refund: Exactly 25% of illegal dues
-• Ganga in Bihar: 445 km | 12 Districts | Enters at Chausa (Buxar)`,
-        tip: `BPSC PYQ Pattern: BPSC frequently tests specific river confluence points (Son at Maner, Kosi at Kursela, Punpun at Fatuha). Memorize these confluences!`,
-        mnemonic: `Confluence Hook: 'Son meets Maner for dinner; Punpun goes to Fatuha; Kosi rushes to Kursela!'`
+3. बिहार का भूगोल एवं गंगा नदी अपवाह तंत्र:
+• क्षेत्रफल: 94,163 वर्ग किमी (भारत का 2.86%, 12वाँ सबसे बड़ा राज्य).
+• गंगा नदी: चौसा (बक्सर) के पास बिहार में प्रवेश करती है तथा मनिहारी (कटिहार) के पास निकलती है। बिहार में लंबाई 445 किमी (12 जिलों से होकर बहती है, पटना में सर्वाधिक ~99 किमी).
+• उत्तरी सहायक नदियाँ (हिमालयी):
+  - घाघरा: छपरा के निकट गंगा में मिलती है।
+  - गंडक: वाल्मीकिनगर से प्रवेश, पहलेजा (सोनपुर) में संगम।
+  - बूढ़ी गंडक: सोमेश्वर श्रेणी से निकलकर खगड़िया/मुंगेर में संगम (सर्वाधिक तीव्र धारा).
+  - कोसी ('बिहार का शोक'): नेपाल में सप्तकोशी, कुरसेला (कटिहार) में गंगा में संगम (250 वर्षों में ~120 किमी पश्चिम की ओर खिसकी है).
+• दक्षिणी सहायक नदियाँ (पठारी):
+  - सोन नदी: अमरकंटक (MP) से उद्गम, रोहतास में प्रवेश, मनेर (पटना) के पास संगम।
+  - पुनपुन: फतुहा के पास संगम।
+  - फल्गु (निरंजना): बोधगया में भगवान बुद्ध को ज्ञान प्राप्त हुआ (पितृपक्ष मेला).`,
+        formula: `• तिनकठिया अनुपात: 3/20 भाग पर अनिवार्य नील की खेती
+• अवैध वसूली वापसी: ठीक 25% धन वापस किया गया
+• गंगा नदी बिहार: 445 किमी | 12 जिले | प्रवेश: चौसा (बक्सर)`,
+        tip: `BPSC PYQ Pattern: BPSC अक्सर नदियों के संगम स्थल पूछता है (सोन: मनेर, कोसी: कुरसेला, पुनपुन: फतुहा, गंगा प्रवेश: चौसा). इन्हें कंठस्थ रखें!`,
+        mnemonic: `संगम ट्रिक: 'सोन मनेर में, पुनपुन फतुहा में, और कोसी कुरसेला में गंगा से मिलती है!'`
       },
       {
         id: 'd1_middle',
         category: 'middle',
-        part: 'Part III: Class 6–8 Maths & Science',
+        part: 'Part III: Class 6–8 Maths & Science (गणित-विज्ञान)',
         badge: 'badge-middle_math_sci',
         color: '#10b981',
         readTime: '4 min read',
-        level: 'NCERT / SCERT Class 6–8 Curriculum',
-        title: 'Middle School Maths (Rational Numbers) & Fundamental Sciences',
-        takeaway: 'Cover rational inverses, divisibility rules, bell synchronization, nutrient test reagents, and mirror reflection physics.',
-        content: `1. Rational Numbers & Arithmetic Axioms:
-• Definition: Any number expressible as p/q where p, q are integers and q ≠ 0.
-• Axioms of Inverse:
-  - Additive Inverse of a is -a (Sum = a + (-a) = 0).
-  - Multiplicative Inverse (Reciprocal) of a/b is b/a (Product = (a/b) · (b/a) = 1). Zero has NO multiplicative inverse!
-  - Universal Identity: For any non-zero rational x: (Additive Inverse) × (Multiplicative Inverse) = (-x) × (1/x) = -1.
+        level: 'NCERT / SCERT Class 6–8 Standards',
+        title: 'Middle School Maths & Fundamental Sciences (परिमेय संख्याएँ, पोषण व प्रकाशिकी)',
+        takeaway: 'परिमेय संख्याओं के प्रतिलोम, 9 व 11 की विभाज्यता, पोषक तत्वों के रासायनिक परीक्षण तथा समतल दर्पण में प्रतिबिंबों की संख्या।',
+        content: `1. परिमेय संख्याएँ (Rational Numbers) एवं संक्रियाएँ:
+• परिभाषा: कोई भी संख्या जिसे p/q के रूप में लिखा जा सके (p, q पूर्णांक, q ≠ 0).
+• प्रतिलोम के नियम:
+  - योज्य प्रतिलोम (Additive Inverse): a का योज्य प्रतिलोम -a होता है (योग = 0).
+  - गुणात्मक प्रतिलोम / व्युत्क्रम (Multiplicative Inverse): a/b का व्युत्क्रम b/a होता है (गुणनफल = 1). शून्य (0) का कोई व्युत्क्रम नहीं होता!
+  - सार्वभौमिक संबंध: किसी भी शून्येतर परिमेय संख्या x के लिए: (योज्य प्रतिलोम) × (गुणात्मक प्रतिलोम) = (-x) × (1/x) = -1.
 
-2. Divisibility Tests & Synchronization Problems:
-• Divisibility by 9: The sum of all digits must be divisible by 9.
-• Divisibility by 11: The difference between the sum of digits at odd places and even places must be either 0 or a multiple of 11.
-• Bell Synchronization: When multiple bells toll at intervals of t1, t2, t3, they toll together simultaneously at time intervals equal to LCM(t1, t2, t3).
+2. विभाज्यता परीक्षण व LCM-HCF:
+• 9 से विभाज्यता: सभी अंकों का योग 9 का गुणज होना चाहिए।
+• 11 से विभाज्यता: विषम स्थानों के अंकों के योग और सम स्थानों के अंकों के योग का अंतर 0 या 11 का गुणज हो।
+• घंटियों का एक साथ बजना: यदि घंटियाँ t1, t2, t3 सेकंड के अंतराल पर बजती हैं, तो वे पुनः अपने LCM(t1, t2, t3) पर एक साथ बजेंगी।
 
-3. Human Nutrition & Diagnostic Food Tests:
-• Starch (Carbohydrate): Add dilute Iodine solution ⟶ Turns intense Blue-Black.
-• Protein: Add 2 drops Copper Sulphate (CuSO4) + 10 drops Caustic Soda (NaOH) ⟶ Turns Violet (Biuret reaction).
-• Vitamin Classification:
-  - Fat-Soluble: Vitamins K, E, D, A (Stored in adipose tissue).
-  - Water-Soluble: Vitamins B-complex and Vitamin C (Ascorbic acid). Excreted regularly via urine.
-• Nutritional Deficiencies: Scurvy (Vitamin C), Night Blindness (Vitamin A), Rickets (Vitamin D), Beriberi (Vitamin B1), Goitre (Iodine).
+3. भोजन के घटक एवं पोषक परीक्षण (Food Reagents):
+• स्टार्च (मंड): तनु आयोडीन डालने पर नीला-काला (Blue-Black) रंग देता है।
+• प्रोटीन (Biuret Test): कॉपर सल्फेट (CuSO4) + कास्टिक सोडा (NaOH) डालने पर बैंगनी (Violet) रंग देता है।
+• विटामिन घुलनशीलता:
+  - वसा में घुलनशील: विटामिन K, E, D, A (ट्रिक: K-E-D-A, यकृत व वसा ऊतक में संचित).
+  - जल में घुलनशील: विटामिन B-कॉम्प्लेक्स और विटामिन C (मूत्र द्वारा नियमित उत्सर्जित).
+• हीनताजन्य रोग: स्कर्वी (विटामिन C), रिकेट्स (विटामिन D), रतौंधी (विटामिन A), बेरी-बेरी (विटामिन B1).
 
-4. Geometric Optics & Reflection:
-• Inclined Plane Mirrors: The number of images formed between two plane mirrors inclined at angle θ is n = (360° / θ) - 1 (when 360/θ is an even integer). At 60°, n = (360/60) - 1 = 5 images.
-• Spherical Mirrors:
-  - Concave Mirror: Converging mirror. Produces real, inverted images in all positions EXCEPT when object is between Pole (P) and Focus (F), where it produces virtual, erect, and magnified image (used by dentists and in shaving mirrors).
-  - Convex Mirror: Diverging mirror. Always forms virtual, erect, and diminished images with a broad field of view (used as rear-view mirrors in vehicles).`,
-        formula: `• Rational Inverse Identity: (Add. Inv.) × (Mult. Inv.) = -1
-• Inclined Mirrors: n = (360° / θ) - 1 (when 360/θ is even)
-• Negative Power Law: (a/b)^(-n) = (b/a)^n`,
-        tip: `High-Yield Science: Vitamin C is sensitive to temperature and easily destroyed during boiling and cooking, whereas Vitamin D is synthesized by skin upon UV exposure.`,
-        mnemonic: `Vitamin Fat-Soluble Hook: 'K-E-D-A' stays inside fat; B & C wash away in water!`
+4. प्रकाश का परावर्तन व दर्पण (Optics):
+• झुके हुए समतल दर्पणों के बीच प्रतिबिंब: कोण θ पर झुके दर्पणों के बीच बनने वाले प्रतिबिंबों की संख्या n = (360° / θ) - 1 (जब 360/θ सम संख्या हो). 60° पर n = 6 - 1 = 5 प्रतिबिंब।
+• गोलीय दर्पण:
+  - अवतल दर्पण (Concave): अभिसारी दर्पण। जब वस्तु ध्रुव (P) और फोकस (F) के बीच हो, तो आभासी, सीधा व बड़ा प्रतिबिंब बनता है (दाढ़ी बनाने व डेंटिस्ट द्वारा उपयोग).
+  - उत्तल दर्पण (Convex): अपसारी दर्पण। सदैव आभासी, सीधा व छोटा प्रतिबिंब (वाहनों के साइड मिरर).`,
+        formula: `• परिमेय प्रतिलोम गुणनफल: (Additive Inv.) × (Multiplicative Inv.) = -1
+• दर्पण प्रतिबिंब सूत्र: n = (360° / θ) - 1 (जब 360/θ सम हो)
+• ऋणात्मक घात नियम: (a/b)^(-n) = (b/a)^n`,
+        tip: `विज्ञान तथ्य: विटामिन C खाना पकाने की गर्मी से तुरंत नष्ट हो जाता है, जबकि विटामिन D धूप के संपर्क में आने पर त्वचा द्वारा संश्लेषित होता है.`,
+        mnemonic: `विटामिन ट्रिक: 'K-E-D-A' चर्बी (वसा) में रहता है, और 'B तथा C' पानी में बह जाता है!`
       },
       {
         id: 'd1_sec',
         category: 'secondary',
-        part: 'Part IV: Class 9–10 Secondary Mathematics',
+        part: 'Part IV: Class 9–10 Secondary Maths (माध्यमिक गणित)',
         badge: 'badge-sec_math',
         color: '#0ea5e9',
         readTime: '5 min read',
         level: 'NCERT Exemplar Class 9–10 Standards',
-        title: 'Secondary Mathematics: Real Numbers, Polynomials & Zeroes Algebra',
-        takeaway: 'Master terminating decimal conditions, Vieta’s root formulas for polynomials, and geometric parabola properties.',
-        content: `1. Euclid's Division Lemma & Decimal Expansions:
-• Fundamental Theorem of Arithmetic: Every composite number can be expressed uniquely as a product of prime factors.
-• Terminating Decimals: A rational number in lowest terms p/q has a terminating decimal expansion if and only if prime factors of q are strictly of the form:
-  q = 2^n · 5^m (where n, m are non-negative integers).
-  The decimal terminates after exactly max(n, m) decimal places!
-  Example: 13 / 1250 ⟶ 1250 = 2^1 · 5^4 ⟶ terminates after max(1, 4) = 4 places.
+        title: 'Real Numbers & Polynomials (वास्तविक संख्याएँ, बहुपद व संबंध)',
+        takeaway: 'सांत दशमलव के लिए हर 2^n · 5^m का रूप, द्विघात बहुपद में मूलों के संबंधों (Vieta formulas) का सीधा प्रयोग।',
+        content: `1. वास्तविक संख्याएँ व दशमलव प्रसार (Real Numbers):
+• यूक्लिड विभाजन प्रमेयिका: a = bq + r (0 ≤ r < b).
+• अंकगणित की आधारभूत प्रमेय: प्रत्येक भाज्य संख्या को अभाज्य गुणनखंडों के गुणनफल के रूप में अद्वितीय रूप से लिखा जा सकता है।
+• सांत दशमलव (Terminating Decimals): परिमेय संख्या p/q का दशमलव प्रसार तभी सांत होगा जब हर q के अभाज्य गुणनखंड केवल 2^n · 5^m रूप के हों।
+  - यह दशमलव के ठीक max(n, m) स्थानों के बाद समाप्त होगा!
+  - उदाहरण: 13 / 1250 ⟶ 1250 = 2^1 · 5^4 ⟶ max(1, 4) = 4 अंकों के बाद सांत।
 
-2. Quadratic Polynomials & Parabolic Zeroes:
-• Standard Form: P(x) = ax² + bx + c (a ≠ 0). The geometrical graph is a Parabola.
-  - Opens upward if a > 0; opens downward if a < 0.
-• Vieta's Relations for Zeroes (α, β):
-  1. Sum of zeroes: α + β = -b/a
-  2. Product of zeroes: αβ = c/a
-  3. Sum of reciprocals: 1/α + 1/β = (α + β) / (αβ) = (-b/a) / (c/a) = -b/c
-• Root Signs Rule: If all coefficients a, b, c > 0, then both roots α and β must be strictly negative.
+2. द्विघात बहुपद (Quadratic Polynomials):
+• मानक रूप: P(x) = ax² + bx + c (a ≠ 0). ज्यामितीय आलेख एक परवलय (Parabola) होता है।
+  - यदि a > 0 तो ऊपर खुला (∪), यदि a < 0 तो नीचे खुला (∩).
+• शून्यकों (α, β) और गुणांकों का संबंध (Vieta's Formulas):
+  1. शून्यकों का योग: α + β = -b/a
+  2. शून्यकों का गुणनफल: αβ = c/a
+  3. व्युत्क्रमों का योग: 1/α + 1/β = (α + β)/(αβ) = (-b/a)/(c/a) = -b/c
+• चिन्ह नियम: यदि ax² + bx + c में सभी गुणांक a, b, c > 0 हों, तो दोनों शून्यक अनिवार्य रूप से ऋणात्मक (Negative) होंगे।
 
-3. Cubic Polynomials (Degree 3):
-• Standard Form: P(x) = ax³ + bx² + cx + d (a ≠ 0).
-• Root Relations (α, β, γ):
-  - Sum of roots: α + β + γ = -b/a
-  - Sum of pairwise products: αβ + βγ + γα = c/a
-  - Product of roots: αβγ = -d/a
-• BPSC PYQ Identity: If one zero is zero (γ = 0), then αβ + 0 + 0 = c/a ⟶ The product of the remaining two zeroes is equal to c/a.
+3. त्रिघात बहुपद (Cubic Polynomials):
+• P(x) = ax³ + bx² + cx + d (a ≠ 0).
+• α + β + γ = -b/a | αβ + βγ + γα = c/a | αβγ = -d/a
+• BPSC PYQ प्रमेय: यदि एक शून्यक 0 हो (मान लीजिए γ = 0), तो αβ + 0 + 0 = c/a ⟶ शेष दो शून्यकों का गुणनफल c/a होता है।
 
-4. Remainder and Factor Theorems:
-• Remainder Theorem: When polynomial P(x) is divided by linear divisor (x - a), the remainder is P(a).
-• Factor Theorem: (x - a) is a factor of P(x) if and only if P(a) = 0.`,
-        formula: `• Quadratic Roots: α + β = -b/a | αβ = c/a | 1/α + 1/β = -b/c
-• Decimal Termination: q = 2^n · 5^m terminates in max(n, m) places
-• Cubic Zero Rule: If one root is 0, product of other two roots = c/a`,
-        tip: `Algebra Shortcut: Whenever asked for 1/α + 1/β, write -b/c directly in 2 seconds without computing the individual roots!`,
-        mnemonic: `Parabola Sign: Positive 'a' smiles upward (∪); Negative 'a' frowns downward (∩)!`
+4. शेषफल व गुणनखंड प्रमेय:
+• जब P(x) को (x - a) से भाग दिया जाए, तो शेषफल P(a) होता है।
+• यदि P(a) = 0 हो, तो (x - a) बहुपद P(x) का एक गुणनखंड होता है।`,
+        formula: `• द्विघात शून्यक: α + β = -b/a | αβ = c/a | 1/α + 1/β = -b/c
+• सांत दशमलव: q = 2^n · 5^m ⟶ max(n, m) स्थानों पर सांत
+• त्रिघात शून्यक नियम: एक शून्यक 0 होने पर अन्य दो का गुणनफल = c/a`,
+        tip: `बीजगणित शॉर्टकट: परीक्षा में जब भी 1/α + 1/β पूछे, अलग-अलग मूल निकालने के बजाय सीधे -b/c लिखें—उत्तर 2 सेकंड में आ जाएगा!`,
+        mnemonic: `परवलय ट्रिक: धनात्मक 'a' ऊपर की ओर मुस्कुराता है (∪), ऋणात्मक 'a' नीचे झुकता है (∩)!`
       }
     ],
     2: [
       {
         id: 'd2_lang',
         category: 'language',
-        part: 'Part I: Language Qualifying',
+        part: 'Part I: Language Qualifying (भाषा अहर्ता)',
         badge: 'badge-language',
         color: '#8b5cf6',
         readTime: '3 min read',
         level: 'Matric Level Grammatical Standards',
-        title: 'Prefixes, Vocabulary Classification & Advanced Conditionals',
-        takeaway: 'Deconstruct Sanskrit Upasarg prefixes in Sandhi clusters, navigate BPSC multi-synonym traps, and master past conditionals.',
-        content: `1. Sanskrit & Hindi Prefixes (Upasarg):
-• Upasarg Concept: An affix attached to the beginning of a root word that modifies or intensifies its meaning.
-• Sandhi-Coupled Prefixes: In words like 'Atyant' (अत्यंत), the underlying prefix is 'Ati' (अति). By Yan Sandhi: Ati + Ant = Atyant (i + a ⟶ ya).
-• High-Frequency Exam Examples:
-  - Adhyaksh (अध्यक्ष): Adhi + Aksh (Prefix: Adhi / अधि)
-  - Pratyek (प्रत्येक): Prati + Ek (Prefix: Prati / प्रति)
-  - Anveshan (अन्वेषण): Anu + Eshan (Prefix: Anu / अनु)
-  - Durbal (दुर्बल): Dur + Bal (Prefix: Dur / दुर्)
+        title: 'Prefixes, Synonyms & Advanced Conditionals (उपसर्ग, पर्यायवाची व कंडीशनल)',
+        takeaway: 'संधि युक्त उपसर्गों की पहचान, BPSC पर्यायवाची में "उपर्युक्त में से एक से अधिक" का जाल, तथा Past Conditionals.',
+        content: `1. संस्कृत व हिंदी के उपसर्ग (Upasarg):
+• उपसर्ग: वह शब्दांश जो किसी मूल शब्द के पहले जुड़कर उसके अर्थ में विशेषता या परिवर्तन लाता है।
+• संधि युक्त उपसर्ग (पहचान की ट्रिक):
+  - अत्यंत (Atyant): अति + अंत (उपसर्ग: 'अति') — यण् संधि (i + a ⟶ ya).
+  - अध्यक्ष (Adhyaksh): अधि + अक्ष (उपसर्ग: 'अधि').
+  - प्रत्येक (Pratyek): प्रति + एक (उपसर्ग: 'प्रति').
+  - अन्वेषण (Anveshan): अनु + एषण (उपसर्ग: 'अनु').
+  - दुर्बल (Durbal): दुर् + बल (उपसर्ग: 'दुर्').
 
-2. Synonyms & The BPSC 5-Option Paradigm:
-• 'Ratri' (Night) Synonyms: Vibhavari, Rajani, Nisheeth, Yamini, Tamasvini.
-  - Exam Trap: Because BPSC includes multiple authentic synonyms in options, Option (D) 'More than one of the above' is frequently the correct answer!
-• Standard Antonym Pairs:
-  - Aastik (Theist) ↔ Naastik (Atheist)
-  - Anurag (Affection) ↔ Virag (Aversion)
-  - Utkarsh (Elevation) ↔ Apakarsh (Degradation)
+2. पर्यायवाची शब्द एवं BPSC का 5-विकल्प प्रारूप:
+• 'रात्रि' के प्रमुख पर्यायवाची: विभावरी, रजनी, निशीथ, यामिनी, तमस्विनी।
+  - BPSC Trap: यदि विकल्पों में 'विभावरी' और 'रजनी' दोनों हों, तो उत्तर अनिवार्य रूप से विकल्प (D) "उपर्युक्त में से एक से अधिक" होगा!
+• प्रमुख विलोम शब्द:
+  - आस्तिक ↔ नास्तिक | अनुराग ↔ विराग | उत्कर्ष ↔ अपकर्ष | तिमिर ↔ प्रकाश.
 
-3. English Conditional Sentences:
-• Third Conditional (Hypothetical Past): Expresses regrets or impossible conditions that never occurred in the past.
+3. English Conditional Sentences (शर्त सूचक वाक्य):
+• Third Conditional (Hypothetical Past - अतीत की असंभव शर्त):
   - Formula: If + Past Perfect (had + V3), Subject + would have + Past Participle (V3).
   - Example: "If you HAD STUDIED diligently, you WOULD HAVE PASSED the examination."
-• Second Conditional (Hypothetical Present):
+• Second Conditional (वर्तमान की काल्पनिक स्थिति):
   - Formula: If + Simple Past (V2), Subject + would + Base Verb (V1).
   - Example: "If I knew his address, I would write to him."
 
-4. Prepositions of Time Precision:
-• 'At' is reserved for specific points on a clock: at 8:30 PM, at noon, at midnight.
-• 'On' is applied to specific calendar days and dates: on Monday, on 15th August.
-• 'In' applies to months, seasons, and years: in October, in summer, in 2026.`,
+4. Prepositions of Time (समय के कारक):
+• 'At' निश्चित घड़ी के समय के लिए: at 8:30 PM, at noon, at dawn.
+• 'On' विशिष्ट दिन व तारीख के लिए: on Monday, on 15th August.
+• 'In' महीने, ऋतु व वर्ष के लिए: in October, in summer, in 2026.`,
         formula: `• Third Conditional: If + had + V3 ⟶ would have + V3
-• Prefix Extraction: Always decompose Sandhi cluster (Ati + Ant ⟶ Atyant)
-• Preposition Rule: At (clock time) | On (days/dates) | In (months/years)`,
-        tip: `Exam Technique: Check whether a sentence refers to past impossibility (had + V3) or future probability (if + V1 ⟶ will + V1). Never mix tenses across clauses.`,
-        mnemonic: `Prefix Rule: If you see 'Ty' or 'Dy' (अत्य / अध्य), think 'Ati' and 'Adhi'!`
+• उपसर्ग विच्छेद: अत्यंत = अति + अंत (अति उपसर्ग)
+• Time Prepositions: At (घड़ी समय) | On (दिन/दिनांक) | In (माह/वर्ष)`,
+        tip: `परीक्षा ट्रिक: वाक्य में Past Impossibility (had + V3) हो तो दूसरे भाग में 'would have + V3' ही आएगा. कभी भी Tenses का मिश्रण न करें.`,
+        mnemonic: `उपसर्ग ट्रिक: यदि शब्द में आधा त्+य (अत्यंत) या ध्+य (अध्यक्ष) दिखे, तो सीधे 'अति' और 'अधि' उपसर्ग पहचानें!`
       },
       {
         id: 'd2_gs',
         category: 'gs',
-        part: 'Part II: General Studies & Bihar Special',
+        part: 'Part II: General Studies & Bihar Special (सामान्य अध्ययन व बिहार)',
         badge: 'badge-gs',
         color: '#f59e0b',
         readTime: '5 min read',
-        level: 'BPSC Primary & Secondary GS Core',
-        title: '1942 Quit India (Secretariat Martyrs), Azad Dasta & Soil Profiles',
-        takeaway: 'Know the 7 student martyrs of Patna Secretariat firing, JP’s escape to Nepal Terai, and differences between Bangar and Khadar soils.',
-        content: `1. 1942 Quit India Movement in Bihar:
-• All-India Spark: Launched on 8 August 1942 at Gowalia Tank, Bombay ('Do or Die'). British forces launched Operation Zero Hour early on 9 August, arresting top Congress leadership.
-• Patna Secretariat Firing (11 August 1942):
-  - A heroic procession of students marched to hoist the national tricolour on top of the Patna Secretariat building.
-  - Patna District Magistrate W.G. Archer ordered police firing, martyring 7 students:
-    1. Umakant Prasad Sinha (Ram Mohan Roy Seminary, Class 9)
-    2. Ramanand Singh (Ram Mohan Roy Seminary, Class 9)
-    3. Satish Prasad Jha (Patna Collegiate, Class 10)
-    4. Jagatpati Kumar (BN College, 2nd Year)
-    5. Devipada Choudhary (Miller High School, Class 9)
-    6. Rajendra Singh (Patna High School, Matric)
-    7. Ramgovind Singh (Punpun High School, Class 9)
-  - The Martyr's Memorial (Shaheed Smarak) stands today facing the Bihar Legislative Assembly.
+        level: 'BPSC Primary & Secondary Core GS',
+        title: '1942 Quit India (Secretariat Martyrs) & Soils of Bihar (1942 भारत छोड़ो, आज़ाद दस्ता व मिट्टी)',
+        takeaway: '11 अगस्त 1942 को सचिवालय पर झंडा फहराते 7 छात्र शहीद, जयप्रकाश नारायण का आज़ाद दस्ता तथा पुरानी जलोढ़ (बांगर/कराइल-केवाल) मिट्टी।',
+        content: `1. 1942 भारत छोड़ो आंदोलन और बिहार:
+• आंदोलन का सूत्रपात: 8 अगस्त 1942 को बंबई के गवालिया टैंक मैदान में गांधीजी का 'करो या मरो' का नारा। 9 अगस्त की सुबह 'ऑपरेशन जीरो आवर' के तहत सभी बड़े नेता गिरफ्तार।
+• पटना सचिवालय गोलीकांड (11 अगस्त 1942):
+  - पटना सचिवालय पर तिरंगा फहराने निकले छात्रों के जुलूस पर जिलाधिकारी डब्ल्यू.जी. आर्चर (W.G. Archer) ने गोली चलाने का आदेश दिया।
+  - इसमें 7 वीर छात्र शहीद हुए:
+    1. उमाकांत प्रसाद सिन्हा (राम मोहन राय सेमिनरी, कक्षा 9)
+    2. रामानंद सिंह (राम मोहन राय सेमिनरी, कक्षा 9)
+    3. सतीश प्रसाद झा (पटना कॉलेजिएट, कक्षा 10)
+    4. जगतपति कुमार (बी.एन. कॉलेज, द्वितीय वर्ष)
+    5. देवीपद चौधरी (मिलर हाई स्कूल, कक्षा 9)
+    6. राजेंद्र सिंह (पटना हाई स्कूल, मैट्रिक)
+    7. रामगोविंद सिंह (पुनपुन हाई स्कूल, कक्षा 9)
+  - बिहार विधानसभा के सामने आज 'शहीद स्मारक' (Martyr's Memorial) स्थापित है।
 
-2. Jayaprakash Narayan & 'Azad Dasta':
-• The Prison Break: On Diwali night (9 November 1942), Jayaprakash Narayan (JP) along with Ramanandan Mishra, Suraj Narayan Singh, Shaligram Singh, Yogendra Shukla, and Gulab Chand Gupta escaped from Hazaribagh Central Jail.
-• Formation of Guerrilla Force: In the dense forests of Nepal Terai (Bakro Ka Tapu), JP founded 'Azad Dasta' to disrupt British wartime communication, railways, and telegraphs.
-• Underground Radio: Dr. Rammanohar Lohia ran the clandestine underground Azad Dasta radio broadcasting unit.
+2. जयप्रकाश नारायण (JP) एवं 'आज़ाद दस्ता':
+• जेल से पलायन: दिवाली की रात (9 नवंबर 1942) को जयप्रकाश नारायण, रामानंद मिश्र, सूरज नारायण सिंह, शालिग्राम सिंह, योगेंद्र शुक्ल और गुलाब चंद गुप्त हजारीबाग केंद्रीय जेल की दीवार फांदकर फरार हुए।
+• गुरिल्ला बल: नेपाल की तराई में 'बकरों का टापू' के जंगलों में JP ने 'आज़ाद दस्ता' का गठन किया जिसका उद्देश्य संचार, रेल पटरियों और टेलीग्राफ को नष्ट कर ब्रिटिश सरकार को पंगु बनाना था।
+• भूमिगत रेडियो: डॉ. राममनोहर लोहिया ने आज़ाद दस्ते के भूमिगत रेडियो का संचालन किया।
 
-3. Alluvial Soils & Agriculture of Bihar:
-• Bangar (Older Alluvium): Found in upland interfluves above flood levels. Known locally as 'Karail-Kewal' soil in South Bihar. High clay content, highly retentive of moisture, contains calcium carbonate kankar nodules.
-• Khadar (Newer Alluvium): Found in annual floodplains along northern rivers (Gandak, Kosi, Ganga). Silt-rich, light in colour, extremely fertile for paddy, wheat, and jute.
-• Mithila Makhana (Fox Nut): Concentrated in Darbhanga, Madhubani, and Saharsa wetland ecosystems. Bihar produces over 85% of global Makhana, safeguarded by an official Geographical Indication (GI) tag.`,
-        formula: `• Secretariat Firing Date: 11 August 1942 (7 Martyrs)
-• JP Jail Escape: 9 November 1942 (Diwali Night, Hazaribagh Jail)
-• Soil Types: Bangar = Older Alluvium | Khadar = Newer Flood Alluvium`,
-        tip: `BPSC Focus: Remember the names of the schools and colleges of the 7 martyrs; BPSC TRE has previously asked about their institutions.`,
-        mnemonic: `JP Escape Date: Diwali light guided JP over Hazaribagh walls on 9th November!`
+3. बिहार की जलोढ़ मिट्टियाँ एवं कृषि:
+• बांगर (पुरानी जलोढ़): बाढ़ की सीमा से ऊपर पाई जाने वाली मिट्टी। दक्षिण बिहार में इसे 'कराइल-केवाल' मिट्टी कहा जाता है। इसमें चीका (clay) अधिक होता है, जल धारण क्षमता तीव्र होती है और कंकड़ ग्रंथियां पाई जाती हैं।
+• खादर (नवीन जलोढ़): नदियों के बाढ़ के मैदानों में प्रतिवर्ष जमा होने वाली गाद (silt) युक्त मिट्टी। रंग हल्का, अत्यंत उपजाऊ (धान, गेहूँ और जूट के लिए आदर्श).
+• मिथिला मखाना (Fox Nut): दरभंगा, मधुबनी और सहरसा के आर्द्रभूमि (wetland) में केंद्रित। विश्व का 85% से अधिक मखाना बिहार में उत्पादित होता है (GI टैग प्राप्त).`,
+        formula: `• सचिवालय गोलीकांड: 11 अगस्त 1942 (7 शहीद छात्र)
+• JP जेल पलायन: 9 नवंबर 1942 (दिवाली की रात, हजारीबाग जेल)
+• मिट्टी वर्गीकरण: बांगर = पुरानी जलोढ़ (कराइल-केवाल) | खादर = नवीन जलोढ़`,
+        tip: `BPSC Focus: 7 शहीदों के नाम और उनके स्कूल/कॉलेज BPSC TRE में पहले भी पूछे गए हैं, इन्हें याद रखें!`,
+        mnemonic: `पलायन ट्रिक: दिवाली के दीयों की रोशनी में 9 नवंबर को JP हजारीबाग जेल की दीवार फांद गए!`
       },
       {
         id: 'd2_middle',
         category: 'middle',
-        part: 'Part III: Class 6–8 Maths & Science',
+        part: 'Part III: Class 6–8 Maths & Science (गणित-विज्ञान)',
         badge: 'badge-middle_math_sci',
         color: '#10b981',
         readTime: '4 min read',
-        level: 'NCERT / SCERT Class 6–8 Curriculum',
-        title: 'Commercial Arithmetic, Acid-Base Chemistry & Plant Physiology',
-        takeaway: 'Solve profit and discount markup identities, understand natural acid indicators, and distinguish sound pitch vs loudness.',
-        content: `1. LCM & HCF of Fractional Numbers:
-• LCM of Fractions = [LCM of Numerators] / [HCF of Denominators]
-• HCF of Fractions = [HCF of Numerators] / [LCM of Denominators]
-  Example: Find LCM of 2/3, 4/9, 5/6:
-  - Numerators (2, 4, 5) ⟶ LCM = 20
-  - Denominators (3, 9, 6) ⟶ HCF = 3
-  - Result = 20/3.
+        level: 'NCERT / SCERT Class 6–8 Standards',
+        title: 'Commercial Math, Acid-Base Chemistry & Sound (अंकित मूल्य, अम्ल-क्षार व ध्वनि)',
+        takeaway: 'अंकित मूल्य और क्रय मूल्य का सीधा अनुपात सूत्र, प्राकृतिक अम्लों के स्रोत, तथा ध्वनि की प्रबलता ∝ (आयाम)².',
+        content: `1. भिन्नों का ल.स.प. एवं म.स.प. (Fractions):
+• भिन्नों का LCM = (अंशों का LCM) / (हरों का HCF)
+• भिन्नों का HCF = (अंशों का HCF) / (हरों का LCM)
+  - उदाहरण: 2/3, 4/9, 5/6 का LCM = LCM(2, 4, 5) / HCF(3, 9, 6) = 20/3.
 
-2. Commercial Math (Marked Price & Discount):
-• Universal Profit-Discount Relation:
-  MP / CP = (100 + Profit%) / (100 - Discount%)
-  Example: If discount is 20% and profit is 20%:
-  MP / CP = (100 + 20) / (100 - 20) = 120 / 80 = 3/2 = 1.5
-  Therefore, Marked Price is set 50% above Cost Price!
+2. व्यावसायिक गणित (अंकित मूल्य एवं छूट):
+• सार्वभौमिक सूत्र:
+  MP / CP = (100 + लाभ%) / (100 - छूट%)
+  - यदि 20% छूट देने के बाद भी 20% का लाभ कमाना हो:
+    MP / CP = (100 + 20) / (100 - 20) = 120 / 80 = 3/2 = 1.5
+    अर्थात अंकित मूल्य को क्रय मूल्य से 50% अधिक रखना होगा!
 
-3. Acids, Bases & Neutralization:
-• The pH Scale: Formulated by Sørensen (0 to 14). pH < 7 (Acidic), pH = 7 (Neutral), pH > 7 (Basic/Alkaline).
-  - Human blood is slightly alkaline: 7.35 to 7.45.
-  - Gastric juice contains concentrated HCl: pH 1.2 to 2.0.
-• Naturally Occurring Organic Acids:
-  - Ant Sting: Methanoic acid (Formic acid, HCOOH) — causes burning; neutralized by baking soda (NaHCO3) or calamine.
-  - Vinegar: Acetic acid (Ethanoic acid, CH3COOH).
-  - Curd: Lactic acid.
-  - Tamarind / Grapes: Tartaric acid.
-  - Tomato: Oxalic acid.
-• Neutralization Reaction: Acid + Base ⟶ Salt + Water + Heat.
+3. अम्ल, क्षार एवं उदासीनीकरण (Acids & Bases):
+• pH पैमाना (सोरेनसन द्वारा): 0 से 14. pH < 7 (अम्लीय), pH = 7 (उदासीन), pH > 7 (क्षारीय).
+  - मानव रक्त: हल्का क्षारीय (7.35 से 7.45).
+  - आमाशय रस (Gastric Juice): सांद्र HCl (pH 1.2 से 2.0).
+• प्राकृतिक अम्ल:
+  - चींटी का डंक: मेथेनोइक अम्ल (फॉर्मिक अम्ल, HCOOH) — बेकिंग सोडा या कैलेमाइन से शांत होता है।
+  - सिरका: एसीटिक अम्ल (CH3COOH).
+  - दही: लैक्टिक अम्ल | इमली/अंगूर: टार्टरिक अम्ल | टमाटर: ऑक्सालिक अम्ल.
+• उदासीनीकरण: अम्ल + क्षार ⟶ लवण + जल + ऊष्मा.
 
-4. Plant Vascular Transport & Sound Physics:
-• Phloem: Complex vascular tissue responsible for translocating soluble organic nutrients (sucrose) bidirectionally from photosynthetic leaves to non-green tissues.
-• Xylem: Transports water and inorganic minerals unidirectionally from soil roots upward via transpiration pull.
-• Sound Wave Loudness: Loudness is proportional to the SQUARE OF AMPLITUDE (Loudness ∝ A²). If amplitude is tripled, loudness increases 9-fold! Pitch depends on Frequency.`,
-        formula: `• Markup Identity: MP / CP = (100 + P%) / (100 - D%)
-• Blood pH Balance: 7.35 ≤ pH ≤ 7.45 (Bicarbonate buffer system)
-• Sound Intensity: Loudness ∝ (Amplitude)²`,
-        tip: `Physics Trap: Frequency governs Pitch/Shrillness (treble/bass), while Amplitude governs Loudness/Volume. Do not confuse them!`,
-        mnemonic: `Vascular Hook: 'Ph'loem moves 'Ph'ood (sucrose); 'X'ylem moves 'W'ater and minerals!`
+4. पादप परिवहन एवं ध्वनि भौतिकी:
+• फ्लोएम (Phloem): पत्तियों में निर्मित भोजन (सुक्रोज) को पौधे के सभी भागों में दोनों दिशाओं (bidirectional) में पहुँचाता है।
+• जाइलम (Xylem): जड़ों से जल एवं खनिजों को एकदिशीय (unidirectional) रूप से ऊपर खींचता है।
+• ध्वनि की प्रबलता (Loudness): प्रबलता आयाम के वर्ग के समानुपाती होती है (प्रबलता ∝ A²). आयाम 3 गुना करने पर ध्वनि 9 गुना तेज हो जाती है! तारत्व (Pitch) आवृत्ति (Frequency) पर निर्भर करता है।`,
+        formula: `• अंकित मूल्य अनुपात: MP / CP = (100 + P%) / (100 - D%)
+• रक्त का pH: 7.35 ≤ pH ≤ 7.45 (हल्का क्षारीय)
+• ध्वनि तीव्रता: प्रबलता ∝ (आयाम)²`,
+        tip: `भौतिकी जाल: आवृत्ति से तारत्व (तीखापन/आवाज़ का मोटा-पतला होना) तय होता है, जबकि आयाम से आवाज़ की ऊँचाई/प्रबलता (Volume) तय होती है. इन्हें आपस में न मिलाएँ.`,
+        mnemonic: `संवहन ट्रिक: 'फ्लो'एम से 'फू'ड (भोजन), और 'जा'इलम से 'ज'ल!`
       },
       {
         id: 'd2_sec',
         category: 'secondary',
-        part: 'Part IV: Class 9–10 Secondary Mathematics',
+        part: 'Part IV: Class 9–10 Secondary Maths (माध्यमिक गणित)',
         badge: 'badge-sec_math',
         color: '#0ea5e9',
         readTime: '5 min read',
         level: 'NCERT Exemplar Class 9–10 Standards',
-        title: 'Linear Systems in Two Variables: Consistency, Methods & Kinematics',
-        takeaway: 'Evaluate system consistency parameters, solve boat/stream relative speeds, and master coordinate perpendicularity.',
-        content: `1. Pair of Linear Equations in Two Variables:
-• General Algebraic Form:
-  a1·x + b1·y + c1 = 0
-  a2·x + b2·y + c2 = 0
-• Three Fundamental Geometric Consistency Conditions:
-  1. Unique Solution (Consistent): a1/a2 ≠ b1/b2.
-     Lines intersect at exactly one point (x, y).
-  2. Infinitely Many Solutions (Consistent & Dependent): a1/a2 = b1/b2 = c1/c2.
-     Lines are coincident (overlap completely).
-  3. No Solution (Inconsistent): a1/a2 = b1/b2 ≠ c1/c2.
-     Lines are parallel and never intersect in the plane.
+        title: 'Linear Systems, Boat & Stream Kinematics (दो चरों वाले रैखिक समीकरण व नाव-धारा)',
+        takeaway: 'रैखिक समीकरणों की संगतता/असंगतता की शर्तें, नाव व धारा की सापेक्ष चाल (u+v व u-v), तथा निर्देशांक तल में लंबवत रेखाएँ।',
+        content: `1. दो चरों वाले रैखिक समीकरण युग्म (Linear Systems):
+• सामान्य रूप: a1·x + b1·y + c1 = 0 तथा a2·x + b2·y + c2 = 0.
+• ज्यामितीय हल की 3 मुख्य स्थितियाँ:
+  1. अद्वितीय हल (Unique Solution, संगत): a1/a2 ≠ b1/b2 ⟶ रेखाएँ एक बिंदु पर प्रतिच्छेद करती हैं।
+  2. अनंत हल (Infinitely Many Solutions, संपाती व आश्रित): a1/a2 = b1/b2 = c1/c2 ⟶ रेखाएँ संपाती (एक दूसरे के ऊपर) होती हैं।
+  3. कोई हल नहीं (No Solution, असंगत): a1/a2 = b1/b2 ≠ c1/c2 ⟶ रेखाएँ समांतर (Parallel) होती हैं।
 
-2. Parameter Evaluation for Infinite Solutions:
-• For 2x + 3y = 7 and (k-1)x + (k+2)y = 3k to have infinite solutions:
+2. अनंत हल के लिए अज्ञात राशि का मान:
+• यदि 2x + 3y = 7 और (k-1)x + (k+2)y = 3k के अनंत हल हों:
   2/(k-1) = 3/(k+2) = 7/(3k)
   ⟶ 2(k+2) = 3(k-1) ⟶ 2k + 4 = 3k - 3 ⟶ k = 7.
 
-3. Stream & Boat Kinematics:
-• Let boat speed in still water = u km/h, stream current speed = v km/h.
-  - Downstream Speed (with current) = u + v
-  - Upstream Speed (against current) = u - v
-  - Speed of boat in still water u = (Downstream + Upstream) / 2
-  - Speed of stream v = (Downstream - Upstream) / 2
-  - Example: If u = 15 km/h, v = 3 km/h ⟶ Downstream = 18 km/h. Time for 36 km = 36/18 = 2 hours.
+3. नाव एवं धारा (Boat and Stream Kinematics):
+• माना शांत जल में नाव की चाल = u किमी/घंटा, धारा की चाल = v किमी/घंटा.
+  - धारा के अनुकूल चाल (Downstream) = u + v
+  - धारा के प्रतिकूल चाल (Upstream) = u - v
+  - शांत जल में नाव की चाल u = (अनुकूल + प्रतिकूल) / 2
+  - धारा की चाल v = (अनुकूल - प्रतिकूल) / 2
+  - उदाहरण: यदि नाव की चाल 15 किमी/घंटा और धारा 3 किमी/घंटा हो, तो अनुकूल चाल = 18 किमी/घंटा. 36 किमी जाने में समय = 36/18 = 2 घंटे।
 
-4. Cartesian Plane Line Orientations:
-• The equation x = 0 represents the Y-axis (vertical line).
-• The equation y = k (such as y = -4) represents a horizontal line parallel to the X-axis.
-• Geometric Rule: A vertical line (x = c) and a horizontal line (y = k) always intersect at right angles (90°) and are therefore MUTUALLY PERPENDICULAR.`,
-        formula: `• Parallel Lines (No Sol): a1/a2 = b1/b2 ≠ c1/c2
-• Downstream Velocity: u + v | Upstream Velocity: u - v
-• Difference of Squares: x² - y² = (x + y)(x - y)`,
-        tip: `Time Saver: In boat and stream problems, calculate downstream speed (u+v) immediately and do not confuse with upstream speed (u-v).`,
-        mnemonic: `Relative Velocity: Downstream pushes you faster (+); Upstream drags you backward (-)!`
+4. कार्तीय तल में रेखाओं की लंबवत स्थिति:
+• समीकरण x = 0 वास्तव में Y-अक्ष (ऊर्ध्वाधर रेखा) को निरूपित करता है।
+• समीकरण y = k (जैसे y = -4) X-अक्ष के समांतर एक क्षैतिज रेखा को निरूपित करता है।
+• नियम: कोई भी ऊर्ध्वाधर रेखा और कोई भी क्षैतिज रेखा 90° पर मिलती हैं, अतः वे परस्पर लंबवत (Mutually Perpendicular) होती हैं।`,
+        formula: `• समांतर रेखाएँ (No Solution): a1/a2 = b1/b2 ≠ c1/c2
+• धारा के अनुकूल: u + v | धारा के प्रतिकूल: u - v
+• वर्गांतर सूत्र: x² - y² = (x + y)(x - y)`,
+        tip: `समय बचाओ ट्रिक: नाव-धारा के प्रश्नों में सबसे पहले अनुकूल (u+v) और प्रतिकूल (u-v) की चाल अलग-अलग लिख लें.`,
+        mnemonic: `सापेक्ष चाल: धारा के अनुकूल नदी धक्का देती है (+), प्रतिकूल में नदी रोकती है (-)!`
       }
     ]
   };
@@ -1744,6 +1777,7 @@
     initTheme();
     loadStoredProgress();
     loadStoredReadNotes();
+    checkUrlAutoSync();
     initDayDropdown();
   });
 
@@ -1941,7 +1975,7 @@
 
     // Buttons
     document.getElementById('btnPrev').disabled = currentIdx === 0;
-    document.getElementById('btnNext').innerText = currentIdx === total - 1 ? 'Finish & Review' : 'Next →';
+    document.getElementById('btnNext').innerText = currentIdx === total - 1 ? 'Finish & Review (समाप्त करें)' : 'Next (अगला) →';
   }
 
   function selectOption(qId, idx) {
@@ -2005,10 +2039,10 @@
     const key = `d${day}_${noteId}`;
     if (readNotesSet.has(key)) {
       readNotesSet.delete(key);
-      showToast('Marked as unread', '○');
+      showToast('Marked as unread (अपठित)', '○');
     } else {
       readNotesSet.add(key);
-      showToast('Module marked as completed!', '✓');
+      showToast('Module marked as completed! (अध्ययन पूर्ण)', '✓');
     }
     saveReadNotes();
     renderStudyNotes();
@@ -2048,7 +2082,7 @@
       btn.innerHTML = '✓ Copied!';
       btn.style.color = '#10b981';
       btn.style.borderColor = '#10b981';
-      showToast('Formula bank copied to clipboard!', '📋');
+      showToast('Formula bank copied to clipboard! (सूत्र कॉपी हो गए)', '📋');
       setTimeout(() => {
         btn.innerHTML = originalText;
         btn.style.color = '';
@@ -2097,7 +2131,7 @@
       box.innerHTML = `
         <div style="text-align: center; padding: 40px 20px; background: var(--bg-surface); border: 1px dashed var(--border); border-radius: var(--radius-lg); color: var(--text-muted);">
           <div style="font-size: 28px; margin-bottom: 8px;">🔍</div>
-          <div style="font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">No matching notes found</div>
+          <div style="font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">No matching notes found (कोई परिणाम नहीं मिला)</div>
           <p style="font-size: 13px;">Try searching for other keywords or clear the topic filter.</p>
           <button onclick="clearNotesSearch()" class="btn btn-secondary" style="margin: 14px auto 0; max-width: 140px; padding: 6px 14px; font-size: 12px;">Reset Search</button>
         </div>
@@ -2123,7 +2157,7 @@
             <span class="meta-tag">⏱️ ${n.readTime}</span>
           </div>
           <button class="btn-mark-read ${isRead ? 'is-read' : ''}" onclick="toggleNoteRead(${activeDay}, '${n.id}')">
-            ${isRead ? '✓ Completed' : '○ Mark as Read'}
+            ${isRead ? '✓ Completed (अध्ययन पूर्ण)' : '○ Mark as Read (पढ़ लिया)'}
           </button>
         </div>
 
@@ -2132,7 +2166,7 @@
         ${n.takeaway ? `
           <div class="note-takeaway">
             <span>🎯</span>
-            <div><strong>High-Yield Takeaway:</strong> ${n.takeaway}</div>
+            <div><strong>High-Yield Takeaway (मुख्य निष्कर्ष):</strong> ${n.takeaway}</div>
           </div>
         ` : ''}
 
@@ -2141,7 +2175,7 @@
         ${n.formula ? `
           <div class="formula-box">
             <div class="formula-header">
-              <span class="formula-label"><span>🧮</span> Formula Bank & Identities</span>
+              <span class="formula-label"><span>🧮</span> Formula Bank & Key Rules (प्रमुख सूत्र व नियम)</span>
               <button class="formula-copy-btn" onclick="copyFormulaText('${escapedFormula}', this)">
                 <span>📋</span> Copy Formulas
               </button>
@@ -2152,13 +2186,13 @@
 
         ${n.tip ? `
           <div class="exam-tip-callout">
-            <strong>⚠️ BPSC Exam Trap & Strategy:</strong> ${n.tip}
+            <strong>⚠️ BPSC Exam Trap & Strategy (परीक्षा सावधानी):</strong> ${n.tip}
           </div>
         ` : ''}
 
         ${n.mnemonic ? `
           <div class="mnemonic-callout">
-            <strong>💡 Memory Hook / Mnemonic:</strong> ${n.mnemonic}
+            <strong>💡 Memory Hook / Mnemonic (याद रखने की ट्रिक):</strong> ${n.mnemonic}
           </div>
         ` : ''}
       `;
@@ -2247,12 +2281,33 @@
   }
 
   // ========================================================
-  // CROSS-DEVICE PROGRESS SYNC
+  // CROSS-DEVICE PROGRESS SYNC (BILINGUAL & 1-CLICK QR LINK)
   // ========================================================
   function openSync() {
-    const raw = JSON.stringify(userProgress);
-    document.getElementById('syncExportArea').value = btoa(unescape(encodeURIComponent(raw)));
+    const payload = {
+      answers: userProgress,
+      readNotes: Array.from(readNotesSet),
+      theme: localStorage.getItem('bpsc_theme') || 'dark',
+      timestamp: Date.now()
+    };
+    const raw = JSON.stringify(payload);
+    const encoded = btoa(unescape(encodeURIComponent(raw)));
+    
+    // Manual code
+    document.getElementById('syncExportArea').value = encoded;
     document.getElementById('syncImportArea').value = '';
+    
+    // Direct auto-sync URL
+    const baseUrl = window.location.origin + window.location.pathname;
+    const fullSyncUrl = `${baseUrl}?sync=${encodeURIComponent(encoded)}`;
+    document.getElementById('syncDirectUrl').value = fullSyncUrl;
+    
+    // QR Code
+    const qrImg = document.getElementById('syncQrCodeImg');
+    if (qrImg) {
+      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(fullSyncUrl)}`;
+    }
+
     document.getElementById('syncModal').classList.add('open');
   }
 
@@ -2264,7 +2319,14 @@
     const area = document.getElementById('syncExportArea');
     area.select();
     navigator.clipboard.writeText(area.value);
-    showToast('Sync code copied to clipboard!', '↻');
+    showToast('Sync code copied to clipboard! (कोड कॉपी हो गया)', '↻');
+  }
+
+  function copyDirectSyncUrl() {
+    const urlInput = document.getElementById('syncDirectUrl');
+    urlInput.select();
+    navigator.clipboard.writeText(urlInput.value);
+    showToast('Direct Sync Link copied! (डायरेक्ट लिंक कॉपी हो गया)', '🔗');
   }
 
   function importSyncCode() {
@@ -2272,14 +2334,53 @@
     if (!input) return;
     try {
       const decoded = decodeURIComponent(escape(atob(input)));
-      userProgress = JSON.parse(decoded);
+      const payload = JSON.parse(decoded);
+      if (payload.answers) {
+        userProgress = Object.assign(userProgress, payload.answers);
+      } else {
+        userProgress = Object.assign(userProgress, payload);
+      }
+      if (payload.readNotes && Array.isArray(payload.readNotes)) {
+        payload.readNotes.forEach(id => readNotesSet.add(id));
+        saveReadNotes();
+      }
       saveProgress();
-      showToast('Progress imported successfully!', '✓');
+      showToast('प्रोग्रेस सफलतापूर्वक सिंक हो गई! (Progress Applied)', '✓');
       closeSync();
       renderQuestion();
       updateAnsweredCounter();
+      renderStudyNotes();
     } catch (e) {
-      alert('Invalid sync code format. Please verify and try again.');
+      alert('Invalid sync code format. कृपया सही कोड चेक करके पुनः प्रयास करें।');
+    }
+  }
+
+  function checkUrlAutoSync() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const syncData = params.get('sync');
+      if (syncData) {
+        const decoded = decodeURIComponent(escape(atob(syncData)));
+        const payload = JSON.parse(decoded);
+        if (payload.answers) {
+          userProgress = Object.assign(userProgress, payload.answers);
+          saveProgress();
+        } else {
+          userProgress = Object.assign(userProgress, payload);
+          saveProgress();
+        }
+        if (payload.readNotes && Array.isArray(payload.readNotes)) {
+          payload.readNotes.forEach(id => readNotesSet.add(id));
+          saveReadNotes();
+        }
+        showToast('प्रोग्रेस ऑटोमैटिक सिंक हो गई! (Progress Synced)', '✓');
+        window.history.replaceState({}, document.title, window.location.pathname);
+        renderQuestion();
+        updateAnsweredCounter();
+        renderStudyNotes();
+      }
+    } catch (e) {
+      console.warn('URL auto-sync check error', e);
     }
   }
 
