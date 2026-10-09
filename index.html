@@ -1976,9 +1976,429 @@
       display: none !important;
     }
 
+  
+    /* ========================================================
+       FROSTED GLASS BLUR SIDE PANEL & UI REFINEMENTS
+       ======================================================== */
+    .side-panel-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 2100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .side-panel-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .blur-side-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 340px;
+      max-width: 86vw;
+      height: 100vh;
+      height: 100dvh;
+      background: rgba(11, 17, 30, 0.85);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 20px 0 60px rgba(0, 0, 0, 0.55);
+      z-index: 2200;
+      transform: translateX(-100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    [data-theme="light"] .blur-side-panel {
+      background: rgba(255, 255, 255, 0.88);
+      border-right: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 20px 0 40px rgba(15, 23, 42, 0.15);
+    }
+
+    .blur-side-panel.open {
+      transform: translateX(0);
+    }
+
+    .side-panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .side-panel-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .side-panel-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.2px;
+    }
+
+    .side-panel-close-btn {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .side-panel-close-btn:hover {
+      color: var(--text-main);
+      border-color: var(--border-focus);
+      transform: scale(1.05);
+    }
+
+    .side-panel-scrollable {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 20px 80px 20px;
+      scrollbar-width: thin;
+    }
+
+    .side-panel-user-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .side-user-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    }
+
+    .side-user-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .side-user-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .side-user-status {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .side-user-switch-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 28px;
+      height: 28px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .side-user-switch-btn:hover {
+      color: var(--text-main);
+      border-color: var(--border-focus);
+    }
+
+    .side-panel-section-title {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+      margin: 16px 0 10px 0;
+    }
+
+    .side-section-links {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 16px;
+    }
+
+    .side-sec-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 9px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+
+    .side-sec-btn:hover {
+      border-color: var(--border-focus);
+      background: var(--bg-option-hover);
+      transform: translateX(3px);
+    }
+
+    .sec-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .sec-name {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      flex: 1;
+    }
+
+    .sec-range {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .side-palette-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .side-palette-cell {
+      aspect-ratio: 1;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+    }
+
+    .side-palette-cell:hover {
+      border-color: var(--border-focus);
+      color: var(--text-main);
+      transform: scale(1.06);
+    }
+
+    .side-palette-cell.answered {
+      background: #10b981;
+      border-color: #059669;
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    .side-palette-cell.current {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+      color: var(--text-main);
+      font-weight: 800;
+    }
+
+    .side-panel-answered-badge {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      padding: 2px 7px;
+      border-radius: var(--radius-sm);
+    }
+
+    .side-action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .side-action-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-body);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .side-action-btn:hover {
+      color: var(--text-main);
+      border-color: var(--border-focus);
+    }
+
+    .side-action-btn.submit-btn {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(139, 92, 246, 0.15));
+      border-color: #3b82f6;
+      color: #38bdf8;
+      font-weight: 700;
+    }
+
+    /* Hamburger toggle button */
+    .btn-side-drawer-toggle {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn-side-drawer-toggle:hover {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.25);
+      transform: scale(1.04);
+    }
+
   </style>
 </head>
 <body>
+
+<!-- FROSTED GLASS BLUR SIDE PANEL -->
+<div class="side-panel-overlay" id="sidePanelOverlay" onclick="closeSidePanel()"></div>
+
+<aside class="blur-side-panel" id="blurSidePanel">
+  <div class="side-panel-header">
+    <div class="side-panel-brand">
+      <span class="brand-badge">BPSC</span>
+      <span class="side-panel-title">TRE 4.0 Hub</span>
+    </div>
+    <button class="side-panel-close-btn" onclick="closeSidePanel()" title="Close Drawer (बंद करें)">✕</button>
+  </div>
+
+  <div class="side-panel-scrollable">
+    <!-- User Profile Card -->
+    <div class="side-panel-user-card">
+      <div class="side-user-avatar" id="sideUserAvatar">👤</div>
+      <div class="side-user-info">
+        <div class="side-user-name" id="sideUserName">Candidate</div>
+        <div class="side-user-status" id="sideUserStatus">Day 01 • 0/50 Answered</div>
+      </div>
+      <button class="side-user-switch-btn" onclick="closeSidePanel(); openUserModal();" title="Switch User Profile">⇄</button>
+    </div>
+
+    <!-- Quick Jump to Sections -->
+    <div class="side-panel-section-title">Jump to Syllabus Section</div>
+    <div class="side-section-links">
+      <button class="side-sec-btn lang" onclick="jumpToSection('language')">
+        <span class="sec-dot" style="background:#8b5cf6;"></span>
+        <span class="sec-name">Part I: Language Qualifying</span>
+        <span class="sec-range">Q 1–8</span>
+      </button>
+      <button class="side-sec-btn gs" onclick="jumpToSection('gs')">
+        <span class="sec-dot" style="background:#f59e0b;"></span>
+        <span class="sec-name">Part II: General Studies & Bihar</span>
+        <span class="sec-range">Q 9–22</span>
+      </button>
+      <button class="side-sec-btn middle" onclick="jumpToSection('middle_math_sci')">
+        <span class="sec-dot" style="background:#10b981;"></span>
+        <span class="sec-name">Part III: 6–8 Maths & Science</span>
+        <span class="sec-range">Q 23–36</span>
+      </button>
+      <button class="side-sec-btn sec" onclick="jumpToSection('sec_math')">
+        <span class="sec-dot" style="background:#0ea5e9;"></span>
+        <span class="sec-name">Part IV: 9–10 Secondary Maths</span>
+        <span class="sec-range">Q 37–50</span>
+      </button>
+    </div>
+
+    <!-- Live 50-Question Palette Matrix -->
+    <div class="side-panel-section-title" style="display:flex; justify-content:space-between; align-items:center;">
+      <span>Question Palette (50 Qs)</span>
+      <span class="side-panel-answered-badge" id="sideAnsweredBadge">0/50</span>
+    </div>
+    <div class="side-palette-grid" id="sidePaletteGrid">
+      <!-- 50 question buttons dynamically rendered -->
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="side-panel-section-title">Quick Actions</div>
+    <div class="side-action-buttons">
+      <button class="side-action-btn" onclick="closeSidePanel(); switchView('practice');">
+        <span>📝</span>
+        <span>Practice 50 MCQs</span>
+      </button>
+      <button class="side-action-btn" onclick="closeSidePanel(); switchView('notes');">
+        <span>📖</span>
+        <span>CBSE Study Notes</span>
+      </button>
+      <button class="side-action-btn" onclick="closeSidePanel(); toggleTheme();">
+        <span id="sideThemeIcon">☀️</span>
+        <span>Toggle Theme</span>
+      </button>
+      <button class="side-action-btn" onclick="closeSidePanel(); openSync();">
+        <span>↻</span>
+        <span>Device Sync</span>
+      </button>
+      <button class="side-action-btn submit-btn" onclick="closeSidePanel(); showScorecard();">
+        <span>🏁</span>
+        <span>Finish & View Scorecard</span>
+      </button>
+    </div>
+  </div>
+</aside>
+
 
 
 <!-- FULL-PAGE LOGIN & WELCOME SCREEN (PRIVATE USER DATA) -->
@@ -2030,6 +2450,7 @@
   <!-- HEADER -->
   <header>
     <div class="brand-group">
+      <button class="btn-side-drawer-toggle" id="sideDrawerToggleBtn" onclick="toggleSidePanel()" title="Open Navigation & Palette Drawer">☰</button>
       <span class="brand-badge">BPSC</span>
       <h1 class="brand-title">TRE 4.0 Prep Hub</h1>
     </div>
@@ -2062,7 +2483,7 @@
   <div class="view-tabs">
     <button class="tab-btn active" id="tabPracticeBtn" onclick="switchView('practice')">
       <span>📝</span>
-      <span>Practice (30 MCQs अभ्यास)</span>
+      <span>Practice (50 MCQs)</span>
     </button>
     <button class="tab-btn" id="tabNotesBtn" onclick="switchView('notes')">
       <span>📖</span>
@@ -2076,7 +2497,7 @@
       <div class="card-accent-line" id="cardAccentLine"></div>
 
       <div class="meta-bar">
-        <span class="q-number-pill" id="qNumberPill">Question 1 of 30</span>
+        <span class="q-number-pill" id="qNumberPill">Question 1 of 50</span>
         <span class="section-badge" id="sectionBadge">Language</span>
       </div>
 
@@ -2136,7 +2557,7 @@
 
       <div class="sub-action-row">
         <span class="sub-link" onclick="openPalette()">
-          Question Grid (<span id="answeredCounter">0</span>/30 Answered)
+          Question Grid (<span id="answeredCounter">0</span>/50 Answered)
         </span>
         <span class="sub-link" onclick="showScorecard()">
           View Scorecard (स्कोरकार्ड)
@@ -2178,7 +2599,7 @@
     <div class="notes-toolbar">
       <div class="notes-filter-pills">
         <button class="note-pill-btn active" onclick="filterNotesCategory('all')">
-          <span>All Modules (30 Qs)</span>
+          <span>All Modules (50 Qs)</span>
         </button>
         <button class="note-pill-btn" onclick="filterNotesCategory('language')">
           <span>Part I: Language</span>
@@ -2243,7 +2664,7 @@
 <!-- QUESTION PALETTE MODAL -->
 <div class="modal-backdrop" id="paletteModal">
   <div class="modal-box">
-    <div class="modal-title">Select Question (30 MCQs)</div>
+    <div class="modal-title">Select Question (50 MCQs)</div>
     <div class="palette-30" id="paletteGrid"></div>
     <button class="modal-close" onclick="closePalette()">Close</button>
   </div>
@@ -3551,7 +3972,92 @@
   // ========================================================
   // QUESTION PALETTE MODAL
   // ========================================================
+  
+  // ========================================================
+  // FROSTED GLASS BLUR SIDE PANEL CONTROLLER
+  // ========================================================
+  function openSidePanel() {
+    const panel = document.getElementById('blurSidePanel');
+    const overlay = document.getElementById('sidePanelOverlay');
+    if (panel) panel.classList.add('open');
+    if (overlay) overlay.classList.add('open');
+    renderSidePalette();
+    updateSideUserInfo();
+  }
+
+  function closeSidePanel() {
+    const panel = document.getElementById('blurSidePanel');
+    const overlay = document.getElementById('sidePanelOverlay');
+    if (panel) panel.classList.remove('open');
+    if (overlay) overlay.classList.remove('open');
+  }
+
+  function toggleSidePanel() {
+    const panel = document.getElementById('blurSidePanel');
+    if (panel && panel.classList.contains('open')) {
+      closeSidePanel();
+    } else {
+      openSidePanel();
+    }
+  }
+
+  function jumpToSection(sectionId) {
+    if (!testData || !testData.questions) return;
+    const idx = testData.questions.findIndex(q => q.section === sectionId);
+    if (idx !== -1) {
+      currentIdx = idx;
+      switchView('practice');
+      renderQuestion();
+      closeSidePanel();
+    }
+  }
+
+  function renderSidePalette() {
+    const grid = document.getElementById('sidePaletteGrid');
+    if (!grid || !testData) return;
+    grid.innerHTML = '';
+    const answers = userProgress[activeDay]?.answers || {};
+
+    testData.questions.forEach((q, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'side-palette-cell';
+      btn.innerText = q.id;
+
+      if (answers[q.id] !== undefined) btn.classList.add('answered');
+      if (idx === currentIdx) btn.classList.add('current');
+
+      btn.onclick = () => {
+        currentIdx = idx;
+        switchView('practice');
+        renderQuestion();
+        closeSidePanel();
+      };
+      grid.appendChild(btn);
+    });
+
+    const countEl = document.getElementById('sideAnsweredBadge');
+    if (countEl) {
+      const answeredCount = Object.keys(answers).length;
+      countEl.innerText = `${answeredCount}/${testData.questions.length}`;
+    }
+  }
+
+  function updateSideUserInfo() {
+    const nameEl = document.getElementById('sideUserName');
+    const avatarEl = document.getElementById('sideUserAvatar');
+    const statusEl = document.getElementById('sideUserStatus');
+    if (nameEl) nameEl.innerText = currentUserName || 'Candidate';
+    if (avatarEl) avatarEl.innerText = (currentUserName || 'U').charAt(0).toUpperCase();
+    if (statusEl) {
+      const answers = userProgress[activeDay]?.answers || {};
+      const total = testData ? testData.questions.length : 50;
+      statusEl.innerText = `Day 0${activeDay} • ${Object.keys(answers).length}/${total} Answered`;
+    }
+  }
+
   function openPalette() {
+    toggleSidePanel();
+    return;
     if (!testData) return;
     const grid = document.getElementById('paletteGrid');
     grid.innerHTML = '';
@@ -3775,7 +4281,7 @@
 
     <!-- Center: Question Grid Pill -->
     <button class="m3-dock-center-pill" onclick="openPalette()" title="Question Grid (प्रश्नावली)">
-      <span id="dockQuestionNumber">1/30</span>
+      <span id="dockQuestionNumber">1/50</span>
       <span style="color:#3b82f6;">▦</span>
     </button>
 

@@ -1,30 +1,30 @@
 {
   "day": 1,
   "date": "2026-10-09",
-  "title": "BPSC TRE 4.0 Day 01 High-Yield Practice Test",
-  "totalQuestions": 30,
-  "durationMinutes": 35,
+  "title": "BPSC TRE 4.0 Day 01 Complete Practice Test (50 Questions)",
+  "totalQuestions": 50,
+  "durationMinutes": 60,
   "negativeMarking": 0.33,
   "sections": [
     {
       "id": "language",
       "name": "Part I: Language Qualifying (भाषा अहर्ता)",
-      "questionsCount": 5
-    },
-    {
-      "id": "gs",
-      "name": "Part II: General Studies (सामान्य अध्ययन)",
       "questionsCount": 8
     },
     {
+      "id": "gs",
+      "name": "Part II: General Studies & Bihar Special (सामान्य अध्ययन)",
+      "questionsCount": 14
+    },
+    {
       "id": "middle_math_sci",
-      "name": "Part III: Class 6-8 (Maths & Science)",
-      "questionsCount": 10
+      "name": "Part III: Class 6–8 Maths & Science (गणित-विज्ञान)",
+      "questionsCount": 14
     },
     {
       "id": "sec_math",
-      "name": "Part IV: Class 9-10 Secondary Mathematics",
-      "questionsCount": 7
+      "name": "Part IV: Class 9–10 Secondary Mathematics (माध्यमिक गणित)",
+      "questionsCount": 14
     }
   ],
   "questions": [
@@ -44,7 +44,7 @@
       "answerIndex": 0,
       "explanation": "The correct Sandhi-Vichhed is 'Ut + Jwal' (उत् + ज्वल = उज्ज्वल).",
       "aiDeepSolution": {
-        "concept": "Consonant Sandhi (Vyanjan Sandhi) Rule: When 't' (त्) or 'd' (द्) is followed by 'j' (ज्) or 'jh' (झ्), the preceding 't/d' assimilates into 'j' (ज्).",
+        "concept": "Consonant Sandhi (व्यंजन संधि) Rule: When 't' (त्) or 'd' (द्) is followed by 'j' (ज्) or 'jh' (झ्), the preceding 't/d' assimilates into 'j' (ज्).",
         "trick": "In 'Ujjwal', both 'j' letters are half (consonant cluster j + j + v + l). This is a frequent BPSC question in both Sandhi and orthography (spelling test).",
         "trap": "Students often pick 'Ud + Jwal' due to colloquial Hindi variations, but according to Paninian Sanskrit grammar and official BPSC answer keys, 'Ut' is the standard prefix."
       }
@@ -56,17 +56,17 @@
       "source": "BPSC TRE 1.0 (Aug 2023) PYQ",
       "question": "Which type of compound (Samas) is present in the compound word 'Yathashakti' (यथाशक्ति)?",
       "options": [
-        "Tatpurush Samas",
-        "Avyayibhav Samas",
-        "Karmadharaya Samas",
+        "Tatpurush Samas (तत्पुरुष समास)",
+        "Avyayibhav Samas (अव्ययीभाव समास)",
+        "Karmadharaya Samas (कर्मधारय समास)",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "'Yathashakti' is an example of Avyayibhav Samas.",
+      "explanation": "'Yathashakti' is an authentic example of Avyayibhav Samas (अव्ययीभाव समास).",
       "aiDeepSolution": {
         "concept": "Avyayibhav Samas: A compound where the initial constituent is an Indeclinable/Prefix (Avyaya) and is the principal element, causing the whole compound to function adverbially.",
-        "trick": "Look for prefixes like 'Yatha-', 'Prati-', 'Be-', 'Ba-', 'Bhar-', 'Anu-'. Yathashakti literally translates to 'according to one's capacity'.",
+        "trick": "Look for prefixes like 'Yatha-', 'Prati-', 'Be-', 'Ba-', 'Bhar-', 'Anu-'. Yathashakti literally translates to 'according to one's capacity' (शक्ति के अनुसार).",
         "trap": "Tatpurush involves elision of case endings (Karak), whereas here 'Yatha' is an indeclinable modifier."
       }
     },
@@ -94,6 +94,27 @@
     {
       "id": 4,
       "section": "language",
+      "subject": "Hindi Grammar",
+      "source": "BPSC TRE 2.0 PYQ",
+      "question": "Which prefix (Upasarg) is used in the compound word 'Atyant' (अत्यंत)?",
+      "options": [
+        "At (अत्)",
+        "Ati (अति)",
+        "Atya (अत्य)",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "The prefix is 'Ati' (अति). Ati + Ant = Atyant (Yan vowel Sandhi).",
+      "aiDeepSolution": {
+        "concept": "A prefix (Upasarg) is an affix placed at the beginning of a root word. Here, 'i' of Ati combines with 'a' of Ant to form 'y' via Yan Sandhi rules.",
+        "trick": "Split the word by Sandhi: Ati + Ant = Atyant. Hence the root prefix is 'Ati'.",
+        "trap": "Candidates often superficially look at the first two letters and pick 'Atya', which is not a standard prefix."
+      }
+    },
+    {
+      "id": 5,
+      "section": "language",
       "subject": "English Grammar",
       "source": "BPSC TRE 2.0 English PYQ",
       "question": "Choose the correct verb to fill in the blank:\n'Neither the teacher nor the students _______ present in the seminar yesterday.'",
@@ -113,7 +134,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "section": "language",
       "subject": "English Grammar",
       "source": "BPSC TRE 1.0 English PYQ",
@@ -134,32 +155,137 @@
       }
     },
     {
-      "id": 6,
-      "section": "gs",
-      "subject": "National Movement",
-      "source": "BPSC TRE 1.0 (Aug 2023) GS PYQ",
-      "question": "Who led the rebellion in Patna city on 3rd July 1857 during the Great Revolt of 1857?",
+      "id": 7,
+      "section": "language",
+      "subject": "English Grammar",
+      "source": "BPSC TRE 3.0 English PYQ",
+      "question": "Complete the sentence with the correct conditional structure:\n'If the candidate _______ harder, he would have cleared the BPSC examination.'",
       "options": [
-        "Babu Veer Kunwar Singh",
-        "Peer Ali Khan",
+        "worked",
+        "had worked",
+        "would work",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "The correct past perfect conditional form is 'had worked'.",
+      "aiDeepSolution": {
+        "concept": "Third Conditional (Past Unreal Condition): If + Past Perfect (had + V3), Subject + would have + Past Participle (V3).",
+        "trick": "Notice 'would have cleared' in the main clause. It strictly pairs with 'had + V3' in the If-clause.",
+        "trap": "Using 'would have worked' in the If-clause is a common error (Conditionals never take 'would' in the If-clause)."
+      }
+    },
+    {
+      "id": 8,
+      "section": "language",
+      "subject": "English Grammar",
+      "source": "NCERT Class 10 English Standards",
+      "question": "Choose the correct preposition to fill in the blank:\n'The live online lecture is scheduled to start _______ 8:30 AM sharp.'",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "The correct preposition for a precise point of clock time is 'at'.",
+      "aiDeepSolution": {
+        "concept": "Prepositions of Time: Use 'at' for precise clock times and specific points of day (at 8:30 AM, at noon, at midnight).",
+        "trick": "'At' = clock time | 'On' = days and dates | 'In' = months, years, and seasons.",
+        "trap": "Do not use 'in' or 'on' for specific hour markers."
+      }
+    },
+    {
+      "id": 9,
+      "section": "gs",
+      "subject": "National Movement in Bihar",
+      "source": "BPSC TRE 1.0 (Aug 2023) GS PYQ",
+      "question": "Where did the 1857 Revolt in Bihar initially break out on 12 June 1857?",
+      "options": [
+        "Jagdishpur (Bhojpur)",
+        "Danapur Cantonment",
+        "Rohini village (Deoghar)",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "The 1857 revolt in Bihar initially broke out on 12 June 1857 in Rohini village (now in Deoghar district, Jharkhand) by the soldiers of the 32nd Native Infantry Regiment.",
+      "aiDeepSolution": {
+        "concept": "Initial spark of 1857 in Bihar took place at Rohini village, where Lieutenant Norman Leslie was killed by mutinous soldiers.",
+        "trick": "Chronology: Rohini (12 June) ⟶ Patna (3 July) ⟶ Danapur (25 July) ⟶ Jagdishpur (26 July).",
+        "trap": "Most candidates mark Danapur or Jagdishpur, which occurred later in July 1857."
+      }
+    },
+    {
+      "id": 10,
+      "section": "gs",
+      "subject": "National Movement in Bihar",
+      "source": "68th BPSC Prelims PYQ",
+      "question": "Who led the 1857 uprising in Patna City on 3 July 1857?",
+      "options": [
+        "Babu Kunwar Singh",
+        "Pir Ali Khan",
         "Amar Singh",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The Patna uprising of 3rd July 1857 was led by bookseller Peer Ali Khan.",
+      "explanation": "The uprising in Patna City was led by Pir Ali Khan, a local bookseller, on 3 July 1857.",
       "aiDeepSolution": {
-        "concept": "Peer Ali Khan, a bookseller in Patna, mobilized the masses and attacked the colonial administration, killing British opium agent Dr. R. Lyell. Commissioner William Tayler executed Peer Ali along with his associates.",
-        "trick": "P for Patna = Peer Ali. Veer Kunwar Singh led the rebellion in Jagdishpur (Bhojpur / Shahabad).",
-        "trap": "Students frequently rush to mark Kunwar Singh, overlooking that the question specifically specifies 'Patna city'."
+        "concept": "Pir Ali Khan mobilized the local masses in Patna. In the ensuing clash, British Opium Agent Dr. R. Lyell was killed. Commissioner William Tayler suppressed the revolt and Pir Ali was publicly executed.",
+        "trick": "Patna City = Pir Ali Khan (Bookseller). Jagdishpur = Babu Kunwar Singh.",
+        "trap": "Confusing the urban Patna revolt with the Arrah/Jagdishpur rebellion led by Kunwar Singh."
       }
     },
     {
-      "id": 7,
+      "id": 11,
       "section": "gs",
-      "subject": "Champaran Satyagraha",
+      "subject": "National Movement in Bihar",
       "source": "BPSC TRE 2.0 GS PYQ",
-      "question": "Who persuaded and invited Mahatma Gandhi to visit Champaran at the Lucknow Congress Session of 1916?",
+      "question": "At the age of nearly 80, which eminent leader from Jagdishpur spearheaded the 1857 rebellion and defeated British forces under Captain Dunbar and Le Grand?",
+      "options": [
+        "Maulvi Ahmadullah",
+        "Babu Veer Kunwar Singh",
+        "Tatya Tope",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Babu Veer Kunwar Singh, the zamindar of Jagdishpur (Arrah), led the 1857 rebellion in Bihar.",
+      "aiDeepSolution": {
+        "concept": "Kunwar Singh assumed leadership after the Danapur sepoy revolt on 25 July 1857. He defeated Dunbar near Arrah and Le Grand near Jagdishpur before succumbing to injuries on 26 April 1858.",
+        "trick": "Look for keywords 'Jagdishpur' and '80 years old' ⟶ Babu Veer Kunwar Singh.",
+        "trap": "His younger brother Amar Singh continued the guerrilla struggle after his death from the Kaimur Hills."
+      }
+    },
+    {
+      "id": 12,
+      "section": "gs",
+      "subject": "National Movement",
+      "source": "BPSC TRE 1.0 GS PYQ",
+      "question": "What proportion of land was compulsorily reserved for indigo cultivation under the Tinkathia system in Champaran?",
+      "options": [
+        "1/10th of land",
+        "3/20th of land",
+        "3/10th of land",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Under the Tinkathia system, tenant farmers were legally compelled by European planters to cultivate indigo on 3/20th (3 kathas per bigha) of their most fertile land.",
+      "aiDeepSolution": {
+        "concept": "1 Bigha = 20 Kathas in Bihar. 'Tin-kathia' literally means 3 kathas out of 20 kathas (3/20th).",
+        "trick": "Tinkathia = 3 kathas out of 1 Bigha (20 Kathas) = 3/20.",
+        "trap": "Do not confuse 3/20 with 3/10 or 1/3."
+      }
+    },
+    {
+      "id": 13,
+      "section": "gs",
+      "subject": "National Movement in Bihar",
+      "source": "66th BPSC Prelims PYQ",
+      "question": "Who persuaded Mahatma Gandhi during the 1916 Lucknow Congress Session to visit Champaran and investigate the plight of indigo cultivators?",
       "options": [
         "Dr. Rajendra Prasad",
         "Rajkumar Shukla",
@@ -168,418 +294,649 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Peasant leader Rajkumar Shukla invited Mahatma Gandhi.",
+      "explanation": "Rajkumar Shukla, a farmer from Murli Bharhawa in Champaran, persistently pursued Mahatma Gandhi and persuaded him at the Lucknow Session (1916).",
       "aiDeepSolution": {
-        "concept": "Rajkumar Shukla, an indigo farmer from Murli Bharhawa village in Champaran, met Gandhi at the 1916 Lucknow Congress and persistently followed him to Kanpur and Kolkata until Gandhi agreed to visit Bihar in April 1917.",
-        "trick": "Shukla was described by Gandhi in his autobiography as 'resolute and determined'.",
-        "trap": "Dr. Rajendra Prasad and Brajkishore Prasad joined Gandhi's inquiry team after his arrival in Bihar; the invitation was exclusively initiated by Shukla."
-      }
-    },
-    {
-      "id": 8,
-      "section": "gs",
-      "subject": "Champaran Satyagraha",
-      "source": "BPSC TRE 1.0 & TRE 3.0 GS PYQ",
-      "question": "Following the Champaran Satyagraha (1917), what percentage of illegally extorted dues did the European indigo planters agree to refund to the peasants upon the Champaran Agrarian Committee's recommendation?",
-      "options": [
-        "20%",
-        "25%",
-        "50%",
-        "More than one of the above",
-        "None of the above"
-      ],
-      "answerIndex": 1,
-      "explanation": "European planters agreed to refund 25% of the extorted money.",
-      "aiDeepSolution": {
-        "concept": "The Champaran Agrarian Committee (which included Gandhi) abolished the oppressive Tinkathia system. The planters offered a 25% refund, which Gandhi accepted because it shattered the psychological myth of planter prestige and British invincibility.",
-        "trick": "Tinkathia = 3/20th part of land. Extorted money refund = exactly 25% (one-fourth).",
-        "trap": "A common distractor assumption is 50% or 100%, but the historical compromise was exactly 25%."
-      }
-    },
-    {
-      "id": 9,
-      "section": "gs",
-      "subject": "Bihar Geography",
-      "source": "BPSC TRE 2.0 GS PYQ",
-      "question": "In which district does the Ganga River first enter the territory of Bihar from Uttar Pradesh?",
-      "options": [
-        "Bhojpur",
-        "Buxar",
-        "Saran",
-        "More than one of the above",
-        "None of the above"
-      ],
-      "answerIndex": 1,
-      "explanation": "Ganga enters Bihar near Chausa in Buxar district.",
-      "aiDeepSolution": {
-        "concept": "The Ganga flows for 445 km through Bihar, entering near Chausa in Buxar and exiting at Bhagalpur/Katihar into West Bengal. It touches 12 districts in Bihar.",
-        "trick": "Associate with the historic Battle of Chausa (1539, Sher Shah vs Humayun) situated on the banks of Ganga in Buxar.",
-        "trap": "Bhojpur lies downstream from Buxar; Buxar is the primary entry point."
-      }
-    },
-    {
-      "id": 10,
-      "section": "gs",
-      "subject": "Bihar Rivers",
-      "source": "BPSC TRE 3.0 GS PYQ",
-      "question": "Which river of Bihar is notoriously called the 'Sorrow of Bihar' due to frequent course shifts and devastating floods, joining the Ganga at Kursela (Katihar)?",
-      "options": [
-        "Gandak River",
-        "Kosi River",
-        "Burhi Gandak River",
-        "More than one of the above",
-        "None of the above"
-      ],
-      "answerIndex": 1,
-      "explanation": "The Kosi River is known as the 'Sorrow of Bihar'.",
-      "aiDeepSolution": {
-        "concept": "Originating in Nepal and Tibet as Saptakoshi, the Kosi carries enormous silt loads that block its bed, causing it to shift over 120 km westwards over the last 250 years. It merges with Ganga at Kursela in Katihar.",
-        "trick": "Sorrow of Bihar = Kosi (merges at Kursela).",
-        "trap": "The Burhi Gandak has the fastest discharge velocity, but course shifting and catastrophic flooding belong to the Kosi."
-      }
-    },
-    {
-      "id": 11,
-      "section": "gs",
-      "subject": "General Science",
-      "source": "BPSC TRE 1.0 Science PYQ",
-      "question": "Which specific endocrine cells in which human gland secrete the hormone Insulin?",
-      "options": [
-        "Kupffer cells of the Liver",
-        "Beta (β) cells of the Islets of Langerhans in the Pancreas",
-        "Anterior Pituitary gland",
-        "More than one of the above",
-        "None of the above"
-      ],
-      "answerIndex": 1,
-      "explanation": "Beta (β) cells of the Islets of Langerhans in the Pancreas secrete Insulin.",
-      "aiDeepSolution": {
-        "concept": "The Pancreas is a heterocrine (mixed) gland. Its endocrine tissue, the Islets of Langerhans, consists of Alpha cells (Glucagon) and Beta cells (Insulin). Insulin facilitates glucose uptake and stimulates glycogenesis.",
-        "trick": "Beta cells = Insulin (lowers blood sugar). Alpha cells = Glucagon (raises blood sugar).",
-        "trap": "Kupffer cells are specialized macrophages residing in the liver, not hormone-secreting endocrine cells."
-      }
-    },
-    {
-      "id": 12,
-      "section": "gs",
-      "subject": "General Science",
-      "source": "BPSC TRE 2.0 Science PYQ",
-      "question": "When white light passes through a glass triangular prism, which spectral colour undergoes the minimum deviation and minimum scattering?",
-      "options": [
-        "Violet",
-        "Red",
-        "Yellow",
-        "More than one of the above",
-        "None of the above"
-      ],
-      "answerIndex": 1,
-      "explanation": "Red light suffers minimum deviation and scattering.",
-      "aiDeepSolution": {
-        "concept": "According to Rayleigh Scattering ($I \\propto 1/\\lambda^4$), scattering is inversely proportional to the fourth power of wavelength. Red light has the longest visible wavelength (approx. 700 nm), smallest refractive index in glass, and hence minimum deviation ($\\\\delta = (\\mu - 1)A$).",
-        "trick": "VIBGYOR: Violet has maximum deviation; Red has minimum deviation.",
-        "trap": "Violet has maximum scattering and maximum refractive index; the question asks for MINIMUM."
-      }
-    },
-    {
-      "id": 13,
-      "section": "gs",
-      "subject": "Mental Ability",
-      "source": "BPSC TRE 3.0 GS PYQ",
-      "question": "Determine the next term in the arithmetic-square progression sequence: 2, 5, 10, 17, 26, ?",
-      "options": [
-        "35",
-        "37",
-        "39",
-        "More than one of the above",
-        "None of the above"
-      ],
-      "answerIndex": 1,
-      "explanation": "The next term in the sequence is 37.",
-      "aiDeepSolution": {
-        "concept": "The pattern follows $n^2 + 1$: $1^2+1=2$, $2^2+1=5$, $3^2+1=10$, $4^2+1=17$, $5^2+1=26$, $6^2+1=37$. Alternatively, consecutive odd differences: +3, +5, +7, +9, +11 -> 26 + 11 = 37.",
-        "trick": "Sequence of differences is consecutive odd numbers: 3, 5, 7, 9, 11.",
-        "trap": "35 is $6^2 - 1$, which candidates mistakenly pick by reversing the sign."
+        "concept": "Rajkumar Shukla represented the suffering peasantry of Champaran. Gandhi accompanied him to Patna, Muzaffarpur, and finally arrived in Champaran in April 1917.",
+        "trick": "Lucknow Congress 1916 invitation = Rajkumar Shukla.",
+        "trap": "While Rajendra Prasad and Brajkishore Prasad were key associates during the inquiry, the primary initiator who brought Gandhi was Rajkumar Shukla."
       }
     },
     {
       "id": 14,
-      "section": "middle_math_sci",
-      "subject": "Mathematics (6-8)",
-      "source": "BPSC TRE 2.0 (Class 6-8 Maths & Sci) PYQ",
-      "question": "If the HCF and LCM of two positive integers are 12 and 144 respectively, and one of the integers is 36, what is the value of the other integer?",
+      "section": "gs",
+      "subject": "National Movement in Bihar",
+      "source": "BPSC TRE 3.0 GS PYQ",
+      "question": "As an outcome of the Champaran Satyagraha (1917), what percentage of the illegally extorted dues did European planters agree to refund?",
       "options": [
-        "48",
-        "54",
-        "72",
+        "50%",
+        "25%",
+        "100%",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 0,
-      "explanation": "The second integer is 48.",
+      "answerIndex": 1,
+      "explanation": "European planters agreed to refund exactly 25% of the money they had illegally extorted from the ryots.",
       "aiDeepSolution": {
-        "concept": "Fundamental Theorem of Arithmetic property for two positive integers: $\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b$.",
-        "trick": "Calculation: $12 \\times 144 = 36 \\times b \\implies b = \\frac{12 \\times 144}{36} = \\frac{144}{3} = 48$.",
-        "trap": "This product formula holds strictly for two numbers only; do not attempt for three numbers without modification."
+        "concept": "Gandhi compromised on a 25% refund to break the prestige and moral dominance of the British planters. The Tinkathia system was formally abolished by the Champaran Agrarian Act of 1918.",
+        "trick": "Gandhi accepted 25% refund because the planters' prestige was shattered more than the monetary concession.",
+        "trap": "Candidates often assume full refund (100%) or half (50%). The exact figure is 25%."
       }
     },
     {
       "id": 15,
-      "section": "middle_math_sci",
-      "subject": "Mathematics (6-8)",
-      "source": "Bihar SCERT Class 6 & BPSC TRE 1.0 PYQ",
-      "question": "If the 6-digit number 5432k7 is completely divisible by 9, what must be the single-digit value of 'k'?",
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "67th BPSC Prelims PYQ",
+      "question": "What is the total length of the River Ganga within the geographic territory of Bihar?",
       "options": [
-        "6",
-        "7",
-        "5",
+        "405 km",
+        "445 km",
+        "525 km",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 0,
-      "explanation": "The value of digit k is 6.",
+      "answerIndex": 1,
+      "explanation": "The total length of the Ganga river in Bihar is 445 km, passing through 12 districts.",
       "aiDeepSolution": {
-        "concept": "Divisibility Rule of 9: A number is divisible by 9 if and only if the sum of its constituent digits is a multiple of 9.",
-        "trick": "Sum of digits: $5 + 4 + 3 + 2 + k + 7 = 21 + k$. The next multiple of 9 after 21 is 27. Therefore, $21 + k = 27 \\implies k = 6$.",
-        "trap": "Do not confuse divisibility of 9 with divisibility of 3 ($k=0, 3, 6, 9$ work for 3, but only $k=6$ works for 9)."
+        "concept": "The Ganga has a total length of 2,525 km in India. In Bihar, its stretch is 445 km, entering at Chausa (Buxar) and exiting at Manihari (Katihar). It has its longest stretch in Patna district (~99 km).",
+        "trick": "Remember 445 km (exactly 12 districts). Patna has the longest stretch (~99 km).",
+        "trap": "Do not confuse the Bihar length (445 km) with the West Bengal or UP stretches."
       }
     },
     {
       "id": 16,
-      "section": "middle_math_sci",
-      "subject": "Mathematics (6-8)",
-      "source": "NCERT Class 8 & BPSC TRE 3.0 PYQ",
-      "question": "What is the product of the additive inverse and the multiplicative inverse of the rational number -7/19?",
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "BPSC TRE 2.0 GS PYQ",
+      "question": "Near which historic location does the River Ganga enter the state of Bihar?",
       "options": [
-        "1",
-        "-1",
-        "0",
+        "Valmikinagar (West Champaran)",
+        "Chausa (Buxar)",
+        "Sahibganj",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The product is -1.",
+      "explanation": "The Ganga enters Bihar near Chausa in Buxar district.",
       "aiDeepSolution": {
-        "concept": "For any non-zero rational number $x$: Additive Inverse = $-x$; Multiplicative Inverse (reciprocal) = $1/x$. Their product is $(-x) \\times (1/x) = -1$.",
-        "trick": "Universal Property: The product of the additive inverse and multiplicative inverse of ANY non-zero number is ALWAYS -1.",
-        "trap": "Candidates calculate $(7/19) \\times (-19/7) = -1$. Do not lose the negative sign."
+        "concept": "The Ganga enters Bihar at Chausa (Buxar) and exits near Manihari (Katihar).",
+        "trick": "Entry = Chausa (Buxar) | Exit = Manihari (Katihar).",
+        "trap": "Valmikinagar is the entry point of the Gandak river, not the Ganga."
       }
     },
     {
       "id": 17,
-      "section": "middle_math_sci",
-      "subject": "Mathematics (6-8)",
-      "source": "NCERT Class 8 & BPSC TRE 2.0 PYQ",
-      "question": "Evaluate the exponential numerical expression: $(1/2)^{-2} + (1/3)^{-2} + (1/4)^{-2}$",
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "69th BPSC Prelims PYQ",
+      "question": "At which confluence point does the Kosi River ('Sorrow of Bihar') merge into the River Ganga?",
       "options": [
-        "29",
-        "36",
-        "61/144",
+        "Pahleza (Sonepur)",
+        "Kursela (Katihar)",
+        "Maner (Patna)",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 0,
-      "explanation": "The evaluated value is 29.",
+      "answerIndex": 1,
+      "explanation": "The Kosi River merges into the Ganga at Kursela in Katihar district.",
       "aiDeepSolution": {
-        "concept": "Law of Negative Exponents: $(a/b)^{-n} = (b/a)^n$. Hence, $(1/2)^{-2} = 2^2 = 4$, $(1/3)^{-2} = 3^2 = 9$, $(1/4)^{-2} = 4^2 = 16$.",
-        "trick": "Direct calculation: $4 + 9 + 16 = 29$.",
-        "trap": "Option C (61/144) is the result of $(1/4 + 1/9 + 1/16)$, where the negative exponent is erroneously ignored."
+        "concept": "The Kosi River originates as Saptakoshi in Nepal, enters Bihar at Supaul, and flows through Saharsa and Madhepura to merge with the Ganga at Kursela (Katihar).",
+        "trick": "Kosi ⟶ Kursela (K-K pairing).",
+        "trap": "Pahleza is the confluence of Gandak, while Maner is the confluence of Son."
       }
     },
     {
       "id": 18,
-      "section": "middle_math_sci",
-      "subject": "Science (Physics)",
-      "source": "BPSC TRE 3.0 Science PYQ",
-      "question": "Two plane mirrors are inclined to each other at an angle of 60°. How many distinct images of an object placed symmetrically between them will be formed?",
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "BPSC TRE 1.0 GS PYQ",
+      "question": "Which major south-bank peninsular tributary of the Ganga originates from the Amarkantak Plateau and joins the Ganga near Maner in Patna district?",
       "options": [
-        "5",
-        "6",
-        "4",
+        "Punpun River",
+        "Son River",
+        "Falgu River",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 0,
-      "explanation": "Exactly 5 images will be formed.",
+      "answerIndex": 1,
+      "explanation": "The Son River originates from the Amarkantak plateau (Madhya Pradesh) and joins the Ganga near Maner (Patna).",
       "aiDeepSolution": {
-        "concept": "Image formation formula by inclined mirrors: $m = 360^\\circ / \\theta$. Here $m = 360 / 60 = 6$. Since $m$ is an EVEN integer, number of images $n = m - 1 = 6 - 1 = 5$ (regardless of position).",
-        "trick": "If $360/\\theta$ is even, subtract 1: $6 - 1 = 5$.",
-        "trap": "Candidates often forget the '-1' subtraction and incorrectly choose 6."
+        "concept": "The Son River enters Bihar at Rohtas district, flows between Rohtas/Bhojpur and Aurangabad/Arwal, and joins the Ganga near Maner.",
+        "trick": "Son River: Origin = Amarkantak, Entry in Bihar = Rohtas, Confluence = Maner (Patna).",
+        "trap": "Punpun meets the Ganga at Fatuha, not Maner."
       }
     },
     {
       "id": 19,
-      "section": "middle_math_sci",
-      "subject": "Science (Biology)",
-      "source": "NCERT Class 6 & BPSC TRE 1.0 PYQ",
-      "question": "Which combination of chemical reagents is used to test for the presence of proteins in food, and what positive colour reaction confirms it?",
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "BPSC TRE 2.0 GS PYQ",
+      "question": "At which place does the Punpun River join the River Ganga?",
       "options": [
-        "Dilute Iodine solution (Blue-black colouration)",
-        "Copper sulphate solution and Caustic soda (Violet colouration)",
-        "Benedict's solution (Brick red precipitate)",
+        "Fatuha",
+        "Munger",
+        "Chhapra",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 1,
-      "explanation": "Copper sulphate and Caustic soda produce a violet colour, confirming proteins (Biuret test).",
+      "answerIndex": 0,
+      "explanation": "The Punpun River joins the Ganga at Fatuha (east of Patna).",
       "aiDeepSolution": {
-        "concept": "Biuret test for peptide bonds: In an alkaline medium (Caustic soda / NaOH), Copper(II) ions ($CuSO_4$) chelate with peptide nitrogen atoms to form a violet/purple complex.",
-        "trick": "Iodine = Starch (Blue-Black). Biuret ($CuSO_4 + NaOH$) = Protein (Violet).",
-        "trap": "Option A is the diagnostic test for carbohydrates (starch), not proteins."
+        "concept": "Originating in the Chota Nagpur Plateau of Jharkhand, the Punpun flows through Aurangabad, Arwal, and Patna before meeting the Ganga at Fatuha.",
+        "trick": "Punpun meets Ganga at Fatuha.",
+        "trap": "Chhapra is where the Ghaghara meets the Ganga."
       }
     },
     {
       "id": 20,
-      "section": "middle_math_sci",
-      "subject": "Science (Biology)",
-      "source": "BPSC TRE 2.0 Class 6-8 Science PYQ",
-      "question": "Which of the following essential vitamins is water-soluble in human nutrition?",
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "Official Census & Bihar Economic Survey",
+      "question": "What is the total geographical area of the state of Bihar?",
       "options": [
-        "Vitamin A",
-        "Vitamin C",
-        "Vitamin D",
+        "94,163 sq km",
+        "84,163 sq km",
+        "98,120 sq km",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 1,
-      "explanation": "Vitamin C is water-soluble.",
+      "answerIndex": 0,
+      "explanation": "The total geographical area of Bihar is 94,163 square kilometers, accounting for 2.86% of India's total geographical area (12th largest state by area).",
       "aiDeepSolution": {
-        "concept": "Vitamins are classified into: Fat-soluble (Vitamins K, E, D, A) and Water-soluble (Vitamin B-complex and Vitamin C / Ascorbic acid). Water-soluble vitamins are readily excreted in urine and must be supplied regularly.",
-        "trick": "Mnemonic: 'KEDA' are fat-soluble. 'B and C' dissolve in water.",
-        "trap": "Do not confuse Vitamin D (fat-soluble) with Vitamin C."
+        "concept": "Area = 94,163 sq km. North-to-South span = 345 km. East-to-West span = 483 km.",
+        "trick": "Mnemonic: 94-163 (94 thousand, 163).",
+        "trap": "Do not confuse the area with population percentages (population is 8.6% of India, 3rd largest)."
       }
     },
     {
       "id": 21,
-      "section": "middle_math_sci",
-      "subject": "Science (Physics)",
-      "source": "Bihar SCERT Class 7 & BPSC TRE 1.0 PYQ",
-      "question": "Which optical mirror is installed as a rear-view mirror in motor vehicles to provide a wide field of view?",
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "BPSC TRE 3.0 GS PYQ",
+      "question": "In the agricultural plains of South Bihar, the older alluvium (Bangar) is locally known by which name?",
       "options": [
-        "Concave mirror",
-        "Convex mirror",
-        "Plane mirror",
+        "Khadar soil",
+        "Karail-Kewal soil",
+        "Terai soil",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Convex mirrors are used as rear-view mirrors.",
+      "explanation": "In South Bihar, older alluvium (Bangar) is locally referred to as 'Karail-Kewal' soil.",
       "aiDeepSolution": {
-        "concept": "Convex mirrors always form virtual, erect, and diminished images of distant objects, and curve outwards, giving the driver a significantly wider field of view than a plane mirror.",
-        "trick": "Convex = Diverging mirror = Erect diminished image + Wide panorama.",
-        "trap": "Concave mirrors produce inverted images for distant objects, making them unusable as rear-view mirrors."
+        "concept": "Karail-Kewal soil is characterized by heavy clay, high water retention, neutral to slightly alkaline pH, and presence of calcareous kankar nodules.",
+        "trick": "South Bihar Older Alluvium = Karail-Kewal. Newer Alluvium = Khadar.",
+        "trap": "Terai soil is found in the northern Himalayan border belt of West Champaran, Kishanganj."
       }
     },
     {
       "id": 22,
-      "section": "middle_math_sci",
-      "subject": "Science (Biology)",
-      "source": "BPSC TRE 2.0 Science PYQ",
-      "question": "Scurvy is a clinical deficiency disease caused by the prolonged lack of which vitamin in the human diet?",
+      "section": "gs",
+      "subject": "Indian Polity",
+      "source": "NCERT Class 9-10 Polity Standards",
+      "question": "On which historic date did the Constituent Assembly of India adopt, enact, and give to themselves the Constitution of India?",
       "options": [
-        "Vitamin B1 (Thiamine)",
-        "Vitamin C (Ascorbic acid)",
-        "Vitamin D (Calciferol)",
+        "26 January 1950",
+        "26 November 1949",
+        "15 August 1947",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Scurvy is caused by Vitamin C deficiency.",
+      "explanation": "The Constitution of India was adopted on 26 November 1949 (celebrated as Constitution Day / Samvidhan Divas) and came into full legal enforcement on 26 January 1950.",
       "aiDeepSolution": {
-        "concept": "Vitamin C (Ascorbic acid) is an essential cofactor for collagen synthesis. Deficiency leads to fragile blood capillaries, bleeding gums, poor wound healing, and scurvy.",
-        "trick": "C for Citrus = C for Ascorbic acid = C for Scurvy prevention.",
-        "trap": "Vitamin B1 deficiency causes Beriberi; Vitamin D deficiency causes Rickets."
+        "concept": "The Preamble explicitly states: 'In our Constituent Assembly this twenty-sixth day of November, 1949, do hereby Adopt, Enact and Give to Ourselves this Constitution.'",
+        "trick": "Adopted = 26 Nov 1949. Enforced (Republic Day) = 26 Jan 1950.",
+        "trap": "Candidates often choose 26 January 1950, which is the date of commencement/enforcement, not adoption."
       }
     },
     {
       "id": 23,
       "section": "middle_math_sci",
-      "subject": "Science (Physics)",
-      "source": "NCERT Class 10 & BPSC TRE 3.0 PYQ",
-      "question": "What is the nature and size of the image formed by a concave spherical mirror when an object is placed between its Principal Focus (F) and Pole (P)?",
+      "subject": "NCERT Class 7–8 Mathematics",
+      "source": "NCERT Class 8 Rational Numbers",
+      "question": "What is the additive inverse of the rational number -7/19?",
       "options": [
-        "Real, inverted, and magnified",
-        "Virtual, erect, and magnified (enlarged)",
-        "Real, inverted, and diminished",
+        "19/7",
+        "7/19",
+        "-19/7",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The image is virtual, erect, and magnified, formed behind the mirror.",
+      "explanation": "The additive inverse of -7/19 is 7/19, because (-7/19) + (7/19) = 0.",
       "aiDeepSolution": {
-        "concept": "This is the single exceptional case for concave mirrors. When the object is inside the focal length ($u < f$), the reflected rays diverge and appear to meet behind the mirror, creating a virtual, upright, and magnified image (utilized in shaving/dentist mirrors).",
-        "trick": "Inside Focus = Virtual and Magnified. Beyond Focus = Real and Inverted.",
-        "trap": "All other positions for concave mirrors yield REAL and INVERTED images; this is the only virtual case."
+        "concept": "Additive inverse of a is -a such that a + (-a) = 0 (the additive identity).",
+        "trick": "Just invert the sign: negative becomes positive, positive becomes negative.",
+        "trap": "Do not flip numerator and denominator (that is the reciprocal / multiplicative inverse)."
       }
     },
     {
       "id": 24,
-      "section": "sec_math",
-      "subject": "Mathematics (9-10)",
-      "source": "BPSC TRE 1.0 (Class 9-10 Maths) PYQ",
-      "question": "According to Euclid's Division Lemma, for any two positive integers a and b, there exist unique whole numbers q and r such that $a = bq + r$. What is the mandatory condition on remainder r?",
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7–8 Mathematics",
+      "source": "NCERT Class 8 Rational Numbers",
+      "question": "What is the multiplicative inverse (reciprocal) of -13/17?",
       "options": [
-        "$0 \\le r < b$",
-        "$0 < r \\le b$",
-        "$0 \\le r \\le b$",
-        "More than one of the above",
-        "None of the above"
-      ],
-      "answerIndex": 0,
-      "explanation": "The remainder must satisfy $0 \\le r < b$.",
-      "aiDeepSolution": {
-        "concept": "Euclid's Division Lemma formalizes the long division algorithm: the remainder can be zero or strictly positive, but it MUST be strictly smaller than the divisor $b$. If $r = b$, the quotient increases by 1.",
-        "trick": "Strict inequality at the upper bound: $0 \\le r < b$.",
-        "trap": "Option C includes $r \\le b$, which is invalid because a remainder can never equal the divisor."
-      }
-    },
-    {
-      "id": 25,
-      "section": "sec_math",
-      "subject": "Mathematics (9-10)",
-      "source": "BPSC TRE 2.0 Class 9-10 & NCERT Exemplar",
-      "question": "After how many decimal places will the decimal expansion of the rational number 13/1250 terminate?",
-      "options": [
-        "3",
-        "4",
-        "5",
+        "13/17",
+        "-17/13",
+        "17/13",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The decimal expansion terminates after 4 decimal places.",
+      "explanation": "The multiplicative inverse of -13/17 is -17/13, because (-13/17) × (-17/13) = 1.",
       "aiDeepSolution": {
-        "concept": "Let $x = p/q$ in simplest terms. If $q = 2^n \\cdot 5^m$, the decimal terminates after $\\max(n, m)$ places. Here $1250 = 2^1 \\times 5^4$. The powers are $n=1, m=4$. $\\max(1, 4) = 4$.",
-        "trick": "Prime factorize denominator: $1250 = 2 \\times 625 = 2^1 \\times 5^4$. Highest exponent is 4 -> terminates in 4 decimal places ($13/1250 = 0.0104$).",
-        "trap": "Do not divide manually in exam conditions; apply the $\\max(n, m)$ exponent rule directly."
+        "concept": "Multiplicative inverse of a/b is b/a such that (a/b) × (b/a) = 1. The algebraic sign remains unchanged.",
+        "trick": "Reciprocal flips the fraction upside down while keeping the negative sign.",
+        "trap": "Changing the sign to positive is an error; that confuses it with additive inverse."
+      }
+    },
+    {
+      "id": 25,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 8 Mathematics",
+      "source": "BPSC TRE Middle School PYQ",
+      "question": "For any non-zero rational number x, what is the product of its additive inverse and its multiplicative inverse?",
+      "options": [
+        "1",
+        "0",
+        "-1",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "The additive inverse is -x and the multiplicative inverse is 1/x. Their product is (-x) × (1/x) = -1.",
+      "aiDeepSolution": {
+        "concept": "Universal algebraic identity: Additive Inverse × Multiplicative Inverse = (-x) × (1/x) = -1 for any x ≠ 0.",
+        "trick": "Take any sample number, e.g., 5: Additive inv = -5, Multiplicative inv = 1/5. Product = -5 × 1/5 = -1.",
+        "trap": "Thinking the product cancels out to positive +1."
       }
     },
     {
       "id": 26,
-      "section": "sec_math",
-      "subject": "Mathematics (9-10)",
-      "source": "BPSC TRE 2.0 (Class 9-10 Maths) PYQ",
-      "question": "If $\\alpha$ and $\\beta$ are the zeroes of the quadratic polynomial $P(x) = 2x^2 - 5x + 7$, what is the exact numerical value of $(1/\\alpha + 1/\\beta)$?",
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 6–8 Mathematics",
+      "source": "NCERT Divisibility Rules",
+      "question": "If the 6-digit number 473x24 is divisible by 9, what is the single-digit value of x?",
       "options": [
-        "5/7",
-        "-5/7",
-        "5/2",
+        "5",
+        "7",
+        "9",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 0,
-      "explanation": "The value of $(1/\\alpha + 1/\\beta)$ is 5/7.",
+      "answerIndex": 1,
+      "explanation": "Sum of digits = 4 + 7 + 3 + x + 2 + 4 = 20 + x. The next multiple of 9 is 27, so 20 + x = 27 ⟹ x = 7.",
       "aiDeepSolution": {
-        "concept": "Sum of roots $\\alpha + \\beta = -b/a = -(-5)/2 = 5/2$. Product of roots $\\alpha\\beta = c/a = 7/2$. Then $1/\\alpha + 1/\\beta = (\\alpha + \\beta)/(\\alpha\\beta) = (5/2)/(7/2) = 5/7$.",
-        "trick": "Direct BPSC Shortcut: $1/\\alpha + 1/\\beta = -b/c = -(-5)/7 = 5/7$. Solve in 3 seconds!",
-        "trap": "Sign error: candidates forget the leading minus in $-b/c$ and answer $-5/7$."
+        "concept": "Divisibility rule for 9: A number is divisible by 9 if and only if the sum of all its digits is divisible by 9.",
+        "trick": "Sum known digits: 4 + 7 + 3 + 2 + 4 = 20. Nearest multiple of 9 > 20 is 27. x = 27 - 20 = 7.",
+        "trap": "Picking 5 gives sum 25, which is not divisible by 9."
       }
     },
     {
       "id": 27,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 6–8 Mathematics",
+      "source": "NCERT Divisibility Rules",
+      "question": "If the 7-digit number 853x412 is completely divisible by 11, what is the value of digit x?",
+      "options": [
+        "6",
+        "4",
+        "3",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 4,
+      "explanation": "Sum of odd-position digits = 2 + 4 + 3 + 8 = 17. Sum of even-position digits = 1 + x + 5 = 6 + x. Difference = 17 - (6 + x) = 11 - x. For divisibility by 11, 11 - x must be a multiple of 11 ⟹ x = 0. Since 0 is not listed in options (A, B, C), the correct BPSC answer is 'None of the above'.",
+      "aiDeepSolution": {
+        "concept": "Divisibility rule for 11: Difference between the sum of digits in odd places and even places must be either 0 or a multiple of 11.",
+        "trick": "Calculate: Sum(Odd) - Sum(Even) = 17 - (6 + x) = 11 - x. For a single digit (0-9), only x = 0 satisfies this condition.",
+        "trap": "Candidates often hesitate to choose 'None of the above' (Option E) even when their calculation is correct. BPSC frequently makes Option E the correct answer!"
+      }
+    },
+    {
+      "id": 28,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 6 Mathematics",
+      "source": "NCERT Playing with Numbers",
+      "question": "Three bells toll at intervals of 12, 15, and 18 seconds respectively. If they toll together now, after how many minutes will they next toll together?",
+      "options": [
+        "2 minutes",
+        "3 minutes",
+        "5 minutes",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "LCM(12, 15, 18) = 180 seconds. In minutes: 180 / 60 = 3 minutes.",
+      "aiDeepSolution": {
+        "concept": "Simultaneous recurring events occur at the Least Common Multiple (LCM) of their individual time periods.",
+        "trick": "12 = 2² × 3, 15 = 3 × 5, 18 = 2 × 3². LCM = 2² × 3² × 5 = 4 × 9 × 5 = 180 seconds. Convert to minutes: 180 / 60 = 3 minutes.",
+        "trap": "Candidates find 180 and forget to convert seconds into minutes."
+      }
+    },
+    {
+      "id": 29,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7 Mathematics",
+      "source": "Fractions & Decimals Standards",
+      "question": "What is the LCM of the fractions 2/3, 4/9, and 5/6?",
+      "options": [
+        "20/3",
+        "10/9",
+        "20/27",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "LCM of fractions = (LCM of numerators) / (HCF of denominators) = LCM(2, 4, 5) / HCF(3, 9, 6) = 20 / 3.",
+      "aiDeepSolution": {
+        "concept": "Standard Fraction Formula: LCM(Fractions) = LCM(Numerators) / HCF(Denominators).",
+        "trick": "Numerators = 2, 4, 5 ⟶ LCM = 20. Denominators = 3, 9, 6 ⟶ HCF = 3. Result = 20/3.",
+        "trap": "Inverting the formula (e.g., finding HCF of numerators / LCM of denominators, which gives HCF, not LCM)."
+      }
+    },
+    {
+      "id": 30,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 6 Science",
+      "source": "NCERT Class 6 Components of Food",
+      "question": "In a laboratory test, when a few drops of dilute Iodine solution are added to a crushed food sample, it turns Blue-Black. This confirms the presence of which nutrient?",
+      "options": [
+        "Protein",
+        "Starch",
+        "Fats",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "A blue-black coloration with dilute Iodine solution confirms the presence of starch.",
+      "aiDeepSolution": {
+        "concept": "Iodine intercalates into the helical amylose structure of starch, producing a characteristic deep blue-black charge-transfer complex.",
+        "trick": "Iodine ⟶ Blue-Black = Starch.",
+        "trap": "Proteins give violet with Biuret test, not blue-black with iodine."
+      }
+    },
+    {
+      "id": 31,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 6 Science",
+      "source": "NCERT Class 6 Components of Food",
+      "question": "Which chemical reagents are used in the Biuret test to confirm the presence of proteins in food?",
+      "options": [
+        "Copper Sulphate and Caustic Soda (NaOH)",
+        "Dilute Iodine and Alcohol",
+        "Iron Sulphate and Hydrochloric Acid",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "Copper Sulphate (CuSO4) and Caustic Soda (NaOH) are added to test for proteins, producing a violet color.",
+      "aiDeepSolution": {
+        "concept": "Biuret reaction: Cu²⁺ ions form a violet coordination complex with peptide bonds in alkaline (NaOH) medium.",
+        "trick": "Protein Test = CuSO4 + NaOH ⟶ Violet color.",
+        "trap": "Confusing CuSO4 with FeSO4 or iodine."
+      }
+    },
+    {
+      "id": 32,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 6–7 Science",
+      "source": "NCERT Vitamins & Health Standards",
+      "question": "Which of the following vitamins are completely water-soluble and must be regularly supplied in the daily diet?",
+      "options": [
+        "Vitamins A and D",
+        "Vitamins B-Complex and C",
+        "Vitamins E and K",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Vitamin B-complex and Vitamin C are water-soluble vitamins, excreted regularly through urine.",
+      "aiDeepSolution": {
+        "concept": "Vitamins are classified into: Fat-soluble (K, E, D, A) stored in liver/adipose tissue; and Water-soluble (B-complex, C) which cannot be stored in the body.",
+        "trick": "Mnemonic: 'K-E-D-A' is fat-soluble. 'B and C' are water-soluble.",
+        "trap": "Vitamins A, D, E, K are fat-soluble and excess can cause hypervitaminosis."
+      }
+    },
+    {
+      "id": 33,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7 Science",
+      "source": "NCERT Class 7 Light",
+      "question": "If two plane mirrors are placed inclined at an angle of 60° to each other, how many images of an object placed between them will be formed?",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "The formula is n = (360° / θ) - 1 when 360/θ is an even integer. Here n = (360 / 60) - 1 = 6 - 1 = 5 images.",
+      "aiDeepSolution": {
+        "concept": "Number of images between inclined plane mirrors: When 360/θ is even, n = (360/θ) - 1 regardless of object position.",
+        "trick": "360 / 60 = 6 (even). Subtract 1: 6 - 1 = 5.",
+        "trap": "Forgetting to subtract 1 and answering 6."
+      }
+    },
+    {
+      "id": 34,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7–8 Science",
+      "source": "NCERT Class 7 Light & Reflection",
+      "question": "Where should an object be placed in front of a concave mirror to obtain a virtual, erect, and magnified image?",
+      "options": [
+        "At the Centre of Curvature (C)",
+        "Between the Focus (F) and Centre of Curvature (C)",
+        "Between the Pole (P) and Focus (F)",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "When an object is placed between the Pole (P) and Focus (F) of a concave mirror, the reflected rays diverge and appear to meet behind the mirror, forming a virtual, erect, and magnified image.",
+      "aiDeepSolution": {
+        "concept": "In all other positions, a concave mirror forms a real and inverted image. Only when placed between P and F does it form a virtual, erect, and enlarged image (principle of dentist mirrors).",
+        "trick": "Dentist Mirror Case: Between P and F ⟶ Virtual, Erect, Enlarged.",
+        "trap": "At C it forms real, inverted, same size image. Between F and C it forms real, inverted, magnified image."
+      }
+    },
+    {
+      "id": 35,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7 Science",
+      "source": "NCERT Transportation in Animals and Plants",
+      "question": "Which plant vascular tissue is responsible for the bidirectional translocation of synthesized food (sucrose) from leaves to other storage organs?",
+      "options": [
+        "Xylem",
+        "Phloem",
+        "Stomata",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Phloem translocates organic nutrients (food/sugars) bidirectionally throughout the plant.",
+      "aiDeepSolution": {
+        "concept": "Phloem transports food (sucrose) in both upward and downward directions (bidirectional translocation) using energy (ATP). Xylem conducts water and minerals unidirectionally upwards.",
+        "trick": "Phloem = Food (bidirectional) | Xylem = Water/Jal (unidirectional).",
+        "trap": "Confusing Xylem (water) with Phloem (food)."
+      }
+    },
+    {
+      "id": 36,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 8 Science",
+      "source": "NCERT Class 8 Sound",
+      "question": "If the amplitude of a sound wave is tripled, by what factor will the loudness of the sound increase?",
+      "options": [
+        "3 times",
+        "6 times",
+        "9 times",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "Loudness of sound is directly proportional to the square of its amplitude: Loudness ∝ (Amplitude)². When amplitude is tripled (3×), loudness increases by 3² = 9 times.",
+      "aiDeepSolution": {
+        "concept": "Physics of Sound: Loudness ∝ A². Pitch is determined by frequency, whereas loudness/intensity is determined by amplitude squared.",
+        "trick": "Loudness ∝ A² ⟶ (3)² = 9 times.",
+        "trap": "Assuming linear relationship (3 times)."
+      }
+    },
+    {
+      "id": 37,
       "section": "sec_math",
-      "subject": "Mathematics (9-10)",
-      "source": "NCERT Exemplar & BPSC TRE 2.0 Exact PYQ",
-      "question": "If $\\alpha$ and $\\beta$ are the zeroes of the quadratic polynomial $x^2 + 99x + 127$, what are the algebraic signs of both zeroes?",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 1 Real Numbers",
+      "question": "According to the Fundamental Theorem of Arithmetic, every composite number can be factorized as a product of prime numbers in a manner that is:",
+      "options": [
+        "Dependent on the method used",
+        "Unique, apart from the order in which prime factors occur",
+        "Non-unique for numbers greater than 100",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Fundamental Theorem of Arithmetic states that every composite number can be uniquely expressed as a product of primes, up to the order of factors.",
+      "aiDeepSolution": {
+        "concept": "Theorem 1.2 (NCERT Class 10): Every composite number can be factored uniquely as a product of primes, apart from the order in which the prime factors occur.",
+        "trick": "Fundamental Theorem = Unique Prime Factorization.",
+        "trap": "The order can change (e.g., 2 × 3 = 3 × 2), but the set of prime factors and their multiplicities are strictly unique."
+      }
+    },
+    {
+      "id": 38,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 1 Real Numbers",
+      "question": "A rational number p/q in simplest form (gcd(p, q) = 1) has a terminating decimal expansion if and only if the prime factorisation of q contains:",
+      "options": [
+        "Only 3 and 7",
+        "Only primes of the form 2^n · 5^m (n, m non-negative integers)",
+        "Any prime numbers except 2 and 5",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "A rational number has a terminating decimal expansion if and only if the denominator q is of the form 2^n · 5^m, where n and m are non-negative integers.",
+      "aiDeepSolution": {
+        "concept": "NCERT Theorem: Let x = p/q be a rational number such that prime factorisation of q is of the form 2^n · 5^m. Then x has a terminating decimal expansion.",
+        "trick": "Terminating decimal denominator must ONLY have factors of 2 and/or 5.",
+        "trap": "If any other prime (like 3, 7, 11) is present in the reduced denominator, the decimal is non-terminating repeating."
+      }
+    },
+    {
+      "id": 39,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "BPSC TRE Secondary Maths PYQ",
+      "question": "After how many decimal places will the decimal expansion of 13 / 1250 terminate?",
+      "options": [
+        "2 decimal places",
+        "3 decimal places",
+        "4 decimal places",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "1250 = 2^1 × 5^4. The decimal expansion terminates after max(1, 4) = 4 decimal places.",
+      "aiDeepSolution": {
+        "concept": "The decimal expansion of p / (2^n · 5^m) terminates after exactly max(n, m) places.",
+        "trick": "1250 = 2 × 625 = 2^1 × 5^4. The highest power between 1 and 4 is 4. Hence, terminates after 4 places (0.0104).",
+        "trap": "Counting only the power of 2 or taking the sum 1+4=5."
+      }
+    },
+    {
+      "id": 40,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 2 Polynomials",
+      "question": "What is the geometric shape of the graph of the quadratic polynomial P(x) = ax² + bx + c (a ≠ 0)?",
+      "options": [
+        "Straight line",
+        "Circle",
+        "Parabola",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "The graph of a quadratic polynomial P(x) = ax² + bx + c is a Parabola (opening upward if a > 0, downward if a < 0).",
+      "aiDeepSolution": {
+        "concept": "The graph of y = ax² + bx + c is a parabola. It intersects the x-axis at at most 2 points, corresponding to its real zeros.",
+        "trick": "Linear = Straight line | Quadratic = Parabola.",
+        "trap": "Parabolas are not hyperbolas or circles."
+      }
+    },
+    {
+      "id": 41,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 2 Polynomials",
+      "question": "If α and β are the zeros of the quadratic polynomial P(x) = 3x² - 5x - 2, what is the sum of its zeros (α + β)?",
+      "options": [
+        "-5/3",
+        "5/3",
+        "-2/3",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "By Vieta's formulas, sum of zeros α + β = -b/a = -(-5)/3 = 5/3.",
+      "aiDeepSolution": {
+        "concept": "Vieta's formula for quadratic ax² + bx + c: Sum of roots α + β = -b/a.",
+        "trick": "Here a = 3, b = -5, c = -2. Sum = -(-5)/3 = 5/3.",
+        "trap": "Forgetting the negative sign in -b/a and answering -5/3."
+      }
+    },
+    {
+      "id": 42,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 2 Polynomials",
+      "question": "If α and β are the zeros of the quadratic polynomial P(x) = 2x² + 7x + 5, what is the product of its zeros (αβ)?",
+      "options": [
+        "-7/2",
+        "5/2",
+        "-5/2",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Product of zeros αβ = c/a = 5/2.",
+      "aiDeepSolution": {
+        "concept": "For ax² + bx + c, product of zeros is αβ = c/a.",
+        "trick": "a = 2, b = 7, c = 5. αβ = c/a = 5/2.",
+        "trap": "Putting a negative sign on c/a."
+      }
+    },
+    {
+      "id": 43,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "BPSC TRE Secondary Maths PYQ",
+      "question": "If α and β are the zeros of the polynomial P(x) = ax² + bx + c (a, c ≠ 0), what is the value of (1/α + 1/β)?",
+      "options": [
+        "-b/c",
+        "b/c",
+        "-c/b",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "1/α + 1/β = (α + β) / (αβ) = (-b/a) / (c/a) = -b/c.",
+      "aiDeepSolution": {
+        "concept": "Sum of reciprocals: 1/α + 1/β = (α + β)/(αβ). Since α + β = -b/a and αβ = c/a, the ratio is (-b/a)/(c/a) = -b/c.",
+        "trick": "1/α + 1/β is always equal to -b/c. Direct exam shortcut!",
+        "trap": "Confusing with -b/a or +b/c."
+      }
+    },
+    {
+      "id": 44,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Exemplar Class 10",
+      "question": "If in the quadratic polynomial ax² + bx + c, all three coefficients a, b, and c are positive (a > 0, b > 0, c > 0), then both its zeros are:",
       "options": [
         "Both positive",
         "Both negative",
@@ -588,19 +945,19 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "Both zeroes are strictly negative.",
+      "explanation": "Sum of zeros = -b/a < 0 (negative) and Product of zeros = c/a > 0 (positive). Since the product is positive, both roots have the same sign. Since their sum is negative, both zeros must be strictly negative.",
       "aiDeepSolution": {
-        "concept": "For $ax^2 + bx + c$, if $a, b, c > 0$: Product $\\alpha\\beta = c/a = 127/1 > 0$ implies both roots have the same sign. Sum $\\alpha + \\beta = -b/a = -99 < 0$ implies both must be negative.",
-        "trick": "Rule: If all coefficients of a quadratic polynomial are positive, both roots MUST be negative.",
-        "trap": "Do not solve the discriminant or use quadratic formula; inspect signs of sum and product."
+        "concept": "Sign analysis of quadratic roots: αβ = c/a > 0 means roots have identical signs. α + β = -b/a < 0 means their sum is negative. Therefore, both roots must be negative.",
+        "trick": "All positive coefficients ⟶ both roots are negative.",
+        "trap": "Assuming positive coefficients yield positive roots."
       }
     },
     {
-      "id": 28,
+      "id": 45,
       "section": "sec_math",
-      "subject": "Mathematics (9-10)",
-      "source": "NCERT Exemplar & BPSC TRE 1.0 PYQ",
-      "question": "If one of the zeroes of the cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$ is equal to 0, what is the product of the other two zeroes?",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Exemplar Class 10",
+      "question": "If one of the zeros of the cubic polynomial P(x) = ax³ + bx² + cx + d is 0, what is the product of the other two zeros?",
       "options": [
         "-c/a",
         "c/a",
@@ -609,53 +966,116 @@
         "None of the above"
       ],
       "answerIndex": 1,
-      "explanation": "The product of the other two zeroes is c/a.",
+      "explanation": "For a cubic polynomial, αβ + βγ + γα = c/a. If one zero is 0 (say γ = 0), then αβ + 0 + 0 = c/a ⟹ αβ = c/a.",
       "aiDeepSolution": {
-        "concept": "In a cubic polynomial with roots $\\alpha, \\beta, \\gamma$, the sum of pairwise products is $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = c/a$. If $\\gamma = 0$, then $\\alpha\\beta + 0 + 0 = c/a \\implies \\alpha\\beta = c/a$.",
-        "trick": "Set $\\gamma = 0$ in $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = c/a$ -> $\\alpha\\beta = c/a$.",
-        "trap": "Do not confuse with the product of all three roots $\\alpha\\beta\\gamma = -d/a$."
+        "concept": "Vieta's relations for cubic: α + β + γ = -b/a, αβ + βγ + γα = c/a, αβγ = -d/a. If γ = 0, then the sum of pairwise products simplifies directly to αβ = c/a.",
+        "trick": "Put γ = 0 into αβ + βγ + γα = c/a ⟶ αβ = c/a.",
+        "trap": "Confusing with -d/a."
       }
     },
     {
-      "id": 29,
+      "id": 46,
       "section": "sec_math",
-      "subject": "Mathematics (9-10)",
-      "source": "BPSC TRE 3.0 (Class 9-10 Maths) PYQ",
-      "question": "Consider the following statements regarding real numbers:\n1. The sum of a rational and an irrational number is always irrational.\n2. The product of two irrational numbers is always irrational.\n3. Every real number is either rational or irrational.\nWhich of the above statements is/are mathematically TRUE?",
+      "subject": "NCERT Class 9 Mathematics",
+      "source": "NCERT Class 9 Polynomials",
+      "question": "What is the remainder when the polynomial P(x) = 2x³ - 3x² + 4x - 5 is divided by (x - 2)?",
       "options": [
-        "Only 1 and 3",
-        "Only 1 and 2",
-        "All 1, 2, and 3",
+        "7",
+        "9",
+        "11",
         "More than one of the above",
         "None of the above"
       ],
       "answerIndex": 0,
-      "explanation": "Statements 1 and 3 are true; Statement 2 is false.",
+      "explanation": "By Remainder Theorem, Remainder = P(2) = 2(2)³ - 3(2)² + 4(2) - 5 = 2(8) - 3(4) + 8 - 5 = 16 - 12 + 8 - 5 = 7.",
       "aiDeepSolution": {
-        "concept": "Statement 1 is TRUE (Rational + Irrational = Irrational). Statement 2 is FALSE: e.g. $\\sqrt{2} \\times \\sqrt{2} = 2$ (rational) or $\\sqrt{2} \\times \\sqrt{3} = \\sqrt{6}$ (irrational). Statement 3 is TRUE: $\\mathbb{R} = \\mathbb{Q} \\cup \\mathbb{Q}'$.",
-        "trick": "Counterexample for statement 2: $(\\sqrt{3}) \\times (\\sqrt{3}) = 3$ (rational). Thus 2 is false.",
-        "trap": "Believing irrational numbers are closed under multiplication is a classic mathematical trap."
+        "concept": "Remainder Theorem: When P(x) is divided by (x - a), the remainder is P(a).",
+        "trick": "Substitute x = 2: 2(8) - 3(4) + 8 - 5 = 16 - 12 + 8 - 5 = 7.",
+        "trap": "Performing long polynomial division when direct substitution takes 10 seconds."
       }
     },
     {
-      "id": 30,
+      "id": 47,
       "section": "sec_math",
-      "subject": "Mathematics (9-10)",
-      "source": "NCERT Class 9 Polynomials & BPSC TRE 2.0 PYQ",
-      "question": "When the polynomial $P(x) = x^3 - 3x^2 + 5x - 3$ is divided by $(x - 2)$, what is the remainder obtained according to the Remainder Theorem?",
+      "subject": "NCERT Class 9 Mathematics",
+      "source": "NCERT Class 9 Polynomials",
+      "question": "According to the Factor Theorem, a linear polynomial (x - a) is a factor of polynomial P(x) if and only if:",
       "options": [
-        "3",
-        "-3",
-        "1",
+        "P(a) = 1",
+        "P(a) = 0",
+        "P(0) = a",
         "More than one of the above",
         "None of the above"
       ],
-      "answerIndex": 0,
-      "explanation": "The remainder is 3.",
+      "answerIndex": 1,
+      "explanation": "(x - a) is a factor of P(x) if and only if P(a) = 0.",
       "aiDeepSolution": {
-        "concept": "Remainder Theorem: When polynomial $P(x)$ is divided by $(x - a)$, the remainder is simply $P(a)$. Here $a = 2$.",
-        "trick": "Substitute $x = 2$: $P(2) = 2^3 - 3(2^2) + 5(2) - 3 = 8 - 12 + 10 - 3 = 18 - 15 = 3$.",
-        "trap": "Arithmetic error while evaluating signs of terms."
+        "concept": "Factor Theorem is a corollary of the Remainder Theorem: P(x) = (x - a)Q(x) + P(a). If remainder P(a) = 0, then (x - a) is a factor.",
+        "trick": "Factor condition = Remainder P(a) is zero.",
+        "trap": "Confusing P(a) = 0 with P(0) = a."
+      }
+    },
+    {
+      "id": 48,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 3 Pair of Linear Equations",
+      "question": "Under which condition does a pair of linear equations a1·x + b1·y + c1 = 0 and a2·x + b2·y + c2 = 0 represent two intersecting straight lines with a UNIQUE solution?",
+      "options": [
+        "a1/a2 = b1/b2 = c1/c2",
+        "a1/a2 ≠ b1/b2",
+        "a1/a2 = b1/b2 ≠ c1/c2",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "A pair of linear equations has a unique solution (intersecting lines) if and only if a1/a2 ≠ b1/b2.",
+      "aiDeepSolution": {
+        "concept": "Linear system geometric conditions: 1. Unique solution (intersecting) ⟶ a1/a2 ≠ b1/b2. 2. Infinitely many (coincident) ⟶ a1/a2 = b1/b2 = c1/c2. 3. No solution (parallel) ⟶ a1/a2 = b1/b2 ≠ c1/c2.",
+        "trick": "Unique solution = Slopes are unequal = a1/a2 ≠ b1/b2.",
+        "trap": "Confusing with the condition for coincident or parallel lines."
+      }
+    },
+    {
+      "id": 49,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "BPSC TRE Secondary Maths PYQ",
+      "question": "For what value of k will the system of equations 2x + 3y = 7 and (k - 1)x + (k + 2)y = 3k have INFINITELY MANY solutions?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "For infinitely many solutions: a1/a2 = b1/b2 = c1/c2 ⟹ 2/(k - 1) = 3/(k + 2) = 7/(3k). From 2/(k - 1) = 3/(k + 2), 2(k + 2) = 3(k - 1) ⟹ 2k + 4 = 3k - 3 ⟹ k = 7.",
+      "aiDeepSolution": {
+        "concept": "Infinitely many solutions condition: a1/a2 = b1/b2 = c1/c2.",
+        "trick": "Cross multiply 2(k+2) = 3(k-1) ⟶ 2k + 4 = 3k - 3 ⟶ k = 7. Verify: 2/6 = 3/9 = 7/21 = 1/3 (holds true!).",
+        "trap": "Not verifying with the constant ratio c1/c2."
+      }
+    },
+    {
+      "id": 50,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Class 10 Linear Equations Kinematics",
+      "question": "A motor boat can travel at 15 km/h in still water. If the river stream flows at 3 km/h, what is the time taken by the boat to travel 36 km downstream?",
+      "options": [
+        "3 hours",
+        "2 hours",
+        "2.5 hours",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Downstream speed = Speed of boat + Speed of stream = 15 + 3 = 18 km/h. Time taken = Distance / Speed = 36 / 18 = 2 hours.",
+      "aiDeepSolution": {
+        "concept": "Boat & Stream Kinematics: Downstream speed = u + v, Upstream speed = u - v.",
+        "trick": "Downstream = 15 + 3 = 18 km/h. Time = 36 / 18 = 2 hours.",
+        "trap": "Using upstream speed (15 - 3 = 12 km/h ⟶ 36/12 = 3 hours) instead of downstream."
       }
     }
   ]

@@ -1,30 +1,30 @@
 {
   "day": 2,
   "date": "2026-10-10",
-  "title": "BPSC TRE 4.0 Day 02 High-Yield Practice Test",
-  "totalQuestions": 30,
-  "durationMinutes": 35,
+  "title": "BPSC TRE 4.0 Day 02 Complete Practice Test (50 Questions)",
+  "totalQuestions": 50,
+  "durationMinutes": 60,
   "negativeMarking": 0.33,
   "sections": [
     {
       "id": "language",
       "name": "Part I: Language Qualifying (भाषा अहर्ता)",
-      "questionsCount": 5
-    },
-    {
-      "id": "gs",
-      "name": "Part II: General Studies (सामान्य अध्ययन)",
       "questionsCount": 8
     },
     {
+      "id": "gs",
+      "name": "Part II: General Studies & Bihar Special (सामान्य अध्ययन)",
+      "questionsCount": 14
+    },
+    {
       "id": "middle_math_sci",
-      "name": "Part III: Class 6-8 (Maths & Science)",
-      "questionsCount": 10
+      "name": "Part III: Class 6–8 Maths & Science (गणित-विज्ञान)",
+      "questionsCount": 14
     },
     {
       "id": "sec_math",
-      "name": "Part IV: Class 9-10 Secondary Mathematics",
-      "questionsCount": 7
+      "name": "Part IV: Class 9–10 Secondary Mathematics (माध्यमिक गणित)",
+      "questionsCount": 14
     }
   ],
   "questions": [
@@ -656,6 +656,426 @@
         "concept": "The equation $x = 0$ is the Y-axis (vertical line). The equation $y = -4$ is a horizontal line parallel to the X-axis at a distance of 4 units below origin. Vertical and horizontal lines intersect at a $90^\\circ$ angle and are therefore mutually perpendicular.",
         "trick": "Y-axis ($x=0$) and Horizontal line ($y=-4$) always meet at $90^\\circ$ -> Perpendicular.",
         "trap": "Assuming $x = 0$ and $y = -4$ are parallel because both are linear constants."
+      }
+    },
+    {
+      "id": 31,
+      "section": "language",
+      "subject": "Hindi Grammar",
+      "source": "BPSC TRE 2.0 PYQ",
+      "question": "Which of the following is the authentic antonym (विलोम) of 'Anurag' (अनुराग)?",
+      "options": [
+        "Viraag (विराग)",
+        "Dvesh (द्वेष)",
+        "Krodh (क्रोध)",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "The standard antonym of 'Anurag' (अनुराग) is 'Viraag' (विराग).",
+      "aiDeepSolution": {
+        "concept": "Standard Hindi antonym pairs: Anurag ↔ Viraag | Utkarsh ↔ Apakarsh | Aastik ↔ Nastik.",
+        "trick": "Prefix 'Vi-' is used to form the opposite: Anu-rag ⟶ Vi-rag.",
+        "trap": "Dvesh is often chosen casually, but the exact literary antonym is Viraag."
+      }
+    },
+    {
+      "id": 32,
+      "section": "language",
+      "subject": "English Grammar",
+      "source": "NCERT Class 10 English",
+      "question": "Choose the correct preposition to complete the sentence:\n'The historic Champaran Satyagraha started _______ April 1917.'",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "We use 'in' for months and years ('in April 1917').",
+      "aiDeepSolution": {
+        "concept": "Preposition of time: 'In' + month/year | 'On' + specific day/date | 'At' + precise clock time.",
+        "trick": "April 1917 is a month + year ⟶ requires 'in'.",
+        "trap": "Using 'on' is only correct if an exact calendar date is provided (e.g., 'on 10th April 1917')."
+      }
+    },
+    {
+      "id": 33,
+      "section": "language",
+      "subject": "English Grammar",
+      "source": "BPSC TRE 3.0 PYQ",
+      "question": "Select the sentence with grammatically correct punctuation and conditional sequence:",
+      "options": [
+        "If he had run fast, he would have caught the train.",
+        "If he ran fast, he will catch the train.",
+        "If he had run fast, he caught the train.",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "'If he had run fast, he would have caught the train' correctly follows the Third Conditional format.",
+      "aiDeepSolution": {
+        "concept": "Third conditional formula: If + had + V3, Subject + would have + V3.",
+        "trick": "Had run ⟶ would have caught.",
+        "trap": "Mixing past simple with will."
+      }
+    },
+    {
+      "id": 34,
+      "section": "gs",
+      "subject": "1942 Movement in Bihar",
+      "source": "BPSC TRE 2.0 GS PYQ",
+      "question": "On which date did the historic Patna Secretariat police firing take place during the 1942 Quit India Movement?",
+      "options": [
+        "9 August 1942",
+        "11 August 1942",
+        "15 August 1942",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Patna Secretariat firing took place on 11 August 1942, in which 7 patriotic students attained martyrdom.",
+      "aiDeepSolution": {
+        "concept": "Under orders from District Magistrate W.G. Archer, police fired upon students attempting to hoist the national tricolour on 11 August 1942.",
+        "trick": "9 Aug = Movement launched & arrests | 11 Aug = Patna Secretariat firing.",
+        "trap": "Confusing 9 August with 11 August."
+      }
+    },
+    {
+      "id": 35,
+      "section": "gs",
+      "subject": "1942 Movement in Bihar",
+      "source": "67th BPSC Prelims PYQ",
+      "question": "From which central jail did Jayaprakash Narayan (JP) escape along with his colleagues on the night of Diwali in November 1942?",
+      "options": [
+        "Patna Camp Jail",
+        "Hazaribagh Central Jail",
+        "Buxar Central Jail",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Jayaprakash Narayan escaped from Hazaribagh Central Jail on 9 November 1942 (Diwali night).",
+      "aiDeepSolution": {
+        "concept": "JP along with 5 associates scaled the walls of Hazaribagh Jail and established 'Azad Dasta' in the Nepal forests.",
+        "trick": "JP Diwali escape = Hazaribagh Central Jail.",
+        "trap": "Assuming Bankipur or Patna Camp jail."
+      }
+    },
+    {
+      "id": 36,
+      "section": "gs",
+      "subject": "Bihar Geography & Agriculture",
+      "source": "Bihar Economic Survey",
+      "question": "Which agro-climatic region and crop of Bihar received the prestigious Geographical Indication (GI) tag and accounts for over 85% of total global supply?",
+      "options": [
+        "Bhagalpur Silk",
+        "Mithila Makhana (Fox Nut)",
+        "Shahi Litchi of Muzaffarpur",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mithila Makhana (Fox Nut) received the GI tag and Bihar accounts for over 85% of global makhana production.",
+      "aiDeepSolution": {
+        "concept": "Concentrated in Darbhanga, Madhubani, and Saharsa wetlands. Over 85% of global makhana is produced in Bihar.",
+        "trick": "Over 85% global production = Mithila Makhana.",
+        "trap": "While Shahi Litchi also has a GI tag, it accounts for a large share of India's litchi, but Mithila Makhana dominates over 85% globally."
+      }
+    },
+    {
+      "id": 37,
+      "section": "gs",
+      "subject": "Bihar Geography",
+      "source": "BPSC TRE 1.0 GS PYQ",
+      "question": "What is the average annual rainfall received by the state of Bihar?",
+      "options": [
+        "1,013 mm to 1,200 mm",
+        "400 mm to 600 mm",
+        "2,200 mm to 2,500 mm",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bihar receives an average annual rainfall between 1,000 mm and 1,200 mm, with Kishanganj receiving the highest rainfall.",
+      "aiDeepSolution": {
+        "concept": "Monsoon brings ~85% of total annual rainfall between June and September. Kishanganj receives the highest rainfall (~1,800 mm).",
+        "trick": "Average rainfall = ~1,100 to 1,200 mm. Maximum rainfall = Kishanganj.",
+        "trap": "Assuming very dry or ultra-heavy tropical numbers."
+      }
+    },
+    {
+      "id": 38,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7 Science",
+      "source": "NCERT Acids, Bases and Salts",
+      "question": "Which organic acid is present in ant sting that causes a burning irritation, and which mild base is applied to neutralize it?",
+      "options": [
+        "Citric acid, neutralized by vinegar",
+        "Methanoic acid (Formic acid), neutralized by Baking Soda or Calamine",
+        "Lactic acid, neutralized by milk",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ant sting contains Methanoic acid (HCOOH), which is neutralized by applying mild bases such as moist baking soda (sodium hydrogen carbonate) or calamine solution (zinc carbonate).",
+      "aiDeepSolution": {
+        "concept": "Neutralization reaction: Acid + Base ⟶ Salt + Water. Formic acid + Base relieves pain.",
+        "trick": "Ant sting = Methanoic / Formic acid | Neutralizer = Baking soda or Calamine.",
+        "trap": "Vinegar is acidic and would worsen the burn."
+      }
+    },
+    {
+      "id": 39,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7 Science",
+      "source": "NCERT Acids, Bases and Salts",
+      "question": "What is the normal physiological pH range of healthy human blood?",
+      "options": [
+        "5.5 to 6.5 (Acidic)",
+        "7.35 to 7.45 (Slightly Alkaline)",
+        "8.5 to 9.5 (Strongly Alkaline)",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "Human arterial blood pH is tightly buffered in the slightly alkaline range of 7.35 to 7.45.",
+      "aiDeepSolution": {
+        "concept": "Human blood is slightly basic (alkaline) with pH buffered around 7.40 by bicarbonate buffer system.",
+        "trick": "Blood pH = 7.35 - 7.45 (slightly above neutral 7.0).",
+        "trap": "Marking 7.0 (strictly neutral) or acidic."
+      }
+    },
+    {
+      "id": 40,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7–8 Mathematics",
+      "source": "Commercial Mathematics Standards",
+      "question": "A shopkeeper allows a discount of 10% on the marked price of a book and still gains 20%. By what percentage is the Marked Price above the Cost Price?",
+      "options": [
+        "25%",
+        "33.33%",
+        "30%",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "MP / CP = (100 + P%) / (100 - D%) = (100 + 20) / (100 - 10) = 120 / 90 = 4/3. Percentage markup = (4/3 - 1) × 100% = 33.33%.",
+      "aiDeepSolution": {
+        "concept": "Universal Commercial Formula: MP / CP = (100 + P%) / (100 - D%).",
+        "trick": "MP/CP = 120/90 = 4/3. Excess = 1/3 = 33.33%.",
+        "trap": "Adding 20% + 10% = 30% (incorrect linear addition)."
+      }
+    },
+    {
+      "id": 41,
+      "section": "middle_math_sci",
+      "subject": "NCERT Class 7–8 Mathematics",
+      "source": "Fractions & Decimals Standards",
+      "question": "What is the HCF of the fractions 3/4, 6/7, and 9/8?",
+      "options": [
+        "3/56",
+        "18/7",
+        "1/28",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "HCF of fractions = (HCF of numerators) / (LCM of denominators) = HCF(3, 6, 9) / LCM(4, 7, 8) = 3 / 56.",
+      "aiDeepSolution": {
+        "concept": "HCF(Fractions) = HCF(Numerators) / LCM(Denominators).",
+        "trick": "HCF(3, 6, 9) = 3. LCM(4, 7, 8) = 56. Result = 3/56.",
+        "trap": "Finding LCM of numerators instead of HCF."
+      }
+    },
+    {
+      "id": 42,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 3 Linear Equations",
+      "question": "Which of the following geometric conditions represents a system of linear equations that has NO SOLUTION (Inconsistent)?",
+      "options": [
+        "a1/a2 ≠ b1/b2",
+        "a1/a2 = b1/b2 = c1/c2",
+        "a1/a2 = b1/b2 ≠ c1/c2",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "A linear system has no solution (parallel lines) if and only if a1/a2 = b1/b2 ≠ c1/c2.",
+      "aiDeepSolution": {
+        "concept": "Parallel lines never meet, hence no common solution exists (inconsistent). This occurs when slopes are equal but intercepts differ: a1/a2 = b1/b2 ≠ c1/c2.",
+        "trick": "Equal first ratios, unequal constant ratio = Parallel (No solution).",
+        "trap": "Confusing with all three ratios being equal (coincident lines, infinite solutions)."
+      }
+    },
+    {
+      "id": 43,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 7 Coordinate Geometry",
+      "question": "What is the geometric relationship between the straight line x = 0 and the straight line y = -4 in the Cartesian coordinate plane?",
+      "options": [
+        "They are parallel lines",
+        "They are coincident lines",
+        "They are mutually perpendicular lines",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 2,
+      "explanation": "x = 0 represents the vertical Y-axis and y = -4 represents a horizontal line parallel to the X-axis. Any vertical line is perpendicular to any horizontal line.",
+      "aiDeepSolution": {
+        "concept": "Lines of the form x = a are vertical and lines of the form y = b are horizontal. They intersect at a right angle (90°).",
+        "trick": "x = c (vertical) ⊥ y = k (horizontal) ⟶ Always Perpendicular.",
+        "trap": "Thinking they do not intersect."
+      }
+    },
+    {
+      "id": 44,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 7 Coordinate Geometry",
+      "question": "What is the distance between the two points A(2, 3) and B(5, 7) in the Cartesian plane?",
+      "options": [
+        "5 units",
+        "6 units",
+        "7 units",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "Distance d = √[(5 - 2)² + (7 - 3)²] = √[3² + 4²] = √[9 + 16] = √25 = 5 units.",
+      "aiDeepSolution": {
+        "concept": "Distance formula: d = √[(x2 - x1)² + (y2 - y1)²].",
+        "trick": "Notice the 3-4-5 Pythagorean triplet! Δx = 3, Δy = 4 ⟶ Distance = 5.",
+        "trap": "Forgetting to take the square root."
+      }
+    },
+    {
+      "id": 45,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 8 Trigonometry",
+      "question": "What is the simplified value of the trigonometric expression (sin²θ + cos²θ + tan²θ - sec²θ)?",
+      "options": [
+        "1",
+        "0",
+        "-1",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "sin²θ + cos²θ = 1 and sec²θ - tan²θ = 1 (so tan²θ - sec²θ = -1). Therefore, 1 + (-1) = 0.",
+      "aiDeepSolution": {
+        "concept": "Fundamental identities: sin²θ + cos²θ = 1, and 1 + tan²θ = sec²θ ⟹ tan²θ - sec²θ = -1.",
+        "trick": "Expression = 1 + (-1) = 0.",
+        "trap": "Not noticing the sign flip in tan²θ - sec²θ."
+      }
+    },
+    {
+      "id": 46,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 6 Triangles",
+      "question": "In ΔABC, if line DE is drawn parallel to side BC intersecting AB at D and AC at E (Basic Proportionality Theorem / Thales Theorem), and AD = 2 cm, DB = 3 cm, AE = 4 cm, what is the length of EC?",
+      "options": [
+        "5 cm",
+        "6 cm",
+        "8 cm",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "By Thales Theorem, AD/DB = AE/EC ⟹ 2/3 = 4/EC ⟹ 2·EC = 12 ⟹ EC = 6 cm.",
+      "aiDeepSolution": {
+        "concept": "Basic Proportionality Theorem (Thales Theorem): If a line is drawn parallel to one side of a triangle, it divides the other two sides in the same ratio: AD/DB = AE/EC.",
+        "trick": "2/3 = 4/EC ⟶ EC = 3 × 4 / 2 = 6 cm.",
+        "trap": "Setting AD/AB instead of AD/DB."
+      }
+    },
+    {
+      "id": 47,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 4 Quadratic Equations",
+      "question": "What is the discriminant (D) of the quadratic equation 2x² - 4x + 3 = 0, and what is the nature of its roots?",
+      "options": [
+        "D = 8, real and distinct roots",
+        "D = -8, no real roots (imaginary)",
+        "D = 0, real and equal roots",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "D = b² - 4ac = (-4)² - 4(2)(3) = 16 - 24 = -8. Since D < 0, the equation has no real roots.",
+      "aiDeepSolution": {
+        "concept": "Discriminant D = b² - 4ac. If D > 0, 2 distinct real roots; if D = 0, 2 equal real roots; if D < 0, no real roots.",
+        "trick": "16 - 24 = -8 < 0 ⟶ No real roots.",
+        "trap": "Dropping the negative sign in (-4)²."
+      }
+    },
+    {
+      "id": 48,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 14 Statistics",
+      "question": "Which empirical relationship connects the Mean, Median, and Mode of a moderately skewed distribution?",
+      "options": [
+        "Mode = 3 Median - 2 Mean",
+        "Mode = 2 Median - 3 Mean",
+        "Median = 3 Mode - 2 Mean",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "Karl Pearson's empirical formula is: Mode = 3 Median - 2 Mean.",
+      "aiDeepSolution": {
+        "concept": "Empirical relationship for moderately skewed frequency distribution: Mode = 3 Median - 2 Mean.",
+        "trick": "Remember coefficients: 3 with Median (longer word), 2 with Mean (shorter word): 3 Med - 2 Mean.",
+        "trap": "Swapping 2 and 3."
+      }
+    },
+    {
+      "id": 49,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 5 Arithmetic Progressions",
+      "question": "What is the 10th term of the Arithmetic Progression (AP): 2, 7, 12, 17, ...?",
+      "options": [
+        "45",
+        "47",
+        "52",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 1,
+      "explanation": "First term a = 2, common difference d = 7 - 2 = 5. a_10 = a + (10 - 1)d = 2 + 9(5) = 2 + 45 = 47.",
+      "aiDeepSolution": {
+        "concept": "nth term of an AP: a_n = a + (n - 1)d.",
+        "trick": "a = 2, d = 5. a_10 = 2 + 9 × 5 = 47.",
+        "trap": "Using n instead of (n - 1) (which would give 2 + 50 = 52)."
+      }
+    },
+    {
+      "id": 50,
+      "section": "sec_math",
+      "subject": "NCERT Class 10 Mathematics",
+      "source": "NCERT Chapter 15 Probability",
+      "question": "A card is drawn from a well-shuffled deck of 52 playing cards. What is the probability of drawing a face card (King, Queen, or Jack)?",
+      "options": [
+        "3/13",
+        "1/13",
+        "4/13",
+        "More than one of the above",
+        "None of the above"
+      ],
+      "answerIndex": 0,
+      "explanation": "There are 4 Kings, 4 Queens, and 4 Jacks, totaling 12 face cards. Probability = 12 / 52 = 3 / 13.",
+      "aiDeepSolution": {
+        "concept": "Total cards = 52. Face cards = 3 per suit × 4 suits = 12 cards. P = 12 / 52 = 3 / 13.",
+        "trick": "12 / 52 simplifies by dividing numerator and denominator by 4 ⟶ 3 / 13.",
+        "trap": "Including Aces as face cards (Aces are honor cards, not face cards)."
       }
     }
   ]
