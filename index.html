@@ -178,6 +178,28 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .user-pill-btn {
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      color: #3b82f6;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .user-pill-btn:hover {
+      background: #3b82f6;
+      color: #ffffff;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
     }
 
     .day-selector {
@@ -1108,7 +1130,59 @@
       cursor: pointer;
     }
 
-    /* Sync Tabs */
+    /* User Profile Cards */
+    .user-item-card {
+      background: var(--bg-option);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .user-item-card:hover {
+      border-color: var(--border-focus);
+      background: var(--bg-option-hover);
+    }
+
+    .user-item-card.active-user-card {
+      border-color: #3b82f6;
+      background: rgba(59, 130, 246, 0.1);
+    }
+
+    .user-info-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-avatar-badge {
+      font-size: 22px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .user-name-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .user-stats-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Sync Method Card */
     .sync-method-card {
       background: var(--bg-option);
       border: 1px solid var(--border);
@@ -1130,6 +1204,12 @@
     </div>
 
     <div class="header-actions">
+      <!-- Active User Profile Switcher -->
+      <button class="user-pill-btn" id="activeUserBtn" onclick="openUserModal()" title="Switch User / Profile (यूजर बदलें)">
+        <span id="activeUserAvatar">👤</span>
+        <span id="activeUserName">User</span>
+      </button>
+
       <select class="day-selector" id="daySelect" onchange="loadDay(this.value)">
         <option value="1">Day 01 (09 Oct)</option>
         <option value="2">Day 02 (10 Oct)</option>
@@ -1142,7 +1222,7 @@
 
       <button class="btn-icon btn-sync-highlight" onclick="openSync()" title="Sync Across Phone & PC (डिवाइस सिंक)">
         <span>↻</span>
-        <span>Sync (सिंक)</span>
+        <span>Sync</span>
       </button>
     </div>
   </header>
@@ -1245,7 +1325,7 @@
         Comprehensive NCERT/SCERT aligned revision notes covering Language (भाषा अहर्ता), General Studies (सामान्य अध्ययन), Class 6–8 Maths & Science, and Class 9–10 Secondary Maths.
       </p>
       <div class="mastery-stats-row">
-        <span class="mastery-label">Daily Revision Mastery (रिवीजन प्रगति)</span>
+        <span class="mastery-label">Daily Revision Mastery (<span id="notesUserLabel">User</span> की प्रगति)</span>
         <span class="mastery-pct" id="notesMasteryText">0 of 4 Completed (0%)</span>
       </div>
       <div class="mastery-progress-track">
@@ -1289,6 +1369,40 @@
 
 </div>
 
+<!-- USER PROFILE / LOGIN MODAL -->
+<div class="modal-backdrop" id="userModal">
+  <div class="modal-box">
+    <div class="modal-title">👥 User Profiles & Login (यूजर प्रोफाइल)</div>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.5;">
+      दो या दो से अधिक लोग एक ही फोन या कंप्यूटर पर अलग-अलग तैयारी कर सकते हैं। अपनी प्रोफाइल चुनें या नया नाम जोड़ें:
+    </p>
+
+    <!-- Profiles List Container -->
+    <div id="usersListContainer" style="margin-bottom: 14px;">
+      <!-- Injected dynamically -->
+    </div>
+
+    <!-- Add New User Form -->
+    <div style="background: var(--bg-option); border: 1px dashed var(--border); border-radius: var(--radius-md); padding: 12px; margin-bottom: 14px;">
+      <div style="font-size: 12px; font-weight: 700; color: #3b82f6; margin-bottom: 8px;">+ Add New User (नया यूजर जोड़ें):</div>
+      <div style="display: flex; gap: 8px;">
+        <select id="newUserAvatarSelect" style="background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 15px;">
+          <option value="👤">👤</option>
+          <option value="🎯">🎯</option>
+          <option value="📚">📚</option>
+          <option value="🏆">🏆</option>
+          <option value="🚀">🚀</option>
+          <option value="⭐">⭐</option>
+        </select>
+        <input type="text" id="newUserNameInput" placeholder="Enter name (उदा. Nadeem, Rahul...)" style="flex: 1; background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-main); padding: 7px 10px; border-radius: var(--radius-sm); font-size: 12.5px;">
+        <button class="modal-close" style="width: auto; padding: 7px 14px; background: #2563eb; color: #ffffff;" onclick="handleAddUser()">Add</button>
+      </div>
+    </div>
+
+    <button class="modal-close" onclick="closeUserModal()">Close (बंद करें)</button>
+  </div>
+</div>
+
 <!-- QUESTION PALETTE MODAL -->
 <div class="modal-backdrop" id="paletteModal">
   <div class="modal-box">
@@ -1298,21 +1412,21 @@
   </div>
 </div>
 
-<!-- SYNC MODAL (BILINGUAL & QR AUTO-SYNC) -->
+<!-- SYNC MODAL (USER-AWARE AUTO SYNC) -->
 <div class="modal-backdrop" id="syncModal">
   <div class="modal-box">
-    <div class="modal-title">📱 Sync Phone & PC (डिवाइस सिंक)</div>
-    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.5;">
-      अपने फोन और कंप्यूटर के बीच अपने हल किए हुए प्रश्न, स्कोर और नोट्स की प्रगति 1-क्लिक में सिंक करें।
+    <div class="modal-title">📱 Sync User Progress (डिवाइस सिंक)</div>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.5;">
+      Active Profile: <strong id="syncModalUserLabel" style="color: #3b82f6;">User</strong> की प्रोग्रेस और स्कोर सिंक करें:
     </p>
 
     <!-- METHOD 1: QR & 1-CLICK AUTO LINK -->
     <div class="sync-method-card">
       <div style="font-size: 13px; font-weight: 800; color: #10b981; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-        <span>⚡ तरीका 1: 1-Click QR Code या Direct Link (सबसे आसान)</span>
+        <span>⚡ तरीका 1: 1-Click QR Code या Direct Link</span>
       </div>
       <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
-        अपने फोन के कैमरे से यह QR कोड स्कैन करें, या लिंक को WhatsApp/Notes में खोलें — पूरी प्रोग्रेस फोन में अपने आप लोड हो जाएगी!
+        इस QR कोड को फोन से स्कैन करें — यह सीधे <strong id="syncQrUserHighlight" style="color: #10b981;"></strong> की प्रोग्रेस लोड करेगा!
       </p>
 
       <div style="text-align: center; margin-bottom: 10px;" id="qrCodeContainer">
@@ -1334,7 +1448,7 @@
       </div>
 
       <div style="margin-bottom: 10px;">
-        <label style="font-size: 11px; font-weight: 600; color: var(--text-muted);">Current Progress Code (कोड कॉपी करें):</label>
+        <label style="font-size: 11px; font-weight: 600; color: var(--text-muted);">Current User Code (कोड कॉपी करें):</label>
         <div style="display: flex; gap: 6px; margin-top: 4px;">
           <input type="text" id="syncExportArea" readonly style="flex: 1; background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-main); padding: 6px; border-radius: var(--radius-sm); font-size: 11px; font-family: var(--font-mono);">
           <button class="modal-close" style="width: auto; padding: 6px 12px; background: #2563eb; color: #ffffff;" onclick="copySyncCode()">Copy Code</button>
@@ -1357,7 +1471,7 @@
 <!-- SCORECARD MODAL -->
 <div class="modal-backdrop" id="scorecardModal">
   <div class="modal-box" style="text-align: center;">
-    <div class="modal-title">Exam Performance Summary (परीक्षा परिणाम)</div>
+    <div class="modal-title">Exam Performance Summary (<span id="scorecardUserLabel">User</span> का स्कोर)</div>
     <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">BPSC Marking Scheme (+1.0 Correct, -0.33 Negative)</p>
 
     <div style="font-size: 40px; font-weight: 800; color: #38bdf8; margin: 4px 0;" id="scoreNet">0.00</div>
@@ -1408,6 +1522,10 @@
   let searchQuery = '';
   let readNotesSet = new Set();
   let toastTimer = null;
+
+  // Multi-User Profile State
+  let usersList = [];
+  let currentUserId = 'default_user';
 
   const SECTION_CONFIG = {
     'language': {
@@ -1775,11 +1893,163 @@
   // ========================================================
   window.addEventListener('DOMContentLoaded', () => {
     initTheme();
-    loadStoredProgress();
-    loadStoredReadNotes();
+    initUsers();
     checkUrlAutoSync();
     initDayDropdown();
   });
+
+  // ========================================================
+  // MULTI-USER PROFILES & LOGIN SYSTEM
+  // ========================================================
+  function initUsers() {
+    try {
+      const saved = localStorage.getItem('bpsc_user_profiles');
+      if (saved) {
+        usersList = JSON.parse(saved);
+      }
+    } catch (e) {}
+
+    if (!usersList || usersList.length === 0) {
+      usersList = [
+        { id: 'usr_nadeem', name: 'Nadeem', avatar: '👤', createdAt: Date.now() }
+      ];
+      localStorage.setItem('bpsc_user_profiles', JSON.stringify(usersList));
+    }
+
+    const savedActiveId = localStorage.getItem('bpsc_active_user_id');
+    const exists = usersList.find(u => u.id === savedActiveId);
+    currentUserId = exists ? savedActiveId : usersList[0].id;
+    localStorage.setItem('bpsc_active_user_id', currentUserId);
+
+    updateUserUI();
+    loadActiveUserData();
+  }
+
+  function getActiveUser() {
+    return usersList.find(u => u.id === currentUserId) || usersList[0];
+  }
+
+  function updateUserUI() {
+    const user = getActiveUser();
+    document.getElementById('activeUserAvatar').innerText = user.avatar || '👤';
+    document.getElementById('activeUserName').innerText = user.name || 'User';
+    
+    const userLabel = document.getElementById('notesUserLabel');
+    if (userLabel) userLabel.innerText = user.name;
+    
+    const scorecardLabel = document.getElementById('scorecardUserLabel');
+    if (scorecardLabel) scorecardLabel.innerText = user.name;
+  }
+
+  function openUserModal() {
+    renderUsersList();
+    document.getElementById('userModal').classList.add('open');
+  }
+
+  function closeUserModal() {
+    document.getElementById('userModal').classList.remove('open');
+  }
+
+  function renderUsersList() {
+    const container = document.getElementById('usersListContainer');
+    container.innerHTML = '';
+
+    usersList.forEach(u => {
+      const isCurrent = u.id === currentUserId;
+      
+      // Load user answers stats
+      let userAnswersCount = 0;
+      try {
+        const pRaw = localStorage.getItem(`bpsc_prog_${u.id}`);
+        if (pRaw) {
+          const pData = JSON.parse(pRaw);
+          userAnswersCount = Object.keys(pData[activeDay]?.answers || {}).length;
+        }
+      } catch (e) {}
+
+      const item = document.createElement('div');
+      item.className = `user-item-card ${isCurrent ? 'active-user-card' : ''}`;
+      item.onclick = () => switchUser(u.id);
+
+      item.innerHTML = `
+        <div class="user-info-left">
+          <div class="user-avatar-badge">${u.avatar}</div>
+          <div>
+            <div class="user-name-title">${u.name} ${isCurrent ? '<span style="font-size:11px; color:#10b981; font-weight:700;">● Active</span>' : ''}</div>
+            <div class="user-stats-desc">Day ${activeDay}: ${userAnswersCount}/30 Questions Solved</div>
+          </div>
+        </div>
+        <div>
+          ${isCurrent ? '<span style="font-size:12px; font-weight:700; color:#3b82f6;">Selected ✓</span>' : '<button class="modal-close" style="padding:4px 10px; font-size:11px;">Switch</button>'}
+        </div>
+      `;
+      container.appendChild(item);
+    });
+  }
+
+  function handleAddUser() {
+    const nameInput = document.getElementById('newUserNameInput');
+    const avatarSelect = document.getElementById('newUserAvatarSelect');
+    const name = nameInput.value.trim();
+    if (!name) {
+      alert('कृपया यूजर का नाम दर्ज करें (Please enter a name)');
+      return;
+    }
+
+    const newId = 'usr_' + Date.now().toString(36);
+    const avatar = avatarSelect.value || '👤';
+
+    usersList.push({ id: newId, name, avatar, createdAt: Date.now() });
+    localStorage.setItem('bpsc_user_profiles', JSON.stringify(usersList));
+
+    nameInput.value = '';
+    switchUser(newId);
+  }
+
+  function switchUser(targetUserId) {
+    // 1. Save current active user progress
+    saveActiveUserData();
+
+    // 2. Set new active user
+    currentUserId = targetUserId;
+    localStorage.setItem('bpsc_active_user_id', currentUserId);
+
+    // 3. Load target user progress
+    loadActiveUserData();
+
+    // 4. Update UI
+    updateUserUI();
+    renderQuestion();
+    updateAnsweredCounter();
+    renderStudyNotes();
+    closeUserModal();
+
+    const user = getActiveUser();
+    showToast(`Switched to profile: ${user.name} (${user.avatar})`, '👤');
+  }
+
+  function loadActiveUserData() {
+    // Load question progress
+    try {
+      const pRaw = localStorage.getItem(`bpsc_prog_${currentUserId}`);
+      userProgress = pRaw ? JSON.parse(pRaw) : {};
+    } catch (e) {
+      userProgress = {};
+    }
+
+    // Load read notes
+    try {
+      const nRaw = localStorage.getItem(`bpsc_notes_${currentUserId}`);
+      readNotesSet = nRaw ? new Set(JSON.parse(nRaw)) : new Set();
+    } catch (e) {
+      readNotesSet = new Set();
+    }
+  }
+
+  function saveActiveUserData() {
+    localStorage.setItem(`bpsc_prog_${currentUserId}`, JSON.stringify(userProgress));
+    localStorage.setItem(`bpsc_notes_${currentUserId}`, JSON.stringify(Array.from(readNotesSet)));
+  }
 
   // ========================================================
   // THEME MANAGEMENT (LIGHT & DARK)
@@ -1981,7 +2251,7 @@
   function selectOption(qId, idx) {
     if (!userProgress[activeDay]) userProgress[activeDay] = { answers: {} };
     userProgress[activeDay].answers[qId] = idx;
-    saveProgress();
+    saveActiveUserData();
     renderQuestion();
     updateAnsweredCounter();
   }
@@ -2044,20 +2314,9 @@
       readNotesSet.add(key);
       showToast('Module marked as completed! (अध्ययन पूर्ण)', '✓');
     }
-    saveReadNotes();
+    saveActiveUserData();
     renderStudyNotes();
     updateNotesMasteryBar();
-  }
-
-  function saveReadNotes() {
-    localStorage.setItem('bpsc_read_notes', JSON.stringify(Array.from(readNotesSet)));
-  }
-
-  function loadStoredReadNotes() {
-    try {
-      const saved = localStorage.getItem('bpsc_read_notes');
-      if (saved) readNotesSet = new Set(JSON.parse(saved));
-    } catch (e) {}
   }
 
   function updateNotesMasteryBar() {
@@ -2281,13 +2540,19 @@
   }
 
   // ========================================================
-  // CROSS-DEVICE PROGRESS SYNC (BILINGUAL & 1-CLICK QR LINK)
+  // CROSS-DEVICE PROGRESS SYNC (MULTI-USER AWARE)
   // ========================================================
   function openSync() {
+    const user = getActiveUser();
+    document.getElementById('syncModalUserLabel').innerText = `${user.avatar} ${user.name}`;
+    document.getElementById('syncQrUserHighlight').innerText = user.name;
+
     const payload = {
+      userId: user.id,
+      userName: user.name,
+      userAvatar: user.avatar,
       answers: userProgress,
       readNotes: Array.from(readNotesSet),
-      theme: localStorage.getItem('bpsc_theme') || 'dark',
       timestamp: Date.now()
     };
     const raw = JSON.stringify(payload);
@@ -2299,7 +2564,7 @@
     
     // Direct auto-sync URL
     const baseUrl = window.location.origin + window.location.pathname;
-    const fullSyncUrl = `${baseUrl}?sync=${encodeURIComponent(encoded)}`;
+    const fullSyncUrl = `${baseUrl}?user=${encodeURIComponent(user.name)}&sync=${encodeURIComponent(encoded)}`;
     document.getElementById('syncDirectUrl').value = fullSyncUrl;
     
     // QR Code
@@ -2335,24 +2600,43 @@
     try {
       const decoded = decodeURIComponent(escape(atob(input)));
       const payload = JSON.parse(decoded);
-      if (payload.answers) {
-        userProgress = Object.assign(userProgress, payload.answers);
-      } else {
-        userProgress = Object.assign(userProgress, payload);
-      }
-      if (payload.readNotes && Array.isArray(payload.readNotes)) {
-        payload.readNotes.forEach(id => readNotesSet.add(id));
-        saveReadNotes();
-      }
-      saveProgress();
-      showToast('प्रोग्रेस सफलतापूर्वक सिंक हो गई! (Progress Applied)', '✓');
+      applyImportedPayload(payload);
       closeSync();
-      renderQuestion();
-      updateAnsweredCounter();
-      renderStudyNotes();
     } catch (e) {
       alert('Invalid sync code format. कृपया सही कोड चेक करके पुनः प्रयास करें।');
     }
+  }
+
+  function applyImportedPayload(payload) {
+    // 1. Ensure user profile exists or create it
+    if (payload.userName) {
+      let targetUser = usersList.find(u => u.name.toLowerCase() === payload.userName.toLowerCase());
+      if (!targetUser) {
+        const newId = payload.userId || ('usr_' + Date.now().toString(36));
+        targetUser = { id: newId, name: payload.userName, avatar: payload.userAvatar || '👤', createdAt: Date.now() };
+        usersList.push(targetUser);
+        localStorage.setItem('bpsc_user_profiles', JSON.stringify(usersList));
+      }
+      currentUserId = targetUser.id;
+      localStorage.setItem('bpsc_active_user_id', currentUserId);
+      updateUserUI();
+    }
+
+    // 2. Merge answers
+    if (payload.answers) {
+      userProgress = Object.assign(userProgress, payload.answers);
+    }
+
+    // 3. Merge read notes
+    if (payload.readNotes && Array.isArray(payload.readNotes)) {
+      payload.readNotes.forEach(id => readNotesSet.add(id));
+    }
+
+    saveActiveUserData();
+    showToast(`प्रोग्रेस सफलतापूर्वक सिंक हो गई! (${getActiveUser().name})`, '✓');
+    renderQuestion();
+    updateAnsweredCounter();
+    renderStudyNotes();
   }
 
   function checkUrlAutoSync() {
@@ -2362,37 +2646,12 @@
       if (syncData) {
         const decoded = decodeURIComponent(escape(atob(syncData)));
         const payload = JSON.parse(decoded);
-        if (payload.answers) {
-          userProgress = Object.assign(userProgress, payload.answers);
-          saveProgress();
-        } else {
-          userProgress = Object.assign(userProgress, payload);
-          saveProgress();
-        }
-        if (payload.readNotes && Array.isArray(payload.readNotes)) {
-          payload.readNotes.forEach(id => readNotesSet.add(id));
-          saveReadNotes();
-        }
-        showToast('प्रोग्रेस ऑटोमैटिक सिंक हो गई! (Progress Synced)', '✓');
+        applyImportedPayload(payload);
         window.history.replaceState({}, document.title, window.location.pathname);
-        renderQuestion();
-        updateAnsweredCounter();
-        renderStudyNotes();
       }
     } catch (e) {
       console.warn('URL auto-sync check error', e);
     }
-  }
-
-  function saveProgress() {
-    localStorage.setItem('bpsc_tre4_progress', JSON.stringify(userProgress));
-  }
-
-  function loadStoredProgress() {
-    try {
-      const s = localStorage.getItem('bpsc_tre4_progress');
-      if (s) userProgress = JSON.parse(s);
-    } catch (e) {}
   }
 </script>
 
